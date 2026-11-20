@@ -207,6 +207,7 @@ export function renderDashboard(model) {
         <p class="key-item">${icon('steady-solid', { cls: 'dot dot--solid' })}<span><strong>Solid</strong>over ¾ right</span></p>
         <p class="key-item">${icon('steady-none', { cls: 'dot dot--unrated' })}<span><strong>Not rated yet</strong>fewer than 3 answers</span></p>
         <p class="key-note">Counts your last 5 answers per topic, right without a hint. Solid needs 2 exam-style ones.</p>
+        <p class="key-note"><a href="/bank">Browse every question in the bank</a></p>
       </div>
   </section>
 </main>`;

@@ -49,6 +49,21 @@ Then reload the dashboard in the browser. The three states are:
 
 This replaces the student's progress with sample numbers, so only use it for a demo. If it says "Run the app and finish setup first.", start Steady and complete the setup page first.
 
+## Practice with real exam questions
+
+Practice and the quick checks use the real question bank in the `question-bank` folder next to `app`
+(the Montfort Secondary School 2025 Sec 4 Chemistry prelim). Each topic on the dashboard opens real
+questions from the paper, tagged to that topic:
+
+- **Multiple choice:** pick an answer and Steady marks it.
+- **Written questions:** answer on paper, open the mark scheme, then say whether you got it.
+
+Every answer counts towards the topic's rating on the dashboard, and finishing a check counts as one of
+the six checks. **Browse every question in the bank** (at the bottom of the dashboard) lists the whole
+paper with the scanned figures and mark schemes. Questions still waiting for review are never shown.
+
+If the `question-bank` folder is missing, the practice pages show "Coming next" instead.
+
 ## Stop Steady
 
 Close the Terminal window that opened when you started Steady (or click in it and press Control-C). Your accounts and progress are kept in the `data` folder and will be there next time.
@@ -57,3 +72,4 @@ Close the Terminal window that opened when you started Steady (or click in it an
 
 - `npm start` runs the server (port 4600; set `PORT` to change it). Data lives in `data/` (set `STEADY_DATA_DIR` to change it).
 - `npm test` runs the tests. There are no npm dependencies to install.
+- The question bank is read from `../question-bank` at start-up (set `STEADY_BANK_DIR` to change it). Restart Steady after replacing the bundle.
