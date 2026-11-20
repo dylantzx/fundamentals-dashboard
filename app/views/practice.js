@@ -49,6 +49,8 @@ function mcq(m) {
 /** Structured part: answer on paper, open the mark scheme, then mark yourself. */
 function structured(m) {
   const it = m.item;
+  // Once self-marked, the mark scheme stays open next to the explanation.
+  if (m.feedback) return markScheme(it);
   const onPaper = it.answerSpace === 'drawing' ? 'Draw your answer on paper' : 'Write your answer on paper or in your head';
   return html`<p class="q-hint">${icon('i-info', { size: 18 })}${onPaper}, then check it against the mark scheme.</p>
     <details class="q-reveal">
@@ -63,14 +65,53 @@ function structured(m) {
     </details>`;
 }
 
+/** One titled paragraph of explanation inside the result box. */
+const whyBlock = (title, text, cls = '') => html`<section class="why${cls}"><h3 class="why-h">${title}</h3>${richText(text)}</section>`;
+
+/** MCQ: why the right answer is right, why the student's pick is wrong, and the other options behind a disclosure. */
+function mcqWhy(it, picked) {
+  const ex = it.explanation;
+  if (!ex) return '';
+  const right = picked === it.correctOption;
+  const others = it.options.filter((o) => o.label !== it.correctOption && o.label !== picked && ex.wrongNotes[o.label]);
+  return html`${!right && ex.wrongNotes[picked] ? whyBlock(`Why ${picked} is wrong`, ex.wrongNotes[picked], ' why--wrong') : ''}
+      ${ex.why ? whyBlock(`Why ${it.correctOption} is right`, ex.why) : ''}
+      ${others.length ? html`<details class="q-printed why-more"><summary>Why the other ${others.length === 1 ? 'option is' : 'options are'} wrong</summary>
+        <ul class="why-list">${others.map((o) => html`<li><span class="opt-letter">${o.label}</span><div>${richText(ex.wrongNotes[o.label])}</div></li>`)}</ul>
+      </details>` : ''}`;
+}
+
+/** Written part: why the mark scheme's answer is right, and where marks are usually lost. */
+function structuredWhy(it, gotIt) {
+  const ex = it.explanation;
+  if (!ex) return '';
+  const slips = ex.slips.length ? html`<ul class="why-slips">${ex.slips.map((t) => html`<li>${t}</li>`)}</ul>` : '';
+  return html`${ex.why ? whyBlock('Why this is the answer', ex.why) : ''}
+      ${slips ? (gotIt
+        ? html`<details class="q-printed why-more"><summary>Where marks are often lost</summary>${slips}</details>`
+        : html`<section class="why why--wrong"><h3 class="why-h">Where marks are often lost</h3>${slips}</section>`) : ''}`;
+}
+
 function feedbackBanner(m) {
   const fb = m.feedback;
   if (!fb) return '';
-  const right = fb.picked === m.item.correctOption;
+  const it = m.item;
+  const next = html`<a class="btn btn-primary btn-lg" href="${safeHref(m.nextHref)}">${m.isLast ? 'Finish' : 'Next question'}${icon('i-arrow', { cls: 'arrow', size: 22 })}</a>`;
+  if (it.type !== 'mcq') {
+    const gotIt = fb.self === 'right';
+    const marks = it.marks > 1 ? 'the marks' : 'the mark';
+    return html`<div class="result ${gotIt ? 'result--right' : 'result--wrong'}" role="status">
+      <p class="result-title">${gotIt ? `Nice. You got ${marks}.` : `Here is how to get ${marks}.`}</p>
+      ${structuredWhy(it, gotIt)}
+      ${next}
+    </div>`;
+  }
+  const right = fb.picked === it.correctOption;
   return html`<div class="result ${right ? 'result--right' : 'result--wrong'}" role="status">
-      <p class="result-title">${right ? 'Right.' : `Not this time. The answer is ${m.item.correctOption}.`}</p>
-      ${m.item.markScheme.some((a) => a.crops.length) ? html`<details class="q-printed"><summary>See the school’s answer key</summary>${m.item.markScheme.flatMap((a) => a.crops.map((c) => scan(c, { alt: 'Answer key as printed', cls: 'q-crop' })))}</details>` : ''}
-      <a class="btn btn-primary btn-lg" href="${safeHref(m.nextHref)}">${m.isLast ? 'Finish' : 'Next question'}${icon('i-arrow', { cls: 'arrow', size: 22 })}</a>
+      <p class="result-title">${right ? 'Right.' : `Not this time. The answer is ${it.correctOption}.`}</p>
+      ${mcqWhy(it, fb.picked)}
+      ${it.markScheme.some((a) => a.crops.length) ? html`<details class="q-printed"><summary>See the school’s answer key</summary>${it.markScheme.flatMap((a) => a.crops.map((c) => scan(c, { alt: 'Answer key as printed', cls: 'q-crop' })))}</details>` : ''}
+      ${next}
     </div>`;
 }
 
@@ -79,7 +120,7 @@ function feedbackBanner(m) {
  *   user: { username: string }, mode: 'practise' | 'check', checkN?: number,
  *   topic: { id: string, n: number, name: string }, rating: any,
  *   base: string, index: number, count: number, item: any | null,
- *   feedback: null | { picked: string }, nextHref: string, isLast: boolean,
+ *   feedback: null | { picked: string } | { self: 'right' | 'wrong' }, nextHref: string, isLast: boolean,
  *   done: boolean, source: string,
  * }} m
  */

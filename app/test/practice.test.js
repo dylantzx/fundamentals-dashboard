@@ -9,9 +9,11 @@ import { fileURLToPath } from 'node:url';
 
 import { createApp } from '../server.js';
 import { loadQuestionBank } from '../lib/question-bank.js';
+import { loadExplanations, cleanExplanation } from '../lib/explanations.js';
 import { views, buildDashboardModel, publicDir } from './helpers/app-parts.js';
 
 const BANK_DIR = path.join(path.dirname(fileURLToPath(import.meta.url)), '..', '..', 'question-bank');
+const EXPLANATIONS = path.join(path.dirname(fileURLToPath(import.meta.url)), '..', 'content', 'explanations.json');
 const HAVE_BANK = fs.existsSync(path.join(BANK_DIR, 'export.json'));
 const STUDENT = { username: 'mei', password: 'student-pass-456' };
 const PARENT = { username: 'MumTan', password: 'parent-pass-123' };
@@ -40,6 +42,40 @@ describe('question bank', { skip: !HAVE_BANK && 'no question-bank/export.json' }
     assert.equal(part.context.length, 2);
     assert.ok(part.context.every((c) => typeof c === 'string'));
     assert.ok(part.parentFigures.some((f) => f.caption === 'Fig. 1.1'));
+  });
+});
+
+test('cleanExplanation keeps only well-formed fields', () => {
+  assert.equal(cleanExplanation(null), null);
+  assert.equal(cleanExplanation({ why: '  ' }), null);
+  assert.deepEqual(cleanExplanation({ why: ' Because. ', wrongNotes: { A: 'no', E: 'x', B: 3 }, slips: ['s', '', 7] }),
+    { why: 'Because.', wrongNotes: { A: 'no' }, slips: ['s'] });
+  assert.equal(loadExplanations('/no/such/file.json').size, 0);
+});
+
+describe('explanations', { skip: !HAVE_BANK && 'no question-bank/export.json' }, () => {
+  const explanations = HAVE_BANK ? loadExplanations(EXPLANATIONS) : new Map();
+  const bank = HAVE_BANK ? loadQuestionBank(BANK_DIR, { explanations }) : null;
+
+  test('every explanation belongs to a bank question and fits it', () => {
+    assert.ok(explanations.size > 0);
+    for (const [id, ex] of explanations) {
+      const item = bank.item(id);
+      assert.ok(item, `${id} is not in the bank`);
+      assert.ok(ex.why, `${id} has no why`);
+      if (item.type === 'mcq') {
+        const wrong = item.options.map((o) => o.label).filter((l) => l !== item.correctOption);
+        assert.deepEqual(Object.keys(ex.wrongNotes).sort(), wrong.sort(), `${id} needs a note for each wrong option`);
+      } else {
+        assert.deepEqual(ex.wrongNotes, {}, `${id} is written, not MCQ`);
+      }
+    }
+  });
+
+  test('every question practice can serve has an explanation', () => {
+    for (const t of ['t1', 't2', 't3', 't4', 't5', 't6']) {
+      for (const it of bank.forTopic(t)) assert.ok(it.explanation, `${t} ${it.paper} ${it.label} (${it.id})`);
+    }
   });
 });
 
@@ -94,9 +130,16 @@ describe('practice pages', { skip: !HAVE_BANK && 'no question-bank/export.json' 
     assert.match(body, new RegExp(`The answer is ${item.correctOption}`));
     assert.deepEqual(progress().topics.t3, { right: 0, total: 1 });
 
+    // Why the pick is wrong, then why the right answer is right.
+    assert.match(body, new RegExp(`Why ${wrong} is wrong`));
+    assert.match(body, new RegExp(`Why ${item.correctOption} is right`));
+    assert.ok(body.includes('(9 × x + 3 × (x + 2))'));
+
     res = await post('/practise/t3/answer', { i: '0', choice: item.correctOption }, student);
     body = await (await get(res.headers.get('location'), student)).text();
     assert.match(body, /Right\./);
+    assert.match(body, new RegExp(`Why ${item.correctOption} is right`));
+    assert.match(body, /Why the other options are wrong/);
     assert.deepEqual(progress().topics.t3, { right: 1, total: 2 });
   });
 
@@ -109,6 +152,24 @@ describe('practice pages', { skip: !HAVE_BANK && 'no question-bank/export.json' 
     const res = await post('/practise/t4/answer', { i: String(i), self: 'right' }, student);
     assert.equal(res.status, 303);
     assert.deepEqual(progress().topics.t4, { right: 1, total: 1 });
+  });
+
+  test('after self-marking a written part, it says why', async () => {
+    const items = server.bank.forTopic('t4');
+    const i = items.findIndex((x) => x.type === 'structured');
+    const res = await post('/practise/t4/answer', { i: String(i), self: 'wrong' }, student);
+    assert.equal(res.headers.get('location'), `/practise/t4?i=${i}&self=wrong`);
+    const body = await (await get(res.headers.get('location'), student)).text();
+    assert.match(body, /Here is how to get the mark/);
+    assert.match(body, /Why this is the answer/);
+    assert.match(body, /Where marks are often lost/);
+    assert.match(body, /class="q-scheme"/);
+    assert.doesNotMatch(body, /name="self"/, 'no second chance to mark it');
+    assert.match(body, new RegExp(`href="/practise/t4\\?i=${i + 1}"`));
+    // Reloading the explanation does not count the answer again.
+    const before = progress().topics.t4;
+    await get(res.headers.get('location'), student);
+    assert.deepEqual(progress().topics.t4, before);
   });
 
   test('bad answers are ignored', async () => {

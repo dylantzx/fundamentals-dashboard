@@ -58,6 +58,11 @@ questions from the paper, tagged to that topic:
 - **Multiple choice:** pick an answer and Steady marks it.
 - **Written questions:** answer on paper, open the mark scheme, then say whether you got it.
 
+After each answer Steady says **why**: why the right answer is right, why the option you picked is
+wrong (and the other wrong options behind a link), and for written questions where marks are often
+lost. These explanations are in `app/content/explanations.json`, written for every question that
+practice can show. A question without one still works; it just shows the answer without the "why".
+
 Every answer counts towards the topic's rating on the dashboard, and finishing a check counts as one of
 the six checks. **Browse every question in the bank** (at the bottom of the dashboard) lists the whole
 paper with the scanned figures and mark schemes. Questions still waiting for review are never shown.

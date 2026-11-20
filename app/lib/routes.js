@@ -295,8 +295,7 @@ export function createRouter(deps) {
     const index = Number(url.searchParams.get('i') ?? 0);
     if (!done && count && !(Number.isInteger(index) && index >= 0 && index < count)) return redirect(res, set.base);
     const item = done || !count ? null : set.items[index];
-    const picked = url.searchParams.get('picked');
-    const feedback = item && item.type === 'mcq' && item.options.some((o) => o.label === picked) ? { picked } : null;
+    const feedback = feedbackFor(item, url.searchParams);
     const isLast = index === count - 1;
     sendHtml(res, 200, renderPractice({
       user: { username: ctx.user.username },
@@ -349,6 +348,8 @@ export function createRouter(deps) {
     store.setProgress(ctx.user.id, progress);
 
     if (item.type === 'mcq') return redirect(res, `${set.base}?i=${index}&picked=${form.choice}`);
+    // A written part with an explanation stops to say why; without one, go straight on.
+    if (item.explanation) return redirect(res, `${set.base}?i=${index}&self=${form.self}`);
     return redirect(res, isLast ? `${set.base}?done=1` : `${set.base}?i=${index + 1}`);
   }
 
@@ -476,6 +477,21 @@ export function createRouter(deps) {
       return sendText(res, 500, 'Something went wrong.');
     }
   };
+}
+
+/**
+ * What the student answered, from the query string, once it has been marked:
+ * { picked } for an MCQ, { self } for a self-marked written part. Anything else is null.
+ * @param {any} item @param {URLSearchParams} q
+ */
+function feedbackFor(item, q) {
+  if (!item) return null;
+  if (item.type === 'mcq') {
+    const picked = q.get('picked');
+    return item.options.some((o) => o.label === picked) ? { picked } : null;
+  }
+  const self = q.get('self');
+  return self === 'right' || self === 'wrong' ? { self } : null;
 }
 
 /** Number of answerable parts in a question tree. */

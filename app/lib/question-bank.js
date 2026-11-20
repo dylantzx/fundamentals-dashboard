@@ -35,8 +35,11 @@ export function showFigure(fig, node) {
 
 /**
  * @param {string} bankDir folder holding export.json and assets/
+ * @param {{ explanations?: Map<string, import('./explanations.js').Explanation> }} [opts]
+ *   why each answer is right or wrong, by question id (see lib/explanations.js)
  */
-export function loadQuestionBank(bankDir) {
+export function loadQuestionBank(bankDir, opts = {}) {
+  const explanations = opts.explanations ?? new Map();
   const exportPath = path.join(bankDir, 'export.json');
   const data = JSON.parse(fs.readFileSync(exportPath, 'utf8'));
 
@@ -64,7 +67,7 @@ export function loadQuestionBank(bankDir) {
       if (answerable) {
         const parentFigures = ancestors.flatMap((a) => (a.assets?.figures || []).filter((f) => showFigure(f, a)));
         const ownFigures = (node.assets?.figures || []).filter((f) => showFigure(f, node));
-        items.push(toItem(node, root, paper, ancestors, parentFigures, ownFigures));
+        items.push(toItem(node, root, paper, ancestors, parentFigures, ownFigures, explanations.get(node.id) || null));
       }
       for (const child of node.children || []) walk(child, [...ancestors, node]);
     }
@@ -99,7 +102,7 @@ export function loadQuestionBank(bankDir) {
   };
 }
 
-function toItem(node, root, paper, ancestors, parentFigures, ownFigures) {
+function toItem(node, root, paper, ancestors, parentFigures, ownFigures, explanation) {
   const codes = (node.topics || []).map((t) => t.code);
   const answers = node.answers || [];
   const text = [
@@ -134,5 +137,7 @@ function toItem(node, root, paper, ancestors, parentFigures, ownFigures) {
     codeSet: new Set(codes),
     searchText: text,
     hasHandwriting: !!node.has_handwriting,
+    /** Why the answer is right (and each wrong option wrong), or null if none is written yet. */
+    explanation,
   };
 }

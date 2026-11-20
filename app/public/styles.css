@@ -509,6 +509,19 @@ svg { display: block; flex-shrink: 0; }
 .result-title { font-size: var(--fs-20); font-weight: 700; }
 .result--right .result-title { color: var(--c-primary-ink); }
 .result--wrong .result-title { color: var(--c-shaky-ink); }
+.result .btn { margin-top: var(--s-2); }
+
+/* Why the answer is right or wrong, inside the result box */
+.why { display: flex; flex-direction: column; gap: var(--s-2); width: 100%; padding: var(--s-4); border-radius: var(--r-lg); background: var(--c-surface); border: 1px solid var(--c-border); font-size: var(--fs-18); }
+.why p { margin: 0; }
+.why-h { font-size: var(--fs-14); font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--c-primary-ink); }
+.why--wrong .why-h { color: var(--c-shaky-ink); }
+.why-more { width: 100%; }
+.why-list { list-style: none; padding: 0; margin: var(--s-3) 0 0; display: flex; flex-direction: column; gap: var(--s-3); }
+.why-list li { display: flex; align-items: flex-start; gap: var(--s-3); }
+.why-list p { margin: 0; }
+.why-slips { margin: 0; padding-left: 1.25em; display: flex; flex-direction: column; gap: var(--s-2); }
+.why-more .why-slips { margin-top: var(--s-3); }
 
 /* Mark scheme reveal and the printed scans */
 .q-reveal > summary { list-style: none; width: fit-content; }

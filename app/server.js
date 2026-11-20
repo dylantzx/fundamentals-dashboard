@@ -13,6 +13,7 @@ import { createSessions, IDLE_MS } from './lib/sessions.js';
 import { createRouter } from './lib/routes.js';
 import { createStudySessions } from './lib/study-sessions.js';
 import { loadQuestionBank } from './lib/question-bank.js';
+import { loadExplanations } from './lib/explanations.js';
 import fs from 'node:fs';
 
 const APP_DIR = path.dirname(fileURLToPath(import.meta.url));
@@ -57,6 +58,7 @@ async function loadRealUi() {
  *   log?: (line: string) => void, // access/error log sink (default console.log)
  *   bankDir?: string | null,      // question bank folder (export.json + assets/); default env STEADY_BANK_DIR
  *                                 // or ../question-bank. null = no bank: practice pages show "Coming next".
+ *   explanationsFile?: string,    // why answers are right or wrong; default app/content/explanations.json
  * }} [opts]
  * @returns {http.Server & { store: any, answers: any, sessions: any, auth: any, studySessions: any }}
  */
@@ -96,7 +98,7 @@ export function createApp(opts = {}) {
   let bank = null;
   if (bankDir && fs.existsSync(path.join(bankDir, 'export.json'))) {
     try {
-      bank = loadQuestionBank(bankDir);
+      bank = loadQuestionBank(bankDir, { explanations: readExplanations(opts.explanationsFile, log) });
     } catch (err) {
       log(`question bank not loaded from ${bankDir}: ${err && err.message}`);
     }
@@ -107,6 +109,17 @@ export function createApp(opts = {}) {
   server.headersTimeout = 15_000;
   server.requestTimeout = 30_000;
   return Object.assign(server, { store, answers, sessions, auth, bank, studySessions });
+}
+
+/** Explanations are optional: a missing or broken file just means no "why" after answers. */
+function readExplanations(file, log) {
+  const f = file ?? path.join(APP_DIR, 'content', 'explanations.json');
+  try {
+    return loadExplanations(f);
+  } catch (err) {
+    log(`explanations not loaded from ${f}: ${err && err.message}`);
+    return new Map();
+  }
 }
 
 const isMain = process.argv[1] && pathToFileURL(path.resolve(process.argv[1])).href === import.meta.url;
