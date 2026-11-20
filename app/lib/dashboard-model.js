@@ -1,6 +1,14 @@
 // Builds everything the student dashboard shows from a user and their progress.
 // Pure: no I/O, no clock, no randomness.
+//
+// Ratings come from the per-answer log (lib/answer-log.js) when the user has
+// logged answers: PRD 6.2 labels over the latest five, PRD 6.3 Next up and
+// PRD 6.5 Chemistry label (lib/rating-rules.js). With an empty log they come
+// from the older `progress` right/total counts (seed-demo and the demo site),
+// labelled by lib/ratings.js; Next up and the Chemistry label follow the same
+// PRD 6.3 / 6.5 rules either way.
 import { TOPICS, LABEL_TEXT, MIN_ANSWERS, labelFor } from './ratings.js';
+import { labelOf, weakest, chemistryLabel } from './rating-rules.js';
 
 export const CHECKS_TOTAL = 6;
 
@@ -19,12 +27,6 @@ export const SUBJECTS = Object.freeze([
   Object.freeze({ id: 'combined-humanities', name: 'Combined Humanities', active: false }),
 ]);
 
-/** Next-up order: lower rank is weaker. Unrated topics are never Next up. */
-const RANK = { shaky: 0, getting: 1, solid: 2 };
-/** Points for the overall Chemistry label. */
-const POINTS = { shaky: 1, getting: 2, solid: 3 };
-const BY_POINTS = { 1: 'shaky', 2: 'getting', 3: 'solid' };
-
 /** Whole number >= 0, or 0 for anything else. */
 function count(v) {
   const n = Math.floor(Number(v));
@@ -32,32 +34,48 @@ function count(v) {
 }
 
 /**
- * Overall Chemistry label (PRD 6.5): null until all six topics are rated.
- * Then score each topic Shaky = 1, Getting there = 2, Solid = 3, take the
- * average over the six, and round to the nearest whole number with halves
- * rounding up (1.5 -> Getting there, 2.5 -> Solid). The returning sample is
- * 1+1 + 2+2+2 + 3 = 11 points, 11 / 6 = 1.83, which rounds to 2: "Getting there".
+ * Overall Chemistry label (PRD 6.5, see chemistryLabel in lib/rating-rules.js):
+ * null until all six topics are rated. Shaky 1, Getting there 2, Solid 3,
+ * added up: 6-9 Shaky, 10-14 Getting there, 15-18 Solid, and never Solid
+ * while any topic is Shaky. The returning sample is 1+1 + 2+2+2 + 3 = 11:
+ * "Getting there".
  * @param {string[]} labels one label per topic
  * @returns {'shaky' | 'getting' | 'solid' | null}
  */
 export function overallLabel(labels) {
-  if (labels.length !== TOPICS.length || labels.some((l) => !(l in POINTS))) return null;
-  const avg = labels.reduce((sum, l) => sum + POINTS[l], 0) / labels.length;
-  return BY_POINTS[Math.round(avg)];
+  return chemistryLabel(labels).label;
 }
 
 /**
- * @param {{ user: { username: string }, progress?: { topics?: Record<string, { right: number, total: number }>, checksDone?: number } }} input
+ * One topic's label and right/total. From the log: the latest five (right
+ * first time / looked at). Otherwise from the progress counts.
+ * @returns {{ label: string, right: number, total: number }}
  */
-export function buildDashboardModel({ user, progress }) {
+function scoreOf(topicId, logged, scores) {
+  if (logged) {
+    const r = labelOf(logged.filter((a) => a && a.topicId === topicId));
+    return { label: r.label, right: r.right, total: r.lookedAt };
+  }
+  const s = scores[topicId] || {};
+  const total = count(s.total);
+  const right = Math.min(count(s.right), total);
+  return { label: labelFor({ right, total }), right, total };
+}
+
+/**
+ * @param {{
+ *   user: { username: string },
+ *   progress?: { topics?: Record<string, { right: number, total: number }>, checksDone?: number },
+ *   answers?: Array<{ id: any, topicId: string, correct: boolean, level: string, pool: string, at: number }>,
+ * }} input  answers: this user's answer log (lib/answer-log.js list(userId)); empty or missing = use progress
+ */
+export function buildDashboardModel({ user, progress, answers }) {
   const scores = (progress && progress.topics) || {};
   const checksDone = Math.min(count(progress && progress.checksDone), CHECKS_TOTAL);
+  const logged = Array.isArray(answers) && answers.length > 0 ? answers : null;
 
   const topics = TOPICS.map((t) => {
-    const s = scores[t.id] || {};
-    const total = count(s.total);
-    const right = Math.min(count(s.right), total);
-    const label = labelFor({ right, total });
+    const { label, right, total } = scoreOf(t.id, logged, scores);
     return {
       id: t.id,
       n: t.n,
@@ -77,9 +95,10 @@ export function buildDashboardModel({ user, progress }) {
     : checksDone === 0 && rated.length === 0 ? 'first-time'
     : 'part-way';
 
-  // Weakest rated topic; on a tie the earlier topic in the list (PRD 6.3 rule 2).
-  let next = null;
-  for (const t of rated) if (!next || RANK[t.label] < RANK[next.label]) next = t;
+  // PRD 6.3 rules 1 and 2: the lowest label from Shaky, Not rated yet, Getting
+  // there, Solid; a tie goes to the earlier topic. While nothing is rated at
+  // all the checks are the main action, so there is no Next up.
+  const next = rated.length ? topics[weakest(topics.map((t) => t.label))] : null;
   const nextUp = next && {
     id: next.id,
     name: next.name,
@@ -87,6 +106,7 @@ export function buildDashboardModel({ user, progress }) {
     labelText: next.labelText,
     right: next.right,
     total: next.total,
+    needMore: next.needMore,
     href: next.href,
     minutes: 10,
     questions: 5,
