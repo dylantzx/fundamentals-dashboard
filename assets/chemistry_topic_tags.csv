@@ -1,0 +1,415 @@
+school,year,exam_type,paper,section,question_no,marks,primary_topic,secondary_topics,summary,answer,pdf_page,source_pdf
+Ang Mo Kio,2025,Prelims,P1,MCQ,1,1,Experimental Chemistry,None (single topic),interpreting chromatograms to identify an unknown substance,A,2,papers/2025_Prelim_AngMoKio.pdf
+Ang Mo Kio,2025,Prelims,P1,MCQ,2,1,Experimental Chemistry,Acid-Base Chemistry,choosing solutions to purify and dry carbon monoxide gas,A,2,papers/2025_Prelim_AngMoKio.pdf
+Ang Mo Kio,2025,Prelims,P1,MCQ,3,1,Experimental Chemistry,Kinetic Particle Theory,cooling air to liquefy only oxygen using boiling points,B,3,papers/2025_Prelim_AngMoKio.pdf
+Ang Mo Kio,2025,Prelims,P1,MCQ,4,1,Atomic Structure,Chemical Calculations,deductions from isotopes and relative atomic mass of bromine,C,3,papers/2025_Prelim_AngMoKio.pdf
+Ang Mo Kio,2025,Prelims,P1,MCQ,5,1,Chemical Bonding and Structure,Atomic Structure,non-bonding electrons in an ethane molecule,B,3,papers/2025_Prelim_AngMoKio.pdf
+Ang Mo Kio,2025,Prelims,P1,MCQ,6,1,Atomic Structure,None (single topic),mass number of element from ion electrons and neutrons,B,4,papers/2025_Prelim_AngMoKio.pdf
+Ang Mo Kio,2025,Prelims,P1,MCQ,7,1,Chemical Calculations,Chemical Bonding and Structure,deducing formula of thallium chlorate from given formulae,C,4,papers/2025_Prelim_AngMoKio.pdf
+Ang Mo Kio,2025,Prelims,P1,MCQ,8,1,Chemical Calculations,Chemical Bonding and Structure,comparing number of ions in different salt solutions,D,4,papers/2025_Prelim_AngMoKio.pdf
+Ang Mo Kio,2025,Prelims,P1,MCQ,9,1,Chemical Calculations,Acid-Base Chemistry,percentage yield of calcium nitrate from calcium oxide,C,4,papers/2025_Prelim_AngMoKio.pdf
+Ang Mo Kio,2025,Prelims,P1,MCQ,10,1,Redox Chemistry,Chemical Calculations,mass of silver deposited using same current as copper,D,5,papers/2025_Prelim_AngMoKio.pdf
+Ang Mo Kio,2025,Prelims,P1,MCQ,11,1,Acid-Base Chemistry,Qualitative Analysis,reaction of dilute nitric acid giving colourless solution,A,5,papers/2025_Prelim_AngMoKio.pdf
+Ang Mo Kio,2025,Prelims,P1,MCQ,12,1,Acid-Base Chemistry,Qualitative Analysis,identifying a salt preparable by titration,C,5,papers/2025_Prelim_AngMoKio.pdf
+Ang Mo Kio,2025,Prelims,P1,MCQ,13,1,Patterns in the Periodic Table,Acid-Base Chemistry,oxide properties of consecutive elements including noble gas,C,5,papers/2025_Prelim_AngMoKio.pdf
+Ang Mo Kio,2025,Prelims,P1,MCQ,14,1,Acid-Base Chemistry,Chemical Bonding and Structure,conductivity change when adding acid to barium hydroxide,C,5,papers/2025_Prelim_AngMoKio.pdf
+Ang Mo Kio,2025,Prelims,P1,MCQ,15,1,Rate of Reactions,Chemical Energetics,effect of temperature on rate and yield in Haber process,B,6,papers/2025_Prelim_AngMoKio.pdf
+Ang Mo Kio,2025,Prelims,P1,MCQ,16,1,Rate of Reactions,Redox Chemistry,false statement about Haber process conditions and catalyst,C,6,papers/2025_Prelim_AngMoKio.pdf
+Ang Mo Kio,2025,Prelims,P1,MCQ,17,1,Qualitative Analysis,Chemical Bonding and Structure,ions left in filtrate after barium sulfate precipitation,D,7,papers/2025_Prelim_AngMoKio.pdf
+Ang Mo Kio,2025,Prelims,P1,MCQ,18,1,Qualitative Analysis,Acid-Base Chemistry,identifying incorrect observation in carbonate ion tests,C,7,papers/2025_Prelim_AngMoKio.pdf
+Ang Mo Kio,2025,Prelims,P1,MCQ,19,1,Qualitative Analysis,Redox Chemistry,deducing ions from precipitate and ammonia gas tests,B,7,papers/2025_Prelim_AngMoKio.pdf
+Ang Mo Kio,2025,Prelims,P1,MCQ,20,1,Redox Chemistry,None (single topic),methods that do not slow down rusting of iron,D,8,papers/2025_Prelim_AngMoKio.pdf
+Ang Mo Kio,2025,Prelims,P1,MCQ,21,1,Redox Chemistry,None (single topic),deducing metal identity from reactivity equations,B,8,papers/2025_Prelim_AngMoKio.pdf
+Ang Mo Kio,2025,Prelims,P1,MCQ,22,1,Redox Chemistry,None (single topic),choosing cell set-up giving highest voltage,B,8,papers/2025_Prelim_AngMoKio.pdf
+Ang Mo Kio,2025,Prelims,P1,MCQ,23,1,Redox Chemistry,Chemical Calculations; Chemical Bonding and Structure,electrolyte needing two moles electrons per mole metal,C,9,papers/2025_Prelim_AngMoKio.pdf
+Ang Mo Kio,2025,Prelims,P1,MCQ,24,1,Patterns in the Periodic Table,Atomic Structure,why Group 1 metals are more reactive than Group 2,B,10,papers/2025_Prelim_AngMoKio.pdf
+Ang Mo Kio,2025,Prelims,P1,MCQ,25,1,Patterns in the Periodic Table,Atomic Structure,identifying periodic trend from graph across elements,D,10,papers/2025_Prelim_AngMoKio.pdf
+Ang Mo Kio,2025,Prelims,P1,MCQ,26,1,Patterns in the Periodic Table,Atomic Structure,properties that increase across a period,D,10,papers/2025_Prelim_AngMoKio.pdf
+Ang Mo Kio,2025,Prelims,P1,MCQ,27,1,Redox Chemistry,None (single topic),oxidation numbers of phosphorus through conversion sequence,A,11,papers/2025_Prelim_AngMoKio.pdf
+Ang Mo Kio,2025,Prelims,P1,MCQ,28,1,Redox Chemistry,None (single topic),identifying the redox reaction among equations,C,11,papers/2025_Prelim_AngMoKio.pdf
+Ang Mo Kio,2025,Prelims,P1,MCQ,29,1,Redox Chemistry,None (single topic),true statement about redox of copper oxide and ammonia,A,11,papers/2025_Prelim_AngMoKio.pdf
+Ang Mo Kio,2025,Prelims,P1,MCQ,30,1,Acid-Base Chemistry,Redox Chemistry,similarity of sulfuric acid reacting with two metal oxides,D,12,papers/2025_Prelim_AngMoKio.pdf
+Ang Mo Kio,2025,Prelims,P1,MCQ,31,1,Rate of Reactions,Chemical Energetics,why reaction speeds up over time with calcium and acid,D,12,papers/2025_Prelim_AngMoKio.pdf
+Ang Mo Kio,2025,Prelims,P1,MCQ,32,1,Rate of Reactions,Chemical Energetics,purpose of palladium catalyst in methane combustion,C,12,papers/2025_Prelim_AngMoKio.pdf
+Ang Mo Kio,2025,Prelims,P1,MCQ,33,1,Organic Chemistry,Chemical Bonding and Structure,comparing crude oil fractions' boiling point and flammability,A,13,papers/2025_Prelim_AngMoKio.pdf
+Ang Mo Kio,2025,Prelims,P1,MCQ,34,1,Organic Chemistry,Maintaining Air Quality,why bioethanol from sugarcane is renewable,C,13,papers/2025_Prelim_AngMoKio.pdf
+Ang Mo Kio,2025,Prelims,P1,MCQ,35,1,Organic Chemistry,None (single topic),identifying isomers among five hydrocarbon structures,B,13,papers/2025_Prelim_AngMoKio.pdf
+Ang Mo Kio,2025,Prelims,P1,MCQ,36,1,Organic Chemistry,Rate of Reactions,hydrogenation of vegetable oil to margarine and catalyst,D,14,papers/2025_Prelim_AngMoKio.pdf
+Ang Mo Kio,2025,Prelims,P1,MCQ,37,1,Organic Chemistry,Acid-Base Chemistry; Chemical Bonding and Structure,incorrect statement about aspirin's structure and properties,C,14,papers/2025_Prelim_AngMoKio.pdf
+Ang Mo Kio,2025,Prelims,P1,MCQ,38,1,Organic Chemistry,Maintaining Air Quality,natural resource depleted by plastic manufacture,B,15,papers/2025_Prelim_AngMoKio.pdf
+Ang Mo Kio,2025,Prelims,P1,MCQ,39,1,Organic Chemistry,Chemical Calculations,empirical formula of monomer from polymer structure,A,15,papers/2025_Prelim_AngMoKio.pdf
+Ang Mo Kio,2025,Prelims,P1,MCQ,40,1,Maintaining Air Quality,Chemical Calculations,final volume of air after oxygen removed by zinc,C,15,papers/2025_Prelim_AngMoKio.pdf
+Ang Mo Kio,2025,Prelims,P2,A,A1,4,Atomic Structure,Chemical Bonding and Structure,"particle atomic structure: ions, isotopes, formula, electron diagram",Written answer - see mark scheme,20,papers/2025_Prelim_AngMoKio.pdf
+Ang Mo Kio,2025,Prelims,P2,A,A2,7,Chemical Bonding and Structure,Acid-Base Chemistry; Patterns in the Periodic Table,"bonding, formula, conductivity and acidity of phosphorus oxide",Written answer - see mark scheme,21,papers/2025_Prelim_AngMoKio.pdf
+Ang Mo Kio,2025,Prelims,P2,A,A3,6,Chemical Energetics,Chemical Bonding and Structure,bond energy calculation and enthalpy change of reaction,Written answer - see mark scheme,22,papers/2025_Prelim_AngMoKio.pdf
+Ang Mo Kio,2025,Prelims,P2,A,A4,8,Chemical Calculations,Acid-Base Chemistry; Redox Chemistry,"sodium azide airbag: equations, gas volume, salt preparation",Written answer - see mark scheme,23,papers/2025_Prelim_AngMoKio.pdf
+Ang Mo Kio,2025,Prelims,P2,A,A5,5,Qualitative Analysis,Acid-Base Chemistry; Redox Chemistry,"selecting reagent pairs for gases, precipitates and solids",Written answer - see mark scheme,25,papers/2025_Prelim_AngMoKio.pdf
+Ang Mo Kio,2025,Prelims,P2,A,A6,10,Redox Chemistry,Chemical Bonding and Structure,electrolysis of copper sulfate and molten electrolyte set-up,Written answer - see mark scheme,26,papers/2025_Prelim_AngMoKio.pdf
+Ang Mo Kio,2025,Prelims,P2,A,A7,10,Organic Chemistry,Chemical Calculations; Redox Chemistry,"alkanes: fractional distillation, cracking, alkene reactions, % carbon",Written answer - see mark scheme,27,papers/2025_Prelim_AngMoKio.pdf
+Ang Mo Kio,2025,Prelims,P2,A,A8,9,Organic Chemistry,None (single topic),"esterification, alkene bromine test and addition polymerisation of compound",Written answer - see mark scheme,29,papers/2025_Prelim_AngMoKio.pdf
+Ang Mo Kio,2025,Prelims,P2,A,A9,11,Rate of Reactions,Patterns in the Periodic Table; Experimental Chemistry,colorimeter experiments on chlorine-halide displacement and rate factors,Written answer - see mark scheme,31,papers/2025_Prelim_AngMoKio.pdf
+Ang Mo Kio,2025,Prelims,P2,B,B10,10,Redox Chemistry,Experimental Chemistry; Kinetic Particle Theory,"potassium chlorate decomposition: separation, oxidation states, redox",Written answer - see mark scheme,35,papers/2025_Prelim_AngMoKio.pdf
+Ang Mo Kio,2025,Prelims,P2,B,B11,10,Patterns in the Periodic Table,Atomic Structure; Chemical Bonding and Structure,"ionisation energy trends, isotopes and ionic bonding of sodium sulfide",Written answer - see mark scheme,37,papers/2025_Prelim_AngMoKio.pdf
+CHIJ Katong,2025,Prelims,P1,MCQ,1,1,Experimental Chemistry,Rate of Reactions,apparatus for measuring rate of H2O2 decomposition,A,2,papers/2025_Prelim_CHIJKatong.pdf
+CHIJ Katong,2025,Prelims,P1,MCQ,2,1,Experimental Chemistry,Kinetic Particle Theory,separating mixtures by sublimation/filtration set-up,B,2,papers/2025_Prelim_CHIJKatong.pdf
+CHIJ Katong,2025,Prelims,P1,MCQ,3,1,Kinetic Particle Theory,Chemical Calculations,gas diffusion rates in porous pot by molecular mass,B,3,papers/2025_Prelim_CHIJKatong.pdf
+CHIJ Katong,2025,Prelims,P1,MCQ,4,1,Atomic Structure,Chemical Bonding and Structure,protons neutrons electrons in ion from isotope symbol,D,3,papers/2025_Prelim_CHIJKatong.pdf
+CHIJ Katong,2025,Prelims,P1,MCQ,5,1,Kinetic Particle Theory,Chemical Bonding and Structure,particle diagram of monatomic element and diatomic compound mixture,C,3,papers/2025_Prelim_CHIJKatong.pdf
+CHIJ Katong,2025,Prelims,P1,MCQ,6,1,Chemical Bonding and Structure,Atomic Structure,electronic configurations of atoms forming ionic XY2,D,4,papers/2025_Prelim_CHIJKatong.pdf
+CHIJ Katong,2025,Prelims,P1,MCQ,7,1,Chemical Bonding and Structure,Atomic Structure,compound with element not achieving octet,D,4,papers/2025_Prelim_CHIJKatong.pdf
+CHIJ Katong,2025,Prelims,P1,MCQ,8,1,Chemical Bonding and Structure,None (single topic),particles conducting electricity in metals,A,4,papers/2025_Prelim_CHIJKatong.pdf
+CHIJ Katong,2025,Prelims,P1,MCQ,9,1,Chemical Calculations,None (single topic),deducing molecular formula from mole ratio of products,C,4,papers/2025_Prelim_CHIJKatong.pdf
+CHIJ Katong,2025,Prelims,P1,MCQ,10,1,Chemical Calculations,None (single topic),percentage mass of oxygen in hydrated sodium carbonate,D,4,papers/2025_Prelim_CHIJKatong.pdf
+CHIJ Katong,2025,Prelims,P1,MCQ,11,1,Chemical Calculations,None (single topic),gas volumes remaining after CO and O2 reaction,C,5,papers/2025_Prelim_CHIJKatong.pdf
+CHIJ Katong,2025,Prelims,P1,MCQ,12,1,Chemical Calculations,Atomic Structure,identify element from oxide empirical formula and mass,A,5,papers/2025_Prelim_CHIJKatong.pdf
+CHIJ Katong,2025,Prelims,P1,MCQ,13,1,Chemical Calculations,None (single topic),volume of water for dilution of HCl,B,5,papers/2025_Prelim_CHIJKatong.pdf
+CHIJ Katong,2025,Prelims,P1,MCQ,14,1,Chemical Calculations,Qualitative Analysis,percentage yield of lead(II) chloride precipitate,D,6,papers/2025_Prelim_CHIJKatong.pdf
+CHIJ Katong,2025,Prelims,P1,MCQ,15,1,Acid-Base Chemistry,Organic Chemistry,ionic equation for methanoic acid with KOH,B,6,papers/2025_Prelim_CHIJKatong.pdf
+CHIJ Katong,2025,Prelims,P1,MCQ,16,1,Acid-Base Chemistry,Patterns in the Periodic Table,amphoteric zinc oxide reacting with acid and alkali,D,6,papers/2025_Prelim_CHIJKatong.pdf
+CHIJ Katong,2025,Prelims,P1,MCQ,17,1,Acid-Base Chemistry,Qualitative Analysis,reactions of solids with warm dilute sulfuric acid,C,6,papers/2025_Prelim_CHIJKatong.pdf
+CHIJ Katong,2025,Prelims,P1,MCQ,18,1,Acid-Base Chemistry,Rate of Reactions,"strong monobasic vs dibasic acid pH, rate, hydrogen yield",A,7,papers/2025_Prelim_CHIJKatong.pdf
+CHIJ Katong,2025,Prelims,P1,MCQ,19,1,Acid-Base Chemistry,Qualitative Analysis,choosing reagents to safely prepare salts,C,7,papers/2025_Prelim_CHIJKatong.pdf
+CHIJ Katong,2025,Prelims,P1,MCQ,20,1,Rate of Reactions,Organic Chemistry,"Haber process statements, catalyst and temperature",C,7,papers/2025_Prelim_CHIJKatong.pdf
+CHIJ Katong,2025,Prelims,P1,MCQ,21,1,Qualitative Analysis,None (single topic),identifying ions in mixture of two salts from tests,C,8,papers/2025_Prelim_CHIJKatong.pdf
+CHIJ Katong,2025,Prelims,P1,MCQ,22,1,Redox Chemistry,Acid-Base Chemistry,reaction not involving oxidation or reduction,C,8,papers/2025_Prelim_CHIJKatong.pdf
+CHIJ Katong,2025,Prelims,P1,MCQ,23,1,Redox Chemistry,Patterns in the Periodic Table,chlorine as oxidising agent with KI and KMnO4,B,8,papers/2025_Prelim_CHIJKatong.pdf
+CHIJ Katong,2025,Prelims,P1,MCQ,24,1,Redox Chemistry,Chemical Bonding and Structure,simple cell giving greatest voltage by metal pair,A,9,papers/2025_Prelim_CHIJKatong.pdf
+CHIJ Katong,2025,Prelims,P1,MCQ,25,1,Redox Chemistry,Chemical Calculations,charge on vanadium ion from electrolysis masses,D,9,papers/2025_Prelim_CHIJKatong.pdf
+CHIJ Katong,2025,Prelims,P1,MCQ,26,1,Patterns in the Periodic Table,Chemical Bonding and Structure; Acid-Base Chemistry,order of period elements from oxide and properties,D,9,papers/2025_Prelim_CHIJKatong.pdf
+CHIJ Katong,2025,Prelims,P1,MCQ,27,1,Patterns in the Periodic Table,None (single topic),trends in melting point and reactivity Group 1 and 17,D,10,papers/2025_Prelim_CHIJKatong.pdf
+CHIJ Katong,2025,Prelims,P1,MCQ,28,1,Redox Chemistry,None (single topic),reactivity order of metals from reaction data,C,10,papers/2025_Prelim_CHIJKatong.pdf
+CHIJ Katong,2025,Prelims,P1,MCQ,29,1,Redox Chemistry,Chemical Energetics,fuel cell hydrogen and oxygen generating electricity,A,10,papers/2025_Prelim_CHIJKatong.pdf
+CHIJ Katong,2025,Prelims,P1,MCQ,30,1,Chemical Energetics,Rate of Reactions,energy profile diagram statements about enthalpy and catalyst,C,11,papers/2025_Prelim_CHIJKatong.pdf
+CHIJ Katong,2025,Prelims,P1,MCQ,31,1,Redox Chemistry,None (single topic),reactivity series position of metal Z and extraction,B,11,papers/2025_Prelim_CHIJKatong.pdf
+CHIJ Katong,2025,Prelims,P1,MCQ,32,1,Redox Chemistry,None (single topic),sacrificial protection of iron by magnesium,C,12,papers/2025_Prelim_CHIJKatong.pdf
+CHIJ Katong,2025,Prelims,P1,MCQ,33,1,Organic Chemistry,Chemical Bonding and Structure,fractional distillation of crude oil fraction properties,C,12,papers/2025_Prelim_CHIJKatong.pdf
+CHIJ Katong,2025,Prelims,P1,MCQ,34,1,Rate of Reactions,Chemical Calculations,gas volume graphs under different concentration and temperature,B,13,papers/2025_Prelim_CHIJKatong.pdf
+CHIJ Katong,2025,Prelims,P1,MCQ,35,1,Organic Chemistry,None (single topic),counting isomers among alkane structural formulae,B,14,papers/2025_Prelim_CHIJKatong.pdf
+CHIJ Katong,2025,Prelims,P1,MCQ,36,1,Organic Chemistry,None (single topic),cracking of C8H18 to ethane and propene,B,14,papers/2025_Prelim_CHIJKatong.pdf
+CHIJ Katong,2025,Prelims,P1,MCQ,37,1,Organic Chemistry,None (single topic),reactant pairs forming ester C4H8O2,A,15,papers/2025_Prelim_CHIJKatong.pdf
+CHIJ Katong,2025,Prelims,P1,MCQ,38,1,Organic Chemistry,Acid-Base Chemistry,alcohol oxidised to acid then magnesium salt,B,15,papers/2025_Prelim_CHIJKatong.pdf
+CHIJ Katong,2025,Prelims,P1,MCQ,39,1,Organic Chemistry,None (single topic),number of C=C bonds in unsaturated fatty acid,B,15,papers/2025_Prelim_CHIJKatong.pdf
+CHIJ Katong,2025,Prelims,P1,MCQ,40,1,Maintaining Air Quality,Redox Chemistry,pollutants reacted in catalytic converter,A,15,papers/2025_Prelim_CHIJKatong.pdf
+CHIJ Katong,2025,Prelims,P2,A,A1,5,Patterns in the Periodic Table,Acid-Base Chemistry; Kinetic Particle Theory,"periodic table element properties: amphoteric oxide, colour, noble gas",Written answer - see mark scheme,20,papers/2025_Prelim_CHIJKatong.pdf
+CHIJ Katong,2025,Prelims,P2,A,A2,6,Experimental Chemistry,None (single topic),"paper chromatography purity, Rf value and alternative test",Written answer - see mark scheme,21,papers/2025_Prelim_CHIJKatong.pdf
+CHIJ Katong,2025,Prelims,P2,A,A3,7,Maintaining Air Quality,Chemical Calculations; Rate of Reactions,"atmosphere composition, NOx formation, catalyst ozone breakdown, greenhouse",Written answer - see mark scheme,23,papers/2025_Prelim_CHIJKatong.pdf
+CHIJ Katong,2025,Prelims,P2,A,A4,8,Redox Chemistry,Acid-Base Chemistry,electrolysis of KCl and CuSO4 with graphite and copper electrodes,Written answer - see mark scheme,25,papers/2025_Prelim_CHIJKatong.pdf
+CHIJ Katong,2025,Prelims,P2,A,A5,8,Redox Chemistry,Chemical Calculations,"reduction of metal oxides by hydrogen, empirical formula",Written answer - see mark scheme,27,papers/2025_Prelim_CHIJKatong.pdf
+CHIJ Katong,2025,Prelims,P2,A,A6,7,Organic Chemistry,Kinetic Particle Theory; Acid-Base Chemistry; Qualitative Analysis,"amines homologous series, states, base reaction with acid and Cu2+",Written answer - see mark scheme,29,papers/2025_Prelim_CHIJKatong.pdf
+CHIJ Katong,2025,Prelims,P2,A,A7,9,Organic Chemistry,Chemical Energetics,"polylactic acid polyester, depolymerisation, energy profile, polypropene",Written answer - see mark scheme,31,papers/2025_Prelim_CHIJKatong.pdf
+CHIJ Katong,2025,Prelims,P2,A,A8,12,Rate of Reactions,Organic Chemistry; Chemical Bonding and Structure,"rate law orders from data, alkene/alkyne bromination, dot-and-cross ethyne",Written answer - see mark scheme,33,papers/2025_Prelim_CHIJKatong.pdf
+CHIJ Katong,2025,Prelims,P2,A,A9,8,Organic Chemistry,Acid-Base Chemistry,ester preparation and strong vs weak acid comparison,Written answer - see mark scheme,37,papers/2025_Prelim_CHIJKatong.pdf
+CHIJ Katong,2025,Prelims,P2,B,B10,10,Chemical Bonding and Structure,Chemical Calculations; Organic Chemistry,"melting points of diamond, Teflon, ethane; Teflon calculations and substitution",Written answer - see mark scheme,38,papers/2025_Prelim_CHIJKatong.pdf
+CHIJ Katong,2025,Prelims,P2,B,B11,10,Patterns in the Periodic Table,Atomic Structure; Chemical Bonding and Structure,"Group 1 and 17 atomic/ionic radii, metallic vs molecular properties",Written answer - see mark scheme,40,papers/2025_Prelim_CHIJKatong.pdf
+Christ Church,2025,Prelims,P1,MCQ,1,1,Experimental Chemistry,None (single topic),gas syringe set-up apparatus needed for CO2 volume rate,C,2,papers/2025_Prelim_ChristChurch.pdf
+Christ Church,2025,Prelims,P1,MCQ,2,1,Kinetic Particle Theory,Experimental Chemistry,"diffusion of gas through porous pot, water level",A,2,papers/2025_Prelim_ChristChurch.pdf
+Christ Church,2025,Prelims,P1,MCQ,3,1,Chemical Calculations,Kinetic Particle Theory,"equal gas volumes: moles, molar mass and molar volume",C,3,papers/2025_Prelim_ChristChurch.pdf
+Christ Church,2025,Prelims,P1,MCQ,4,1,Kinetic Particle Theory,Maintaining Air Quality,boiling points and fractional distillation of liquid air,C,3,papers/2025_Prelim_ChristChurch.pdf
+Christ Church,2025,Prelims,P1,MCQ,5,1,Atomic Structure,Patterns in the Periodic Table,deduce information from ion electron diagram of J2+,B,5,papers/2025_Prelim_ChristChurch.pdf
+Christ Church,2025,Prelims,P1,MCQ,6,1,Chemical Bonding and Structure,None (single topic),count shared electron pairs in herbicide molecule,D,5,papers/2025_Prelim_ChristChurch.pdf
+Christ Church,2025,Prelims,P1,MCQ,7,1,Chemical Bonding and Structure,Atomic Structure,molecule where all outer electrons bond,A,5,papers/2025_Prelim_ChristChurch.pdf
+Christ Church,2025,Prelims,P1,MCQ,8,1,Patterns in the Periodic Table,Chemical Bonding and Structure,"predict bonding and pH of silicon chloride, Period 3 trend",A,6,papers/2025_Prelim_ChristChurch.pdf
+Christ Church,2025,Prelims,P1,MCQ,9,1,Chemical Bonding and Structure,None (single topic),identify structure type from melting point and conductivity,D,6,papers/2025_Prelim_ChristChurch.pdf
+Christ Church,2025,Prelims,P1,MCQ,10,1,Chemical Bonding and Structure,None (single topic),compare graphite and copper structure and conductivity,C,6,papers/2025_Prelim_ChristChurch.pdf
+Christ Church,2025,Prelims,P1,MCQ,11,1,Chemical Bonding and Structure,None (single topic),ionic lattice coordination numbers deduce ions and formula,B,7,papers/2025_Prelim_ChristChurch.pdf
+Christ Church,2025,Prelims,P1,MCQ,12,1,Chemical Calculations,None (single topic),"volume of CO2 from heating carbonate, r.t.p. expression",C,7,papers/2025_Prelim_ChristChurch.pdf
+Christ Church,2025,Prelims,P1,MCQ,13,1,Acid-Base Chemistry,None (single topic),distinguishing solutions using red cabbage indicator pH colours,B,7,papers/2025_Prelim_ChristChurch.pdf
+Christ Church,2025,Prelims,P1,MCQ,14,1,Acid-Base Chemistry,Chemical Energetics,deduce strong versus weak acid from conductivity and reactivity,B,8,papers/2025_Prelim_ChristChurch.pdf
+Christ Church,2025,Prelims,P1,MCQ,15,1,Acid-Base Chemistry,Chemical Bonding and Structure,why carbonate does not react with HCl in benzene,B,8,papers/2025_Prelim_ChristChurch.pdf
+Christ Church,2025,Prelims,P1,MCQ,16,1,Acid-Base Chemistry,Redox Chemistry,reaction where HCl is not acting as an acid,A,8,papers/2025_Prelim_ChristChurch.pdf
+Christ Church,2025,Prelims,P1,MCQ,17,1,Rate of Reactions,Maintaining Air Quality,incorrect statements about Haber process conditions and yield,A,9,papers/2025_Prelim_ChristChurch.pdf
+Christ Church,2025,Prelims,P1,MCQ,18,1,Chemical Energetics,Rate of Reactions,"Haber process enthalpy, catalyst, pressure and yield statements",B,9,papers/2025_Prelim_ChristChurch.pdf
+Christ Church,2025,Prelims,P1,MCQ,19,1,Qualitative Analysis,Acid-Base Chemistry,identify compound Y from gas and hydroxide precipitate tests,B,9,papers/2025_Prelim_ChristChurch.pdf
+Christ Church,2025,Prelims,P1,MCQ,20,1,Qualitative Analysis,Redox Chemistry,ammonium salt test using NaOH and aluminium foil,D,10,papers/2025_Prelim_ChristChurch.pdf
+Christ Church,2025,Prelims,P1,MCQ,21,1,Qualitative Analysis,Acid-Base Chemistry,ion concentrations when ammonia added to copper(II) sulfate,D,10,papers/2025_Prelim_ChristChurch.pdf
+Christ Church,2025,Prelims,P1,MCQ,22,1,Redox Chemistry,None (single topic),identify which reaction type is redox,B,10,papers/2025_Prelim_ChristChurch.pdf
+Christ Church,2025,Prelims,P1,MCQ,23,1,Redox Chemistry,None (single topic),pairs of compounds with same oxidation state,D,10,papers/2025_Prelim_ChristChurch.pdf
+Christ Church,2025,Prelims,P1,MCQ,24,1,Redox Chemistry,Chemical Bonding and Structure,"electrolysis products in three cells, gas at both electrodes",D,10,papers/2025_Prelim_ChristChurch.pdf
+Christ Church,2025,Prelims,P1,MCQ,25,1,Redox Chemistry,None (single topic),"fix electroplating set-up with nickel, anode and cathode",C,11,papers/2025_Prelim_ChristChurch.pdf
+Christ Church,2025,Prelims,P1,MCQ,26,1,Patterns in the Periodic Table,Atomic Structure; Redox Chemistry,"Group 17 trends: diatomic, density, oxidising strength",B,11,papers/2025_Prelim_ChristChurch.pdf
+Christ Church,2025,Prelims,P1,MCQ,27,1,Patterns in the Periodic Table,None (single topic),compare properties of copper and sodium,A,11,papers/2025_Prelim_ChristChurch.pdf
+Christ Church,2025,Prelims,P1,MCQ,28,1,Redox Chemistry,Patterns in the Periodic Table,"carbonate thermal decomposition, reactivity series, catalyst",A,12,papers/2025_Prelim_ChristChurch.pdf
+Christ Church,2025,Prelims,P1,MCQ,29,1,Redox Chemistry,None (single topic),metal needing least energy to extract from ore,B,12,papers/2025_Prelim_ChristChurch.pdf
+Christ Church,2025,Prelims,P1,MCQ,30,1,Redox Chemistry,None (single topic),sacrificial protection choosing metal pairs by reactivity,D,12,papers/2025_Prelim_ChristChurch.pdf
+Christ Church,2025,Prelims,P1,MCQ,31,1,Chemical Energetics,None (single topic),temperature-time graph for endothermic dissolving,D,13,papers/2025_Prelim_ChristChurch.pdf
+Christ Church,2025,Prelims,P1,MCQ,32,1,Chemical Energetics,None (single topic),enthalpy change from energy profile diagram,B,13,papers/2025_Prelim_ChristChurch.pdf
+Christ Church,2025,Prelims,P1,MCQ,33,1,Rate of Reactions,Chemical Calculations,"match rate graphs to concentration, particle size experiments",A,14,papers/2025_Prelim_ChristChurch.pdf
+Christ Church,2025,Prelims,P1,MCQ,34,1,Organic Chemistry,Maintaining Air Quality,why bioethanol from sugarcane is renewable,A,14,papers/2025_Prelim_ChristChurch.pdf
+Christ Church,2025,Prelims,P1,MCQ,35,1,Organic Chemistry,Chemical Bonding and Structure,"petroleum fractions flammability, sootiness, viscosity trends",B,15,papers/2025_Prelim_ChristChurch.pdf
+Christ Church,2025,Prelims,P1,MCQ,36,1,Organic Chemistry,None (single topic),product of bromine addition to C4H8 alkene,B,15,papers/2025_Prelim_ChristChurch.pdf
+Christ Church,2025,Prelims,P1,MCQ,37,1,Organic Chemistry,Chemical Calculations,number of double bonds from iodine reacted with fatty acid,D,15,papers/2025_Prelim_ChristChurch.pdf
+Christ Church,2025,Prelims,P1,MCQ,38,1,Organic Chemistry,Redox Chemistry; Acid-Base Chemistry,identify starting alcohol from dicarboxylate salt oxidation,D,16,papers/2025_Prelim_ChristChurch.pdf
+Christ Church,2025,Prelims,P1,MCQ,39,1,Organic Chemistry,Chemical Calculations,property unchanged in polymerisation of ethene,C,16,papers/2025_Prelim_ChristChurch.pdf
+Christ Church,2025,Prelims,P1,MCQ,40,1,Maintaining Air Quality,Redox Chemistry,equation not occurring in catalytic converter,C,16,papers/2025_Prelim_ChristChurch.pdf
+Christ Church,2025,Prelims,P2,A,A1,8,Chemical Bonding and Structure,Qualitative Analysis; Redox Chemistry; Kinetic Particle Theory,"substances: conduction, precipitate, oxidation state; Na2O particles and solution",Written answer - see mark scheme,3,papers/2025_Prelim_ChristChurch.pdf
+Christ Church,2025,Prelims,P2,A,A2,7,Chemical Calculations,Redox Chemistry,"thiosulfate-iodine limiting reagent, percentage yield, reducing agent",Written answer - see mark scheme,4,papers/2025_Prelim_ChristChurch.pdf
+Christ Church,2025,Prelims,P2,A,A3,5,Maintaining Air Quality,Chemical Calculations; Experimental Chemistry,"magnesium removing oxygen from air in syringes, calculate mass",Written answer - see mark scheme,5,papers/2025_Prelim_ChristChurch.pdf
+Christ Church,2025,Prelims,P2,A,A4,5,Redox Chemistry,None (single topic),"reactivity order from simple cell data, half equations, cell differences",Written answer - see mark scheme,6,papers/2025_Prelim_ChristChurch.pdf
+Christ Church,2025,Prelims,P2,A,A5,9,Rate of Reactions,Chemical Calculations; Experimental Chemistry,"Haber process ratio and conditions, ammonia collection, rate, yield",Written answer - see mark scheme,7,papers/2025_Prelim_ChristChurch.pdf
+Christ Church,2025,Prelims,P2,A,A6,7,Chemical Bonding and Structure,None (single topic),giant covalent silicon dioxide versus glass structure and conductivity,Written answer - see mark scheme,8,papers/2025_Prelim_ChristChurch.pdf
+Christ Church,2025,Prelims,P2,A,A7,9,Acid-Base Chemistry,Chemical Calculations; Redox Chemistry,"conductometric titration of Ba(OH)2 with H2SO4, strong acid, calculation",Written answer - see mark scheme,10,papers/2025_Prelim_ChristChurch.pdf
+Christ Church,2025,Prelims,P2,A,A8,12,Organic Chemistry,Chemical Energetics,"ethers: combustion enthalpy, isomers, oxidation, polyamide alcohol X",Written answer - see mark scheme,12,papers/2025_Prelim_ChristChurch.pdf
+Christ Church,2025,Prelims,P2,A,A9,8,Chemical Bonding and Structure,Maintaining Air Quality,"CFC dot-cross, boiling point, ozone depletion chain reaction",Written answer - see mark scheme,15,papers/2025_Prelim_ChristChurch.pdf
+Christ Church,2025,Prelims,P2,B,B10,10,Rate of Reactions,Acid-Base Chemistry,"carbonate acid rate experiment curves, lead carbonate, salt preparation",Written answer - see mark scheme,16,papers/2025_Prelim_ChristChurch.pdf
+Christ Church,2025,Prelims,P2,B,B11,10,Organic Chemistry,Chemical Bonding and Structure,"polymer structures: tests, monomers, addition/condensation, biodegradability",Written answer - see mark scheme,18,papers/2025_Prelim_ChristChurch.pdf
+Chung Cheng,2025,Prelims,P1,MCQ,1,1,Rate of Reactions,Experimental Chemistry,apparatus suitable for following rate of marble-acid reaction,A,2,papers/2025_Prelim_ChungCheng.pdf
+Chung Cheng,2025,Prelims,P1,MCQ,2,1,Experimental Chemistry,Acid-Base Chemistry,gas preparation and choice of drying agent for ammonia,A,3,papers/2025_Prelim_ChungCheng.pdf
+Chung Cheng,2025,Prelims,P1,MCQ,3,1,Experimental Chemistry,None (single topic),separating pure hydrated copper sulfate from insoluble carbonate,B,3,papers/2025_Prelim_ChungCheng.pdf
+Chung Cheng,2025,Prelims,P1,MCQ,4,1,Experimental Chemistry,Qualitative Analysis,Rf value from chromatogram and colour of iron(III) hydroxide,C,4,papers/2025_Prelim_ChungCheng.pdf
+Chung Cheng,2025,Prelims,P1,MCQ,5,1,Experimental Chemistry,None (single topic),best method to test purity of ethanol,B,4,papers/2025_Prelim_ChungCheng.pdf
+Chung Cheng,2025,Prelims,P1,MCQ,6,1,Kinetic Particle Theory,None (single topic),heating curve changes of state and particle energy,C,5,papers/2025_Prelim_ChungCheng.pdf
+Chung Cheng,2025,Prelims,P1,MCQ,7,1,Atomic Structure,Patterns in the Periodic Table,graph of valence electrons against proton number H to Mg,C,6,papers/2025_Prelim_ChungCheng.pdf
+Chung Cheng,2025,Prelims,P1,MCQ,8,1,Atomic Structure,None (single topic),deflection of electron beam versus proton beam,C,7,papers/2025_Prelim_ChungCheng.pdf
+Chung Cheng,2025,Prelims,P1,MCQ,9,1,Atomic Structure,Patterns in the Periodic Table,"nucleon notation: group, period, ion charge of beryllium",C,7,papers/2025_Prelim_ChungCheng.pdf
+Chung Cheng,2025,Prelims,P1,MCQ,10,1,Atomic Structure,Chemical Calculations,isotopes deduced from relative atomic mass of bromine,A,8,papers/2025_Prelim_ChungCheng.pdf
+Chung Cheng,2025,Prelims,P1,MCQ,11,1,Chemical Bonding and Structure,None (single topic),substance with both ionic and covalent bonds,A,8,papers/2025_Prelim_ChungCheng.pdf
+Chung Cheng,2025,Prelims,P1,MCQ,12,1,Chemical Bonding and Structure,None (single topic),identify metallic substance from properties,B,8,papers/2025_Prelim_ChungCheng.pdf
+Chung Cheng,2025,Prelims,P1,MCQ,13,1,Chemical Bonding and Structure,None (single topic),"classify substances as element, compound or mixture",D,9,papers/2025_Prelim_ChungCheng.pdf
+Chung Cheng,2025,Prelims,P1,MCQ,14,1,Chemical Calculations,None (single topic),identify element from mass and gas volume of chloride,C,9,papers/2025_Prelim_ChungCheng.pdf
+Chung Cheng,2025,Prelims,P1,MCQ,15,1,Chemical Calculations,None (single topic),moles of nitric acid from NO via two-step reaction,C,10,papers/2025_Prelim_ChungCheng.pdf
+Chung Cheng,2025,Prelims,P1,MCQ,16,1,Chemical Calculations,Organic Chemistry,hydrocarbon with highest hydrogen percentage by mass,A,10,papers/2025_Prelim_ChungCheng.pdf
+Chung Cheng,2025,Prelims,P1,MCQ,17,1,Chemical Calculations,None (single topic),percentage purity from mass of water formed,B,10,papers/2025_Prelim_ChungCheng.pdf
+Chung Cheng,2025,Prelims,P1,MCQ,18,1,Acid-Base Chemistry,Chemical Calculations,"titration with methyl orange, endpoint colour and volume",A,10,papers/2025_Prelim_ChungCheng.pdf
+Chung Cheng,2025,Prelims,P1,MCQ,19,1,Acid-Base Chemistry,None (single topic),oxides reacting with aqueous potassium hydroxide,C,11,papers/2025_Prelim_ChungCheng.pdf
+Chung Cheng,2025,Prelims,P1,MCQ,20,1,Acid-Base Chemistry,Rate of Reactions,"why lead carbonate-acid reaction stops, insoluble sulfate layer",A,11,papers/2025_Prelim_ChungCheng.pdf
+Chung Cheng,2025,Prelims,P1,MCQ,21,1,Acid-Base Chemistry,Qualitative Analysis,choose salt preparation methods for given salts,B,11,papers/2025_Prelim_ChungCheng.pdf
+Chung Cheng,2025,Prelims,P1,MCQ,22,1,Rate of Reactions,Chemical Energetics; Organic Chemistry,incorrect statement about Haber process conditions,B,11,papers/2025_Prelim_ChungCheng.pdf
+Chung Cheng,2025,Prelims,P1,MCQ,23,1,Qualitative Analysis,None (single topic),identify salt from light meter and NaOH precipitation,D,12,papers/2025_Prelim_ChungCheng.pdf
+Chung Cheng,2025,Prelims,P1,MCQ,24,1,Redox Chemistry,None (single topic),identify disproportionation reaction,C,12,papers/2025_Prelim_ChungCheng.pdf
+Chung Cheng,2025,Prelims,P1,MCQ,25,1,Redox Chemistry,Qualitative Analysis,oxidising/reducing agent from gas observations,B,13,papers/2025_Prelim_ChungCheng.pdf
+Chung Cheng,2025,Prelims,P1,MCQ,26,1,Redox Chemistry,Chemical Energetics,compare electrolytic cell and simple cell statements,B,13,papers/2025_Prelim_ChungCheng.pdf
+Chung Cheng,2025,Prelims,P1,MCQ,27,1,Redox Chemistry,Chemical Calculations,charge on titanium ion from electrolysis masses,D,14,papers/2025_Prelim_ChungCheng.pdf
+Chung Cheng,2025,Prelims,P1,MCQ,28,1,Patterns in the Periodic Table,Chemical Bonding and Structure,order elements across Period 3 from properties,C,14,papers/2025_Prelim_ChungCheng.pdf
+Chung Cheng,2025,Prelims,P1,MCQ,29,1,Redox Chemistry,None (single topic),rusting conditions and sacrificial protection diagram,D,14,papers/2025_Prelim_ChungCheng.pdf
+Chung Cheng,2025,Prelims,P1,MCQ,30,1,Redox Chemistry,Acid-Base Chemistry,carbonate that melts but does not decompose on heating,D,15,papers/2025_Prelim_ChungCheng.pdf
+Chung Cheng,2025,Prelims,P1,MCQ,31,1,Maintaining Air Quality,Chemical Energetics,carbon cycle processes and energy changes,D,15,papers/2025_Prelim_ChungCheng.pdf
+Chung Cheng,2025,Prelims,P1,MCQ,32,1,Chemical Energetics,Rate of Reactions,energy profile with catalyst and enthalpy change,B,16,papers/2025_Prelim_ChungCheng.pdf
+Chung Cheng,2025,Prelims,P1,MCQ,33,1,Rate of Reactions,Chemical Calculations,effect of changed conditions on gas volume curve,C,16,papers/2025_Prelim_ChungCheng.pdf
+Chung Cheng,2025,Prelims,P1,MCQ,34,1,Organic Chemistry,None (single topic),fractional distillation of petroleum fraction properties,A,17,papers/2025_Prelim_ChungCheng.pdf
+Chung Cheng,2025,Prelims,P1,MCQ,35,1,Organic Chemistry,None (single topic),vegetable oil versus margarine properties,C,17,papers/2025_Prelim_ChungCheng.pdf
+Chung Cheng,2025,Prelims,P1,MCQ,36,1,Organic Chemistry,Acid-Base Chemistry,identify alcohol from oxidation and salt formula,B,18,papers/2025_Prelim_ChungCheng.pdf
+Chung Cheng,2025,Prelims,P1,MCQ,37,1,Organic Chemistry,None (single topic),"ester structure, reactants and name",C,18,papers/2025_Prelim_ChungCheng.pdf
+Chung Cheng,2025,Prelims,P1,MCQ,38,1,Organic Chemistry,None (single topic),products of glucose fermentation,A,19,papers/2025_Prelim_ChungCheng.pdf
+Chung Cheng,2025,Prelims,P1,MCQ,39,1,Maintaining Air Quality,Chemical Calculations,oxygen content of air passed over hot tin,D,19,papers/2025_Prelim_ChungCheng.pdf
+Chung Cheng,2025,Prelims,P1,MCQ,40,1,Maintaining Air Quality,Acid-Base Chemistry,true statement about atmospheric pollutants,D,19,papers/2025_Prelim_ChungCheng.pdf
+Chung Cheng,2025,Prelims,P2,A,A1,6,Patterns in the Periodic Table,Chemical Bonding and Structure; Atomic Structure; Qualitative Analysis,identify elements from periodic table properties,Written answer - see mark scheme,25,papers/2025_Prelim_ChungCheng.pdf
+Chung Cheng,2025,Prelims,P2,A,A2,5,Acid-Base Chemistry,Experimental Chemistry,"ions in mineral water: pH, salts, dry residue",Written answer - see mark scheme,26,papers/2025_Prelim_ChungCheng.pdf
+Chung Cheng,2025,Prelims,P2,A,A3,6,Kinetic Particle Theory,Acid-Base Chemistry,diffusion of HCl and NH3 along indicator paper,Written answer - see mark scheme,27,papers/2025_Prelim_ChungCheng.pdf
+Chung Cheng,2025,Prelims,P2,A,A4,6,Patterns in the Periodic Table,Chemical Bonding and Structure; Atomic Structure,"Group 1 and 17 ions, radii, halogen displacement",Written answer - see mark scheme,28,papers/2025_Prelim_ChungCheng.pdf
+Chung Cheng,2025,Prelims,P2,A,A5,7,Maintaining Air Quality,Redox Chemistry; Organic Chemistry,"catalytic converters, trees and carbon-neutral ethanol",Written answer - see mark scheme,29,papers/2025_Prelim_ChungCheng.pdf
+Chung Cheng,2025,Prelims,P2,A,A6,10,Redox Chemistry,Patterns in the Periodic Table,"transition metals, reactivity and displacement of Mn, Cr, Fe",Written answer - see mark scheme,31,papers/2025_Prelim_ChungCheng.pdf
+Chung Cheng,2025,Prelims,P2,A,A7,10,Rate of Reactions,Acid-Base Chemistry; Chemical Calculations,"acid concentration and rate, titration calculation",Written answer - see mark scheme,33,papers/2025_Prelim_ChungCheng.pdf
+Chung Cheng,2025,Prelims,P2,A,A8,8,Chemical Bonding and Structure,None (single topic),phosphorus allotropes: structure and melting point,Written answer - see mark scheme,35,papers/2025_Prelim_ChungCheng.pdf
+Chung Cheng,2025,Prelims,P2,A,A9,12,Organic Chemistry,Chemical Bonding and Structure; Chemical Calculations,"alkynes: trends, bonding, calculation, test and reactions",Written answer - see mark scheme,37,papers/2025_Prelim_ChungCheng.pdf
+Chung Cheng,2025,Prelims,P2,B,B10,10,Redox Chemistry,Acid-Base Chemistry; Patterns in the Periodic Table,electrolysis of caesium chloride and zinc-copper cell,Written answer - see mark scheme,40,papers/2025_Prelim_ChungCheng.pdf
+Chung Cheng,2025,Prelims,P2,B,B11,10,Organic Chemistry,Chemical Calculations,"proteins, poly(propene), cracking and polymerisation",Written answer - see mark scheme,42,papers/2025_Prelim_ChungCheng.pdf
+Fu Hua,2025,Prelims,P1,MCQ,1,1,Kinetic Particle Theory,Patterns in the Periodic Table,identify substance that is monatomic gas at given temperature,C,2,papers/2025_Prelim_FuHua.pdf
+Fu Hua,2025,Prelims,P1,MCQ,2,1,Experimental Chemistry,Kinetic Particle Theory,temperature-volume graph for fractional distillation of hexane/heptane,A,2,papers/2025_Prelim_FuHua.pdf
+Fu Hua,2025,Prelims,P1,MCQ,3,1,Experimental Chemistry,Rate of Reactions,apparatus needed to measure rate of CaCO3 reaction at different temperatures,B,3,papers/2025_Prelim_FuHua.pdf
+Fu Hua,2025,Prelims,P1,MCQ,4,1,Experimental Chemistry,Chemical Bonding and Structure,"classify element, mixture, compound from composition and properties",A,3,papers/2025_Prelim_FuHua.pdf
+Fu Hua,2025,Prelims,P1,MCQ,5,1,Experimental Chemistry,None (single topic),interpret chromatogram of four substances,D,3,papers/2025_Prelim_FuHua.pdf
+Fu Hua,2025,Prelims,P1,MCQ,6,1,Atomic Structure,None (single topic),neutrons and electrons in a cerium ion,A,4,papers/2025_Prelim_FuHua.pdf
+Fu Hua,2025,Prelims,P1,MCQ,7,1,Chemical Bonding and Structure,None (single topic),properties of giant and simple covalent structures,A,4,papers/2025_Prelim_FuHua.pdf
+Fu Hua,2025,Prelims,P1,MCQ,8,1,Chemical Bonding and Structure,Atomic Structure,bond types formed from electronic configurations,B,4,papers/2025_Prelim_FuHua.pdf
+Fu Hua,2025,Prelims,P1,MCQ,9,1,Chemical Bonding and Structure,Kinetic Particle Theory,properties of covalent compound causing tearing from onions,A,4,papers/2025_Prelim_FuHua.pdf
+Fu Hua,2025,Prelims,P1,MCQ,10,1,Chemical Bonding and Structure,None (single topic),molecule with most bonded electrons,A,5,papers/2025_Prelim_FuHua.pdf
+Fu Hua,2025,Prelims,P1,MCQ,11,1,Redox Chemistry,None (single topic),ionic equation of hydrazine reducing silver ions,D,5,papers/2025_Prelim_FuHua.pdf
+Fu Hua,2025,Prelims,P1,MCQ,12,1,Patterns in the Periodic Table,Acid-Base Chemistry,amphoteric oxide identifies the element,C,5,papers/2025_Prelim_FuHua.pdf
+Fu Hua,2025,Prelims,P1,MCQ,13,1,Maintaining Air Quality,Acid-Base Chemistry; Redox Chemistry,correct results of sulfur dioxide experiments,C,5,papers/2025_Prelim_FuHua.pdf
+Fu Hua,2025,Prelims,P1,MCQ,14,1,Acid-Base Chemistry,Experimental Chemistry,excess reagent and purification for preparing calcium chloride,B,5,papers/2025_Prelim_FuHua.pdf
+Fu Hua,2025,Prelims,P1,MCQ,15,1,Qualitative Analysis,Acid-Base Chemistry,identify precipitate and reagent from precipitation graph,B,6,papers/2025_Prelim_FuHua.pdf
+Fu Hua,2025,Prelims,P1,MCQ,16,1,Chemical Calculations,None (single topic),percentage yield of zinc oxide expression,A,6,papers/2025_Prelim_FuHua.pdf
+Fu Hua,2025,Prelims,P1,MCQ,17,1,Chemical Calculations,None (single topic),incorrect statement about moles in ethane sample,D,6,papers/2025_Prelim_FuHua.pdf
+Fu Hua,2025,Prelims,P1,MCQ,18,1,Chemical Calculations,None (single topic),gas volumes remaining after hydrogen reacts with oxygen,D,6,papers/2025_Prelim_FuHua.pdf
+Fu Hua,2025,Prelims,P1,MCQ,19,1,Redox Chemistry,Experimental Chemistry,experiments showing oxygen needed for rusting,C,7,papers/2025_Prelim_FuHua.pdf
+Fu Hua,2025,Prelims,P1,MCQ,20,1,Redox Chemistry,Patterns in the Periodic Table,observations when sodium added to iron(II) sulfate,B,7,papers/2025_Prelim_FuHua.pdf
+Fu Hua,2025,Prelims,P1,MCQ,21,1,Redox Chemistry,Acid-Base Chemistry,count redox reactions among three equations,B,7,papers/2025_Prelim_FuHua.pdf
+Fu Hua,2025,Prelims,P1,MCQ,22,1,Maintaining Air Quality,Patterns in the Periodic Table,noble gas with highest concentration in air,A,7,papers/2025_Prelim_FuHua.pdf
+Fu Hua,2025,Prelims,P1,MCQ,23,1,Maintaining Air Quality,Acid-Base Chemistry,gas pair most damaging to limestone buildings,D,7,papers/2025_Prelim_FuHua.pdf
+Fu Hua,2025,Prelims,P1,MCQ,24,1,Patterns in the Periodic Table,Atomic Structure; Redox Chemistry,property decreasing down any group,B,8,papers/2025_Prelim_FuHua.pdf
+Fu Hua,2025,Prelims,P1,MCQ,25,1,Patterns in the Periodic Table,None (single topic),most violent reaction between group 1 and group 17 elements,A,8,papers/2025_Prelim_FuHua.pdf
+Fu Hua,2025,Prelims,P1,MCQ,26,1,Rate of Reactions,Chemical Calculations,fastest initial rate of magnesium with acid,A,8,papers/2025_Prelim_FuHua.pdf
+Fu Hua,2025,Prelims,P1,MCQ,27,1,Redox Chemistry,Chemical Calculations,moles of chlorine from electrolysis of molten NaCl,C,8,papers/2025_Prelim_FuHua.pdf
+Fu Hua,2025,Prelims,P1,MCQ,28,1,Rate of Reactions,Kinetic Particle Theory,effects of temperature increase on collisions and energy,C,8,papers/2025_Prelim_FuHua.pdf
+Fu Hua,2025,Prelims,P1,MCQ,29,1,Chemical Energetics,Chemical Calculations,heat change per mole ethane combusted,B,9,papers/2025_Prelim_FuHua.pdf
+Fu Hua,2025,Prelims,P1,MCQ,30,1,Rate of Reactions,Experimental Chemistry,changes needed to obtain graph with greater mass loss,D,9,papers/2025_Prelim_FuHua.pdf
+Fu Hua,2025,Prelims,P1,MCQ,31,1,Rate of Reactions,Chemical Energetics,effect of pressure on speed and yield of Haber process,A,9,papers/2025_Prelim_FuHua.pdf
+Fu Hua,2025,Prelims,P1,MCQ,32,1,Redox Chemistry,None (single topic),copper electroplating of steel key electrolyte change,B,10,papers/2025_Prelim_FuHua.pdf
+Fu Hua,2025,Prelims,P1,MCQ,33,1,Chemical Energetics,Rate of Reactions,statements on Haber energy profile diagram,D,10,papers/2025_Prelim_FuHua.pdf
+Fu Hua,2025,Prelims,P1,MCQ,34,1,Organic Chemistry,None (single topic),true statement about homologous series,B,10,papers/2025_Prelim_FuHua.pdf
+Fu Hua,2025,Prelims,P1,MCQ,35,1,Organic Chemistry,None (single topic),vegetable oil versus margarine properties,C,11,papers/2025_Prelim_FuHua.pdf
+Fu Hua,2025,Prelims,P1,MCQ,36,1,Organic Chemistry,Acid-Base Chemistry,products of alkaline hydrolysis of diester,C,11,papers/2025_Prelim_FuHua.pdf
+Fu Hua,2025,Prelims,P1,MCQ,37,1,Organic Chemistry,Redox Chemistry,reactions that form water,B,12,papers/2025_Prelim_FuHua.pdf
+Fu Hua,2025,Prelims,P1,MCQ,38,1,Organic Chemistry,Qualitative Analysis,reagents distinguishing propene from propanoic acid,C,12,papers/2025_Prelim_FuHua.pdf
+Fu Hua,2025,Prelims,P1,MCQ,39,1,Organic Chemistry,Acid-Base Chemistry,false statement about serine properties,D,12,papers/2025_Prelim_FuHua.pdf
+Fu Hua,2025,Prelims,P1,MCQ,40,1,Redox Chemistry,Chemical Calculations,charge on vanadium ion from electrolysis data,C,12,papers/2025_Prelim_FuHua.pdf
+Fu Hua,2025,Prelims,P2,A,A1,5,Patterns in the Periodic Table,Chemical Bonding and Structure; Redox Chemistry; Atomic Structure,"Period 3 electron arrangements: reducing agents, oxides, dot-and-cross",Written answer - see mark scheme,16,papers/2025_Prelim_FuHua.pdf
+Fu Hua,2025,Prelims,P2,A,A2,10,Chemical Energetics,Redox Chemistry; Rate of Reactions; Chemical Calculations,"Contact process: catalyst, redox, yield, energy profile, heat calc",Written answer - see mark scheme,17,papers/2025_Prelim_FuHua.pdf
+Fu Hua,2025,Prelims,P2,A,A3,12,Redox Chemistry,Acid-Base Chemistry,"electrolysis of KCl, electroplating cells, electron flow, pH change",Written answer - see mark scheme,19,papers/2025_Prelim_FuHua.pdf
+Fu Hua,2025,Prelims,P2,A,A4,4,Kinetic Particle Theory,Patterns in the Periodic Table; Redox Chemistry,"diffusion of halogens, Mr, halogen displacement ionic equation",Written answer - see mark scheme,21,papers/2025_Prelim_FuHua.pdf
+Fu Hua,2025,Prelims,P2,A,A5,11,Organic Chemistry,Qualitative Analysis; Chemical Calculations,"alkene to alcohol steps, esters, tests, biodiesel transesterification",Written answer - see mark scheme,22,papers/2025_Prelim_FuHua.pdf
+Fu Hua,2025,Prelims,P2,A,A6,6,Acid-Base Chemistry,Chemical Calculations,"ethylamine as base, titration pH curve, sulfuric acid concentration",Written answer - see mark scheme,25,papers/2025_Prelim_FuHua.pdf
+Fu Hua,2025,Prelims,P2,A,A7,10,Chemical Calculations,Acid-Base Chemistry; Rate of Reactions; Experimental Chemistry,"purity of PbCO3 from mass loss, acid graphs, salt preparation",Written answer - see mark scheme,26,papers/2025_Prelim_FuHua.pdf
+Fu Hua,2025,Prelims,P2,A,A8,12,Organic Chemistry,Chemical Calculations; Maintaining Air Quality,"polymers PET/HDPE repeat units, carbon footprint, sustainability, chain length",Written answer - see mark scheme,28,papers/2025_Prelim_FuHua.pdf
+Fu Hua,2025,Prelims,P2,B,B9,10,Redox Chemistry,Patterns in the Periodic Table; Chemical Energetics,"metal reactivity displacement table, Ca vs Sr reactivity, hydroxide pH",Written answer - see mark scheme,32,papers/2025_Prelim_FuHua.pdf
+Fu Hua,2025,Prelims,P2,B,B10,10,Patterns in the Periodic Table,Chemical Bonding and Structure,"Period 2 melting point and conductivity trends, identify Period 3 element",Written answer - see mark scheme,35,papers/2025_Prelim_FuHua.pdf
+Maris Stella,2025,Prelims,P1,MCQ,1,1,Kinetic Particle Theory,None (single topic),"diffusion of hydrogen into porous tube, water level change",C,2,papers/2025_Prelim_MarisStella.pdf
+Maris Stella,2025,Prelims,P1,MCQ,2,1,Experimental Chemistry,None (single topic),choosing separation techniques for given mixtures,A,2,papers/2025_Prelim_MarisStella.pdf
+Maris Stella,2025,Prelims,P1,MCQ,3,1,Atomic Structure,None (single topic),"protons, neutrons, electrons in negative ion of isotope",A,2,papers/2025_Prelim_MarisStella.pdf
+Maris Stella,2025,Prelims,P1,MCQ,4,1,Chemical Bonding and Structure,Chemical Calculations,formulae of compounds from proton numbers of elements,B,3,papers/2025_Prelim_MarisStella.pdf
+Maris Stella,2025,Prelims,P1,MCQ,5,1,Chemical Bonding and Structure,Redox Chemistry,electrons transferred in forming metal oxides,A,3,papers/2025_Prelim_MarisStella.pdf
+Maris Stella,2025,Prelims,P1,MCQ,6,1,Chemical Bonding and Structure,Organic Chemistry,substance with fewer than four covalent bonds per atom,D,3,papers/2025_Prelim_MarisStella.pdf
+Maris Stella,2025,Prelims,P1,MCQ,7,1,Chemical Bonding and Structure,None (single topic),mobile electrons as cause of conductivity,D,3,papers/2025_Prelim_MarisStella.pdf
+Maris Stella,2025,Prelims,P1,MCQ,8,1,Chemical Calculations,Chemical Bonding and Structure,"statements about Fe2O3: ion, mass, empirical formula, moles",C,4,papers/2025_Prelim_MarisStella.pdf
+Maris Stella,2025,Prelims,P1,MCQ,9,1,Chemical Calculations,None (single topic),"mass of ammonium nitrate from water formed, impure sample",B,4,papers/2025_Prelim_MarisStella.pdf
+Maris Stella,2025,Prelims,P1,MCQ,10,1,Chemical Calculations,Organic Chemistry,gas volume remaining after propene combustion,C,4,papers/2025_Prelim_MarisStella.pdf
+Maris Stella,2025,Prelims,P1,MCQ,11,1,Acid-Base Chemistry,Experimental Chemistry,distinguishing strong from weak acid by tests,A,5,papers/2025_Prelim_MarisStella.pdf
+Maris Stella,2025,Prelims,P1,MCQ,12,1,Qualitative Analysis,Acid-Base Chemistry,identify copper(II) chloride from properties and preparation,A,5,papers/2025_Prelim_MarisStella.pdf
+Maris Stella,2025,Prelims,P1,MCQ,13,1,Acid-Base Chemistry,Qualitative Analysis,ammonia and carbon dioxide from ethanoic acid reactions,D,5,papers/2025_Prelim_MarisStella.pdf
+Maris Stella,2025,Prelims,P1,MCQ,14,1,Redox Chemistry,Acid-Base Chemistry,identify non-redox reaction from equations,C,5,papers/2025_Prelim_MarisStella.pdf
+Maris Stella,2025,Prelims,P1,MCQ,15,1,Redox Chemistry,None (single topic),oxidation states and reducing agent in Cu with nitric acid,C,6,papers/2025_Prelim_MarisStella.pdf
+Maris Stella,2025,Prelims,P1,MCQ,16,1,Redox Chemistry,None (single topic),reactivity series from displacement; metals reacting with acid,B,6,papers/2025_Prelim_MarisStella.pdf
+Maris Stella,2025,Prelims,P1,MCQ,17,1,Redox Chemistry,None (single topic),metals reacting with acid and oxides reduced by hydrogen,A,6,papers/2025_Prelim_MarisStella.pdf
+Maris Stella,2025,Prelims,P1,MCQ,18,1,Redox Chemistry,None (single topic),rust prevention methods on steel including sacrificial zinc,D,7,papers/2025_Prelim_MarisStella.pdf
+Maris Stella,2025,Prelims,P1,MCQ,19,1,Patterns in the Periodic Table,None (single topic),predicting properties of heavier alkali metal,D,7,papers/2025_Prelim_MarisStella.pdf
+Maris Stella,2025,Prelims,P1,MCQ,20,1,Redox Chemistry,None (single topic),electrolysis setup giving no change in concentration,B,7,papers/2025_Prelim_MarisStella.pdf
+Maris Stella,2025,Prelims,P1,MCQ,21,1,Redox Chemistry,Chemical Calculations,charge on tin ion from masses deposited by same charge,D,8,papers/2025_Prelim_MarisStella.pdf
+Maris Stella,2025,Prelims,P1,MCQ,22,1,Redox Chemistry,Chemical Energetics,hydrogen-oxygen fuel cell electrode processes and products,D,8,papers/2025_Prelim_MarisStella.pdf
+Maris Stella,2025,Prelims,P1,MCQ,23,1,Patterns in the Periodic Table,Acid-Base Chemistry,trends across Period 3 metallic character and oxides,B,8,papers/2025_Prelim_MarisStella.pdf
+Maris Stella,2025,Prelims,P1,MCQ,24,1,Patterns in the Periodic Table,Chemical Bonding and Structure,likely formula of tellurium compound from Group 16,A,8,papers/2025_Prelim_MarisStella.pdf
+Maris Stella,2025,Prelims,P1,MCQ,25,1,Chemical Energetics,Rate of Reactions,"energy profile diagram interpretation, catalyst effect",C,9,papers/2025_Prelim_MarisStella.pdf
+Maris Stella,2025,Prelims,P1,MCQ,26,1,Chemical Energetics,Kinetic Particle Theory,identifying exothermic stages in candlewax combustion scheme,D,9,papers/2025_Prelim_MarisStella.pdf
+Maris Stella,2025,Prelims,P1,MCQ,27,1,Rate of Reactions,Chemical Calculations,changes producing curve 2 for zinc and acid,C,10,papers/2025_Prelim_MarisStella.pdf
+Maris Stella,2025,Prelims,P1,MCQ,28,1,Rate of Reactions,Experimental Chemistry,suitable methods to follow rate of gas-forming reaction,C,10,papers/2025_Prelim_MarisStella.pdf
+Maris Stella,2025,Prelims,P1,MCQ,29,1,Maintaining Air Quality,Chemical Calculations,incorrect statement about Haber process,B,11,papers/2025_Prelim_MarisStella.pdf
+Maris Stella,2025,Prelims,P1,MCQ,30,1,Acid-Base Chemistry,Qualitative Analysis,properties and preparation of ammonia,A,11,papers/2025_Prelim_MarisStella.pdf
+Maris Stella,2025,Prelims,P1,MCQ,31,1,Maintaining Air Quality,Experimental Chemistry,gases removed from air by NaOH and heated copper,A,11,papers/2025_Prelim_MarisStella.pdf
+Maris Stella,2025,Prelims,P1,MCQ,32,1,Maintaining Air Quality,Acid-Base Chemistry,gases causing acid rain damage to limestone,D,11,papers/2025_Prelim_MarisStella.pdf
+Maris Stella,2025,Prelims,P1,MCQ,33,1,Organic Chemistry,None (single topic),"fractional distillation fractions: boiling point, viscosity, flammability",A,12,papers/2025_Prelim_MarisStella.pdf
+Maris Stella,2025,Prelims,P1,MCQ,34,1,Organic Chemistry,None (single topic),property constant during polymerisation of ethene,C,12,papers/2025_Prelim_MarisStella.pdf
+Maris Stella,2025,Prelims,P1,MCQ,35,1,Organic Chemistry,None (single topic),product of ethane substitution with chlorine,B,12,papers/2025_Prelim_MarisStella.pdf
+Maris Stella,2025,Prelims,P1,MCQ,36,1,Organic Chemistry,None (single topic),number of C=C in oleic acid from formula,B,13,papers/2025_Prelim_MarisStella.pdf
+Maris Stella,2025,Prelims,P1,MCQ,37,1,Organic Chemistry,Qualitative Analysis,"identify compound from carboxylic acid, alkene, ester tests",A,13,papers/2025_Prelim_MarisStella.pdf
+Maris Stella,2025,Prelims,P1,MCQ,38,1,Organic Chemistry,Redox Chemistry,"formulae of alcohol, acid and ester from reaction scheme",C,13,papers/2025_Prelim_MarisStella.pdf
+Maris Stella,2025,Prelims,P1,MCQ,39,1,Organic Chemistry,Acid-Base Chemistry,amino acid polymerisation and reactions of arginine,C,14,papers/2025_Prelim_MarisStella.pdf
+Maris Stella,2025,Prelims,P1,MCQ,40,1,Organic Chemistry,None (single topic),monomers of polyester from polymer repeat unit,D,14,papers/2025_Prelim_MarisStella.pdf
+Maris Stella,2025,Prelims,P2,A,A1,7,Chemical Bonding and Structure,Organic Chemistry; Maintaining Air Quality,"identify structures: hydrocarbon, giant structure, CO2, limestone; CO2 increase",Written answer - see mark scheme,18,papers/2025_Prelim_MarisStella.pdf
+Maris Stella,2025,Prelims,P2,A,A2,9,Chemical Bonding and Structure,Atomic Structure,"metallic vs ionic bonding, melting points, conductivity, ion formation",Written answer - see mark scheme,20,papers/2025_Prelim_MarisStella.pdf
+Maris Stella,2025,Prelims,P2,A,A3,7,Redox Chemistry,Chemical Bonding and Structure,"dot-cross of ClO2, disproportionation, oxidising agent",Written answer - see mark scheme,22,papers/2025_Prelim_MarisStella.pdf
+Maris Stella,2025,Prelims,P2,A,A4,6,Organic Chemistry,Acid-Base Chemistry,"malonic acid formula, decomposition, esterification, weak acid pH",Written answer - see mark scheme,23,papers/2025_Prelim_MarisStella.pdf
+Maris Stella,2025,Prelims,P2,A,A5,9,Rate of Reactions,Chemical Energetics; Chemical Calculations,"H2O2 decomposition: bond energy, catalyst graph, concentration, temperature",Written answer - see mark scheme,24,papers/2025_Prelim_MarisStella.pdf
+Maris Stella,2025,Prelims,P2,A,A6,9,Redox Chemistry,Chemical Calculations,"brine electrolysis equations, molten NaCl volume, seawater oxygen generator",Written answer - see mark scheme,26,papers/2025_Prelim_MarisStella.pdf
+Maris Stella,2025,Prelims,P2,A,A7,4,Organic Chemistry,Rate of Reactions,compare ethene hydration and glucose fermentation for ethanol,Written answer - see mark scheme,28,papers/2025_Prelim_MarisStella.pdf
+Maris Stella,2025,Prelims,P2,A,A8,7,Organic Chemistry,Qualitative Analysis,"polymerisation of acrylamide and amino acids, ammonium test",Written answer - see mark scheme,29,papers/2025_Prelim_MarisStella.pdf
+Maris Stella,2025,Prelims,P2,A,A9,12,Organic Chemistry,Experimental Chemistry; Chemical Calculations,"chromatography, mass spectrum of hydrocarbon isomer, formula, combustion",Written answer - see mark scheme,31,papers/2025_Prelim_MarisStella.pdf
+Maris Stella,2025,Prelims,P2,B,B10,10,Redox Chemistry,Patterns in the Periodic Table,"metal reactivity order, hydrogen position, iron corrosion contact",Written answer - see mark scheme,34,papers/2025_Prelim_MarisStella.pdf
+Maris Stella,2025,Prelims,P2,B,B11,10,Chemical Bonding and Structure,Rate of Reactions; Redox Chemistry; Patterns in the Periodic Table,"Zamak alloy: identity, powder rate, alloy hardness, plastic, rust prevention",Written answer - see mark scheme,36,papers/2025_Prelim_MarisStella.pdf
+Montfort,2025,SA2,P1,MCQ,1,1,Rate of Reactions,Experimental Chemistry,apparatus suitable for following rate of marble-acid reaction,D,2,papers/2025_SA2_Montfort.pdf
+Montfort,2025,SA2,P1,MCQ,2,1,Experimental Chemistry,Kinetic Particle Theory,"fractional distillation of miscible liquids, composition at positions",D,3,papers/2025_SA2_Montfort.pdf
+Montfort,2025,SA2,P1,MCQ,3,1,Atomic Structure,None (single topic),pair of particles with zero charge and mass of 1/12 C-12,B,3,papers/2025_SA2_Montfort.pdf
+Montfort,2025,SA2,P1,MCQ,4,1,Atomic Structure,Chemical Calculations,relative atomic mass from isotope abundance diagram,A,4,papers/2025_SA2_Montfort.pdf
+Montfort,2025,SA2,P1,MCQ,5,1,Chemical Bonding and Structure,Chemical Calculations,"element vs compound formation, empirical formula statements",C,4,papers/2025_SA2_Montfort.pdf
+Montfort,2025,SA2,P1,MCQ,6,1,Chemical Bonding and Structure,None (single topic),molecule with four electrons in covalent bonds,C,5,papers/2025_SA2_Montfort.pdf
+Montfort,2025,SA2,P1,MCQ,7,1,Chemical Bonding and Structure,Organic Chemistry,match melting/boiling points to structures of four substances,D,5,papers/2025_SA2_Montfort.pdf
+Montfort,2025,SA2,P1,MCQ,8,1,Chemical Calculations,Chemical Bonding and Structure,charges on ammonium and metavanadate ions from formula,A,6,papers/2025_SA2_Montfort.pdf
+Montfort,2025,SA2,P1,MCQ,9,1,Redox Chemistry,Chemical Calculations,ionic equation for copper displacing silver from silver nitrate,B,6,papers/2025_SA2_Montfort.pdf
+Montfort,2025,SA2,P1,MCQ,10,1,Chemical Calculations,Atomic Structure,"relative formula and atomic mass statements, hydrated carbonate",A,6,papers/2025_SA2_Montfort.pdf
+Montfort,2025,SA2,P1,MCQ,11,1,Chemical Calculations,Acid-Base Chemistry,matching concentrations of solutions using moles and volume,C,7,papers/2025_SA2_Montfort.pdf
+Montfort,2025,SA2,P1,MCQ,12,1,Chemical Calculations,None (single topic),mass of magnesium chloride from magnesium and acid,D,7,papers/2025_SA2_Montfort.pdf
+Montfort,2025,SA2,P1,MCQ,13,1,Chemical Calculations,None (single topic),element with greatest percentage by mass in compounds,D,8,papers/2025_SA2_Montfort.pdf
+Montfort,2025,SA2,P1,MCQ,14,1,Chemical Calculations,None (single topic),water of crystallisation x and y from dehydration masses,D,8,papers/2025_SA2_Montfort.pdf
+Montfort,2025,SA2,P1,MCQ,15,1,Redox Chemistry,None (single topic),anode reaction in electrolysis of copper sulfate with copper electrodes,A,9,papers/2025_SA2_Montfort.pdf
+Montfort,2025,SA2,P1,MCQ,16,1,Redox Chemistry,Chemical Energetics,statements about hydrogen-oxygen fuel cells,C,9,papers/2025_SA2_Montfort.pdf
+Montfort,2025,SA2,P1,MCQ,17,1,Chemical Energetics,Rate of Reactions,"activation energy, endothermic and bond making statements",D,9,papers/2025_SA2_Montfort.pdf
+Montfort,2025,SA2,P1,MCQ,18,1,Chemical Energetics,None (single topic),activation energy of reverse reaction from pathway diagram,D,10,papers/2025_SA2_Montfort.pdf
+Montfort,2025,SA2,P1,MCQ,19,1,Rate of Reactions,None (single topic),greatest rate of gas production from volume-time graph,A,11,papers/2025_SA2_Montfort.pdf
+Montfort,2025,SA2,P1,MCQ,20,1,Redox Chemistry,None (single topic),oxidation states of copper oxides and hydrogen peroxide role,A,11,papers/2025_SA2_Montfort.pdf
+Montfort,2025,SA2,P1,MCQ,21,1,Acid-Base Chemistry,None (single topic),universal indicator equilibrium shift on adding acid,B,12,papers/2025_SA2_Montfort.pdf
+Montfort,2025,SA2,P1,MCQ,22,1,Acid-Base Chemistry,None (single topic),strong vs weak acid and pH of HCl and HNO3,C,12,papers/2025_SA2_Montfort.pdf
+Montfort,2025,SA2,P1,MCQ,23,1,Acid-Base Chemistry,Patterns in the Periodic Table,"statements about acidic, basic and amphoteric oxides",D,12,papers/2025_SA2_Montfort.pdf
+Montfort,2025,SA2,P1,MCQ,24,1,Acid-Base Chemistry,Qualitative Analysis,salts preparable as pure dry samples from given reagents,B,13,papers/2025_SA2_Montfort.pdf
+Montfort,2025,SA2,P1,MCQ,25,1,Acid-Base Chemistry,Qualitative Analysis,identify compound giving ions and acidic gas with carbonate,C,13,papers/2025_SA2_Montfort.pdf
+Montfort,2025,SA2,P1,MCQ,26,1,Patterns in the Periodic Table,Atomic Structure,"how groups, periods and ordering are determined in Periodic Table",A,13,papers/2025_SA2_Montfort.pdf
+Montfort,2025,SA2,P1,MCQ,27,1,Patterns in the Periodic Table,None (single topic),identify Group 1 element from properties,C,14,papers/2025_SA2_Montfort.pdf
+Montfort,2025,SA2,P1,MCQ,28,1,Patterns in the Periodic Table,Chemical Bonding and Structure,statements about general properties of metals,B,14,papers/2025_SA2_Montfort.pdf
+Montfort,2025,SA2,P1,MCQ,29,1,Patterns in the Periodic Table,Redox Chemistry,Group 1 and transition elements reactivity and density,A,15,papers/2025_SA2_Montfort.pdf
+Montfort,2025,SA2,P1,MCQ,30,1,Redox Chemistry,None (single topic),reactivity order of metals from displacement equations,C,15,papers/2025_SA2_Montfort.pdf
+Montfort,2025,SA2,P1,MCQ,31,1,Redox Chemistry,None (single topic),galvanising iron and rusting statements,B,16,papers/2025_SA2_Montfort.pdf
+Montfort,2025,SA2,P1,MCQ,32,1,Redox Chemistry,None (single topic),type of reaction used to extract metals from ores,D,16,papers/2025_SA2_Montfort.pdf
+Montfort,2025,SA2,P1,MCQ,33,1,Maintaining Air Quality,Experimental Chemistry,main products of fractional distillation of liquid air,C,16,papers/2025_SA2_Montfort.pdf
+Montfort,2025,SA2,P1,MCQ,34,1,Maintaining Air Quality,Organic Chemistry,carbon cycle statements,C,17,papers/2025_SA2_Montfort.pdf
+Montfort,2025,SA2,P1,MCQ,35,1,Maintaining Air Quality,Organic Chemistry,element in CFC that depletes ozone,B,17,papers/2025_SA2_Montfort.pdf
+Montfort,2025,SA2,P1,MCQ,36,1,Organic Chemistry,None (single topic),properties of top fraction in petroleum fractional distillation,C,18,papers/2025_SA2_Montfort.pdf
+Montfort,2025,SA2,P1,MCQ,37,1,Organic Chemistry,None (single topic),hydrocarbon with no isomers and no bromine decolourisation,B,18,papers/2025_SA2_Montfort.pdf
+Montfort,2025,SA2,P1,MCQ,38,1,Organic Chemistry,None (single topic),cracking of decane equation giving two alkenes,D,18,papers/2025_SA2_Montfort.pdf
+Montfort,2025,SA2,P1,MCQ,39,1,Organic Chemistry,Redox Chemistry,fermentation yield and ethanol oxidation to ethanoic acid,D,19,papers/2025_SA2_Montfort.pdf
+Montfort,2025,SA2,P1,MCQ,40,1,Organic Chemistry,None (single topic),atom count change when ester forms from acid and alcohol,C,19,papers/2025_SA2_Montfort.pdf
+Montfort,2025,SA2,P2,A,A1,7,Chemical Bonding and Structure,Organic Chemistry,"structures: giant covalent, ionic, natural gas, dot-and-cross HCl",Written answer - see mark scheme,22,papers/2025_SA2_Montfort.pdf
+Montfort,2025,SA2,P2,A,A2,11,Organic Chemistry,Chemical Energetics; Chemical Calculations,"methane: equation, saturation, substitution, combustion energetics, pathway diagram",Written answer - see mark scheme,24,papers/2025_SA2_Montfort.pdf
+Montfort,2025,SA2,P2,A,A3,7,Rate of Reactions,Maintaining Air Quality,"rate vs concentration, collision theory, SO2 source, catalyst",Written answer - see mark scheme,26,papers/2025_SA2_Montfort.pdf
+Montfort,2025,SA2,P2,A,A4,7,Redox Chemistry,Patterns in the Periodic Table,"electrolysis of conc HCl, electrode choice, halogen displacement",Written answer - see mark scheme,28,papers/2025_SA2_Montfort.pdf
+Montfort,2025,SA2,P2,A,A5,9,Redox Chemistry,Chemical Bonding and Structure; Patterns in the Periodic Table,"molybdenum extraction: oxidation states, redox, metallic bonding",Written answer - see mark scheme,30,papers/2025_SA2_Montfort.pdf
+Montfort,2025,SA2,P2,A,A6,9,Chemical Calculations,Acid-Base Chemistry,"fertiliser formulae, neutralisation, empirical formula of urea, ammonium-alkali reaction",Written answer - see mark scheme,32,papers/2025_SA2_Montfort.pdf
+Montfort,2025,SA2,P2,A,A7,10,Rate of Reactions,Maintaining Air Quality; Chemical Calculations,"ammonia equilibrium graph, pressure and rate, NO treatment, pollutants",Written answer - see mark scheme,34,papers/2025_SA2_Montfort.pdf
+Montfort,2025,SA2,P2,A,A8,10,Maintaining Air Quality,Organic Chemistry; Redox Chemistry,"biogas comprehension: H2S pollution, greenhouse gases, iron fuel recycling",Written answer - see mark scheme,36,papers/2025_SA2_Montfort.pdf
+Montfort,2025,SA2,P2,B,B9,10,Organic Chemistry,Chemical Bonding and Structure,"ester homologous series, properties, structures and yield calculation",Written answer - see mark scheme,39,papers/2025_SA2_Montfort.pdf
+Montfort,2025,SA2,P2,B,B10,10,Organic Chemistry,Chemical Bonding and Structure; Chemical Calculations; Kinetic Particle Theory,"polypropene, percentage yield, isomers, melting glass and SiO2 structure",Written answer - see mark scheme,41,papers/2025_SA2_Montfort.pdf
+Tanjong Katong,2025,Prelims,P1,MCQ,1,1,Experimental Chemistry,Acid-Base Chemistry,prepare and collect dry SO2 apparatus,C,2,papers/2025_Prelim_TanjongKatong.pdf
+Tanjong Katong,2025,Prelims,P1,MCQ,2,1,Experimental Chemistry,Kinetic Particle Theory,separate iodine from sodium chloride by sublimation,B,2,papers/2025_Prelim_TanjongKatong.pdf
+Tanjong Katong,2025,Prelims,P1,MCQ,3,1,Experimental Chemistry,None (single topic),interpret paper chromatogram spots of mixtures,C,3,papers/2025_Prelim_TanjongKatong.pdf
+Tanjong Katong,2025,Prelims,P1,MCQ,4,1,Kinetic Particle Theory,None (single topic),energy changes when ice melts,D,3,papers/2025_Prelim_TanjongKatong.pdf
+Tanjong Katong,2025,Prelims,P1,MCQ,5,1,Kinetic Particle Theory,Chemical Calculations,relative rates of diffusion of gases by Mr,C,4,papers/2025_Prelim_TanjongKatong.pdf
+Tanjong Katong,2025,Prelims,P1,MCQ,6,1,Atomic Structure,None (single topic),relative charge and mass of subatomic particles,A,4,papers/2025_Prelim_TanjongKatong.pdf
+Tanjong Katong,2025,Prelims,P1,MCQ,7,1,Atomic Structure,None (single topic),properties of isotopes,C,4,papers/2025_Prelim_TanjongKatong.pdf
+Tanjong Katong,2025,Prelims,P1,MCQ,8,1,Chemical Bonding and Structure,Atomic Structure,ions from subatomic particle table and compound formulae,D,5,papers/2025_Prelim_TanjongKatong.pdf
+Tanjong Katong,2025,Prelims,P1,MCQ,9,1,Chemical Bonding and Structure,None (single topic),structure types and physical properties,C,5,papers/2025_Prelim_TanjongKatong.pdf
+Tanjong Katong,2025,Prelims,P1,MCQ,10,1,Chemical Calculations,None (single topic),balance equation for phosphorus and nitric acid,D,6,papers/2025_Prelim_TanjongKatong.pdf
+Tanjong Katong,2025,Prelims,P1,MCQ,11,1,Chemical Calculations,None (single topic),information needed to find relative molecular mass,D,6,papers/2025_Prelim_TanjongKatong.pdf
+Tanjong Katong,2025,Prelims,P1,MCQ,12,1,Chemical Calculations,None (single topic),percentage of ore as CuFeS2 from copper content,B,6,papers/2025_Prelim_TanjongKatong.pdf
+Tanjong Katong,2025,Prelims,P1,MCQ,13,1,Chemical Calculations,None (single topic),empirical formula of boron carbide from masses,D,6,papers/2025_Prelim_TanjongKatong.pdf
+Tanjong Katong,2025,Prelims,P1,MCQ,14,1,Chemical Calculations,None (single topic),number of atoms in 1 g of diatomic element,B,7,papers/2025_Prelim_TanjongKatong.pdf
+Tanjong Katong,2025,Prelims,P1,MCQ,15,1,Acid-Base Chemistry,None (single topic),substance to neutralise acidic soil,B,7,papers/2025_Prelim_TanjongKatong.pdf
+Tanjong Katong,2025,Prelims,P1,MCQ,16,1,Acid-Base Chemistry,None (single topic),oxides reacting with aqueous sodium hydroxide,D,7,papers/2025_Prelim_TanjongKatong.pdf
+Tanjong Katong,2025,Prelims,P1,MCQ,17,1,Acid-Base Chemistry,Experimental Chemistry,salt preparation by excess solid method,B,7,papers/2025_Prelim_TanjongKatong.pdf
+Tanjong Katong,2025,Prelims,P1,MCQ,18,1,Rate of Reactions,Chemical Energetics,"effect of temperature, pressure, catalyst in Haber process",B,8,papers/2025_Prelim_TanjongKatong.pdf
+Tanjong Katong,2025,Prelims,P1,MCQ,19,1,Qualitative Analysis,None (single topic),aqueous ammonia test on zinc and aluminium ions,A,8,papers/2025_Prelim_TanjongKatong.pdf
+Tanjong Katong,2025,Prelims,P1,MCQ,20,1,Qualitative Analysis,None (single topic),"identify ions from NaOH, aluminium test for nitrate",A,8,papers/2025_Prelim_TanjongKatong.pdf
+Tanjong Katong,2025,Prelims,P1,MCQ,21,1,Redox Chemistry,None (single topic),purification of copper by electrolysis,A,9,papers/2025_Prelim_TanjongKatong.pdf
+Tanjong Katong,2025,Prelims,P1,MCQ,22,1,Redox Chemistry,Acid-Base Chemistry,pH changes at electrodes of hydrogen-oxygen fuel cell,D,9,papers/2025_Prelim_TanjongKatong.pdf
+Tanjong Katong,2025,Prelims,P1,MCQ,23,1,Redox Chemistry,None (single topic),anode products in electrolysis of aqueous solutions,A,10,papers/2025_Prelim_TanjongKatong.pdf
+Tanjong Katong,2025,Prelims,P1,MCQ,24,1,Patterns in the Periodic Table,Atomic Structure,identify species in same group from electron configuration,B,10,papers/2025_Prelim_TanjongKatong.pdf
+Tanjong Katong,2025,Prelims,P1,MCQ,25,1,Patterns in the Periodic Table,None (single topic),predict properties of indium from group 13,A,10,papers/2025_Prelim_TanjongKatong.pdf
+Tanjong Katong,2025,Prelims,P1,MCQ,26,1,Patterns in the Periodic Table,None (single topic),properties not predictable from periodic table position,C,11,papers/2025_Prelim_TanjongKatong.pdf
+Tanjong Katong,2025,Prelims,P1,MCQ,27,1,Patterns in the Periodic Table,None (single topic),group 1 trend for rubidium,C,11,papers/2025_Prelim_TanjongKatong.pdf
+Tanjong Katong,2025,Prelims,P1,MCQ,28,1,Patterns in the Periodic Table,None (single topic),group 17 trend for astatine,D,11,papers/2025_Prelim_TanjongKatong.pdf
+Tanjong Katong,2025,Prelims,P1,MCQ,29,1,Patterns in the Periodic Table,Rate of Reactions; Redox Chemistry,why transition metals are good catalysts,B,12,papers/2025_Prelim_TanjongKatong.pdf
+Tanjong Katong,2025,Prelims,P1,MCQ,30,1,Patterns in the Periodic Table,Atomic Structure,use of unreactive argon in light bulbs,C,12,papers/2025_Prelim_TanjongKatong.pdf
+Tanjong Katong,2025,Prelims,P1,MCQ,31,1,Redox Chemistry,None (single topic),extraction of metal not reduced by carbon or hydrogen,A,12,papers/2025_Prelim_TanjongKatong.pdf
+Tanjong Katong,2025,Prelims,P1,MCQ,32,1,Rate of Reactions,Chemical Energetics,activation energy on profile when catalyst is added,C,13,papers/2025_Prelim_TanjongKatong.pdf
+Tanjong Katong,2025,Prelims,P1,MCQ,33,1,Chemical Energetics,Chemical Calculations,scaling enthalpy change with equation multiple,A,13,papers/2025_Prelim_TanjongKatong.pdf
+Tanjong Katong,2025,Prelims,P1,MCQ,34,1,Organic Chemistry,Kinetic Particle Theory,fractional distillation of petrol versus diesel,A,14,papers/2025_Prelim_TanjongKatong.pdf
+Tanjong Katong,2025,Prelims,P1,MCQ,35,1,Organic Chemistry,None (single topic),equation for cracking of decane into alkenes,D,14,papers/2025_Prelim_TanjongKatong.pdf
+Tanjong Katong,2025,Prelims,P1,MCQ,36,1,Organic Chemistry,Chemical Calculations,find carbons in dicarboxylic acid from Mr,C,15,papers/2025_Prelim_TanjongKatong.pdf
+Tanjong Katong,2025,Prelims,P1,MCQ,37,1,Organic Chemistry,Chemical Calculations,empirical versus molecular formulae of organic compounds,B,15,papers/2025_Prelim_TanjongKatong.pdf
+Tanjong Katong,2025,Prelims,P1,MCQ,38,1,Organic Chemistry,None (single topic),reactants forming given amide,A,16,papers/2025_Prelim_TanjongKatong.pdf
+Tanjong Katong,2025,Prelims,P1,MCQ,39,1,Organic Chemistry,Chemical Calculations,Mr of polyamide from hydrolysis products,B,17,papers/2025_Prelim_TanjongKatong.pdf
+Tanjong Katong,2025,Prelims,P1,MCQ,40,1,Organic Chemistry,None (single topic),uses of man-made fibres,D,17,papers/2025_Prelim_TanjongKatong.pdf
+Tanjong Katong,2025,Prelims,P2,A,A1,5,Patterns in the Periodic Table,Atomic Structure; Chemical Bonding and Structure; Acid-Base Chemistry,"Period 3 outer shells: metals, ions, oxides",Written answer - see mark scheme,22,papers/2025_Prelim_TanjongKatong.pdf
+Tanjong Katong,2025,Prelims,P2,A,A2,10,Chemical Bonding and Structure,Atomic Structure; Acid-Base Chemistry,"atomic particles, K2O vs SO3 bonding, oxide reactions",Written answer - see mark scheme,23,papers/2025_Prelim_TanjongKatong.pdf
+Tanjong Katong,2025,Prelims,P2,A,A3,10,Rate of Reactions,Acid-Base Chemistry; Qualitative Analysis; Redox Chemistry; Experimental Chemistry,"CuCO3 and HCl rate, zinc displacement, ammonia tests, salt prep",Written answer - see mark scheme,25,papers/2025_Prelim_TanjongKatong.pdf
+Tanjong Katong,2025,Prelims,P2,A,A4,6,Maintaining Air Quality,Organic Chemistry,"octane combustion, catalytic converter, acid rain, carbon cycle",Written answer - see mark scheme,27,papers/2025_Prelim_TanjongKatong.pdf
+Tanjong Katong,2025,Prelims,P2,A,A5,11,Organic Chemistry,Chemical Calculations; Acid-Base Chemistry,"alkene reactions, ester formation, test, limiting reactant and yield",Written answer - see mark scheme,28,papers/2025_Prelim_TanjongKatong.pdf
+Tanjong Katong,2025,Prelims,P2,A,A6,8,Organic Chemistry,Chemical Calculations; Maintaining Air Quality,"PHBV monomers, polyethene repeat units, recycling, polymerising compound X",Written answer - see mark scheme,31,papers/2025_Prelim_TanjongKatong.pdf
+Tanjong Katong,2025,Prelims,P2,A,A7,12,Chemical Calculations,Acid-Base Chemistry; Redox Chemistry; Qualitative Analysis; Patterns in the Periodic Table; Rate of Reactions,"aquarium nitrification data, ppm, titration, rust protection",Written answer - see mark scheme,34,papers/2025_Prelim_TanjongKatong.pdf
+Tanjong Katong,2025,Prelims,P2,A,A8,8,Redox Chemistry,Patterns in the Periodic Table,"electrolysis of nickel sulfate, simple cell, oxidation states",Written answer - see mark scheme,38,papers/2025_Prelim_TanjongKatong.pdf
+Tanjong Katong,2025,Prelims,P2,B,B9,10,Acid-Base Chemistry,Rate of Reactions; Chemical Energetics; Redox Chemistry; Qualitative Analysis,"CaCO3 with acids, decomposition, equilibria in seawater",Written answer - see mark scheme,40,papers/2025_Prelim_TanjongKatong.pdf
+Tanjong Katong,2025,Prelims,P2,B,B10,10,Acid-Base Chemistry,Chemical Energetics; Qualitative Analysis; Chemical Calculations; Rate of Reactions,"carbonate reactions with acid, thermal decomposition of MgCO3",Written answer - see mark scheme,42,papers/2025_Prelim_TanjongKatong.pdf
+Yishun Town,2025,Prelims,P2,A,A1,6,Atomic Structure,Patterns in the Periodic Table; Chemical Bonding and Structure,"nuclide notation: isotopes, neutrons, diatomic elements, Haber catalyst",Written answer - see mark scheme,2,papers/2025_Prelim_YishunTown.pdf
+Yishun Town,2025,Prelims,P2,A,A2,5,Patterns in the Periodic Table,Rate of Reactions,"Group 1 trends, melting points, lithium-water gas graphs and temperature",Written answer - see mark scheme,3,papers/2025_Prelim_YishunTown.pdf
+Yishun Town,2025,Prelims,P2,A,A3,12,Chemical Calculations,Qualitative Analysis; Acid-Base Chemistry; Maintaining Air Quality; Chemical Bonding and Structure,"polluted water ions: formula, precipitate mass, chloride test, weak acid model",Written answer - see mark scheme,4,papers/2025_Prelim_YishunTown.pdf
+Yishun Town,2025,Prelims,P2,A,A4,13,Chemical Bonding and Structure,Chemical Energetics; Redox Chemistry; Maintaining Air Quality,"sulfuryl fluoride dot-cross, bond energy, SO2 effects, oxidation numbers",Written answer - see mark scheme,6,papers/2025_Prelim_YishunTown.pdf
+Yishun Town,2025,Prelims,P2,A,A5,14,Redox Chemistry,Chemical Calculations; Chemical Bonding and Structure; Acid-Base Chemistry; Patterns in the Periodic Table,"chromium extraction, alloys, reactivity, covalent compound properties, amphoteric hydroxide",Written answer - see mark scheme,8,papers/2025_Prelim_YishunTown.pdf
+Yishun Town,2025,Prelims,P2,A,A6,12,Organic Chemistry,Chemical Calculations; Rate of Reactions; Chemical Bonding and Structure,"honey: sugars, empirical formula, polymer, fermentation, catalyst role of yeast",Written answer - see mark scheme,10,papers/2025_Prelim_YishunTown.pdf
+Yishun Town,2025,Prelims,P2,A,A7,8,Organic Chemistry,None (single topic),"crude oil fractions, cracking equation, addition polymers of pentene",Written answer - see mark scheme,13,papers/2025_Prelim_YishunTown.pdf
+Yishun Town,2025,Prelims,P2,B,B8,10,Redox Chemistry,Chemical Bonding and Structure,"electroplating iron with copper, electrolyte colour, graphite structure",Written answer - see mark scheme,14,papers/2025_Prelim_YishunTown.pdf
+Yishun Town,2025,Prelims,P2,B,B9,10,Redox Chemistry,Chemical Bonding and Structure; Organic Chemistry; Maintaining Air Quality,"bioethanol fuel cell redox, environmental comparison, graphite properties",Written answer - see mark scheme,16,papers/2025_Prelim_YishunTown.pdf
