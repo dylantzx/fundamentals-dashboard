@@ -14,6 +14,9 @@ import { createRouter } from './lib/routes.js';
 import { createStudySessions } from './lib/study-sessions.js';
 import { loadQuestionBank } from './lib/question-bank.js';
 import { loadExplanations } from './lib/explanations.js';
+import { loadSources } from './lib/sources.js';
+import { loadSummaries } from './lib/summaries.js';
+import { ILLUSTRATION_IDS } from './views/illustrations/index.js';
 import fs from 'node:fs';
 
 const APP_DIR = path.dirname(fileURLToPath(import.meta.url));
@@ -59,6 +62,8 @@ async function loadRealUi() {
  *   bankDir?: string | null,      // question bank folder (export.json + assets/); default env STEADY_BANK_DIR
  *                                 // or ../question-bank. null = no bank: practice pages show "Coming next".
  *   explanationsFile?: string,    // why answers are right or wrong; default app/content/explanations.json
+ *   sourcesFile?: string,         // checked outside study sources; default app/content/sources.json
+ *   summariesFile?: string,       // in-app topic summaries; default app/content/summaries.json
  * }} [opts]
  * @returns {http.Server & { store: any, answers: any, sessions: any, auth: any, studySessions: any }}
  */
@@ -68,6 +73,12 @@ export function createApp(opts = {}) {
   const now = opts.now ?? Date.now;
   const publicDir = opts.publicDir ?? path.join(APP_DIR, 'public');
   const log = opts.log ?? ((line) => console.log(line));
+
+  // Study content for /learn. A broken file stops the app here, with a plain message.
+  const learn = {
+    sources: loadSources(opts.sourcesFile ?? path.join(APP_DIR, 'content', 'sources.json')),
+    summaries: loadSummaries(opts.summariesFile ?? path.join(APP_DIR, 'content', 'summaries.json'), { illustrationIds: ILLUSTRATION_IDS }),
+  };
 
   const store = createStore(dataDir);
   const answers = createAnswerLog(dataDir);
@@ -104,7 +115,7 @@ export function createApp(opts = {}) {
     }
   }
 
-  const handler = createRouter({ store, answers, sessions, auth, loadUi, publicDir, bank, log, studySessions, now });
+  const handler = createRouter({ store, answers, sessions, auth, loadUi, publicDir, bank, log, studySessions, now, learn });
   const server = http.createServer(handler);
   server.headersTimeout = 15_000;
   server.requestTimeout = 30_000;
@@ -126,7 +137,16 @@ const isMain = process.argv[1] && pathToFileURL(path.resolve(process.argv[1])).h
 if (isMain) {
   const port = Number(process.env.PORT) || 4600;
   const host = '127.0.0.1';
-  const server = createApp();
+  let server;
+  try {
+    server = createApp();
+  } catch (err) {
+    if (err && (err.name === 'SourcesError' || err.name === 'SummariesError')) {
+      console.error(err.message);
+      process.exit(1);
+    }
+    throw err;
+  }
   server.listen(port, host, () => {
     console.log(`Steady is running at http://localhost:${port}  (Ctrl+C to stop)`);
     console.log(server.bank

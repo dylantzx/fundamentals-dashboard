@@ -152,7 +152,11 @@ function overallChip(c) {
   return html`<span class="chip chip--${label}">${icon(ICON_FOR[label], { cls: 'dot' })}${c.labelText || TEXT_FOR[label]}</span>`;
 }
 
-/** One topic tile: a link with its rating chip and a visible "Practise →". */
+/**
+ * One topic tile: a link with its rating chip and a visible "Practise →", plus a
+ * small secondary "Study notes" link (to /learn/tN) under it. The two links are
+ * siblings, never nested.
+ */
 function topicTile(t, isNext, state) {
   const label = safeLabel(t.label);
   // The brand's settle moment: plays once on a Solid chip (design/landing.html, topic 1).
@@ -160,11 +164,11 @@ function topicTile(t, isNext, state) {
   // Without the flag it plays on Solid chips in the returning state only, as in the mockups
   // (the part-way mockup's Solid chip is still).
   const settle = label === 'solid' && (typeof t.justLevelledUp === 'boolean' ? t.justLevelledUp : state === 'returning');
-  return html`<li><a class="topic${isNext ? ' topic--next' : ''}" href="${safeHref(t.href)}">
+  return html`<li class="topic-item"><a class="topic${isNext ? ' topic--next' : ''}" href="${safeHref(t.href)}">
           <span class="topic-body"><span class="topic-name"><span class="topic-num">${t.n}</span>${t.name}${isNext ? html`<span class="next-tag">Next up</span>` : ''}</span>
             <span style="display:flex;align-items:center;gap:8px">${chip(t, { settle, settleTitle: settle ? 'Just levelled up to Solid' : '' })}</span></span>
           <span class="topic-go">Practise${icon('i-arrow', { size: 16 })}</span>
-        </a></li>`;
+        </a><a class="study-link" href="${safeHref(`/learn/${t.id}`)}">Study notes<span class="sr-only">: ${t.name}</span></a></li>`;
 }
 
 /**
