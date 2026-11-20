@@ -1,0 +1,136 @@
+{
+  "about": "Why each answer is right or wrong, shown after the student answers. Keyed by question-bank id. 'why' explains the right answer; 'wrongNotes' (MCQ) says why each wrong option is wrong; 'slips' (written parts) lists common ways the mark is lost. Checked against the school's answer key and mark scheme.",
+  "questions": {
+    "q_090e533f235fc241": {
+      "ref": "Paper 1 Q3",
+      "why": "A proton has a charge of +1 and an electron −1, so together they add to zero. 1/12 of the mass of a ¹²C atom is 1 unit, which is the mass of one proton. An electron's mass is so small (about 1/1840 of a proton) that it barely adds anything.",
+      "wrongNotes": {
+        "A": "An electron (−1) and a neutron (0) add to −1, not zero. The mass is about right, but the charge test fails.",
+        "C": "A neutron (0) and a proton (+1) add to +1, not zero, and their mass is about 2 units, not 1.",
+        "D": "Two neutrons do add to zero charge, but their mass is about 2 units: double 1/12 of a ¹²C atom."
+      }
+    },
+    "q_823e8b30c5af0a11": {
+      "ref": "Paper 1 Q26",
+      "why": "Elements in the same group have the same number of outer-shell electrons (every Group 1 element has one). Elements in the same period have the same number of occupied shells (every Period 3 element has three). The Periodic Table is arranged in order of proton number, not mass number.",
+      "wrongNotes": {
+        "B": "Group and period are swapped, and the table is ordered by proton number, not mass number.",
+        "C": "Group and period are right, but the table is ordered by proton number. By mass, potassium (39) would come before argon (40), which is the wrong way round.",
+        "D": "The order is right, but group and period are swapped: the group tells you the outer-shell electrons, the period tells you the number of shells."
+      }
+    },
+    "q_9ff642ec57c35c7c": {
+      "ref": "Paper 1 Q28",
+      "why": "Statement 1 is true: every metal conducts electricity because of its delocalised electrons. Statement 2 is true: every metal has at least 3 electrons (lithium is the smallest), so its first shell is always full with 2. Statement 3 is false: mercury is a liquid at room temperature and sodium melts at about 98 °C. So 1 and 2 only.",
+      "wrongNotes": {
+        "A": "Statement 3 is false. Not all metals have high melting points: mercury is a liquid at room temperature, and sodium melts below 100 °C.",
+        "C": "Statement 2 is also true (every metal has at least 3 electrons, so its innermost shell is full with 2), and statement 3 is false (mercury, sodium).",
+        "D": "Statement 1 is true: all metals conduct, thanks to their delocalised electrons. Statement 3 is false: mercury and sodium have low melting points."
+      }
+    },
+    "q_044c7baf5ed0776f": {
+      "ref": "Paper 1 Q4",
+      "why": "Count the atoms in the diagram: 9 have mass x and 3 have mass x + 2, so 12 atoms in all. Average mass = (9 × x + 3 × (x + 2)) ÷ 12 = (12x + 6) ÷ 12 = x + 0.5.",
+      "wrongNotes": {
+        "B": "x + 1.0 is halfway between the two masses, which is only right when there are equal numbers of each isotope. Here there are three times as many atoms of mass x, so the average is pulled towards x.",
+        "C": "x + 1.5 is nearer the heavier isotope, but most atoms (9 of the 12) have mass x, so the average must be nearer x.",
+        "D": "x + 2.0 is the mass of the heavier isotope alone. An average of two isotopes always lies between their two masses."
+      }
+    },
+    "q_7636e2d0389fd31a": {
+      "ref": "Paper 1 Q10",
+      "why": "Na₂CO₃ = 2(23) + 12 + 3(16) = 106. Each H₂O adds 18. So 106 + 18x = 286, giving 18x = 180 and x = 10.",
+      "wrongNotes": {
+        "B": "H₃PO₄ = 3(1) + 31 + 4(16) = 98, not 50.",
+        "C": "Relative atomic mass is a weighted average, so it depends on how much of each isotope there is. It is 21 only when both isotopes are equally common; if more atoms have mass 20, it is below 21.",
+        "D": "Relative atomic mass compares the average mass of the atoms with 1/12 of the mass of a carbon-12 atom, not with a hydrogen atom."
+      }
+    },
+    "q_b97aa2dd22e7cd6e": {
+      "ref": "Paper 1 Q8",
+      "why": "The ammonium ion is NH₄⁺, with a charge of 1+. NH₄VO₃ has one of each ion and a compound has no overall charge, so the VO₃ ion must be 1−.",
+      "wrongNotes": {
+        "B": "With one of each ion, 2+ and 2− would balance, but the ammonium ion is always 1+ (NH₄⁺), so VO₃ is 1−.",
+        "C": "The ammonium ion is always 1+ (NH₄⁺). The 3 in VO₃ counts oxygen atoms; it is not the charge.",
+        "D": "The 4 in NH₄ counts hydrogen atoms; it is not the charge. The ammonium ion is 1+."
+      }
+    },
+    "q_5bfc684a19556d33": {
+      "ref": "Paper 1 Q6",
+      "why": "H₂S has two single S–H bonds. Each single bond is one shared pair (2 electrons), so 2 × 2 = 4 electrons are in bonds. Sulfur's other 4 outer electrons are lone pairs, which are not in bonds.",
+      "wrongNotes": {
+        "A": "Cl₂ has one single Cl–Cl bond: only 2 electrons in bonds.",
+        "B": "CO₂ has two C=O double bonds. Each double bond is 2 shared pairs (4 electrons), so 8 electrons are in bonds.",
+        "D": "N₂ has a triple bond (N≡N): 3 shared pairs, so 6 electrons are in bonds."
+      }
+    },
+    "q_a40bd4986e883f3b": {
+      "ref": "Paper 1 Q7",
+      "why": "Match each substance to its structure. Silicon(IV) oxide is giant covalent, so it has by far the highest melting point: Y (1728 °C). Ethane is a small molecule with very weak forces between molecules, so it is the lowest: Z (a gas, boils at −89 °C). Bromine is a liquid at room temperature: X (melts at −7 °C, boils at 59 °C). The large C₁₆H₃₂O₂ molecule has stronger forces between molecules than bromine, so it is a solid: W (melts at 63 °C).",
+      "wrongNotes": {
+        "A": "W melts at 63 °C, far too low for silicon(IV) oxide. A giant covalent structure like SiO₂ has a very high melting point, so it must be Y.",
+        "B": "Silicon(IV) oxide is giant covalent, so it must be Y (melts at 1728 °C), not W. Ethane cannot be Y either: it is a gas at room temperature.",
+        "C": "Silicon(IV) oxide (Y) and ethane (Z) are right, but bromine and the acid are swapped. Bromine is a liquid at room temperature (X: melts at −7 °C, boils at 59 °C); the big C₁₆ acid is a waxy solid (W: melts at 63 °C)."
+      }
+    },
+    "q_9ae4e9fa4a6a8386": {
+      "ref": "Paper 2 Q1(a)(iii)",
+      "why": "D shows every atom covalently bonded to four others, in a network that carries on in every direction. That is a giant covalent (giant molecular) structure, like diamond.",
+      "slips": [
+        "Choosing G: it is also a giant lattice, but it is made of ions (Na⁺ and I⁻), so it is giant ionic, not giant covalent.",
+        "Choosing A, B, C, E or F: these are simple molecules, small separate units."
+      ]
+    },
+    "q_3c2aaf5f58928f44": {
+      "ref": "Paper 2 Q1(a)(iv)",
+      "why": "G (sodium iodide) is a giant ionic lattice. To melt it, the strong electrostatic attraction between oppositely charged ions all through the lattice has to be overcome, which takes a lot of energy.",
+      "slips": [
+        "Choosing D: diamond has a high melting point too, but it is an element (carbon only), not a compound.",
+        "Choosing A, B, C, E or F: these are simple molecules with weak forces between molecules, so they have low melting points."
+      ]
+    },
+    "q_6ff034ca7cb8505c": {
+      "ref": "Paper 2 Q1(a)(vi)",
+      "why": "Sodium iodide (G) is an ionic solid at room temperature. In the solid its ions are held in fixed positions, but when it dissolves in water the ions are free to move and carry charge, so the solution conducts.",
+      "slips": [
+        "Choosing B: hydrogen chloride does conduct when dissolved in water, but it is a gas at room temperature, not a solid.",
+        "Choosing D: diamond is a solid, but it does not dissolve in water and does not conduct."
+      ]
+    },
+    "q_ac1cf1867aa4ff70": {
+      "ref": "Paper 2 Q1(b)",
+      "why": "Hydrogen has 1 outer electron and chlorine has 7. Each gives one electron to a shared pair (one dot, one cross) between H and Cl. That gives hydrogen 2 electrons (a full first shell) and chlorine 8. Chlorine's other 6 electrons stay on chlorine as 3 non-bonding pairs.",
+      "slips": [
+        "Drawing more than 2 electrons around hydrogen: its only shell holds 2.",
+        "Leaving out chlorine's 6 non-bonding electrons, or drawing the shared pair as two dots (it needs one dot and one cross).",
+        "Drawing ions (H⁺ and Cl⁻): hydrogen chloride is covalent, so the electrons are shared, not transferred."
+      ]
+    },
+    "q_1bcb2ac6b2cbf881": {
+      "ref": "Paper 2 Q10(c)(ii)",
+      "why": "Two points, one mark each. First, SiO₂ has a giant molecular (giant covalent) structure, with strong covalent bonds between the silicon and oxygen atoms throughout. Second, melting means breaking many of these strong bonds, which needs a lot of energy, so the temperature must be high.",
+      "slips": [
+        "Writing about intermolecular forces or forces between molecules: SiO₂ has no separate molecules, so this loses the marks.",
+        "Saying 'strong bonds' without saying they are covalent bonds between atoms.",
+        "Stopping at the structure: you also need 'a lot of energy is needed to break (overcome) the bonds'."
+      ]
+    },
+    "q_0b0d1291ba67ae0b": {
+      "ref": "Paper 2 Q5(d)(i)",
+      "why": "Molybdenum is a metal, so the bonding is metallic bonding (first mark). For the second mark, draw rows of positive ions (label them, e.g. Mo ions or cations) surrounded by a 'sea' of delocalised electrons (label them too). The bonding is the electrostatic attraction between the positive ions and the delocalised electrons.",
+      "slips": [
+        "Drawing neutral atoms instead of positive ions: put a + on each ion.",
+        "Leaving the electrons unlabelled: label them 'delocalised electrons' or 'sea of electrons'.",
+        "Calling it ionic or covalent bonding."
+      ]
+    },
+    "q_662a8069f6b637af": {
+      "ref": "Paper 2 Q5(d)(ii)",
+      "why": "Both metals are held together by metallic bonding. Molybdenum has many more protons and electrons, so the electrostatic attraction between its positive ions and delocalised electrons is stronger. More energy is needed to overcome it, so the melting point is higher.",
+      "slips": [
+        "Saying 'stronger bonds' without saying what attracts what: name the electrostatic attraction between the positive ions and the delocalised electrons.",
+        "Talking about intermolecular forces: metals are not made of molecules."
+      ]
+    }
+  }
+}
