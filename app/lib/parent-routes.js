@@ -12,6 +12,7 @@ import crypto from 'node:crypto';
 import { sendHtml, redirect, readForm } from './http-utils.js';
 import { STATUSES } from './study-sessions.js';
 import { buildParentModel } from './parent-model.js';
+import { labelOf } from './rating-rules.js';
 
 const MIN_PASSWORD_LENGTH = 8;
 const MAX_PASSWORD_LENGTH = 200;
@@ -20,7 +21,7 @@ const NOTICES = new Set(['stale', 'invalid', 'password-changed']);
 /**
  * @param {{
  *   store: any, auth: any, studySessions: any,
- *   loadParentData: () => Promise<{ answerLog: { list(userId: string): any[] }, labelOf: (answers: any[]) => { label: string } }>,
+ *   answers: { list(userId: string): any[] } | null,   // lib/answer-log.js
  *   loadUi: () => Promise<{ views: any }>,
  *   currentUser: (req: any) => { user: any, sid?: string, expired: boolean },
  *   toLogin: (res: any, ctx: any) => void,
@@ -29,7 +30,7 @@ const NOTICES = new Set(['stale', 'invalid', 'password-changed']);
  * }} deps
  */
 export function createParentRoutes(deps) {
-  const { store, auth, studySessions, loadParentData, loadUi, currentUser, toLogin, homeFor, notFound } = deps;
+  const { store, auth, studySessions, answers: answerLog, loadUi, currentUser, toLogin, homeFor, notFound } = deps;
 
   const studentOf = () => store.listUsers().find((u) => u.role === 'student') ?? null;
 
@@ -38,10 +39,9 @@ export function createParentRoutes(deps) {
     studySessions.closeStale();
     let model;
     if (student) {
-      const { answerLog, labelOf } = await loadParentData();
       const sessions = studySessions.list(student.id);
       const records = Object.fromEntries(sessions.map((s) => [s.id, studySessions.getRecord(s.id)]));
-      const answers = (await answerLog.list(student.id)) ?? [];
+      const answers = answerLog ? answerLog.list(student.id) : [];
       model = buildParentModel({ user: ctx.user, student, sessions, records, answers, labelOf });
     } else {
       model = buildParentModel({ user: ctx.user, student: null, labelOf: () => ({ label: 'unrated' }) });

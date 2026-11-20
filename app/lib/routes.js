@@ -13,6 +13,7 @@ import {
 } from './http-utils.js';
 import { COOKIE_NAME } from './sessions.js';
 import { TOPICS, LABEL_TEXT, labelFor } from './ratings.js';
+import { labelOf } from './rating-rules.js';
 import { renderPractice, renderBankIndex, renderBankQuestion } from '../views/practice.js';
 import { createParentRoutes } from './parent-routes.js';
 
@@ -32,14 +33,14 @@ const USERNAME_RE = /^[A-Za-z0-9][A-Za-z0-9._-]{0,31}$/;
  *
  * @typedef {{
  *   store: ReturnType<typeof import('./store.js').createStore>,
+ *   answers?: ReturnType<typeof import('./answer-log.js').createAnswerLog> | null,  // per-answer log for the PRD 6 ratings
  *   sessions: ReturnType<typeof import('./sessions.js').createSessions>,
  *   auth: ReturnType<typeof import('./auth.js').createAuthenticator>,
- *   loadUi: () => Promise<{ views: Views, buildDashboardModel: (o: { user: any, progress: any }) => any }>,
+ *   loadUi: () => Promise<{ views: Views, buildDashboardModel: (o: { user: any, progress: any, answers?: any[] }) => any }>,
  *   publicDir: string,
  *   bank?: ReturnType<typeof import('./question-bank.js').loadQuestionBank> | null,
  *   log: (line: string) => void,
  *   studySessions: ReturnType<typeof import('./study-sessions.js').createStudySessions>,
- *   loadParentData: () => Promise<{ answerLog: { list(userId: string): any[] }, labelOf: (answers: any[]) => any }>,
  * }} RouteDeps
  */
 
@@ -56,6 +57,7 @@ const COMING_NEXT = [
 export function createRouter(deps) {
   const { store, sessions, auth, loadUi, publicDir, log } = deps;
   const bank = deps.bank ?? null;
+  const answers = deps.answers ?? null;
   const { studySessions } = deps;
 
   /** Ends the study session tied to a login, if it has one. */
@@ -222,13 +224,17 @@ export function createRouter(deps) {
     if (!ctx.user) return toLogin(res, ctx);
     if (ctx.user.role !== 'student') return redirect(res, homeFor(ctx.user));
     const { views, buildDashboardModel } = await loadUi();
-    const model = buildDashboardModel({ user: ctx.user, progress: store.getProgress(ctx.user.id) });
+    const model = buildDashboardModel({
+      user: ctx.user,
+      progress: store.getProgress(ctx.user.id),
+      answers: answers ? answers.list(ctx.user.id) : [],
+    });
     sendHtml(res, 200, views.renderDashboard(model));
   }
 
   // Everything under /parent (lib/parent-routes.js).
   const handleParent = createParentRoutes({
-    store, auth, studySessions, loadParentData: deps.loadParentData, loadUi, currentUser, toLogin, homeFor, notFound,
+    store, auth, studySessions, answers, loadUi, currentUser, toLogin, homeFor, notFound,
   });
 
   async function getComingNext(req, res, title) {
@@ -267,7 +273,12 @@ export function createRouter(deps) {
     return { mode, topic, checkN, items, base };
   }
 
-  function ratingFor(progress, topicId) {
+  /** The topic's rating, worked out the same way as the dashboard's (lib/dashboard-model.js). */
+  function ratingFor(progress, topicId, logged) {
+    if (logged.length) {
+      const r = labelOf(logged.filter((a) => a.topicId === topicId));
+      return { label: r.label, labelText: LABEL_TEXT[r.label], right: r.right, total: r.lookedAt };
+    }
     const s = progress.topics?.[topicId] || {};
     const total = Math.max(0, Math.floor(Number(s.total) || 0));
     const right = Math.min(total, Math.max(0, Math.floor(Number(s.right) || 0)));
@@ -292,7 +303,7 @@ export function createRouter(deps) {
       mode: set.mode,
       checkN: set.checkN,
       topic: set.topic,
-      rating: ratingFor(store.getProgress(ctx.user.id), set.topic.id),
+      rating: ratingFor(store.getProgress(ctx.user.id), set.topic.id, answers ? answers.list(ctx.user.id) : []),
       base: set.base,
       index: done ? count : index,
       count,
@@ -322,6 +333,13 @@ export function createRouter(deps) {
       if (form.self !== 'right' && form.self !== 'wrong') return redirect(res, `${set.base}?i=${index}`);
       right = form.self === 'right';
     }
+
+    // One finished question for the PRD 6 ratings. The bank holds prelim exam
+    // questions, so every one is Exam level.
+    answers?.add({
+      userId: ctx.user.id, topicId: set.topic.id, questionId: item.id, correct: right,
+      level: 'exam', pool: set.mode === 'check' ? 'check' : 'practice', at: (deps.now ?? Date.now)(),
+    });
 
     const progress = store.getProgress(ctx.user.id);
     const prev = progress.topics[set.topic.id] || { right: 0, total: 0 };

@@ -268,14 +268,15 @@ test('dashboard: unrated chip with 1 answer says "Needs 2 more answers", with 2 
 });
 
 // ---- Parent and placeholders ----
-test('parent home: greeting, student account, coming soon, log out', () => {
+test('parent home: greeting, student account, sessions, log out', () => {
   const out = renderParentHome({ user: { username: 'mum' }, student: { username: EVIL } });
   assertCommon(out);
   assertLogoutForm(out);
   assert.ok(text(out).includes('Hi mum'));
   assert.ok(text(out).includes('Student account'));
   assert.ok(out.includes(EVIL_ESCAPED) && !out.includes(EVIL));
-  assert.ok(text(out).includes('Session summaries coming soon'));
+  assert.ok(text(out).includes('No sessions yet'));
+  assert.ok(text(out).includes('not the actual answers'));
   const none = renderParentHome({ user: { username: 'mum' }, student: null });
   assert.ok(text(none).includes('No student account yet'));
 });
