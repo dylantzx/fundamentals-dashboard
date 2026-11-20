@@ -10,6 +10,8 @@ import { createStore } from './lib/store.js';
 import { createAuthenticator, scryptNFromEnv } from './lib/auth.js';
 import { createSessions, IDLE_MS } from './lib/sessions.js';
 import { createRouter } from './lib/routes.js';
+import { loadQuestionBank } from './lib/question-bank.js';
+import fs from 'node:fs';
 
 const APP_DIR = path.dirname(fileURLToPath(import.meta.url));
 
@@ -51,6 +53,8 @@ async function loadRealUi() {
  *   views?: import('./lib/routes.js').Views,       // override the real views/*.js
  *   buildDashboardModel?: (o: { user: any, progress: any }) => any,  // override lib/dashboard-model.js
  *   log?: (line: string) => void, // access/error log sink (default console.log)
+ *   bankDir?: string | null,      // question bank folder (export.json + assets/); default env STEADY_BANK_DIR
+ *                                 // or ../question-bank. null = no bank: practice pages show "Coming next".
  * }} [opts]
  * @returns {http.Server & { store: any, sessions: any, auth: any }}
  */
@@ -80,11 +84,23 @@ export function createApp(opts = {}) {
       throw err;
     }));
 
-  const handler = createRouter({ store, sessions, auth, loadUi, publicDir, log });
+  const bankDir = opts.bankDir === undefined
+    ? process.env.STEADY_BANK_DIR ?? path.join(APP_DIR, '..', 'question-bank')
+    : opts.bankDir;
+  let bank = null;
+  if (bankDir && fs.existsSync(path.join(bankDir, 'export.json'))) {
+    try {
+      bank = loadQuestionBank(bankDir);
+    } catch (err) {
+      log(`question bank not loaded from ${bankDir}: ${err && err.message}`);
+    }
+  }
+
+  const handler = createRouter({ store, sessions, auth, loadUi, publicDir, bank, log });
   const server = http.createServer(handler);
   server.headersTimeout = 15_000;
   server.requestTimeout = 30_000;
-  return Object.assign(server, { store, sessions, auth });
+  return Object.assign(server, { store, sessions, auth, bank });
 }
 
 const isMain = process.argv[1] && pathToFileURL(path.resolve(process.argv[1])).href === import.meta.url;
@@ -94,6 +110,9 @@ if (isMain) {
   const server = createApp();
   server.listen(port, host, () => {
     console.log(`Steady is running at http://localhost:${port}  (Ctrl+C to stop)`);
+    console.log(server.bank
+      ? `Question bank: ${server.bank.items.length} practice items from ${server.bank.sourceLine()}`
+      : 'Question bank: not found, practice pages show "Coming next"');
   });
   const stop = () => server.close(() => process.exit(0));
   process.on('SIGINT', stop);

@@ -24,6 +24,7 @@ async function startApp(extra = {}) {
     views,
     buildDashboardModel,
     publicDir,
+    bankDir: null,
     log: (line) => logs.push(line),
     ...extra,
   });

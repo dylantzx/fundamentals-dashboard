@@ -1,0 +1,2168 @@
+{
+  "contract_version": 1,
+  "document_id": "montfort-2025-sec4-chem-prelim",
+  "source_pdf": "papers/Sec4_PureChemistry_2025_SA2_montfort.pdf",
+  "chunk": "keys",
+  "extracted_by": "subagent-gold",
+  "pages": [
+    {
+      "page_index": 42,
+      "paper": "P2",
+      "printed_page_number": null,
+      "page_type": "data_sheet",
+      "has_handwriting": false,
+      "notes": "Periodic Table of Elements, printed rotated 90° (landscape); footer gives molar gas volume 24 dm³ at r.t.p. and Avogadro constant L = 6.02 × 10²³ mol⁻¹. Back matter of the Paper 2 booklet (stamp BP-345). A few tiny specks near group 17 look like scan artefacts, not handwriting."
+    },
+    {
+      "page_index": 43,
+      "paper": "P2",
+      "printed_page_number": null,
+      "page_type": "blank",
+      "has_handwriting": false,
+      "notes": "Blank page (stamp BP-346 only)."
+    },
+    {
+      "page_index": 44,
+      "paper": "P1",
+      "printed_page_number": null,
+      "page_type": "answer_key",
+      "has_handwriting": false,
+      "notes": "Header '2025 Montfort Secondary School S4 G3 Chem Prelim Answer Key', 'PAPER 1'. Grid of Q1–Q40, 5 columns, header row 'Qn' above each answer row. Stamp BP-347."
+    },
+    {
+      "page_index": 45,
+      "paper": "P2",
+      "printed_page_number": null,
+      "page_type": "answer_key",
+      "has_handwriting": false,
+      "notes": "Paper 2 mark scheme, table columns Q | ANSWER | Mark | REMARK (REMARK column empty throughout). Stamp BP-348."
+    },
+    {
+      "page_index": 46,
+      "paper": "P2",
+      "printed_page_number": null,
+      "page_type": "answer_key",
+      "has_handwriting": false,
+      "notes": "Paper 2 mark scheme table continued. Stamp BP-349."
+    },
+    {
+      "page_index": 47,
+      "paper": "P2",
+      "printed_page_number": null,
+      "page_type": "answer_key",
+      "has_handwriting": false,
+      "notes": "Paper 2 mark scheme table continued. Stamp BP-350."
+    },
+    {
+      "page_index": 48,
+      "paper": "P2",
+      "printed_page_number": null,
+      "page_type": "answer_key",
+      "has_handwriting": false,
+      "notes": "Paper 2 mark scheme table continued. Stamp BP-351."
+    },
+    {
+      "page_index": 49,
+      "paper": "P2",
+      "printed_page_number": null,
+      "page_type": "answer_key",
+      "has_handwriting": false,
+      "notes": "Paper 2 mark scheme table continued. Stamp BP-352."
+    },
+    {
+      "page_index": 50,
+      "paper": "P2",
+      "printed_page_number": null,
+      "page_type": "answer_key",
+      "has_handwriting": false,
+      "notes": "Paper 2 mark scheme table continued. Stamp BP-353."
+    },
+    {
+      "page_index": 51,
+      "paper": "P2",
+      "printed_page_number": null,
+      "page_type": "blank",
+      "has_handwriting": false,
+      "notes": "Blank page at the end of the mark scheme (stamp BP-354 only). The chunk brief listed 44–51 as answer_key, but this page has no content."
+    }
+  ],
+  "papers": [],
+  "questions": [],
+  "answers": [
+    {
+      "paper": "P1",
+      "label": "1",
+      "correct_option": "D",
+      "answer_text": null,
+      "marks": 1,
+      "page_index": 44,
+      "regions": [
+        {
+          "page_index": 44,
+          "bbox": [
+            0.144,
+            0.134,
+            0.306,
+            0.19
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "label": "2",
+      "correct_option": "D",
+      "answer_text": null,
+      "marks": 1,
+      "page_index": 44,
+      "regions": [
+        {
+          "page_index": 44,
+          "bbox": [
+            0.29,
+            0.135,
+            0.45,
+            0.191
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "label": "3",
+      "correct_option": "B",
+      "answer_text": null,
+      "marks": 1,
+      "page_index": 44,
+      "regions": [
+        {
+          "page_index": 44,
+          "bbox": [
+            0.434,
+            0.136,
+            0.595,
+            0.192
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "label": "4",
+      "correct_option": "A",
+      "answer_text": null,
+      "marks": 1,
+      "page_index": 44,
+      "regions": [
+        {
+          "page_index": 44,
+          "bbox": [
+            0.579,
+            0.137,
+            0.739,
+            0.193
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "label": "5",
+      "correct_option": "C",
+      "answer_text": null,
+      "marks": 1,
+      "page_index": 44,
+      "regions": [
+        {
+          "page_index": 44,
+          "bbox": [
+            0.723,
+            0.138,
+            0.884,
+            0.194
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "label": "6",
+      "correct_option": "C",
+      "answer_text": null,
+      "marks": 1,
+      "page_index": 44,
+      "regions": [
+        {
+          "page_index": 44,
+          "bbox": [
+            0.144,
+            0.186,
+            0.306,
+            0.247
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "label": "7",
+      "correct_option": "D",
+      "answer_text": null,
+      "marks": 1,
+      "page_index": 44,
+      "regions": [
+        {
+          "page_index": 44,
+          "bbox": [
+            0.29,
+            0.187,
+            0.45,
+            0.248
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "label": "8",
+      "correct_option": "A",
+      "answer_text": null,
+      "marks": 1,
+      "page_index": 44,
+      "regions": [
+        {
+          "page_index": 44,
+          "bbox": [
+            0.434,
+            0.188,
+            0.595,
+            0.249
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "label": "9",
+      "correct_option": "B",
+      "answer_text": null,
+      "marks": 1,
+      "page_index": 44,
+      "regions": [
+        {
+          "page_index": 44,
+          "bbox": [
+            0.579,
+            0.189,
+            0.739,
+            0.25
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "label": "10",
+      "correct_option": "A",
+      "answer_text": null,
+      "marks": 1,
+      "page_index": 44,
+      "regions": [
+        {
+          "page_index": 44,
+          "bbox": [
+            0.723,
+            0.19,
+            0.884,
+            0.251
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "label": "11",
+      "correct_option": "C",
+      "answer_text": null,
+      "marks": 1,
+      "page_index": 44,
+      "regions": [
+        {
+          "page_index": 44,
+          "bbox": [
+            0.144,
+            0.243,
+            0.306,
+            0.304
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "label": "12",
+      "correct_option": "D",
+      "answer_text": null,
+      "marks": 1,
+      "page_index": 44,
+      "regions": [
+        {
+          "page_index": 44,
+          "bbox": [
+            0.29,
+            0.244,
+            0.45,
+            0.305
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "label": "13",
+      "correct_option": "D",
+      "answer_text": null,
+      "marks": 1,
+      "page_index": 44,
+      "regions": [
+        {
+          "page_index": 44,
+          "bbox": [
+            0.434,
+            0.245,
+            0.595,
+            0.306
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "label": "14",
+      "correct_option": "D",
+      "answer_text": null,
+      "marks": 1,
+      "page_index": 44,
+      "regions": [
+        {
+          "page_index": 44,
+          "bbox": [
+            0.579,
+            0.246,
+            0.739,
+            0.307
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "label": "15",
+      "correct_option": "A",
+      "answer_text": null,
+      "marks": 1,
+      "page_index": 44,
+      "regions": [
+        {
+          "page_index": 44,
+          "bbox": [
+            0.723,
+            0.247,
+            0.884,
+            0.308
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "label": "16",
+      "correct_option": "C",
+      "answer_text": null,
+      "marks": 1,
+      "page_index": 44,
+      "regions": [
+        {
+          "page_index": 44,
+          "bbox": [
+            0.144,
+            0.3,
+            0.306,
+            0.36
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "label": "17",
+      "correct_option": "D",
+      "answer_text": null,
+      "marks": 1,
+      "page_index": 44,
+      "regions": [
+        {
+          "page_index": 44,
+          "bbox": [
+            0.29,
+            0.301,
+            0.45,
+            0.361
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "label": "18",
+      "correct_option": "D",
+      "answer_text": null,
+      "marks": 1,
+      "page_index": 44,
+      "regions": [
+        {
+          "page_index": 44,
+          "bbox": [
+            0.434,
+            0.302,
+            0.595,
+            0.362
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "label": "19",
+      "correct_option": "A",
+      "answer_text": null,
+      "marks": 1,
+      "page_index": 44,
+      "regions": [
+        {
+          "page_index": 44,
+          "bbox": [
+            0.579,
+            0.303,
+            0.739,
+            0.363
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "label": "20",
+      "correct_option": "A",
+      "answer_text": null,
+      "marks": 1,
+      "page_index": 44,
+      "regions": [
+        {
+          "page_index": 44,
+          "bbox": [
+            0.723,
+            0.304,
+            0.884,
+            0.364
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "label": "21",
+      "correct_option": "B",
+      "answer_text": null,
+      "marks": 1,
+      "page_index": 44,
+      "regions": [
+        {
+          "page_index": 44,
+          "bbox": [
+            0.144,
+            0.356,
+            0.306,
+            0.416
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "label": "22",
+      "correct_option": "C",
+      "answer_text": null,
+      "marks": 1,
+      "page_index": 44,
+      "regions": [
+        {
+          "page_index": 44,
+          "bbox": [
+            0.29,
+            0.357,
+            0.45,
+            0.417
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "label": "23",
+      "correct_option": "D",
+      "answer_text": null,
+      "marks": 1,
+      "page_index": 44,
+      "regions": [
+        {
+          "page_index": 44,
+          "bbox": [
+            0.434,
+            0.358,
+            0.595,
+            0.418
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "label": "24",
+      "correct_option": "B",
+      "answer_text": null,
+      "marks": 1,
+      "page_index": 44,
+      "regions": [
+        {
+          "page_index": 44,
+          "bbox": [
+            0.579,
+            0.359,
+            0.739,
+            0.419
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "label": "25",
+      "correct_option": "C",
+      "answer_text": null,
+      "marks": 1,
+      "page_index": 44,
+      "regions": [
+        {
+          "page_index": 44,
+          "bbox": [
+            0.723,
+            0.36,
+            0.884,
+            0.42
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "label": "26",
+      "correct_option": "A",
+      "answer_text": null,
+      "marks": 1,
+      "page_index": 44,
+      "regions": [
+        {
+          "page_index": 44,
+          "bbox": [
+            0.144,
+            0.412,
+            0.306,
+            0.473
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "label": "27",
+      "correct_option": "C",
+      "answer_text": null,
+      "marks": 1,
+      "page_index": 44,
+      "regions": [
+        {
+          "page_index": 44,
+          "bbox": [
+            0.29,
+            0.413,
+            0.45,
+            0.474
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "label": "28",
+      "correct_option": "B",
+      "answer_text": null,
+      "marks": 1,
+      "page_index": 44,
+      "regions": [
+        {
+          "page_index": 44,
+          "bbox": [
+            0.434,
+            0.414,
+            0.595,
+            0.475
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "label": "29",
+      "correct_option": "A",
+      "answer_text": null,
+      "marks": 1,
+      "page_index": 44,
+      "regions": [
+        {
+          "page_index": 44,
+          "bbox": [
+            0.579,
+            0.415,
+            0.739,
+            0.476
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "label": "30",
+      "correct_option": "C",
+      "answer_text": null,
+      "marks": 1,
+      "page_index": 44,
+      "regions": [
+        {
+          "page_index": 44,
+          "bbox": [
+            0.723,
+            0.416,
+            0.884,
+            0.477
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "label": "31",
+      "correct_option": "B",
+      "answer_text": null,
+      "marks": 1,
+      "page_index": 44,
+      "regions": [
+        {
+          "page_index": 44,
+          "bbox": [
+            0.144,
+            0.469,
+            0.306,
+            0.53
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "label": "32",
+      "correct_option": "D",
+      "answer_text": null,
+      "marks": 1,
+      "page_index": 44,
+      "regions": [
+        {
+          "page_index": 44,
+          "bbox": [
+            0.29,
+            0.47,
+            0.45,
+            0.531
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "label": "33",
+      "correct_option": "C",
+      "answer_text": null,
+      "marks": 1,
+      "page_index": 44,
+      "regions": [
+        {
+          "page_index": 44,
+          "bbox": [
+            0.434,
+            0.471,
+            0.595,
+            0.532
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "label": "34",
+      "correct_option": "C",
+      "answer_text": null,
+      "marks": 1,
+      "page_index": 44,
+      "regions": [
+        {
+          "page_index": 44,
+          "bbox": [
+            0.579,
+            0.472,
+            0.739,
+            0.533
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "label": "35",
+      "correct_option": "B",
+      "answer_text": null,
+      "marks": 1,
+      "page_index": 44,
+      "regions": [
+        {
+          "page_index": 44,
+          "bbox": [
+            0.723,
+            0.473,
+            0.884,
+            0.534
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "label": "36",
+      "correct_option": "C",
+      "answer_text": null,
+      "marks": 1,
+      "page_index": 44,
+      "regions": [
+        {
+          "page_index": 44,
+          "bbox": [
+            0.144,
+            0.526,
+            0.306,
+            0.585
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "label": "37",
+      "correct_option": "B",
+      "answer_text": null,
+      "marks": 1,
+      "page_index": 44,
+      "regions": [
+        {
+          "page_index": 44,
+          "bbox": [
+            0.29,
+            0.527,
+            0.45,
+            0.586
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "label": "38",
+      "correct_option": "D",
+      "answer_text": null,
+      "marks": 1,
+      "page_index": 44,
+      "regions": [
+        {
+          "page_index": 44,
+          "bbox": [
+            0.434,
+            0.528,
+            0.595,
+            0.587
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "label": "39",
+      "correct_option": "D",
+      "answer_text": null,
+      "marks": 1,
+      "page_index": 44,
+      "regions": [
+        {
+          "page_index": 44,
+          "bbox": [
+            0.579,
+            0.529,
+            0.739,
+            0.588
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "label": "40",
+      "correct_option": "C",
+      "answer_text": null,
+      "marks": 1,
+      "page_index": 44,
+      "regions": [
+        {
+          "page_index": 44,
+          "bbox": [
+            0.723,
+            0.53,
+            0.884,
+            0.589
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "label": "1(a)(i)",
+      "correct_option": null,
+      "answer_text": "C",
+      "marks": 1,
+      "page_index": 45,
+      "regions": [
+        {
+          "page_index": 45,
+          "bbox": [
+            0.115,
+            0.145,
+            0.86,
+            0.17
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "label": "1(a)(ii)",
+      "correct_option": null,
+      "answer_text": "A",
+      "marks": 1,
+      "page_index": 45,
+      "regions": [
+        {
+          "page_index": 45,
+          "bbox": [
+            0.115,
+            0.16,
+            0.86,
+            0.185
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "label": "1(a)(iii)",
+      "correct_option": null,
+      "answer_text": "D",
+      "marks": 1,
+      "page_index": 45,
+      "regions": [
+        {
+          "page_index": 45,
+          "bbox": [
+            0.115,
+            0.175,
+            0.86,
+            0.202
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "label": "1(a)(iv)",
+      "correct_option": null,
+      "answer_text": "G",
+      "marks": 1,
+      "page_index": 45,
+      "regions": [
+        {
+          "page_index": 45,
+          "bbox": [
+            0.115,
+            0.192,
+            0.86,
+            0.22
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "label": "1(a)(v)",
+      "correct_option": null,
+      "answer_text": "C",
+      "marks": 1,
+      "page_index": 45,
+      "regions": [
+        {
+          "page_index": 45,
+          "bbox": [
+            0.115,
+            0.21,
+            0.86,
+            0.235
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "label": "1(a)(vi)",
+      "correct_option": null,
+      "answer_text": "G",
+      "marks": 1,
+      "page_index": 45,
+      "regions": [
+        {
+          "page_index": 45,
+          "bbox": [
+            0.115,
+            0.225,
+            0.86,
+            0.252
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "label": "1(b)",
+      "correct_option": null,
+      "answer_text": "bonding pair of electrons between Cl and H\n6 non-bonding electrons on chlorine atom and no extra electrons on the H atom(s) (1)",
+      "marks": 1,
+      "page_index": 45,
+      "regions": [
+        {
+          "page_index": 45,
+          "bbox": [
+            0.115,
+            0.242,
+            0.86,
+            0.302
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "Single mark (1) for the complete dot-and-cross diagram; the scheme describes it in words, no diagram drawn.",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "label": "2(a)",
+      "correct_option": null,
+      "answer_text": "Al₄C₃ + 12H₂O → 4Al(OH)₃ + 3CH₄\nformula for aluminium hydroxide as product (1)\nbalanced equation (1)",
+      "marks": 2,
+      "page_index": 45,
+      "regions": [
+        {
+          "page_index": 45,
+          "bbox": [
+            0.115,
+            0.309,
+            0.86,
+            0.369
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "label": "2(b)(i)",
+      "correct_option": null,
+      "answer_text": "contains only carbon and hydrogen\ncontains single bonds only",
+      "marks": 2,
+      "page_index": 45,
+      "regions": [
+        {
+          "page_index": 45,
+          "bbox": [
+            0.115,
+            0.359,
+            0.86,
+            0.403
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "No (1) markers printed; 2 marks, presumably one per point.",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "label": "2(b)(ii)",
+      "correct_option": null,
+      "answer_text": "Any two from:\nHCl (1)\nCH₃Cl (1)\nCH₂Cl₂ (1)\nCHCl₃ (1)\nCCl₄ (1)",
+      "marks": 2,
+      "page_index": 45,
+      "regions": [
+        {
+          "page_index": 45,
+          "bbox": [
+            0.115,
+            0.393,
+            0.86,
+            0.503
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "label": "2(c)(i)",
+      "correct_option": null,
+      "answer_text": "bond breaking endothermic AND bond making exothermic / energy absorbed to break bonds in CH₄ & O₂ AND energy released on making bonds in CO₂ & H₂O (1)\n\nmore energy released than absorbed (1)",
+      "marks": 2,
+      "page_index": 45,
+      "regions": [
+        {
+          "page_index": 45,
+          "bbox": [
+            0.115,
+            0.493,
+            0.86,
+            0.585
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "Scheme prints formulae without subscripts (CH4, O2, CO2, H2O); normalised to Unicode.",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "label": "2(c)(ii)",
+      "correct_option": null,
+      "answer_text": "[Drawn answer: energy profile diagram. Vertical axis 'energy', horizontal axis 'progress of reaction'. Reactants 'CH₄ + 2O₂' on a horizontal level at the left; the curve rises to a hump and falls to a lower products level 'CO₂ + 2H₂O' on the right. ΔH: vertical arrow pointing down from the reactant level to the product level, labelled ΔH. Eₐ: vertical arrow pointing up from the reactant level to the top of the hump, labelled Eₐ.]\n\nM1 products to right of reactants AND reactant level above product level (1)\nM2 enthalpy change shown as downward arrow AND labelled as enthalpy change or ΔH (1)\nM3 activation energy drawn to maximum of energy hump with an upward arrow AND labelled (1)",
+      "marks": 3,
+      "page_index": 45,
+      "regions": [
+        {
+          "page_index": 45,
+          "bbox": [
+            0.115,
+            0.575,
+            0.86,
+            0.867
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "Answer is a drawn energy profile diagram; described in text, the region crop shows the original.",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "label": "3(a)(i)",
+      "correct_option": null,
+      "answer_text": "Rate doubles as concentration doubles (or reverse argument) (1)",
+      "marks": 1,
+      "page_index": 46,
+      "regions": [
+        {
+          "page_index": 46,
+          "bbox": [
+            0.13,
+            0.088,
+            0.875,
+            0.113
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "label": "3(a)(ii)",
+      "correct_option": null,
+      "answer_text": "Particles closer together / more particles in a given volume (or reverse argument) (1)\nHigher frequency of effective collision / more effective collisions per second (or reverse argument) (1)",
+      "marks": 2,
+      "page_index": 46,
+      "regions": [
+        {
+          "page_index": 46,
+          "bbox": [
+            0.13,
+            0.105,
+            0.875,
+            0.18
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "label": "3(a)(iii)",
+      "correct_option": null,
+      "answer_text": "Increasing temperature increases rate (no marks)\nParticles move faster / particles have greater kinetic energy (1)\nNumber of particles with energy greater than the activation energy is increased / higher frequency of effective collisions / more effective collisions per second (1)",
+      "marks": 2,
+      "page_index": 46,
+      "regions": [
+        {
+          "page_index": 46,
+          "bbox": [
+            0.13,
+            0.172,
+            0.875,
+            0.281
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "label": "3(b)(i)",
+      "correct_option": null,
+      "answer_text": "Burning fossil fuels / burning named fossil fuel / volcanoes (1)",
+      "marks": 1,
+      "page_index": 46,
+      "regions": [
+        {
+          "page_index": 46,
+          "bbox": [
+            0.13,
+            0.273,
+            0.875,
+            0.298
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "label": "3(b)(ii)",
+      "correct_option": null,
+      "answer_text": "It is reformed / it is not used up / it is unchanged at the end of the reaction (1)",
+      "marks": 1,
+      "page_index": 46,
+      "regions": [
+        {
+          "page_index": 46,
+          "bbox": [
+            0.13,
+            0.29,
+            0.875,
+            0.332
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "label": "4(a)(i)",
+      "correct_option": null,
+      "answer_text": "anode (on left) and cathode (on right) correctly labelled (1)\ntest tubes / measuring cylinders over each electrode with open ends dipping into the electrolyte (1)",
+      "marks": 2,
+      "page_index": 46,
+      "regions": [
+        {
+          "page_index": 46,
+          "bbox": [
+            0.13,
+            0.341,
+            0.875,
+            0.4
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "label": "4(a)(ii)",
+      "correct_option": null,
+      "answer_text": "positive electrode: chlorine / Cl₂ (1)\nnegative electrode: hydrogen / H₂ (1)",
+      "marks": 2,
+      "page_index": 46,
+      "regions": [
+        {
+          "page_index": 46,
+          "bbox": [
+            0.13,
+            0.392,
+            0.875,
+            0.433
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "label": "4(a)(iii)",
+      "correct_option": null,
+      "answer_text": "platinum (no marks)\ninert / unreactive",
+      "marks": 1,
+      "page_index": 46,
+      "regions": [
+        {
+          "page_index": 46,
+          "bbox": [
+            0.13,
+            0.425,
+            0.875,
+            0.467
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "No (1) printed; the single mark is presumably for the reason (inert / unreactive), since the element alone earns no marks.",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "label": "4(b)",
+      "correct_option": null,
+      "answer_text": "Cl₂ + 2NaI → I₂ + 2NaCl (1)\n\nchlorine has displaced iodine in sodium iodide\n/ chlorine has taken the place of iodine in sodium iodide (1)",
+      "marks": 2,
+      "page_index": 46,
+      "regions": [
+        {
+          "page_index": 46,
+          "bbox": [
+            0.13,
+            0.459,
+            0.875,
+            0.534
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "label": "5(a)",
+      "correct_option": null,
+      "answer_text": "3MoO₂ + 4Al → 2Al₂O₃ + 3Mo (1)",
+      "marks": 1,
+      "page_index": 46,
+      "regions": [
+        {
+          "page_index": 46,
+          "bbox": [
+            0.13,
+            0.543,
+            0.875,
+            0.568
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "Scheme prints '2Al₂O3' (final 3 not subscripted); normalised to Al₂O₃.",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "label": "5(b)(i)",
+      "correct_option": null,
+      "answer_text": "| element | oxidation state in reactants | oxidation state in products |\n|---|---|---|\n| molybdenum | +4 | 0 (1 for correct row) |\n| aluminium | 0 | +3 (1 for correct row) |",
+      "marks": 2,
+      "page_index": 46,
+      "regions": [
+        {
+          "page_index": 46,
+          "bbox": [
+            0.13,
+            0.56,
+            0.875,
+            0.718
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "label": "5(b)(ii)",
+      "correct_option": null,
+      "answer_text": "molybdenum(IV) oxide has been reduced as the oxidation state of molybdenum has decreased from +4 in MoO₂ to 0 in Mo. (1)\n\naluminium has been oxidised as the oxidation state has increased from 0 in Al to +3 in Al₂O₃. (1)\n\nSince oxidation and reduction occur simultaneously, this is a redox reaction. (no mark)",
+      "marks": 2,
+      "page_index": 46,
+      "regions": [
+        {
+          "page_index": 46,
+          "bbox": [
+            0.13,
+            0.71,
+            0.875,
+            0.852
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "label": "5(c)",
+      "correct_option": null,
+      "answer_text": "molybdenum is less reactive (no mark)\nas it has been displaced from its oxide / molybdenum(IV) oxide has been reduced by alumnium (1)",
+      "marks": 1,
+      "page_index": 46,
+      "regions": [
+        {
+          "page_index": 46,
+          "bbox": [
+            0.13,
+            0.844,
+            0.875,
+            0.895
+          ]
+        },
+        {
+          "page_index": 47,
+          "bbox": [
+            0.11,
+            0.091,
+            0.86,
+            0.119
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "Row continues across the page break (p46 → p47). 'alumnium' is the scheme's own typo, kept verbatim.",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "label": "5(d)(i)",
+      "correct_option": null,
+      "answer_text": "metallic bonding (1)\n\nstructure drawn to show cations in a ‘sea’ of delocalised electrons. (1)",
+      "marks": 2,
+      "page_index": 47,
+      "regions": [
+        {
+          "page_index": 47,
+          "bbox": [
+            0.11,
+            0.109,
+            0.86,
+            0.177
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "No diagram is drawn in the scheme; the marking point describes the expected drawing.",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "label": "5(d)(ii)",
+      "correct_option": null,
+      "answer_text": "stronger electrostatic forces of attraction (1) due to higher number of electrons and protons present in Mo.",
+      "marks": 1,
+      "page_index": 47,
+      "regions": [
+        {
+          "page_index": 47,
+          "bbox": [
+            0.11,
+            0.167,
+            0.86,
+            0.21
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "label": "6(a)",
+      "correct_option": null,
+      "answer_text": "| fertiliser | formula |\n|---|---|\n| ammonium nitrate | NH₄NO₃ (1) |\n| sodium phosphate | Na₃PO₄ |\n| calcium nitrate (1) | Ca(NO₃)₂ |\n| potassium sulfate | K₂SO₄ |",
+      "marks": 2,
+      "page_index": 47,
+      "regions": [
+        {
+          "page_index": 47,
+          "bbox": [
+            0.11,
+            0.218,
+            0.86,
+            0.333
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "The two (1) marks are for the missing entries of Table 6.1: formula of ammonium nitrate and name of Ca(NO₃)₂.",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "label": "6(b)(i)",
+      "correct_option": null,
+      "answer_text": "H⁺ + OH⁻ → H₂O (1)",
+      "marks": 1,
+      "page_index": 47,
+      "regions": [
+        {
+          "page_index": 47,
+          "bbox": [
+            0.11,
+            0.323,
+            0.86,
+            0.35
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "label": "6(b)(ii)",
+      "correct_option": null,
+      "answer_text": "| | N | H | C | O |\n|---|---|---|---|---|\n| % by mass | 46.7 | 6.7 | 20 | 100 − (46.7+6.7+20) = 26.6 (1) |\n| no. of moles / mol (1) | 46.7/14 = 3.33571 | 6.7/1 = 6.7 | 20/12 = 1.66667 | 26.6/16 = 1.6625 |\n| simplest ratio | 3.33571/1.6625 = 2.01 | 6.7/1.6625 = 4.03 | 1.66667/1.6625 = 1.00 | 1.6625/1.6625 = 1.00 |\n| empirical formula | N₂H₄CO (1) | | | |",
+      "marks": 3,
+      "page_index": 47,
+      "regions": [
+        {
+          "page_index": 47,
+          "bbox": [
+            0.11,
+            0.34,
+            0.86,
+            0.557
+          ]
+        }
+      ],
+      "confidence": "medium",
+      "notes": "The scan renders the fractions as garbled run-together text (e.g. '46.71446.714', '20122012', '3.335711.662 53.335711.66 25'); reconstructed as numerator/denominator from the values shown (all quotients check). 'N₂H₄CO (1)' spans all four element columns in the original.",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "label": "6(c)",
+      "correct_option": null,
+      "answer_text": "farmer 2 is correct. (no marks)\n\nthe nitrate ions from calcium nitrate provides the nitrogen content for healthy plant growth. (1)\n\nammonium nitrate will react with calcium hydroxide to form ammonia gas (1) ;\nwhich will escape from the soil and causes a loss in the nitrogen content (1) required for healthy plant growth",
+      "marks": 3,
+      "page_index": 47,
+      "regions": [
+        {
+          "page_index": 47,
+          "bbox": [
+            0.11,
+            0.547,
+            0.86,
+            0.706
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "label": "7(a)",
+      "correct_option": null,
+      "answer_text": "at 150 °C, 60 % of ammonia is formed. at 400 °C, 20 % of ammonia is formed. / any correct evidence data from Fig. 7.1 (1)\n\nas the temperature increases, the percentage of ammonia formed decreases. (1)",
+      "marks": 2,
+      "page_index": 47,
+      "regions": [
+        {
+          "page_index": 47,
+          "bbox": [
+            0.11,
+            0.713,
+            0.86,
+            0.807
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "label": "7(b)",
+      "correct_option": null,
+      "answer_text": "at high temperature, the ammonia decomposes to form hydrogen and nitrogen. (1)",
+      "marks": 1,
+      "page_index": 47,
+      "regions": [
+        {
+          "page_index": 47,
+          "bbox": [
+            0.11,
+            0.797,
+            0.86,
+            0.84
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "label": "7(c)",
+      "correct_option": null,
+      "answer_text": "[Drawn answer: copy of Fig. 7.1, percentage composition / % (0–100) against temperature / °C (100–600), with curves NH₃ (falling from about 68 % to near 0 % at 600 °C), H₂ (rising to about 98 % at 600 °C) and N₂ (rising to about 32 % at 600 °C). The answer curve, labelled (c), is an ammonia curve of the same falling shape lying above the original NH₃ curve at every temperature: about 97 % at low temperature, about 50 % near 320 °C, falling to about 10 % at 600 °C.] (1)",
+      "marks": 1,
+      "page_index": 47,
+      "regions": [
+        {
+          "page_index": 47,
+          "bbox": [
+            0.11,
+            0.83,
+            0.86,
+            0.896
+          ]
+        },
+        {
+          "page_index": 48,
+          "bbox": [
+            0.14,
+            0.088,
+            0.875,
+            0.304
+          ]
+        }
+      ],
+      "confidence": "medium",
+      "notes": "The 7c row on p47 is empty apart from '(1)' in the Mark column; the answer graph is in the continuation row at the top of p48. No marking-point text; values read from the faint graph are approximate.",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "label": "7(d)",
+      "correct_option": null,
+      "answer_text": "when the pressure of gaseous reactants increases, there are more reacting particles per unit volume. (1)\n\nthis increases the frequency of collision and hence increases the frequency of effective collision (1) between the reacting particles and\n\nthus, the rate of reaction increases. (1)",
+      "marks": 3,
+      "page_index": 48,
+      "regions": [
+        {
+          "page_index": 48,
+          "bbox": [
+            0.14,
+            0.296,
+            0.875,
+            0.438
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "label": "7(e)(i)",
+      "correct_option": null,
+      "answer_text": "there will be unreacted or more or excess nitrogen monoxide released into the atmosphere together with less nitrogen and water vapour/steam produced (1)",
+      "marks": 1,
+      "page_index": 48,
+      "regions": [
+        {
+          "page_index": 48,
+          "bbox": [
+            0.14,
+            0.43,
+            0.875,
+            0.488
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "label": "7(e)(ii)",
+      "correct_option": null,
+      "answer_text": "NO will react with air/oxygen to form NO₂ which reacts with moisture and air (or water and oxygen) to form nitric acid (1)\n\nwhich reacts/dissolves in water; to form acid rain which corrodes limestone buildings/kills aquatic life (1) OWTTE;",
+      "marks": 2,
+      "page_index": 48,
+      "regions": [
+        {
+          "page_index": 48,
+          "bbox": [
+            0.14,
+            0.48,
+            0.875,
+            0.571
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "label": "8(a)(i)",
+      "correct_option": null,
+      "answer_text": "has a pungent smell (1)",
+      "marks": 1,
+      "page_index": 48,
+      "regions": [
+        {
+          "page_index": 48,
+          "bbox": [
+            0.14,
+            0.581,
+            0.875,
+            0.606
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "label": "8(a)(ii)",
+      "correct_option": null,
+      "answer_text": "when hydrogen sulfide is combusted, it produces sulfur dioxide and sulfuric acid; which will corrode the metal machinery parts. (1)\n\nhydrogen sulfide is toxic (1)",
+      "marks": 2,
+      "page_index": 48,
+      "regions": [
+        {
+          "page_index": 48,
+          "bbox": [
+            0.14,
+            0.598,
+            0.875,
+            0.672
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "label": "8(b)",
+      "correct_option": null,
+      "answer_text": "environmental: (any three)\n- if cow dung is not used, the cow dung will also degrade naturally to release methane which is a greenhouse gas;\n- converting cow dung into biomethane to be used as biofuel instead of letting it degrade naturally cuts down greenhouse gases by 4%. this is because methane has a much greater global-warming power than carbon dioxide;\n- conserves use of the limited/non-renewable fossil fuels/crude oil or\n- the fertiliser made on the farm can reduce the synthetic fertilisers made from fossil fuels/ crude oil;\n\neconomical: (any two)\n- cow dung is produced and/or collected directly on the farm or on-site and biodigester is on-site so farmers save on transportation costs and/or time; (reject easy to use)\n- also cuts costs on using fossil fuels/crude oil for electricity;\n- biomethane is a biofuel with high performance and high purity;\n- the fertiliser produced from the biodigester can be readily used by farmers, saving costs from purchasing synthetic fertilisers;",
+      "marks": 5,
+      "page_index": 48,
+      "regions": [
+        {
+          "page_index": 48,
+          "bbox": [
+            0.14,
+            0.664,
+            0.875,
+            0.895
+          ]
+        },
+        {
+          "page_index": 49,
+          "bbox": [
+            0.11,
+            0.092,
+            0.855,
+            0.288
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "Row continues across the page break (p48 environmental → p49 economical). No (1) markers printed; 5 marks = any three environmental + any two economical points, presumably 1 each.",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "label": "8(c)(i)",
+      "correct_option": null,
+      "answer_text": "carbon or hydrogen or carbon monoxide",
+      "marks": 1,
+      "page_index": 49,
+      "regions": [
+        {
+          "page_index": 49,
+          "bbox": [
+            0.11,
+            0.278,
+            0.855,
+            0.305
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "No (1) marker printed.",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "label": "8(c)(ii)",
+      "correct_option": null,
+      "answer_text": "iron(III) oxide is a solid product which can be collected more easily for recycling than the gaseous (or escaped) product, carbon dioxide, produced from the burning fossil fuels, which easily escapes into the atmosphere.",
+      "marks": 1,
+      "page_index": 49,
+      "regions": [
+        {
+          "page_index": 49,
+          "bbox": [
+            0.11,
+            0.295,
+            0.855,
+            0.372
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "No (1) marker printed. The scheme underlines the key phrases 'iron(III) oxide is a solid', 'gaseous (or escaped) product, carbon dioxide,' and 'burning fossil fuels'.",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "label": "9(a)",
+      "correct_option": null,
+      "answer_text": "they have the (any 1 for 1 mark)\n- same general formula of CₙH₂ₙ₊₂COO where n is ≥2\n- same functional group of COO\n- Mr between successive members differ by 14 / molecular formula between successive members differ by a −CH₂",
+      "marks": 2,
+      "page_index": 49,
+      "regions": [
+        {
+          "page_index": 49,
+          "bbox": [
+            0.11,
+            0.38,
+            0.855,
+            0.473
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "Section B (Q9 and Q10): candidates answer only one of the two questions; the scheme gives both. The question asks for two characteristics (2 marks): any two of the listed points, 1 mark each. The scheme prints 'CnH2n+2COO' and '−CH2' without subscripts; normalised to Unicode, formula kept as printed. ERRATUM (QA): the scheme's general formula CₙH₂ₙ₊₂COO is chemically wrong; for these esters the general formula is CₙH₂ₙO₂ (e.g. CH₃COOCₘH₂ₘ₊₁). Correct before showing students.",
+      "review_flags": [
+        "answer_mismatch"
+      ]
+    },
+    {
+      "paper": "P2",
+      "label": "9(b)",
+      "correct_option": null,
+      "answer_text": "the melting point increases then decreases (no clear trend) (1)\nbut the boiling point increases as the molecular size / Mr increases (1)",
+      "marks": 2,
+      "page_index": 49,
+      "regions": [
+        {
+          "page_index": 49,
+          "bbox": [
+            0.11,
+            0.463,
+            0.855,
+            0.522
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "Section B (Q9 and Q10): candidates answer only one of the two questions; the scheme gives both.",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "label": "9(c)",
+      "correct_option": null,
+      "answer_text": "The melting point is below 25 °C and (1)\nthe boiling point is above 25 °C (1)\n\nOR\n\n25 °C is between (1) its melting and boiling point (1)",
+      "marks": 2,
+      "page_index": 49,
+      "regions": [
+        {
+          "page_index": 49,
+          "bbox": [
+            0.11,
+            0.512,
+            0.855,
+            0.622
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "Section B (Q9 and Q10): candidates answer only one of the two questions; the scheme gives both.",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "label": "9(d)(i)",
+      "correct_option": null,
+      "answer_text": "[Drawn answer, two boxes:\n- organic acid: displayed formula of ethanoic acid, CH₃COOH (a carbon with three H atoms bonded to a C that has =O and –O–H)\n- compound Y: displayed formula of methanol, CH₃OH (a carbon with three H atoms and –OH)]\n\n(1) correct structural formula of organic acid\n(1) correct structural formula of compound Y",
+      "marks": 2,
+      "page_index": 49,
+      "regions": [
+        {
+          "page_index": 49,
+          "bbox": [
+            0.11,
+            0.612,
+            0.855,
+            0.776
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "Section B (Q9 and Q10): candidates answer only one of the two questions; the scheme gives both. Structures are drawn only; the names ethanoic acid and methanol are read from the drawings.",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "label": "9(d)(ii)",
+      "correct_option": null,
+      "answer_text": "no. of moles of acid = 1.20 g / 60\n= 0.02 mol\n\nno. of moles of methyl ethanoate = 0.02 mol (1)\n\nmass of methyl ethanoate = 0.02 × 74\n= 1.48 g (1)",
+      "marks": 2,
+      "page_index": 49,
+      "regions": [
+        {
+          "page_index": 49,
+          "bbox": [
+            0.11,
+            0.766,
+            0.855,
+            0.894
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "Section B (Q9 and Q10): candidates answer only one of the two questions; the scheme gives both. '×' written as 'x' in the scheme.",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "label": "10(a)(i)",
+      "correct_option": null,
+      "answer_text": "[Drawn answer: repeat unit of poly(propene) in square brackets with subscript n: two C atoms joined by a single bond, with continuation bonds through both brackets; the left C carries CH₃ (up) and H (down), the right C carries H (up) and H (down), i.e. –[CH(CH₃)–CH₂]ₙ–.]",
+      "marks": 1,
+      "page_index": 50,
+      "regions": [
+        {
+          "page_index": 50,
+          "bbox": [
+            0.13,
+            0.102,
+            0.875,
+            0.177
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "Section B (Q9 and Q10): candidates answer only one of the two questions; the scheme gives both. Drawn structure only; no (1) marker printed.",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "label": "10(a)(ii)",
+      "correct_option": null,
+      "answer_text": "2C₃H₆ + 9O₂ → 6CO₂ + 6H₂O\n\nno. of moles of propene = (4.2 × 1000)/42\n= 100 mol\n\nvolume of carbon dioxide produced = 3 × 100 × 24\n= 7200 dm³ (1)\n\npercentage yield = 4800/7200 × 100%\n= 66.7 % (1)\n\nECF allowed for incorrectly balanced equation",
+      "marks": 2,
+      "page_index": 50,
+      "regions": [
+        {
+          "page_index": 50,
+          "bbox": [
+            0.13,
+            0.168,
+            0.875,
+            0.377
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "Section B (Q9 and Q10): candidates answer only one of the two questions; the scheme gives both. Scheme writes 'x' for × and 'dm3' for dm³; normalised.",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "label": "10(b)(i)",
+      "correct_option": null,
+      "answer_text": "both have the molecular formula C₃H₆ but\nthe arrangement of atoms is different (needs to explain the difference fully in their own words) (1)",
+      "marks": 1,
+      "page_index": 50,
+      "regions": [
+        {
+          "page_index": 50,
+          "bbox": [
+            0.13,
+            0.368,
+            0.875,
+            0.427
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "Section B (Q9 and Q10): candidates answer only one of the two questions; the scheme gives both.",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "label": "10(b)(ii)",
+      "correct_option": null,
+      "answer_text": "reagent: Br₂ (aq) (1)\n\nreddish brown bromine decolourises when added to propene but remains unchanged when added to cyclopropane (1)",
+      "marks": 2,
+      "page_index": 50,
+      "regions": [
+        {
+          "page_index": 50,
+          "bbox": [
+            0.13,
+            0.418,
+            0.875,
+            0.494
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "Section B (Q9 and Q10): candidates answer only one of the two questions; the scheme gives both.",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "label": "10(c)(i)",
+      "correct_option": null,
+      "answer_text": "movement: from vibrate about fixed position to move throughout the liquid (1)\n\narrangement: from very close, orderly arrangement to close but disorderly arrangement (1)",
+      "marks": 2,
+      "page_index": 50,
+      "regions": [
+        {
+          "page_index": 50,
+          "bbox": [
+            0.13,
+            0.485,
+            0.875,
+            0.578
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "Section B (Q9 and Q10): candidates answer only one of the two questions; the scheme gives both.",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "label": "10(c)(ii)",
+      "correct_option": null,
+      "answer_text": "has a giant molecular structure and strong covalent bonds between atoms. (1)\n\na lot of energy is needed to overcome the bonds. (1)",
+      "marks": 2,
+      "page_index": 50,
+      "regions": [
+        {
+          "page_index": 50,
+          "bbox": [
+            0.13,
+            0.569,
+            0.875,
+            0.661
+          ]
+        }
+      ],
+      "confidence": "high",
+      "notes": "Section B (Q9 and Q10): candidates answer only one of the two questions; the scheme gives both.",
+      "review_flags": []
+    }
+  ]
+}

@@ -1,0 +1,246 @@
+{
+  "syllabus": "Singapore-Cambridge GCE O-Level Chemistry 6092",
+  "status": "seed - topic list drafted from the 6092 syllabus structure; verify subtopic boundaries against the SEAB syllabus document before relying on it for ratings",
+  "topics": [
+    {
+      "code": "1",
+      "name": "Experimental Chemistry",
+      "subtopics": [
+        {
+          "code": "1.1",
+          "name": "Experimental design, apparatus and measurement"
+        },
+        {
+          "code": "1.2",
+          "name": "Methods of purification and analysis (filtration, crystallisation, distillation, chromatography, purity)"
+        }
+      ]
+    },
+    {
+      "code": "2",
+      "name": "The Particulate Nature of Matter",
+      "subtopics": [
+        {
+          "code": "2.1",
+          "name": "Kinetic particle theory and changes of state"
+        },
+        {
+          "code": "2.2",
+          "name": "Atomic structure, isotopes and electronic configuration"
+        },
+        {
+          "code": "2.3",
+          "name": "Elements, compounds and mixtures"
+        }
+      ]
+    },
+    {
+      "code": "3",
+      "name": "Chemical Bonding and Structure",
+      "subtopics": [
+        {
+          "code": "3.1",
+          "name": "Ionic bonding"
+        },
+        {
+          "code": "3.2",
+          "name": "Covalent bonding"
+        },
+        {
+          "code": "3.3",
+          "name": "Metallic bonding"
+        },
+        {
+          "code": "3.4",
+          "name": "Structure and properties (giant ionic, simple molecular, giant covalent, metallic)"
+        }
+      ]
+    },
+    {
+      "code": "4",
+      "name": "Chemical Calculations",
+      "subtopics": [
+        {
+          "code": "4.1",
+          "name": "Formulae, equations and ionic equations"
+        },
+        {
+          "code": "4.2",
+          "name": "Relative masses and the mole"
+        },
+        {
+          "code": "4.3",
+          "name": "Reacting masses, gas volumes and concentration"
+        },
+        {
+          "code": "4.4",
+          "name": "Percentage yield and percentage purity"
+        }
+      ]
+    },
+    {
+      "code": "5",
+      "name": "Acid-Base Chemistry",
+      "subtopics": [
+        {
+          "code": "5.1",
+          "name": "Acids, bases, pH and indicators"
+        },
+        {
+          "code": "5.2",
+          "name": "Oxides"
+        },
+        {
+          "code": "5.3",
+          "name": "Salts: solubility and preparation"
+        }
+      ]
+    },
+    {
+      "code": "6",
+      "name": "Qualitative Analysis",
+      "subtopics": [
+        {
+          "code": "6.1",
+          "name": "Tests for cations and anions"
+        },
+        {
+          "code": "6.2",
+          "name": "Tests for gases"
+        }
+      ]
+    },
+    {
+      "code": "7",
+      "name": "Redox Chemistry",
+      "subtopics": [
+        {
+          "code": "7.1",
+          "name": "Oxidation, reduction, oxidation states, oxidising and reducing agents"
+        },
+        {
+          "code": "7.2",
+          "name": "Electrolysis"
+        },
+        {
+          "code": "7.3",
+          "name": "Electrochemical (simple) cells and fuel cells"
+        }
+      ]
+    },
+    {
+      "code": "8",
+      "name": "Patterns in the Periodic Table",
+      "subtopics": [
+        {
+          "code": "8.1",
+          "name": "Periodic trends (metallic character, groups and periods)"
+        },
+        {
+          "code": "8.2",
+          "name": "Group 1 alkali metals"
+        },
+        {
+          "code": "8.3",
+          "name": "Group 17 halogens and displacement"
+        },
+        {
+          "code": "8.4",
+          "name": "Group 18 noble gases and transition elements"
+        },
+        {
+          "code": "8.5",
+          "name": "Metals: reactivity series, displacement and extraction"
+        }
+      ]
+    },
+    {
+      "code": "9",
+      "name": "Chemical Energetics",
+      "subtopics": [
+        {
+          "code": "9.1",
+          "name": "Exothermic and endothermic reactions, energy profile diagrams, ΔH and activation energy"
+        },
+        {
+          "code": "9.2",
+          "name": "Bond breaking, bond making and bond energy calculations"
+        },
+        {
+          "code": "9.3",
+          "name": "Fuels and energy sources"
+        }
+      ]
+    },
+    {
+      "code": "10",
+      "name": "Rate of Reactions",
+      "subtopics": [
+        {
+          "code": "10.1",
+          "name": "Measuring rate of reaction, experimental methods and graphs"
+        },
+        {
+          "code": "10.2",
+          "name": "Factors affecting rate and collision theory"
+        },
+        {
+          "code": "10.3",
+          "name": "Catalysts and enzymes"
+        },
+        {
+          "code": "10.4",
+          "name": "Reversible reactions and industrial processes (e.g. Haber process)"
+        }
+      ]
+    },
+    {
+      "code": "11",
+      "name": "Organic Chemistry",
+      "subtopics": [
+        {
+          "code": "11.1",
+          "name": "Crude oil, fractional distillation and homologous series"
+        },
+        {
+          "code": "11.2",
+          "name": "Alkanes"
+        },
+        {
+          "code": "11.3",
+          "name": "Alkenes, cracking and isomerism"
+        },
+        {
+          "code": "11.4",
+          "name": "Alcohols"
+        },
+        {
+          "code": "11.5",
+          "name": "Carboxylic acids and esters"
+        },
+        {
+          "code": "11.6",
+          "name": "Polymers (addition and condensation)"
+        }
+      ]
+    },
+    {
+      "code": "12",
+      "name": "Maintaining Air Quality",
+      "subtopics": [
+        {
+          "code": "12.1",
+          "name": "Composition of air and air pollutants"
+        },
+        {
+          "code": "12.2",
+          "name": "Greenhouse gases, global warming and the carbon cycle"
+        },
+        {
+          "code": "12.3",
+          "name": "Reducing pollution (catalytic converters, flue gas desulfurisation)"
+        }
+      ]
+    }
+  ]
+}

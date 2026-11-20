@@ -1,0 +1,1443 @@
+{
+  "contract_version": 1,
+  "document_id": "montfort-2025-sec4-chem-prelim",
+  "source_pdf": "papers/Sec4_PureChemistry_2025_SA2_montfort.pdf",
+  "chunk": "p1_a",
+  "extracted_by": "subagent-gold",
+  "pages": [
+    {
+      "page_index": 0,
+      "paper": "P1",
+      "printed_page_number": null,
+      "page_type": "cover",
+      "has_handwriting": false,
+      "notes": "Paper 1 cover. Name/class fields blank."
+    },
+    {
+      "page_index": 1,
+      "paper": "P1",
+      "printed_page_number": "2",
+      "page_type": "questions",
+      "has_handwriting": true,
+      "notes": "Handwritten cross next to apparatus diagram 3 (Q1)."
+    },
+    {
+      "page_index": 2,
+      "paper": "P1",
+      "printed_page_number": "3",
+      "page_type": "questions",
+      "has_handwriting": false,
+      "notes": ""
+    },
+    {
+      "page_index": 3,
+      "paper": "P1",
+      "printed_page_number": "4",
+      "page_type": "questions",
+      "has_handwriting": true,
+      "notes": "Small pencil tick marks beside several atoms in the Q4 diagram."
+    },
+    {
+      "page_index": 4,
+      "paper": "P1",
+      "printed_page_number": "5",
+      "page_type": "questions",
+      "has_handwriting": true,
+      "notes": "Q6 options are an overlaid typed insert (larger sans-serif 'A. Cl2 ... D. N2') to the right of the original blank A-D letters; faint pencil specks beside A and B."
+    },
+    {
+      "page_index": 5,
+      "paper": "P1",
+      "printed_page_number": "6",
+      "page_type": "questions",
+      "has_handwriting": true,
+      "notes": "Question number 9 circled by hand."
+    },
+    {
+      "page_index": 6,
+      "paper": "P1",
+      "printed_page_number": "7",
+      "page_type": "questions",
+      "has_handwriting": true,
+      "notes": "Question numbers 11 and 12 circled by hand."
+    },
+    {
+      "page_index": 7,
+      "paper": "P1",
+      "printed_page_number": "8",
+      "page_type": "questions",
+      "has_handwriting": true,
+      "notes": "Pencil strokes beside ZnSO4 and Na2S2O3 in Q13."
+    },
+    {
+      "page_index": 8,
+      "paper": "P1",
+      "printed_page_number": "9",
+      "page_type": "questions",
+      "has_handwriting": true,
+      "notes": "Question number 17 circled by hand."
+    },
+    {
+      "page_index": 9,
+      "paper": "P1",
+      "printed_page_number": "10",
+      "page_type": "questions",
+      "has_handwriting": false,
+      "notes": ""
+    },
+    {
+      "page_index": 10,
+      "paper": "P1",
+      "printed_page_number": "11",
+      "page_type": "questions",
+      "has_handwriting": true,
+      "notes": "Q19 curve partly over-traced in pencil near the bend; extra handwritten 0 at the origin; slash after question number 20. Black oxide formula in Q20 stem is illegible in the scan."
+    }
+  ],
+  "papers": [
+    {
+      "paper": "P1",
+      "paper_code": "6092/01",
+      "school": "Montfort Secondary School",
+      "exam": "Preliminary Examination 2025",
+      "year": 2025,
+      "level": "Secondary 4 Express",
+      "subject": "Chemistry",
+      "date": "2025-08-29",
+      "duration_minutes": 60,
+      "total_marks": 40,
+      "instructions": "Write your name, class and register number on all the work you hand in. Write in dark blue or black pen. You may use a pencil for any diagrams, graphs, tables or rough working. Do not use staples, paper clips, glue or correction fluid. There are forty questions in this section. Answer all questions. For each question, there are four possible answers A, B, C and D. Choose the one you consider correct and record your choice in soft pencil on the separate Answer Sheet. Read the instructions on the Answer Sheet very carefully. Each correct answer will score one mark. A mark will not be deducted for a wrong answer. Any rough working should be done in this booklet. A copy of the Periodic Table is printed on page 20. The use of an approved scientific calculator is expected, where appropriate.",
+      "choice_groups": []
+    }
+  ],
+  "questions": [
+    {
+      "paper": "P1",
+      "section": "A",
+      "label": "1",
+      "parent_label": null,
+      "type": "mcq",
+      "stem": "A student wants to carry out an experiment to follow the rate of the reaction between hydrochloric acid and marble chips.\n\nCaCO₃ + 2HCl → CaCl₂ + CO₂ + H₂O\n\nWhich diagrams show apparatus that is suitable for this experiment?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1 and 2 only"
+        },
+        {
+          "label": "B",
+          "text": "1 and 3 only"
+        },
+        {
+          "label": "C",
+          "text": "1 and 4 only"
+        },
+        {
+          "label": "D",
+          "text": "1, 2 and 4"
+        }
+      ],
+      "marks": 1,
+      "regions": [
+        {
+          "page_index": 1,
+          "bbox": [
+            0.15,
+            0.075,
+            0.88,
+            0.69
+          ]
+        }
+      ],
+      "full_regions": [
+        {
+          "page_index": 1,
+          "bbox": [
+            0.15,
+            0.075,
+            0.88,
+            0.69
+          ]
+        }
+      ],
+      "answer_space": "none",
+      "figures": [
+        {
+          "id": "fig-q1",
+          "page_index": 1,
+          "bbox": [
+            0.21,
+            0.195,
+            0.86,
+            0.59
+          ],
+          "kind": "apparatus",
+          "caption": "",
+          "description": "Four numbered apparatus set-ups. 1: a stoppered round-bottomed flask containing hydrochloric acid and marble chips, with a delivery tube from the side of the neck leading under an inverted graduated measuring cylinder standing in a trough of water (gas collected over water). 2: an open beaker containing hydrochloric acid and marble chips standing on an electronic balance. 3: a burette containing hydrochloric acid clamped above an open conical flask containing marble chips; no gas collection. 4: a conical flask containing hydrochloric acid and marble chips, closed with a two-hole stopper; one hole holds a vertical tube fitted with a tap, the other a delivery tube connected to a horizontal gas syringe."
+        }
+      ],
+      "topics": [
+        "10.1",
+        "1.1"
+      ],
+      "has_handwriting": true,
+      "confidence": "high",
+      "notes": "Handwritten cross next to diagram 3 ignored.",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "section": "A",
+      "label": "2",
+      "parent_label": null,
+      "type": "mcq",
+      "stem": "A mixture containing equal volumes of two liquids that mix completely but do not react together is placed in the apparatus shown and heated until the thermometer first shows a steady reading.\n\nAt which position will there be the highest proportion of the liquid with the higher boiling point?",
+      "options": [
+        {
+          "label": "A",
+          "text": "position A – at the mouth of the receiving conical flask (distillate)"
+        },
+        {
+          "label": "B",
+          "text": "position B – near the top of the fractionating column"
+        },
+        {
+          "label": "C",
+          "text": "position C – at the bottom of the fractionating column"
+        },
+        {
+          "label": "D",
+          "text": "position D – inside the round-bottomed flask, just above the boiling liquid"
+        }
+      ],
+      "marks": 1,
+      "regions": [
+        {
+          "page_index": 2,
+          "bbox": [
+            0.2,
+            0.05,
+            0.9,
+            0.51
+          ]
+        }
+      ],
+      "full_regions": [
+        {
+          "page_index": 2,
+          "bbox": [
+            0.2,
+            0.05,
+            0.9,
+            0.51
+          ]
+        }
+      ],
+      "answer_space": "none",
+      "figures": [
+        {
+          "id": "fig-q2",
+          "page_index": 2,
+          "bbox": [
+            0.28,
+            0.17,
+            0.86,
+            0.51
+          ],
+          "kind": "apparatus",
+          "caption": "",
+          "description": "Fractional distillation apparatus. A round-bottomed flask containing liquid is heated from below (arrow labelled heat). A fractionating column packed with beads rises vertically from the flask; a thermometer is inserted at the top with its bulb level with the side arm. The side arm leads to a sloping Liebig condenser with 'cold water in' at the lower end and 'water out' at the upper end, delivering into a conical flask. Position labels: A at the mouth of the receiving conical flask; B near the top of the fractionating column; C at the bottom of the fractionating column; D inside the round-bottomed flask just above the liquid surface."
+        }
+      ],
+      "topics": [
+        "1.2"
+      ],
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "Options are positions marked on the diagram; option text is a description of where each lettered label points, not printed text.",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "section": "A",
+      "label": "3",
+      "parent_label": null,
+      "type": "mcq",
+      "stem": "In which pair of particles is:\n\n- the sum of their charges equal to zero\n- the sum of their masses almost the same as 1/12 of the mass of an atom of ¹²C?",
+      "options": [
+        {
+          "label": "A",
+          "text": "one electron and one neutron"
+        },
+        {
+          "label": "B",
+          "text": "one electron and one proton"
+        },
+        {
+          "label": "C",
+          "text": "one neutron and one proton"
+        },
+        {
+          "label": "D",
+          "text": "two neutrons"
+        }
+      ],
+      "marks": 1,
+      "regions": [
+        {
+          "page_index": 2,
+          "bbox": [
+            0.2,
+            0.55,
+            0.88,
+            0.735
+          ]
+        }
+      ],
+      "full_regions": [
+        {
+          "page_index": 2,
+          "bbox": [
+            0.2,
+            0.55,
+            0.88,
+            0.735
+          ]
+        }
+      ],
+      "answer_space": "none",
+      "figures": [],
+      "topics": [
+        "2.2",
+        "4.2"
+      ],
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "section": "A",
+      "label": "4",
+      "parent_label": null,
+      "type": "mcq",
+      "stem": "An element has two isotopes of relative isotopic masses x and x+2. The diagram shows the composition of atoms in a sample of the element.\n\nWhat is the relative atomic mass of this element?",
+      "options": [
+        {
+          "label": "A",
+          "text": "x + 0.5"
+        },
+        {
+          "label": "B",
+          "text": "x + 1.0"
+        },
+        {
+          "label": "C",
+          "text": "x + 1.5"
+        },
+        {
+          "label": "D",
+          "text": "x + 2.0"
+        }
+      ],
+      "marks": 1,
+      "regions": [
+        {
+          "page_index": 3,
+          "bbox": [
+            0.17,
+            0.075,
+            0.88,
+            0.38
+          ]
+        }
+      ],
+      "full_regions": [
+        {
+          "page_index": 3,
+          "bbox": [
+            0.17,
+            0.075,
+            0.88,
+            0.38
+          ]
+        }
+      ],
+      "answer_space": "none",
+      "figures": [
+        {
+          "id": "fig-q4",
+          "page_index": 3,
+          "bbox": [
+            0.4,
+            0.11,
+            0.68,
+            0.255
+          ],
+          "kind": "diagram",
+          "caption": "",
+          "description": "A cluster of 12 circles representing atoms, each labelled with its isotopic mass: 9 circles labelled x and 3 circles labelled x+2."
+        }
+      ],
+      "topics": [
+        "2.2",
+        "4.2"
+      ],
+      "has_handwriting": true,
+      "confidence": "high",
+      "notes": "Small pencil ticks beside several x atoms ignored. Count verified on zoom: 9 × x, 3 × x+2.",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "section": "A",
+      "label": "5",
+      "parent_label": null,
+      "type": "mcq",
+      "stem": "X and Y are both elements, one of which is a non-metal.\n\n1 mole of X is added to 1 mole of Y and they are heated together.\n\nX and Y react completely to form substance Z.\n\nSubstance Z cannot be easily separated to form X and Y.\n\nThree statements are given.\n\n1 Y must be the non-metal.\n2 X and Y formed a compound on heating.\n3 Substance Z has the empirical formula XY.\n\nWhich statements are correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1 and 3"
+        },
+        {
+          "label": "B",
+          "text": "1 only"
+        },
+        {
+          "label": "C",
+          "text": "2 and 3"
+        },
+        {
+          "label": "D",
+          "text": "2 only"
+        }
+      ],
+      "marks": 1,
+      "regions": [
+        {
+          "page_index": 3,
+          "bbox": [
+            0.18,
+            0.42,
+            0.86,
+            0.775
+          ]
+        }
+      ],
+      "full_regions": [
+        {
+          "page_index": 3,
+          "bbox": [
+            0.18,
+            0.42,
+            0.86,
+            0.775
+          ]
+        }
+      ],
+      "answer_space": "none",
+      "figures": [],
+      "topics": [
+        "2.3",
+        "4.1"
+      ],
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "section": "A",
+      "label": "6",
+      "parent_label": null,
+      "type": "mcq",
+      "stem": "Which molecule has only four electrons involved in covalent bonds?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cl₂"
+        },
+        {
+          "label": "B",
+          "text": "CO₂"
+        },
+        {
+          "label": "C",
+          "text": "H₂S"
+        },
+        {
+          "label": "D",
+          "text": "N₂"
+        }
+      ],
+      "marks": 1,
+      "regions": [
+        {
+          "page_index": 4,
+          "bbox": [
+            0.2,
+            0.055,
+            0.78,
+            0.205
+          ]
+        }
+      ],
+      "full_regions": [
+        {
+          "page_index": 4,
+          "bbox": [
+            0.2,
+            0.055,
+            0.78,
+            0.205
+          ]
+        }
+      ],
+      "answer_space": "none",
+      "figures": [],
+      "topics": [
+        "3.2"
+      ],
+      "has_handwriting": true,
+      "confidence": "medium",
+      "notes": "The original option area beside the printed A–D letters is blank; the options appear as an overlaid typed insert 'A. Cl2  B. CO2  C. H2S  D. N2' in a different, larger font. Transcribed from that insert. Faint pencil specks beside A and B ignored.",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "section": "A",
+      "label": "7",
+      "parent_label": null,
+      "type": "mcq",
+      "stem": "The melting points and boiling points of four compounds, W, X, Y and Z, are given in the table.\n\n| | melting point / °C | boiling point / °C |\n|---|---|---|\n| W | 63 | 354 |\n| X | −7 | 59 |\n| Y | 1728 | 2230 |\n| Z | −183 | −89 |\n\nThe four compounds are silicon(IV) oxide, ethane, bromine and a carboxylic acid of formula C₁₆H₃₂O₂.\n\nWhich row identifies W, X, Y and Z?",
+      "options": [
+        {
+          "label": "A",
+          "text": "silicon(IV) oxide: W; ethane: X; bromine: Z; carboxylic acid C₁₆H₃₂O₂: Y"
+        },
+        {
+          "label": "B",
+          "text": "silicon(IV) oxide: W; ethane: Y; bromine: Z; carboxylic acid C₁₆H₃₂O₂: X"
+        },
+        {
+          "label": "C",
+          "text": "silicon(IV) oxide: Y; ethane: Z; bromine: W; carboxylic acid C₁₆H₃₂O₂: X"
+        },
+        {
+          "label": "D",
+          "text": "silicon(IV) oxide: Y; ethane: Z; bromine: X; carboxylic acid C₁₆H₃₂O₂: W"
+        }
+      ],
+      "marks": 1,
+      "regions": [
+        {
+          "page_index": 4,
+          "bbox": [
+            0.2,
+            0.22,
+            0.92,
+            0.655
+          ]
+        }
+      ],
+      "full_regions": [
+        {
+          "page_index": 4,
+          "bbox": [
+            0.2,
+            0.22,
+            0.92,
+            0.655
+          ]
+        }
+      ],
+      "answer_space": "none",
+      "figures": [
+        {
+          "id": "fig-q7-data",
+          "page_index": 4,
+          "bbox": [
+            0.43,
+            0.275,
+            0.72,
+            0.408
+          ],
+          "kind": "table",
+          "caption": "",
+          "description": "Table of melting and boiling points (°C): W 63 and 354; X −7 and 59; Y 1728 and 2230; Z −183 and −89."
+        },
+        {
+          "id": "fig-q7-options",
+          "page_index": 4,
+          "bbox": [
+            0.235,
+            0.495,
+            0.91,
+            0.652
+          ],
+          "kind": "table",
+          "caption": "",
+          "description": "Options table with columns silicon(IV) oxide, ethane, bromine, carboxylic acid C₁₆H₃₂O₂. Row A: W, X, Z, Y. Row B: W, Y, Z, X. Row C: Y, Z, W, X. Row D: Y, Z, X, W."
+        }
+      ],
+      "topics": [
+        "3.4",
+        "11.5"
+      ],
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "Table headers read 'melting point / °C' and 'boiling point / °C'; the slash and degree sign are partly lost in the scan.",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "section": "A",
+      "label": "8",
+      "parent_label": null,
+      "type": "mcq",
+      "stem": "The formula of ammonium metavanadate is NH₄VO₃. It consists of NH₄ ions and VO₃ ions.\n\nWhat are the charges on these ions?",
+      "options": [
+        {
+          "label": "A",
+          "text": "NH₄ ion: 1+; VO₃ ion: 1−"
+        },
+        {
+          "label": "B",
+          "text": "NH₄ ion: 2+; VO₃ ion: 2−"
+        },
+        {
+          "label": "C",
+          "text": "NH₄ ion: 3+; VO₃ ion: 3−"
+        },
+        {
+          "label": "D",
+          "text": "NH₄ ion: 4+; VO₃ ion: 4−"
+        }
+      ],
+      "marks": 1,
+      "regions": [
+        {
+          "page_index": 5,
+          "bbox": [
+            0.17,
+            0.08,
+            0.88,
+            0.3
+          ]
+        }
+      ],
+      "full_regions": [
+        {
+          "page_index": 5,
+          "bbox": [
+            0.17,
+            0.08,
+            0.88,
+            0.3
+          ]
+        }
+      ],
+      "answer_space": "none",
+      "figures": [
+        {
+          "id": "fig-q8-options",
+          "page_index": 5,
+          "bbox": [
+            0.21,
+            0.148,
+            0.555,
+            0.298
+          ],
+          "kind": "table",
+          "caption": "",
+          "description": "Options table with columns NH₄ ion and VO₃ ion. Row A: 1+, 1−. Row B: 2+, 2−. Row C: 3+, 3−. Row D: 4+, 4−."
+        }
+      ],
+      "topics": [
+        "4.1",
+        "3.1"
+      ],
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "Ion charges are deliberately omitted in the printed stem (NH₄ ions, VO₃ ions).",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "section": "A",
+      "label": "9",
+      "parent_label": null,
+      "type": "mcq",
+      "stem": "When a strip of copper is placed in aqueous silver nitrate, a displacement reaction takes place.\n\nWhat is the ionic equation for the reaction which takes place?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Ag⁺ (aq) + Cu (s) → Ag (s) + Cu²⁺ (aq) + e⁻"
+        },
+        {
+          "label": "B",
+          "text": "2Ag⁺ (aq) + Cu (s) → 2Ag (s) + Cu²⁺ (aq)"
+        },
+        {
+          "label": "C",
+          "text": "2AgNO₃ (aq) + Cu (s) → 2Ag (s) + Cu(NO₃)₂ (aq)"
+        },
+        {
+          "label": "D",
+          "text": "2Ag (s) + Cu²⁺ (aq) → 2Ag⁺ (aq) + Cu (s)"
+        }
+      ],
+      "marks": 1,
+      "regions": [
+        {
+          "page_index": 5,
+          "bbox": [
+            0.17,
+            0.33,
+            0.88,
+            0.5
+          ]
+        }
+      ],
+      "full_regions": [
+        {
+          "page_index": 5,
+          "bbox": [
+            0.17,
+            0.33,
+            0.88,
+            0.5
+          ]
+        }
+      ],
+      "answer_space": "none",
+      "figures": [],
+      "topics": [
+        "4.1",
+        "8.5",
+        "7.1"
+      ],
+      "has_handwriting": true,
+      "confidence": "high",
+      "notes": "Question number circled by hand; ignored.",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "section": "A",
+      "label": "10",
+      "parent_label": null,
+      "type": "mcq",
+      "stem": "Which statement is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "If the relative formula mass of hydrated sodium carbonate, Na₂CO₃·xH₂O, is 286, then x is 10."
+        },
+        {
+          "label": "B",
+          "text": "Phosphoric(V) acid, H₃PO₄, has a relative molecular mass of 50."
+        },
+        {
+          "label": "C",
+          "text": "The relative atomic mass of a sample of an element with isotopes of masses 20 and 22 can only be equal to 21."
+        },
+        {
+          "label": "D",
+          "text": "The relative atomic mass of an element is the average mass of atoms of isotopes of the element compared with the mass of a hydrogen atom."
+        }
+      ],
+      "marks": 1,
+      "regions": [
+        {
+          "page_index": 5,
+          "bbox": [
+            0.18,
+            0.54,
+            0.88,
+            0.69
+          ]
+        }
+      ],
+      "full_regions": [
+        {
+          "page_index": 5,
+          "bbox": [
+            0.18,
+            0.54,
+            0.88,
+            0.69
+          ]
+        }
+      ],
+      "answer_space": "none",
+      "figures": [],
+      "topics": [
+        "4.2",
+        "2.2"
+      ],
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "section": "A",
+      "label": "11",
+      "parent_label": null,
+      "type": "mcq",
+      "stem": "Two aqueous solutions, Q and R, have the same concentration in mol / dm³.\n\nSolution Q contains 4.0 g of NaOH in 500 cm³ of solution.\n\nWhich solution could be solution R?\n\n[Aᵣ: Na, 23; O, 16; H, 1]",
+      "options": [
+        {
+          "label": "A",
+          "text": "0.2 mol of Ca(OH)₂ in 250 cm³ of solution"
+        },
+        {
+          "label": "B",
+          "text": "0.2 mol of HCl in 100 cm³ of solution"
+        },
+        {
+          "label": "C",
+          "text": "0.05 mol of H₂SO₄ in 250 cm³ of solution"
+        },
+        {
+          "label": "D",
+          "text": "0.1 mol of KOH in 1000 cm³ of solution"
+        }
+      ],
+      "marks": 1,
+      "regions": [
+        {
+          "page_index": 6,
+          "bbox": [
+            0.19,
+            0.05,
+            0.82,
+            0.27
+          ]
+        }
+      ],
+      "full_regions": [
+        {
+          "page_index": 6,
+          "bbox": [
+            0.19,
+            0.05,
+            0.82,
+            0.27
+          ]
+        }
+      ],
+      "answer_space": "none",
+      "figures": [],
+      "topics": [
+        "4.3"
+      ],
+      "has_handwriting": true,
+      "confidence": "high",
+      "notes": "Question number circled by hand; ignored.",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "section": "A",
+      "label": "12",
+      "parent_label": null,
+      "type": "mcq",
+      "stem": "The equation for the reaction between magnesium and dilute hydrochloric acid is shown.\n\nMg + 2HCl → MgCl₂ + H₂\n\nWhich mass of magnesium chloride is formed when 48.0 g of magnesium completely reacts with excess dilute hydrochloric acid?",
+      "options": [
+        {
+          "label": "A",
+          "text": "23.8 g"
+        },
+        {
+          "label": "B",
+          "text": "47.5 g"
+        },
+        {
+          "label": "C",
+          "text": "95.0 g"
+        },
+        {
+          "label": "D",
+          "text": "190 g"
+        }
+      ],
+      "marks": 1,
+      "regions": [
+        {
+          "page_index": 6,
+          "bbox": [
+            0.2,
+            0.315,
+            0.9,
+            0.51
+          ]
+        }
+      ],
+      "full_regions": [
+        {
+          "page_index": 6,
+          "bbox": [
+            0.2,
+            0.315,
+            0.9,
+            0.51
+          ]
+        }
+      ],
+      "answer_space": "none",
+      "figures": [],
+      "topics": [
+        "4.3"
+      ],
+      "has_handwriting": true,
+      "confidence": "high",
+      "notes": "Question number circled by hand; ignored.",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "section": "A",
+      "label": "13",
+      "parent_label": null,
+      "type": "mcq",
+      "stem": "Three compounds are listed.\n\ncopper(II) nitrate, Cu(NO₃)₂\nzinc sulfate, ZnSO₄\nsodium thiosulfate, Na₂S₂O₃\n\nWhich row shows the element that is present in the greatest percentage by mass in each compound?\n\n[relative formula masses, Mᵣ: Cu(NO₃)₂, 188; ZnSO₄, 161; Na₂S₂O₃, 158]",
+      "options": [
+        {
+          "label": "A",
+          "text": "copper(II) nitrate: copper; zinc sulfate: oxygen; sodium thiosulfate: oxygen"
+        },
+        {
+          "label": "B",
+          "text": "copper(II) nitrate: copper; zinc sulfate: oxygen; sodium thiosulfate: sulfur"
+        },
+        {
+          "label": "C",
+          "text": "copper(II) nitrate: oxygen; zinc sulfate: zinc; sodium thiosulfate: sodium"
+        },
+        {
+          "label": "D",
+          "text": "copper(II) nitrate: oxygen; zinc sulfate: zinc; sodium thiosulfate: sulfur"
+        }
+      ],
+      "marks": 1,
+      "regions": [
+        {
+          "page_index": 7,
+          "bbox": [
+            0.17,
+            0.085,
+            0.88,
+            0.42
+          ]
+        }
+      ],
+      "full_regions": [
+        {
+          "page_index": 7,
+          "bbox": [
+            0.17,
+            0.085,
+            0.88,
+            0.42
+          ]
+        }
+      ],
+      "answer_space": "none",
+      "figures": [
+        {
+          "id": "fig-q13-options",
+          "page_index": 7,
+          "bbox": [
+            0.22,
+            0.275,
+            0.71,
+            0.418
+          ],
+          "kind": "table",
+          "caption": "",
+          "description": "Options table with columns copper(II) nitrate, zinc sulfate, sodium thiosulfate. Row A: copper, oxygen, oxygen. Row B: copper, oxygen, sulfur. Row C: oxygen, zinc, sodium. Row D: oxygen, zinc, sulfur."
+        }
+      ],
+      "topics": [
+        "4.2"
+      ],
+      "has_handwriting": true,
+      "confidence": "high",
+      "notes": "Pencil strokes beside ZnSO₄ and Na₂S₂O₃ ignored.",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "section": "A",
+      "label": "14",
+      "parent_label": null,
+      "type": "mcq",
+      "stem": "Samples of two hydrated compounds are weighed and then dehydrated by heating.\n\nThe anhydrous compounds are weighed and the results are shown.\n\n3.97 g FeSO₄·xH₂O gives 2.17 g anhydrous FeSO₄.\n2.88 g CaSO₄·yH₂O gives 2.27 g anhydrous CaSO₄.\n\nWhat are the values of x and y?\n\n[Mᵣ: FeSO₄, 152; CaSO₄, 136; H₂O, 18]",
+      "options": [
+        {
+          "label": "A",
+          "text": "x = 5; y = 2"
+        },
+        {
+          "label": "B",
+          "text": "x = 5; y = 5"
+        },
+        {
+          "label": "C",
+          "text": "x = 7; y = 5"
+        },
+        {
+          "label": "D",
+          "text": "x = 7; y = 2"
+        }
+      ],
+      "marks": 1,
+      "regions": [
+        {
+          "page_index": 7,
+          "bbox": [
+            0.18,
+            0.455,
+            0.82,
+            0.745
+          ]
+        }
+      ],
+      "full_regions": [
+        {
+          "page_index": 7,
+          "bbox": [
+            0.18,
+            0.455,
+            0.82,
+            0.745
+          ]
+        }
+      ],
+      "answer_space": "none",
+      "figures": [
+        {
+          "id": "fig-q14-options",
+          "page_index": 7,
+          "bbox": [
+            0.225,
+            0.628,
+            0.57,
+            0.742
+          ],
+          "kind": "table",
+          "caption": "",
+          "description": "Options table with columns x and y. Row A: 5, 2. Row B: 5, 5. Row C: 7, 5. Row D: 7, 2."
+        }
+      ],
+      "topics": [
+        "4.3",
+        "4.2"
+      ],
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "section": "A",
+      "label": "15",
+      "parent_label": null,
+      "type": "mcq",
+      "stem": "Aqueous copper(II) sulfate is electrolysed with copper electrodes.\n\nWhat is the equation for the reaction occurring at the anode?",
+      "options": [
+        {
+          "label": "A",
+          "text": "Cu → Cu²⁺ + 2e⁻"
+        },
+        {
+          "label": "B",
+          "text": "Cu²⁺ + 2e⁻ → Cu"
+        },
+        {
+          "label": "C",
+          "text": "4OH⁻ → O₂ + 2H₂O + 4e⁻"
+        },
+        {
+          "label": "D",
+          "text": "2SO₄²⁻ + 2H₂O → 2H₂SO₄ + O₂ + 4e⁻"
+        }
+      ],
+      "marks": 1,
+      "regions": [
+        {
+          "page_index": 8,
+          "bbox": [
+            0.2,
+            0.065,
+            0.72,
+            0.225
+          ]
+        }
+      ],
+      "full_regions": [
+        {
+          "page_index": 8,
+          "bbox": [
+            0.2,
+            0.065,
+            0.72,
+            0.225
+          ]
+        }
+      ],
+      "answer_space": "none",
+      "figures": [],
+      "topics": [
+        "7.2"
+      ],
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "section": "A",
+      "label": "16",
+      "parent_label": null,
+      "type": "mcq",
+      "stem": "Three statements about fuel cells are given.\n\n1 A hydrogen-oxygen fuel cell requires a continuous input of fuel and oxygen.\n2 In a hydrogen-oxygen fuel cell, hydrogen is burned in oxygen to produce electricity.\n3 When a hydrogen-oxygen fuel cell is operating, water is the only chemical product.\n\nWhich statements are correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1, 2 and 3"
+        },
+        {
+          "label": "B",
+          "text": "1 and 2 only"
+        },
+        {
+          "label": "C",
+          "text": "1 and 3 only"
+        },
+        {
+          "label": "D",
+          "text": "2 and 3 only"
+        }
+      ],
+      "marks": 1,
+      "regions": [
+        {
+          "page_index": 8,
+          "bbox": [
+            0.2,
+            0.27,
+            0.9,
+            0.515
+          ]
+        }
+      ],
+      "full_regions": [
+        {
+          "page_index": 8,
+          "bbox": [
+            0.2,
+            0.27,
+            0.9,
+            0.515
+          ]
+        }
+      ],
+      "answer_space": "none",
+      "figures": [],
+      "topics": [
+        "7.3"
+      ],
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "section": "A",
+      "label": "17",
+      "parent_label": null,
+      "type": "mcq",
+      "stem": "Which statements about the energy changes during a chemical reaction are correct?\n\n1 The activation energy, Eₐ, is the maximum energy the colliding particles must have in order to react.\n2 During an endothermic reaction, thermal energy is taken in from the surroundings leading to a decrease in the temperature of the surroundings.\n3 The making of chemical bonds is an exothermic process.",
+      "options": [
+        {
+          "label": "A",
+          "text": "1, 2 and 3"
+        },
+        {
+          "label": "B",
+          "text": "1 and 2 only"
+        },
+        {
+          "label": "C",
+          "text": "1 and 3 only"
+        },
+        {
+          "label": "D",
+          "text": "2 and 3 only"
+        }
+      ],
+      "marks": 1,
+      "regions": [
+        {
+          "page_index": 8,
+          "bbox": [
+            0.19,
+            0.555,
+            0.9,
+            0.8
+          ]
+        }
+      ],
+      "full_regions": [
+        {
+          "page_index": 8,
+          "bbox": [
+            0.19,
+            0.555,
+            0.9,
+            0.8
+          ]
+        }
+      ],
+      "answer_space": "none",
+      "figures": [],
+      "topics": [
+        "9.1",
+        "9.2",
+        "10.2"
+      ],
+      "has_handwriting": true,
+      "confidence": "high",
+      "notes": "Question number circled by hand; ignored. 'Ea' is printed without a subscript.",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "section": "A",
+      "label": "18",
+      "parent_label": null,
+      "type": "mcq",
+      "stem": "Under certain conditions, nitrogen reacts with oxygen to form N₂O.\n\n2N₂(g) + O₂(g) → 2N₂O(g)\n\nThe reaction pathway diagram is shown.\n\nWhat is the activation energy of the reverse reaction?",
+      "options": [
+        {
+          "label": "A",
+          "text": "−447 kJ / mol"
+        },
+        {
+          "label": "B",
+          "text": "−283 kJ / mol"
+        },
+        {
+          "label": "C",
+          "text": "+141.5 kJ / mol"
+        },
+        {
+          "label": "D",
+          "text": "+283 kJ / mol"
+        }
+      ],
+      "marks": 1,
+      "regions": [
+        {
+          "page_index": 9,
+          "bbox": [
+            0.16,
+            0.08,
+            0.82,
+            0.52
+          ]
+        }
+      ],
+      "full_regions": [
+        {
+          "page_index": 9,
+          "bbox": [
+            0.16,
+            0.08,
+            0.82,
+            0.52
+          ]
+        }
+      ],
+      "answer_space": "none",
+      "figures": [
+        {
+          "id": "fig-q18",
+          "page_index": 9,
+          "bbox": [
+            0.3,
+            0.185,
+            0.77,
+            0.395
+          ],
+          "kind": "graph",
+          "caption": "",
+          "description": "Reaction pathway (energy profile) diagram: vertical axis 'energy', horizontal axis 'progress of reaction'. Reactants 2N₂(g) + O₂(g) at a lower level; curve rises to a peak then falls to products 2N₂O(g) at a higher level than the reactants. An arrow from the reactant level up to the peak is labelled +447 kJ/mol (forward activation energy). An arrow from the reactant level (dashed line) up to the product level is labelled +164 kJ/mol (enthalpy change)."
+        }
+      ],
+      "topics": [
+        "9.1"
+      ],
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "section": "A",
+      "label": "19",
+      "parent_label": null,
+      "type": "mcq",
+      "stem": "Two reactions each produce a gaseous product.\n\nThe reactions are performed separately using the same conditions of temperature and pressure.\n\nThe volume of gas formed in each experiment is measured over time and the results are plotted in the graph shown.\n\nAt which point is the rate of production of gas the greatest?",
+      "options": [
+        {
+          "label": "A",
+          "text": "point A"
+        },
+        {
+          "label": "B",
+          "text": "point B"
+        },
+        {
+          "label": "C",
+          "text": "point C"
+        },
+        {
+          "label": "D",
+          "text": "point D"
+        }
+      ],
+      "marks": 1,
+      "regions": [
+        {
+          "page_index": 10,
+          "bbox": [
+            0.2,
+            0.065,
+            0.9,
+            0.415
+          ]
+        }
+      ],
+      "full_regions": [
+        {
+          "page_index": 10,
+          "bbox": [
+            0.2,
+            0.065,
+            0.9,
+            0.415
+          ]
+        }
+      ],
+      "answer_space": "none",
+      "figures": [
+        {
+          "id": "fig-q19",
+          "page_index": 10,
+          "bbox": [
+            0.4,
+            0.235,
+            0.73,
+            0.412
+          ],
+          "kind": "graph",
+          "caption": "",
+          "description": "Graph of volume of gas (vertical axis) against time (horizontal axis), both starting at 0. Two lines from the origin: a curve that rises steeply at first then levels off to a horizontal plateau, and a straight line of constant, smaller gradient that eventually crosses above the plateau. Point A is on the steep initial part of the curve near the origin; point B is on the flat plateau of the curve; point C is partway along the straight line; point D is at the upper end of the straight line, above where it crosses the plateau."
+        }
+      ],
+      "topics": [
+        "10.1"
+      ],
+      "has_handwriting": true,
+      "confidence": "high",
+      "notes": "Pencil over-tracing on the curve near its bend and an extra handwritten 0 at the origin ignored. Options are points marked on the graph.",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "section": "A",
+      "label": "20",
+      "parent_label": null,
+      "type": "mcq",
+      "stem": "Copper forms a red oxide, Cu₂O, and a black oxide, CuO.\n\nIn the presence of a catalyst, aqueous hydrogen peroxide, H₂O₂, decomposes to form water.\n\nThe black oxide has copper in a ...1... oxidation state than in the red oxide.\n\nIn forming water, hydrogen peroxide is ...2... .\n\nWhich words correctly complete gaps 1 and 2?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1: higher; 2: reduced"
+        },
+        {
+          "label": "B",
+          "text": "1: higher; 2: oxidised"
+        },
+        {
+          "label": "C",
+          "text": "1: lower; 2: reduced"
+        },
+        {
+          "label": "D",
+          "text": "1: lower; 2: oxidised"
+        }
+      ],
+      "marks": 1,
+      "regions": [
+        {
+          "page_index": 10,
+          "bbox": [
+            0.2,
+            0.455,
+            0.9,
+            0.745
+          ]
+        }
+      ],
+      "full_regions": [
+        {
+          "page_index": 10,
+          "bbox": [
+            0.2,
+            0.455,
+            0.9,
+            0.745
+          ]
+        }
+      ],
+      "answer_space": "none",
+      "figures": [
+        {
+          "id": "fig-q20-options",
+          "page_index": 10,
+          "bbox": [
+            0.24,
+            0.625,
+            0.595,
+            0.743
+          ],
+          "kind": "table",
+          "caption": "",
+          "description": "Options table with columns 1 and 2. Row A: higher, reduced. Row B: higher, oxidised. Row C: lower, reduced. Row D: lower, oxidised."
+        }
+      ],
+      "topics": [
+        "7.1"
+      ],
+      "has_handwriting": true,
+      "confidence": "medium",
+      "notes": "The black oxide's formula is almost entirely lost in the scan (only faint fragments remain); transcribed as CuO from chemistry (the black copper oxide). The subscript in Cu₂O is also faint. Slash after question number is handwriting; ignored.",
+      "review_flags": [
+        "inferred"
+      ]
+    }
+  ],
+  "answers": []
+}

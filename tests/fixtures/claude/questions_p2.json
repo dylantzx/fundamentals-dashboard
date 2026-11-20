@@ -1,0 +1,271 @@
+{
+ "questions": [
+  {
+   "paper": "P2",
+   "section": "A",
+   "parent_label": null,
+   "options": [],
+   "marks": null,
+   "full_regions": [
+    {
+     "page_index": 4,
+     "box": {
+      "x0": 80,
+      "y0": 100,
+      "x1": 920,
+      "y1": 1400
+     }
+    },
+    {
+     "page_index": 5,
+     "box": {
+      "x0": 80,
+      "y0": 50,
+      "x1": 920,
+      "y1": 600
+     }
+    }
+   ],
+   "answer_space": "none",
+   "figures": [
+    {
+     "id": "fig-1.1",
+     "page_index": 4,
+     "box": {
+      "x0": 200,
+      "y0": 150,
+      "x1": 800,
+      "y1": 290
+     },
+     "kind": "apparatus",
+     "caption": "Fig. 1.1",
+     "description": "Conical flask containing marble chips and acid on a top-pan balance, with a cotton wool plug."
+    }
+   ],
+   "topics": [],
+   "has_handwriting": false,
+   "confidence": "high",
+   "notes": "",
+   "label": "1",
+   "type": "context",
+   "stem": "Fig. 1.1 shows the apparatus used to follow the reaction of marble chips with hydrochloric acid, HCI.",
+   "regions": [
+    {
+     "page_index": 4,
+     "box": {
+      "x0": 80,
+      "y0": 100,
+      "x1": 920,
+      "y1": 300
+     }
+    }
+   ],
+   "review_flags": []
+  },
+  {
+   "paper": "P2",
+   "section": "A",
+   "parent_label": "1",
+   "options": [],
+   "marks": 1,
+   "full_regions": [],
+   "answer_space": "lines",
+   "figures": [],
+   "topics": [
+    "10.1"
+   ],
+   "has_handwriting": false,
+   "confidence": "high",
+   "notes": "",
+   "label": "1(a)",
+   "type": "structured",
+   "stem": "Name the gas produced.",
+   "regions": [
+    {
+     "page_index": 4,
+     "box": {
+      "x0": 80,
+      "y0": 320,
+      "x1": 920,
+      "y1": 500
+     }
+    }
+   ],
+   "review_flags": []
+  },
+  {
+   "paper": "P2",
+   "section": "A",
+   "parent_label": "1",
+   "options": [],
+   "marks": null,
+   "full_regions": [],
+   "answer_space": "none",
+   "figures": [],
+   "topics": [],
+   "has_handwriting": false,
+   "confidence": "high",
+   "notes": "",
+   "label": "1(b)",
+   "type": "context",
+   "stem": "The mass of the flask is recorded every minute.",
+   "regions": [
+    {
+     "page_index": 4,
+     "box": {
+      "x0": 80,
+      "y0": 520,
+      "x1": 920,
+      "y1": 700
+     }
+    }
+   ],
+   "review_flags": []
+  },
+  {
+   "paper": "P2",
+   "section": "A",
+   "parent_label": "1(b)",
+   "options": [],
+   "marks": 2,
+   "full_regions": [],
+   "answer_space": "lines",
+   "figures": [],
+   "topics": [
+    "10.2"
+   ],
+   "has_handwriting": false,
+   "confidence": "high",
+   "notes": "",
+   "label": "1(b)(i)",
+   "type": "structured",
+   "stem": "Explain why the mass decreases.",
+   "regions": [
+    {
+     "page_index": 4,
+     "box": {
+      "x0": 80,
+      "y0": 720,
+      "x1": 920,
+      "y1": 1300
+     }
+    }
+   ],
+   "review_flags": []
+  },
+  {
+   "paper": "P2",
+   "section": "A",
+   "parent_label": "1(b)",
+   "options": [],
+   "marks": 2,
+   "full_regions": [],
+   "answer_space": "lines",
+   "figures": [],
+   "topics": [
+    "10.2",
+    "10.1"
+   ],
+   "has_handwriting": true,
+   "confidence": "high",
+   "notes": "",
+   "label": "1(b)(ii)",
+   "type": "structured",
+   "stem": "Suggest how the rate changes when powdered marble is used.",
+   "regions": [
+    {
+     "page_index": 5,
+     "box": {
+      "x0": 80,
+      "y0": 60,
+      "x1": 920,
+      "y1": 580
+     }
+    }
+   ],
+   "review_flags": []
+  },
+  {
+   "paper": "P2",
+   "section": "B",
+   "parent_label": null,
+   "type": "structured",
+   "options": [],
+   "marks": 10,
+   "answer_space": "lines",
+   "figures": [],
+   "topics": [
+    "11.2"
+   ],
+   "has_handwriting": false,
+   "confidence": "high",
+   "review_flags": [],
+   "notes": "",
+   "label": "2",
+   "stem": "Describe the cracking of long-chain alkanes.",
+   "regions": [
+    {
+     "page_index": 5,
+     "box": {
+      "x0": 80,
+      "y0": 620,
+      "x1": 920,
+      "y1": 1000
+     }
+    }
+   ],
+   "full_regions": [
+    {
+     "page_index": 5,
+     "box": {
+      "x0": 80,
+      "y0": 620,
+      "x1": 920,
+      "y1": 1000
+     }
+    }
+   ]
+  },
+  {
+   "paper": "P2",
+   "section": "B",
+   "parent_label": null,
+   "type": "structured",
+   "options": [],
+   "marks": 10,
+   "answer_space": "lines",
+   "figures": [],
+   "topics": [
+    "10.3"
+   ],
+   "has_handwriting": false,
+   "confidence": "high",
+   "review_flags": [],
+   "notes": "",
+   "label": "3",
+   "stem": "Describe the manufacture of ammonia.",
+   "regions": [
+    {
+     "page_index": 5,
+     "box": {
+      "x0": 80,
+      "y0": 1020,
+      "x1": 920,
+      "y1": 1390
+     }
+    }
+   ],
+   "full_regions": [
+    {
+     "page_index": 5,
+     "box": {
+      "x0": 80,
+      "y0": 1020,
+      "x1": 920,
+      "y1": 1390
+     }
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1478 @@
+{
+  "contract_version": 1,
+  "document_id": "montfort-2025-sec4-chem-prelim",
+  "source_pdf": "papers/Sec4_PureChemistry_2025_SA2_montfort.pdf",
+  "chunk": "p2_a",
+  "extracted_by": "subagent-gold",
+  "pages": [
+    {
+      "page_index": 20,
+      "paper": "P2",
+      "printed_page_number": null,
+      "page_type": "cover",
+      "has_handwriting": false,
+      "notes": "Paper 2 cover (unnumbered; first printed number is 2 on the next page). Examiners' table reads 'SECTION A 70 / SECTION C 10 / TOTAL 80' although the instructions name Section B."
+    },
+    {
+      "page_index": 21,
+      "paper": "P2",
+      "printed_page_number": "2",
+      "page_type": "questions",
+      "has_handwriting": false,
+      "notes": "Short diagonal specks in the left margin look like scan/binding artifacts, not ticks."
+    },
+    {
+      "page_index": 22,
+      "paper": "P2",
+      "printed_page_number": "3",
+      "page_type": "questions",
+      "has_handwriting": false,
+      "notes": ""
+    },
+    {
+      "page_index": 23,
+      "paper": "P2",
+      "printed_page_number": "4",
+      "page_type": "questions",
+      "has_handwriting": true,
+      "notes": "Pen stroke after 'hydroxide.' in Q2 stem and a ')'-shaped pen mark in the left margin below 2(c)(i)."
+    },
+    {
+      "page_index": 24,
+      "paper": "P2",
+      "printed_page_number": "5",
+      "page_type": "questions",
+      "has_handwriting": false,
+      "notes": ""
+    },
+    {
+      "page_index": 25,
+      "paper": "P2",
+      "printed_page_number": "6",
+      "page_type": "questions",
+      "has_handwriting": false,
+      "notes": ""
+    },
+    {
+      "page_index": 26,
+      "paper": "P2",
+      "printed_page_number": "7",
+      "page_type": "questions",
+      "has_handwriting": false,
+      "notes": "Answer line of 3(b)(ii) is faintly printed/broken in the scan."
+    },
+    {
+      "page_index": 27,
+      "paper": "P2",
+      "printed_page_number": "8",
+      "page_type": "questions",
+      "has_handwriting": false,
+      "notes": ""
+    },
+    {
+      "page_index": 28,
+      "paper": "P2",
+      "printed_page_number": "9",
+      "page_type": "questions",
+      "has_handwriting": false,
+      "notes": ""
+    },
+    {
+      "page_index": 29,
+      "paper": "P2",
+      "printed_page_number": "10",
+      "page_type": "questions",
+      "has_handwriting": false,
+      "notes": "Tiny specks below the 5(a) answer line (around x=0.69) are probably scan noise."
+    },
+    {
+      "page_index": 30,
+      "paper": "P2",
+      "printed_page_number": "11",
+      "page_type": "questions",
+      "has_handwriting": false,
+      "notes": ""
+    }
+  ],
+  "papers": [
+    {
+      "paper": "P2",
+      "paper_code": "6092/02",
+      "school": "Montfort Secondary School",
+      "exam": "Preliminary Examination 2025",
+      "year": 2025,
+      "level": "Secondary 4 Express",
+      "subject": "Chemistry",
+      "date": "2025-08-25",
+      "duration_minutes": 105,
+      "total_marks": 80,
+      "instructions": "Write your name, class and index number on all the work you hand in. Write in dark blue or black pen. You may use a pencil for any diagrams or graphs. Do not use staples, paper clips, glue or correction fluid. Section A: Answer all questions. Write your answers in the spaces provided. Section B: Answer one question. Write your answers in the spaces provided. The number of marks is given in brackets [ ] at the end of each question or part question. A copy of the Periodic Table is printed on page 24. The use of an approved scientific calculator is expected, where appropriate. (Examiners' table: Section A 70, Section C [sic] 10, Total 80.) This document consists of 23 printed pages and 1 blank page.",
+      "choice_groups": [
+        {
+          "id": "B",
+          "choose": 1,
+          "note": "Section B: answer one question from this section."
+        }
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "paper": "P2",
+      "section": "A",
+      "label": "1",
+      "parent_label": null,
+      "type": "context",
+      "stem": "Fig. 1.1 shows the structures of seven substances, A, B, C, D, E, F and G.",
+      "options": [],
+      "marks": null,
+      "regions": [
+        {
+          "page_index": 21,
+          "bbox": [
+            0.17,
+            0.13,
+            0.9,
+            0.435
+          ]
+        }
+      ],
+      "figures": [
+        {
+          "id": "fig-1.1",
+          "page_index": 21,
+          "bbox": [
+            0.22,
+            0.165,
+            0.88,
+            0.432
+          ],
+          "kind": "structure",
+          "caption": "Fig. 1.1",
+          "description": "Structures of seven substances labelled A to G. A: displayed formula of ethene, H₂C=CH₂ (two C atoms joined by a double bond, each C bonded to two H atoms). B: H–Cl, hydrogen chloride, a single H–Cl bond. C: displayed formula of methane, CH₄ (C with four single bonds to H). D: ball-and-stick drawing of a giant covalent lattice in which each atom is bonded to four others in a tetrahedral network (diamond structure). E: displayed formula of ethane, CH₃–CH₃ (H₃C–CH₃, all single bonds). F: displayed formula of ammonia, NH₃ (N bonded to three H atoms). G: giant ionic lattice drawn as a 3 × 4 grid of alternating circles labelled Na⁺ (smaller) and I⁻ (larger), i.e. sodium iodide."
+        }
+      ],
+      "topics": [],
+      "answer_space": "none",
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "",
+      "full_regions": [
+        {
+          "page_index": 21,
+          "bbox": [
+            0.17,
+            0.13,
+            0.92,
+            0.845
+          ]
+        },
+        {
+          "page_index": 22,
+          "bbox": [
+            0.22,
+            0.05,
+            0.92,
+            0.405
+          ]
+        }
+      ],
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "A",
+      "label": "1(a)",
+      "parent_label": "1",
+      "type": "context",
+      "stem": "Answer the following questions using only the structures in Fig. 1.1.\n\nEach structure may be used once, more than once or not at all.\n\nState the structure that represents:",
+      "options": [],
+      "marks": null,
+      "regions": [
+        {
+          "page_index": 21,
+          "bbox": [
+            0.22,
+            0.435,
+            0.9,
+            0.525
+          ]
+        }
+      ],
+      "figures": [],
+      "topics": [],
+      "answer_space": "none",
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "A",
+      "label": "1(a)(i)",
+      "parent_label": "1(a)",
+      "type": "structured",
+      "stem": "a compound that is the main constituent of natural gas",
+      "options": [],
+      "marks": 1,
+      "regions": [
+        {
+          "page_index": 21,
+          "bbox": [
+            0.26,
+            0.525,
+            0.9,
+            0.585
+          ]
+        }
+      ],
+      "figures": [],
+      "topics": [
+        "11.2",
+        "11.1"
+      ],
+      "answer_space": "lines",
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "A",
+      "label": "1(a)(ii)",
+      "parent_label": "1(a)",
+      "type": "structured",
+      "stem": "the monomer used to produce poly(ethene)",
+      "options": [],
+      "marks": 1,
+      "regions": [
+        {
+          "page_index": 21,
+          "bbox": [
+            0.26,
+            0.588,
+            0.9,
+            0.648
+          ]
+        }
+      ],
+      "figures": [],
+      "topics": [
+        "11.6",
+        "11.3"
+      ],
+      "answer_space": "lines",
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "A",
+      "label": "1(a)(iii)",
+      "parent_label": "1(a)",
+      "type": "structured",
+      "stem": "a giant covalent structure",
+      "options": [],
+      "marks": 1,
+      "regions": [
+        {
+          "page_index": 21,
+          "bbox": [
+            0.26,
+            0.652,
+            0.9,
+            0.712
+          ]
+        }
+      ],
+      "figures": [],
+      "topics": [
+        "3.4"
+      ],
+      "answer_space": "lines",
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "A",
+      "label": "1(a)(iv)",
+      "parent_label": "1(a)",
+      "type": "structured",
+      "stem": "a compound that has a high melting point",
+      "options": [],
+      "marks": 1,
+      "regions": [
+        {
+          "page_index": 21,
+          "bbox": [
+            0.26,
+            0.717,
+            0.9,
+            0.778
+          ]
+        }
+      ],
+      "figures": [],
+      "topics": [
+        "3.4",
+        "3.1"
+      ],
+      "answer_space": "lines",
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "A",
+      "label": "1(a)(v)",
+      "parent_label": "1(a)",
+      "type": "structured",
+      "stem": "a waste gas from digestion in animals",
+      "options": [],
+      "marks": 1,
+      "regions": [
+        {
+          "page_index": 21,
+          "bbox": [
+            0.26,
+            0.782,
+            0.9,
+            0.845
+          ]
+        }
+      ],
+      "figures": [],
+      "topics": [
+        "12.2",
+        "12.1"
+      ],
+      "answer_space": "lines",
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "A",
+      "label": "1(a)(vi)",
+      "parent_label": "1(a)",
+      "type": "structured",
+      "stem": "a solid at room temperature that conducts electricity when dissolved in water.",
+      "options": [],
+      "marks": 1,
+      "regions": [
+        {
+          "page_index": 22,
+          "bbox": [
+            0.26,
+            0.05,
+            0.92,
+            0.122
+          ]
+        }
+      ],
+      "figures": [],
+      "topics": [
+        "3.4",
+        "3.1"
+      ],
+      "answer_space": "lines",
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "A",
+      "label": "1(b)",
+      "parent_label": "1",
+      "type": "structured",
+      "stem": "Draw the dot-and-cross diagram for structure B.\n\nShow the outer electron shells only.",
+      "options": [],
+      "marks": 1,
+      "regions": [
+        {
+          "page_index": 22,
+          "bbox": [
+            0.22,
+            0.125,
+            0.92,
+            0.385
+          ]
+        }
+      ],
+      "figures": [],
+      "topics": [
+        "3.2"
+      ],
+      "answer_space": "drawing",
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "Structure B is H–Cl (hydrogen chloride). Blank drawing space, mark [1] at foot of space.",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "A",
+      "label": "2",
+      "parent_label": null,
+      "type": "context",
+      "stem": "Aluminium carbide, Al₄C₃, reacts with water to form methane, CH₄, and aluminium hydroxide.",
+      "options": [],
+      "marks": null,
+      "regions": [
+        {
+          "page_index": 23,
+          "bbox": [
+            0.15,
+            0.082,
+            0.88,
+            0.127
+          ]
+        }
+      ],
+      "figures": [],
+      "topics": [],
+      "answer_space": "none",
+      "has_handwriting": true,
+      "confidence": "high",
+      "notes": "Pen stroke after 'hydroxide.' ignored.",
+      "full_regions": [
+        {
+          "page_index": 23,
+          "bbox": [
+            0.15,
+            0.08,
+            0.88,
+            0.655
+          ]
+        },
+        {
+          "page_index": 24,
+          "bbox": [
+            0.28,
+            0.05,
+            0.9,
+            0.53
+          ]
+        }
+      ],
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "A",
+      "label": "2(a)",
+      "parent_label": "2",
+      "type": "structured",
+      "stem": "Construct a balanced chemical equation for this reaction.",
+      "options": [],
+      "marks": 2,
+      "regions": [
+        {
+          "page_index": 23,
+          "bbox": [
+            0.2,
+            0.135,
+            0.88,
+            0.192
+          ]
+        }
+      ],
+      "figures": [],
+      "topics": [
+        "4.1"
+      ],
+      "answer_space": "lines",
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "A",
+      "label": "2(b)",
+      "parent_label": "2",
+      "type": "context",
+      "stem": "Methane is a saturated hydrocarbon.",
+      "options": [],
+      "marks": null,
+      "regions": [
+        {
+          "page_index": 23,
+          "bbox": [
+            0.2,
+            0.198,
+            0.88,
+            0.227
+          ]
+        }
+      ],
+      "figures": [],
+      "topics": [],
+      "answer_space": "none",
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "A",
+      "label": "2(b)(i)",
+      "parent_label": "2(b)",
+      "type": "structured",
+      "stem": "Explain why methane is a saturated hydrocarbon.",
+      "options": [],
+      "marks": 2,
+      "regions": [
+        {
+          "page_index": 23,
+          "bbox": [
+            0.24,
+            0.23,
+            0.88,
+            0.322
+          ]
+        }
+      ],
+      "figures": [],
+      "topics": [
+        "11.2"
+      ],
+      "answer_space": "lines",
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "A",
+      "label": "2(b)(ii)",
+      "parent_label": "2(b)",
+      "type": "structured",
+      "stem": "Methane reacts with chlorine in the presence of ultraviolet light.\n\nState the formulae of two products of this reaction.",
+      "options": [],
+      "marks": 2,
+      "regions": [
+        {
+          "page_index": 23,
+          "bbox": [
+            0.24,
+            0.328,
+            0.88,
+            0.415
+          ]
+        }
+      ],
+      "figures": [],
+      "topics": [
+        "11.2"
+      ],
+      "answer_space": "lines",
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "Answer line printed as '...... and ......'.",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "A",
+      "label": "2(c)",
+      "parent_label": "2",
+      "type": "context",
+      "stem": "The equation for the complete combustion of methane is shown.\n\nCH₄ + 2O₂ → CO₂ + 2H₂O\n\nThis reaction is exothermic.",
+      "options": [],
+      "marks": null,
+      "regions": [
+        {
+          "page_index": 23,
+          "bbox": [
+            0.2,
+            0.422,
+            0.88,
+            0.505
+          ]
+        }
+      ],
+      "figures": [],
+      "topics": [],
+      "answer_space": "none",
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "A",
+      "label": "2(c)(i)",
+      "parent_label": "2(c)",
+      "type": "structured",
+      "stem": "Explain, using ideas about bond breaking and bond making, why this reaction is exothermic.",
+      "options": [],
+      "marks": 2,
+      "regions": [
+        {
+          "page_index": 23,
+          "bbox": [
+            0.24,
+            0.508,
+            0.88,
+            0.655
+          ]
+        }
+      ],
+      "figures": [],
+      "topics": [
+        "9.2",
+        "9.1"
+      ],
+      "answer_space": "lines",
+      "has_handwriting": true,
+      "confidence": "high",
+      "notes": "')'-shaped pen mark in the left margin below the answer lines ignored.",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "A",
+      "label": "2(c)(ii)",
+      "parent_label": "2(c)",
+      "type": "structured",
+      "stem": "Complete the reaction pathway diagram in Fig. 2.1 for the complete combustion of methane.\n\nLabel the:\n- reactants\n- products\n- enthalpy change of the reaction, ΔH\n- activation energy, Eₐ.",
+      "options": [],
+      "marks": 3,
+      "regions": [
+        {
+          "page_index": 24,
+          "bbox": [
+            0.28,
+            0.055,
+            0.9,
+            0.505
+          ]
+        }
+      ],
+      "figures": [
+        {
+          "id": "fig-2.1",
+          "page_index": 24,
+          "bbox": [
+            0.41,
+            0.205,
+            0.82,
+            0.488
+          ],
+          "kind": "graph",
+          "caption": "Fig. 2.1",
+          "description": "Blank axes for a reaction pathway (energy profile) diagram: vertical axis labelled 'energy' with an arrow pointing up, horizontal axis labelled 'progress of reaction' with an arrow pointing right. No curve or values are printed; the student draws the profile for the complete combustion of methane and labels reactants, products, ΔH and Eₐ."
+        }
+      ],
+      "topics": [
+        "9.1"
+      ],
+      "answer_space": "graph",
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "Student draws on the labelled blank axes of Fig. 2.1.",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "A",
+      "label": "3",
+      "parent_label": null,
+      "type": "context",
+      "stem": "Nitrogen(V) oxide decomposes on heating to form nitrogen(IV) oxide and oxygen.\n\n2N₂O₅(g) → 4NO₂(g) + O₂(g)",
+      "options": [],
+      "marks": null,
+      "regions": [
+        {
+          "page_index": 25,
+          "bbox": [
+            0.18,
+            0.068,
+            0.82,
+            0.127
+          ]
+        }
+      ],
+      "figures": [],
+      "topics": [],
+      "answer_space": "none",
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "",
+      "full_regions": [
+        {
+          "page_index": 25,
+          "bbox": [
+            0.18,
+            0.065,
+            0.86,
+            0.752
+          ]
+        },
+        {
+          "page_index": 26,
+          "bbox": [
+            0.29,
+            0.05,
+            0.89,
+            0.265
+          ]
+        }
+      ],
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "A",
+      "label": "3(a)",
+      "parent_label": "3",
+      "type": "context",
+      "stem": "The table shows how the rate of reaction varies with the concentration of N₂O₅.\n\n| concentration of N₂O₅(g) in mol/dm³ | rate in mol/dm³/s |\n|---|---|\n| 3.2 | 6.39 |\n| 1.6 | 3.15 |\n| 0.8 | 1.63 |",
+      "options": [],
+      "marks": null,
+      "regions": [
+        {
+          "page_index": 25,
+          "bbox": [
+            0.23,
+            0.138,
+            0.82,
+            0.29
+          ]
+        }
+      ],
+      "figures": [
+        {
+          "id": "tab-3a",
+          "page_index": 25,
+          "bbox": [
+            0.35,
+            0.168,
+            0.77,
+            0.286
+          ],
+          "kind": "table",
+          "caption": "",
+          "description": "Table of rate of decomposition of N₂O₅ against its concentration. Columns: 'concentration of N₂O₅(g) in mol/dm³' and 'rate in mol/dm³/s'. Rows: 3.2 → 6.39; 1.6 → 3.15; 0.8 → 1.63. Halving the concentration roughly halves the rate."
+        }
+      ],
+      "topics": [],
+      "answer_space": "none",
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "A",
+      "label": "3(a)(i)",
+      "parent_label": "3(a)",
+      "type": "structured",
+      "stem": "Describe how the rate of this reaction changes with the concentration of N₂O₅.",
+      "options": [],
+      "marks": 1,
+      "regions": [
+        {
+          "page_index": 25,
+          "bbox": [
+            0.27,
+            0.298,
+            0.86,
+            0.388
+          ]
+        }
+      ],
+      "figures": [],
+      "topics": [
+        "10.1",
+        "10.2"
+      ],
+      "answer_space": "lines",
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "A",
+      "label": "3(a)(ii)",
+      "parent_label": "3(a)",
+      "type": "structured",
+      "stem": "Explain your answer to (a)(i) in terms of collision theory.",
+      "options": [],
+      "marks": 2,
+      "regions": [
+        {
+          "page_index": 25,
+          "bbox": [
+            0.27,
+            0.393,
+            0.86,
+            0.512
+          ]
+        }
+      ],
+      "figures": [],
+      "topics": [
+        "10.2"
+      ],
+      "answer_space": "lines",
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "A",
+      "label": "3(a)(iii)",
+      "parent_label": "3(a)",
+      "type": "structured",
+      "stem": "Describe and explain the effect of increasing the temperature on the rate of this reaction.",
+      "options": [],
+      "marks": 2,
+      "regions": [
+        {
+          "page_index": 25,
+          "bbox": [
+            0.27,
+            0.517,
+            0.86,
+            0.652
+          ]
+        }
+      ],
+      "figures": [],
+      "topics": [
+        "10.2"
+      ],
+      "answer_space": "lines",
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "A",
+      "label": "3(b)",
+      "parent_label": "3",
+      "type": "context",
+      "stem": "Sulfur dioxide is an atmospheric pollutant.",
+      "options": [],
+      "marks": null,
+      "regions": [
+        {
+          "page_index": 25,
+          "bbox": [
+            0.24,
+            0.658,
+            0.86,
+            0.688
+          ]
+        }
+      ],
+      "figures": [],
+      "topics": [],
+      "answer_space": "none",
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "A",
+      "label": "3(b)(i)",
+      "parent_label": "3(b)",
+      "type": "structured",
+      "stem": "Describe one source of the sulfur dioxide in the atmosphere.",
+      "options": [],
+      "marks": 1,
+      "regions": [
+        {
+          "page_index": 25,
+          "bbox": [
+            0.28,
+            0.69,
+            0.86,
+            0.752
+          ]
+        }
+      ],
+      "figures": [],
+      "topics": [
+        "12.1"
+      ],
+      "answer_space": "lines",
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "A",
+      "label": "3(b)(ii)",
+      "parent_label": "3(b)",
+      "type": "structured",
+      "stem": "The oxidation of sulfur dioxide to sulfur trioxide in the atmosphere is catalysed by nitrogen(IV) oxide.\n\nSO₂ + NO₂ → SO₃ + NO\nNO + ½O₂ → NO₂\n\nNitrogen(IV) oxide speeds up the rate of reaction. Which other property of a catalyst is shown by these equations?",
+      "options": [],
+      "marks": 1,
+      "regions": [
+        {
+          "page_index": 26,
+          "bbox": [
+            0.29,
+            0.055,
+            0.89,
+            0.235
+          ]
+        }
+      ],
+      "figures": [],
+      "topics": [
+        "10.3",
+        "12.1"
+      ],
+      "answer_space": "lines",
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "A",
+      "label": "4",
+      "parent_label": null,
+      "type": "context",
+      "stem": "When concentrated hydrochloric acid is electrolysed, gases are produced at the electrodes.\n\nThe incomplete apparatus is shown.",
+      "options": [],
+      "marks": null,
+      "regions": [
+        {
+          "page_index": 27,
+          "bbox": [
+            0.16,
+            0.06,
+            0.88,
+            0.442
+          ]
+        }
+      ],
+      "figures": [
+        {
+          "id": "fig-4-apparatus",
+          "page_index": 27,
+          "bbox": [
+            0.39,
+            0.205,
+            0.72,
+            0.44
+          ],
+          "kind": "apparatus",
+          "caption": "",
+          "description": "Incomplete electrolysis apparatus (no figure number). A container of concentrated hydrochloric acid (labelled) with two vertical dark rod electrodes passing up through a hatched base/bung into the acid; nothing is drawn above the electrodes for collecting gas. Below the container the two electrodes are wired to a power supply box (labelled 'power supply') marked + on the left and − on the right, so the left electrode is connected to the positive terminal and the right electrode to the negative terminal. The electrodes are not labelled anode/cathode; the student completes the diagram."
+        }
+      ],
+      "topics": [],
+      "answer_space": "none",
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "",
+      "full_regions": [
+        {
+          "page_index": 27,
+          "bbox": [
+            0.16,
+            0.06,
+            0.89,
+            0.765
+          ]
+        },
+        {
+          "page_index": 28,
+          "bbox": [
+            0.27,
+            0.05,
+            0.89,
+            0.29
+          ]
+        }
+      ],
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "A",
+      "label": "4(a)",
+      "parent_label": "4",
+      "type": "context",
+      "stem": "",
+      "options": [],
+      "marks": null,
+      "regions": [
+        {
+          "page_index": 27,
+          "bbox": [
+            0.23,
+            0.452,
+            0.28,
+            0.485
+          ]
+        }
+      ],
+      "figures": [],
+      "topics": [],
+      "answer_space": "none",
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "'(a)' carries no text of its own; it is printed on the same line as (i).",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "A",
+      "label": "4(a)(i)",
+      "parent_label": "4(a)",
+      "type": "structured",
+      "stem": "Complete the diagram by:\n- labelling the anode and cathode\n- showing how the gases are collected.",
+      "options": [],
+      "marks": 2,
+      "regions": [
+        {
+          "page_index": 27,
+          "bbox": [
+            0.27,
+            0.452,
+            0.89,
+            0.508
+          ]
+        }
+      ],
+      "figures": [],
+      "topics": [
+        "7.2",
+        "1.1"
+      ],
+      "answer_space": "drawing",
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "Student draws on the apparatus figure attached to Q4.",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "A",
+      "label": "4(a)(ii)",
+      "parent_label": "4(a)",
+      "type": "structured",
+      "stem": "Predict the products of this electrolysis at the:\n\npositive electrode\n\nnegative electrode",
+      "options": [],
+      "marks": 2,
+      "regions": [
+        {
+          "page_index": 27,
+          "bbox": [
+            0.27,
+            0.513,
+            0.89,
+            0.607
+          ]
+        }
+      ],
+      "figures": [],
+      "topics": [
+        "7.2"
+      ],
+      "answer_space": "lines",
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "'positive electrode' and 'negative electrode' are printed prompts before each answer line.",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "A",
+      "label": "4(a)(iii)",
+      "parent_label": "4(a)",
+      "type": "structured",
+      "stem": "Graphite (carbon) electrodes are used in this electrolysis.\n\nSuggest one other element that can be used as an electrode and give a reason, other than that it can conduct electricity.\n\nelement\n\nreason",
+      "options": [],
+      "marks": 1,
+      "regions": [
+        {
+          "page_index": 27,
+          "bbox": [
+            0.27,
+            0.61,
+            0.89,
+            0.765
+          ]
+        }
+      ],
+      "figures": [],
+      "topics": [
+        "7.2"
+      ],
+      "answer_space": "lines",
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "'element' and 'reason' are printed prompts before each answer line.",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "A",
+      "label": "4(b)",
+      "parent_label": "4",
+      "type": "structured",
+      "stem": "Aqueous chlorine reacts with aqueous sodium iodide.\n\nUsing a balanced chemical equation for the reaction, explain why chlorine is more reactive than iodine.",
+      "options": [],
+      "marks": 2,
+      "regions": [
+        {
+          "page_index": 28,
+          "bbox": [
+            0.27,
+            0.055,
+            0.89,
+            0.262
+          ]
+        }
+      ],
+      "figures": [],
+      "topics": [
+        "8.3",
+        "4.1"
+      ],
+      "answer_space": "lines",
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "A",
+      "label": "5",
+      "parent_label": null,
+      "type": "context",
+      "stem": "Molybdenum is a transition element which is used to make steel that is extremely hard.\n\nIt exhibits variable oxidation states and can be manufactured by heating together molybdenum(IV) oxide, MoO₂, and aluminium.",
+      "options": [],
+      "marks": null,
+      "regions": [
+        {
+          "page_index": 29,
+          "bbox": [
+            0.16,
+            0.052,
+            0.87,
+            0.127
+          ]
+        }
+      ],
+      "figures": [],
+      "topics": [],
+      "answer_space": "none",
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "",
+      "full_regions": [
+        {
+          "page_index": 29,
+          "bbox": [
+            0.16,
+            0.05,
+            0.88,
+            0.635
+          ]
+        },
+        {
+          "page_index": 30,
+          "bbox": [
+            0.24,
+            0.05,
+            0.92,
+            0.4
+          ]
+        }
+      ],
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "A",
+      "label": "5(a)",
+      "parent_label": "5",
+      "type": "structured",
+      "stem": "Construct the equation for this reaction.",
+      "options": [],
+      "marks": 1,
+      "regions": [
+        {
+          "page_index": 29,
+          "bbox": [
+            0.21,
+            0.135,
+            0.87,
+            0.197
+          ]
+        }
+      ],
+      "figures": [],
+      "topics": [
+        "4.1",
+        "8.5"
+      ],
+      "answer_space": "lines",
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "A",
+      "label": "5(b)",
+      "parent_label": "5",
+      "type": "context",
+      "stem": "",
+      "options": [],
+      "marks": null,
+      "regions": [
+        {
+          "page_index": 29,
+          "bbox": [
+            0.21,
+            0.2,
+            0.26,
+            0.225
+          ]
+        }
+      ],
+      "figures": [],
+      "topics": [],
+      "answer_space": "none",
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "'(b)' carries no text of its own; it is printed on the same line as (i).",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "A",
+      "label": "5(b)(i)",
+      "parent_label": "5(b)",
+      "type": "structured",
+      "stem": "Complete the table to show the oxidation states of molybdenum and aluminium.\n\n| element | oxidation state in reactants | oxidation state in products |\n|---|---|---|\n| molybdenum | | |\n| aluminium | | |",
+      "options": [],
+      "marks": 2,
+      "regions": [
+        {
+          "page_index": 29,
+          "bbox": [
+            0.25,
+            0.2,
+            0.885,
+            0.382
+          ]
+        }
+      ],
+      "figures": [
+        {
+          "id": "tab-5bi",
+          "page_index": 29,
+          "bbox": [
+            0.3,
+            0.232,
+            0.862,
+            0.368
+          ],
+          "kind": "table",
+          "caption": "",
+          "description": "Table for the student to complete, three columns: 'element', 'oxidation state in reactants', 'oxidation state in products'. Rows: molybdenum (both oxidation-state cells blank); aluminium (both cells blank)."
+        }
+      ],
+      "topics": [
+        "7.1"
+      ],
+      "answer_space": "table",
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "A",
+      "label": "5(b)(ii)",
+      "parent_label": "5(b)",
+      "type": "structured",
+      "stem": "In terms of oxidation states, explain why this is a redox reaction.",
+      "options": [],
+      "marks": 2,
+      "regions": [
+        {
+          "page_index": 29,
+          "bbox": [
+            0.25,
+            0.388,
+            0.88,
+            0.51
+          ]
+        }
+      ],
+      "figures": [],
+      "topics": [
+        "7.1"
+      ],
+      "answer_space": "lines",
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "A",
+      "label": "5(c)",
+      "parent_label": "5",
+      "type": "structured",
+      "stem": "Suggest which metal, molybdenum or aluminium, is less reactive. Explain your answer.",
+      "options": [],
+      "marks": 1,
+      "regions": [
+        {
+          "page_index": 29,
+          "bbox": [
+            0.22,
+            0.515,
+            0.88,
+            0.632
+          ]
+        }
+      ],
+      "figures": [],
+      "topics": [
+        "8.5"
+      ],
+      "answer_space": "lines",
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "A",
+      "label": "5(d)",
+      "parent_label": "5",
+      "type": "context",
+      "stem": "Molybdenum has a melting point of 2620 °C.",
+      "options": [],
+      "marks": null,
+      "regions": [
+        {
+          "page_index": 30,
+          "bbox": [
+            0.24,
+            0.055,
+            0.66,
+            0.082
+          ]
+        }
+      ],
+      "figures": [],
+      "topics": [],
+      "answer_space": "none",
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "A",
+      "label": "5(d)(i)",
+      "parent_label": "5(d)",
+      "type": "structured",
+      "stem": "With the help of a labelled diagram, describe the type of bonding that is present in molybdenum.",
+      "options": [],
+      "marks": 2,
+      "regions": [
+        {
+          "page_index": 30,
+          "bbox": [
+            0.28,
+            0.088,
+            0.92,
+            0.292
+          ]
+        }
+      ],
+      "figures": [],
+      "topics": [
+        "3.3"
+      ],
+      "answer_space": "drawing",
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "Blank space for a labelled diagram followed by two answer lines (drawing + lines).",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "A",
+      "label": "5(d)(ii)",
+      "parent_label": "5(d)",
+      "type": "structured",
+      "stem": "Suggest why molybdenum has a much higher melting point than aluminium.",
+      "options": [],
+      "marks": 1,
+      "regions": [
+        {
+          "page_index": 30,
+          "bbox": [
+            0.28,
+            0.298,
+            0.92,
+            0.37
+          ]
+        }
+      ],
+      "figures": [],
+      "topics": [
+        "3.3",
+        "8.4"
+      ],
+      "answer_space": "lines",
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    }
+  ],
+  "answers": []
+}

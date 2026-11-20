@@ -443,3 +443,102 @@ svg { display: block; flex-shrink: 0; }
 .account-line strong { display: block; color: var(--c-text); font-size: var(--fs-18); }
 .simple-card .soon { margin-top: var(--s-1); }
 .simple-card .soon p { color: var(--c-text-3); font-size: var(--fs-14); }
+
+/* ---------- 20. Practice and quick checks with real exam questions ---------- */
+.practice { max-width: 920px; padding-top: var(--s-6); padding-bottom: var(--s-12); display: flex; flex-direction: column; gap: var(--s-5); }
+.practice-top { display: flex; flex-direction: column; align-items: flex-start; gap: var(--s-3); }
+.practice-top > .link-action { margin-left: calc(-1 * var(--s-3)); }
+.practice-title { display: flex; flex-direction: column; gap: var(--s-2); }
+.practice-meta { display: flex; align-items: center; gap: var(--s-4); flex-wrap: wrap; margin-top: var(--s-1); }
+.practice-card { padding: var(--s-8); display: flex; flex-direction: column; gap: var(--s-5); }
+.q-head { display: flex; align-items: baseline; justify-content: space-between; gap: var(--s-4); flex-wrap: wrap; padding-bottom: var(--s-3); border-bottom: 1px solid var(--c-border); }
+.q-source { font-size: var(--fs-14); color: var(--c-text-3); }
+
+/* Question text: set like an exam paper, a little larger than body */
+.q-body { display: flex; flex-direction: column; gap: var(--s-4); font-size: var(--fs-18); line-height: 1.55; }
+.q-body p, .q-stem p, .q-scheme p { margin: 0 0 var(--s-2); }
+.q-body p:last-child, .q-scheme p:last-child { margin-bottom: 0; }
+.q-context { color: var(--c-text-2); }
+.q-stem { font-weight: 550; }
+.q-marks { float: right; margin-left: var(--s-3); font-weight: 650; color: var(--c-text-3); font-variant-numeric: tabular-nums; }
+.q-list { margin: 0; padding-left: 1.4em; }
+.q-table-wrap { overflow-x: auto; }
+.q-table { border-collapse: collapse; font-size: var(--fs-16); font-variant-numeric: tabular-nums; margin: var(--s-2) 0; }
+.q-table th, .q-table td { border: 1px solid var(--c-border-strong); padding: 6px 14px; text-align: center; }
+.q-table thead th { background: var(--c-surface-2); font-weight: 650; }
+.q-table tbody th { font-weight: 650; text-align: left; }
+.q-fig { margin: 0; display: flex; flex-direction: column; align-items: center; gap: var(--s-1); }
+.q-fig img, .q-crop img { max-width: 100%; height: auto; background: #fff; border-radius: var(--r-sm); mix-blend-mode: multiply; }
+.q-fig figcaption { font-size: var(--fs-14); font-weight: 650; color: var(--c-text-2); }
+.q-crop { margin: var(--s-3) 0 0; }
+.q-crop img { border: 1px solid var(--c-border); }
+
+/* MCQ options: big tap targets, one per row */
+.opts-form { display: flex; flex-direction: column; gap: var(--s-4); }
+.opts { border: 0; margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: var(--s-2); }
+.opt {
+  display: flex; align-items: center; gap: var(--s-4); min-height: var(--target-min);
+  padding: var(--s-3) var(--s-4); border: 1.5px solid var(--c-border); border-radius: var(--r-lg);
+  background: var(--c-surface); font-size: var(--fs-18);
+}
+.opt-text p { margin: 0; }
+.opt-letter {
+  flex: none; width: 34px; height: 34px; border-radius: 50%; display: grid; place-items: center;
+  font-weight: 700; border: 1.5px solid var(--c-border-strong); color: var(--c-text-2);
+}
+.opt--pick { cursor: pointer; }
+.opt--pick input { position: absolute; opacity: 0; pointer-events: none; }
+.opt--pick:hover { border-color: var(--steady-forest); background: #f1f6f2; }
+.opt--pick:has(input:checked) { border-color: var(--steady-forest); background: var(--c-primary-soft); box-shadow: 0 0 0 1px var(--steady-forest); }
+.opt--pick:has(input:checked) .opt-letter { background: var(--steady-forest); border-color: var(--steady-forest); color: #fff; }
+.opt--pick:has(input:focus-visible) { outline: 3px solid var(--c-focus); outline-offset: 2px; }
+.opt--correct { border-color: var(--steady-forest); background: var(--c-primary-soft); }
+.opt--correct .opt-letter { background: var(--steady-forest); border-color: var(--steady-forest); color: #fff; }
+.opt--wrong { border-color: var(--c-shaky-border); background: #fff8f4; }
+.opt--wrong .opt-letter { border-color: var(--steady-coral); color: var(--c-shaky-ink); }
+.opt-note { margin-left: auto; font-size: var(--fs-14); font-weight: 650; color: var(--c-text-3); white-space: nowrap; }
+.opt--correct .opt-note { color: var(--c-primary-ink); }
+
+.q-actions { display: flex; align-items: center; gap: var(--s-2); flex-wrap: wrap; }
+.q-hint { display: flex; align-items: center; gap: var(--s-2); color: var(--c-text-2); }
+
+/* Answer feedback: Forest for right, coral outline (never crimson) for a miss */
+.result { display: flex; flex-direction: column; align-items: flex-start; gap: var(--s-3); padding: var(--s-5); border-radius: var(--r-lg); border: 1.5px solid; }
+.result--right { border-color: var(--c-getting-border); background: var(--c-primary-soft); }
+.result--wrong { border-color: var(--c-shaky-border); background: #fff8f4; }
+.result-title { font-size: var(--fs-20); font-weight: 700; }
+.result--right .result-title { color: var(--c-primary-ink); }
+.result--wrong .result-title { color: var(--c-shaky-ink); }
+
+/* Mark scheme reveal and the printed scans */
+.q-reveal > summary { list-style: none; width: fit-content; }
+.q-reveal > summary::-webkit-details-marker { display: none; }
+.q-reveal[open] > summary { display: none; }
+.q-reveal--inline > summary { display: inline-flex; margin-left: calc(-1 * var(--s-3)); }
+.q-reveal--inline[open] > summary { display: inline-flex; }
+.q-scheme { display: flex; flex-direction: column; gap: var(--s-3); padding: var(--s-5); border-radius: var(--r-lg); background: var(--c-bg); border: 1px solid var(--c-border); }
+.q-scheme::before { content: "Mark scheme"; font-size: var(--fs-14); font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--c-text-3); }
+.q-scheme-row { font-size: var(--fs-18); }
+.self-mark { display: flex; align-items: center; gap: var(--s-2); flex-wrap: wrap; margin-top: var(--s-4); }
+.self-mark-q { font-weight: 650; margin-right: var(--s-2); }
+.q-printed { border-top: 1px solid var(--c-border); padding-top: var(--s-3); }
+.q-printed > summary { cursor: pointer; font-weight: 600; color: var(--c-primary-ink); width: fit-content; }
+.result .q-printed { border-top: 0; padding-top: 0; }
+.q-scheme .q-printed { border-top-color: var(--c-border); }
+
+.done-card { align-items: flex-start; }
+.done-rating { display: flex; align-items: center; gap: var(--s-3); font-weight: 600; color: var(--c-text-2); }
+
+/* ---------- 21. Question bank browser ---------- */
+.bank-group { padding: var(--s-6) var(--s-6) var(--s-4); display: flex; flex-direction: column; gap: var(--s-3); }
+.bank-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
+.bank-list li + li { border-top: 1px solid var(--c-border); }
+.bank-row { display: grid; grid-template-columns: 48px 1fr auto; gap: var(--s-4); align-items: baseline; padding: var(--s-3) var(--s-2); text-decoration: none; color: var(--c-text); border-radius: var(--r-sm); }
+.bank-row:hover { background: #f1f6f2; }
+.bank-label { font-weight: 700; color: var(--c-text-3); font-variant-numeric: tabular-nums; }
+.bank-meta { font-size: var(--fs-14); color: var(--c-text-3); white-space: nowrap; }
+.q-tags { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+.q-tags li { font-size: var(--fs-14); padding: 2px 10px; border-radius: var(--r-pill); background: var(--c-surface-2); color: var(--c-text-2); font-weight: 600; }
+.bank-node { display: flex; flex-direction: column; gap: var(--s-3); font-size: var(--fs-18); line-height: 1.55; }
+.bank-node .bank-node { padding-left: var(--s-5); border-left: 2px solid var(--c-border); margin-top: var(--s-2); }
+.bank-part { font-weight: 700; color: var(--c-text-3); margin: 0; }

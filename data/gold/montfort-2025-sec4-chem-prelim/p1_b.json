@@ -1,0 +1,1357 @@
+{
+  "contract_version": 1,
+  "document_id": "montfort-2025-sec4-chem-prelim",
+  "source_pdf": "papers/Sec4_PureChemistry_2025_SA2_montfort.pdf",
+  "chunk": "p1_b",
+  "extracted_by": "subagent-gold",
+  "pages": [
+    {
+      "page_index": 11,
+      "paper": "P1",
+      "printed_page_number": "12",
+      "page_type": "questions",
+      "has_handwriting": false,
+      "notes": "Q21-Q23."
+    },
+    {
+      "page_index": 12,
+      "paper": "P1",
+      "printed_page_number": "13",
+      "page_type": "questions",
+      "has_handwriting": true,
+      "notes": "Q24-Q26. Q25 number circled by hand."
+    },
+    {
+      "page_index": 13,
+      "paper": "P1",
+      "printed_page_number": "14",
+      "page_type": "questions",
+      "has_handwriting": true,
+      "notes": "Q27-Q28. Q28 number circled by hand."
+    },
+    {
+      "page_index": 14,
+      "paper": "P1",
+      "printed_page_number": "15",
+      "page_type": "questions",
+      "has_handwriting": true,
+      "notes": "Q29-Q30. Q29 number circled by hand."
+    },
+    {
+      "page_index": 15,
+      "paper": "P1",
+      "printed_page_number": "16",
+      "page_type": "questions",
+      "has_handwriting": true,
+      "notes": "Q31-Q33. Pen dots in left margin below Q32; stroke beside Q33 number."
+    },
+    {
+      "page_index": 16,
+      "paper": "P1",
+      "printed_page_number": "17",
+      "page_type": "questions",
+      "has_handwriting": false,
+      "notes": "Q34-Q35."
+    },
+    {
+      "page_index": 17,
+      "paper": "P1",
+      "printed_page_number": "18",
+      "page_type": "questions",
+      "has_handwriting": true,
+      "notes": "Q36-Q38. Handwritten mark beside Q37 option A."
+    },
+    {
+      "page_index": 18,
+      "paper": "P1",
+      "printed_page_number": "19",
+      "page_type": "questions",
+      "has_handwriting": true,
+      "notes": "Q39-Q40. Pen marks around Q39 number. Q39 table 'statement 2' column is blank in the scan."
+    },
+    {
+      "page_index": 19,
+      "paper": "P1",
+      "printed_page_number": null,
+      "page_type": "blank",
+      "has_handwriting": false,
+      "notes": "Blank page at the end of Paper 1 (presumably printed page 20, number not printed). The P1 cover says the Periodic Table is on page 20, but this scan's page is blank; the Periodic Table is at PDF index 42."
+    }
+  ],
+  "papers": [],
+  "questions": [
+    {
+      "paper": "P1",
+      "section": "A",
+      "label": "21",
+      "parent_label": null,
+      "type": "mcq",
+      "stem": "Universal indicator contains several dyes. The reversible reaction of one dye, IndOH, is shown.\n\nIndOH(aq) + H⁺(aq) ⇌ Ind⁺(aq) + H₂O(l)\ncolour X    colour Y\n\nA few drops of Universal indicator solution are added to 50 cm³ of water.\n\nA few drops of dilute hydrochloric acid are added to the solution.\n\nWhich row describes what happens when the acid is added?",
+      "options": [
+        {
+          "label": "A",
+          "text": "pH decreases; colour of solution shifts towards colour X"
+        },
+        {
+          "label": "B",
+          "text": "pH decreases; colour of solution shifts towards colour Y"
+        },
+        {
+          "label": "C",
+          "text": "pH increases; colour of solution shifts towards colour X"
+        },
+        {
+          "label": "D",
+          "text": "pH increases; colour of solution shifts towards colour Y"
+        }
+      ],
+      "marks": 1,
+      "regions": [
+        {
+          "page_index": 11,
+          "bbox": [
+            0.18,
+            0.105,
+            0.87,
+            0.45
+          ]
+        }
+      ],
+      "full_regions": [
+        {
+          "page_index": 11,
+          "bbox": [
+            0.18,
+            0.105,
+            0.87,
+            0.45
+          ]
+        }
+      ],
+      "answer_space": "none",
+      "figures": [
+        {
+          "id": "q21-table",
+          "page_index": 11,
+          "bbox": [
+            0.23,
+            0.3,
+            0.575,
+            0.437
+          ],
+          "kind": "table",
+          "caption": "",
+          "description": "Options table with columns 'pH' and 'colour of solution shifts towards'. A: decreases, colour X. B: decreases, colour Y. C: increases, colour X. D: increases, colour Y."
+        }
+      ],
+      "topics": [
+        "5.1",
+        "10.4"
+      ],
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "The reversible arrow is printed as a double-headed arrow (↔); transcribed as ⇌. 'colour X' is printed under IndOH and 'colour Y' under Ind⁺.",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "section": "A",
+      "label": "22",
+      "parent_label": null,
+      "type": "mcq",
+      "stem": "Samples of HCl(aq) and HNO₃(aq) are tested using Universal indicator paper.\n\nThe sample of HCl(aq) has a pH of 4 and the sample of HNO₃(aq) has a pH of 2.\n\nWhich statement is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "HCl(aq) is a weak acid and HNO₃(aq) is a strong acid."
+        },
+        {
+          "label": "B",
+          "text": "HNO₃(aq) has a lower formula mass than HCl(aq)."
+        },
+        {
+          "label": "C",
+          "text": "The HNO₃(aq) is more concentrated than the HCl(aq)."
+        },
+        {
+          "label": "D",
+          "text": "The HCl(aq) has dissociated more than the HNO₃(aq)."
+        }
+      ],
+      "marks": 1,
+      "regions": [
+        {
+          "page_index": 11,
+          "bbox": [
+            0.19,
+            0.465,
+            0.85,
+            0.655
+          ]
+        }
+      ],
+      "full_regions": [
+        {
+          "page_index": 11,
+          "bbox": [
+            0.19,
+            0.465,
+            0.85,
+            0.655
+          ]
+        }
+      ],
+      "answer_space": "none",
+      "figures": [],
+      "topics": [
+        "5.1"
+      ],
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "section": "A",
+      "label": "23",
+      "parent_label": null,
+      "type": "mcq",
+      "stem": "Which statement about oxides is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "All acidic oxides are gases at room temperature."
+        },
+        {
+          "label": "B",
+          "text": "All basic oxides dissolve in water to give alkalis."
+        },
+        {
+          "label": "C",
+          "text": "Amphoteric oxides react with acids, alkalis and water."
+        },
+        {
+          "label": "D",
+          "text": "Potassium oxide is a basic oxide."
+        }
+      ],
+      "marks": 1,
+      "regions": [
+        {
+          "page_index": 11,
+          "bbox": [
+            0.2,
+            0.685,
+            0.68,
+            0.815
+          ]
+        }
+      ],
+      "full_regions": [
+        {
+          "page_index": 11,
+          "bbox": [
+            0.2,
+            0.685,
+            0.68,
+            0.815
+          ]
+        }
+      ],
+      "answer_space": "none",
+      "figures": [],
+      "topics": [
+        "5.2"
+      ],
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "section": "A",
+      "label": "24",
+      "parent_label": null,
+      "type": "mcq",
+      "stem": "A student is provided with suitable apparatus, distilled water and the following reagents.\n\nsolid magnesium hydroxide    solid lead carbonate    dilute nitric acid\naqueous sodium chloride    aqueous sodium sulfate\n\nWhich salts can the student prepare as a pure dry sample?",
+      "options": [
+        {
+          "label": "A",
+          "text": "lead nitrate, magnesium nitrate, lead chloride, lead sulfate and magnesium sulfate"
+        },
+        {
+          "label": "B",
+          "text": "lead nitrate, magnesium nitrate, lead chloride and lead sulfate only"
+        },
+        {
+          "label": "C",
+          "text": "lead nitrate, magnesium nitrate and lead chloride only"
+        },
+        {
+          "label": "D",
+          "text": "lead nitrate and magnesium nitrate only"
+        }
+      ],
+      "marks": 1,
+      "regions": [
+        {
+          "page_index": 12,
+          "bbox": [
+            0.17,
+            0.068,
+            0.885,
+            0.305
+          ]
+        }
+      ],
+      "full_regions": [
+        {
+          "page_index": 12,
+          "bbox": [
+            0.17,
+            0.068,
+            0.885,
+            0.305
+          ]
+        }
+      ],
+      "answer_space": "none",
+      "figures": [],
+      "topics": [
+        "5.3"
+      ],
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "Small specks near the question number and after 'sulfate' look like scan noise, not handwriting.",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "section": "A",
+      "label": "25",
+      "parent_label": null,
+      "type": "mcq",
+      "stem": "One mole of compound X gives two moles of ions in aqueous solution.\n\nX reacts with ammonium carbonate to give an acidic gas. What is compound X?",
+      "options": [
+        {
+          "label": "A",
+          "text": "calcium hydroxide"
+        },
+        {
+          "label": "B",
+          "text": "ethanoic acid"
+        },
+        {
+          "label": "C",
+          "text": "nitric acid"
+        },
+        {
+          "label": "D",
+          "text": "sodium hydroxide"
+        }
+      ],
+      "marks": 1,
+      "regions": [
+        {
+          "page_index": 12,
+          "bbox": [
+            0.17,
+            0.325,
+            0.83,
+            0.5
+          ]
+        }
+      ],
+      "full_regions": [
+        {
+          "page_index": 12,
+          "bbox": [
+            0.17,
+            0.325,
+            0.83,
+            0.5
+          ]
+        }
+      ],
+      "answer_space": "none",
+      "figures": [],
+      "topics": [
+        "5.1",
+        "6.2"
+      ],
+      "has_handwriting": true,
+      "confidence": "high",
+      "notes": "Question number circled by hand.",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "section": "A",
+      "label": "26",
+      "parent_label": null,
+      "type": "mcq",
+      "stem": "The elements are arranged in groups and periods in the Periodic Table.\n\nWhich row is correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "group: the number of electrons in the outer shell; period: the number of occupied shells; arranged by increasing proton number"
+        },
+        {
+          "label": "B",
+          "text": "group: the number of occupied shells; period: the number of electrons in the outer shell; arranged by increasing mass number"
+        },
+        {
+          "label": "C",
+          "text": "group: the number of electrons in the outer shell; period: the number of occupied shells; arranged by increasing mass number"
+        },
+        {
+          "label": "D",
+          "text": "group: the number of occupied shells; period: the number of electrons in the outer shell; arranged by increasing proton number"
+        }
+      ],
+      "marks": 1,
+      "regions": [
+        {
+          "page_index": 12,
+          "bbox": [
+            0.19,
+            0.52,
+            0.9,
+            0.82
+          ]
+        }
+      ],
+      "full_regions": [
+        {
+          "page_index": 12,
+          "bbox": [
+            0.19,
+            0.52,
+            0.9,
+            0.82
+          ]
+        }
+      ],
+      "answer_space": "none",
+      "figures": [
+        {
+          "id": "q26-table",
+          "page_index": 12,
+          "bbox": [
+            0.22,
+            0.59,
+            0.895,
+            0.808
+          ],
+          "kind": "table",
+          "caption": "",
+          "description": "Options table with columns 'group determined by', 'period determined by' and 'elements in the Periodic Table are arranged by'. A: number of electrons in the outer shell; number of occupied shells; increasing proton number. B: number of occupied shells; number of electrons in the outer shell; increasing mass number. C: number of electrons in the outer shell; number of occupied shells; increasing mass number. D: number of occupied shells; number of electrons in the outer shell; increasing proton number."
+        }
+      ],
+      "topics": [
+        "8.1",
+        "2.2"
+      ],
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "section": "A",
+      "label": "27",
+      "parent_label": null,
+      "type": "mcq",
+      "stem": "Element X is in Group 1.\n\nSome statements about element X are given.\n\n- X is not the least dense element in Group 1.\n- X is more reactive than potassium.\n- X has an Aᵣ value less than 100.\n\nWhich element is X?",
+      "options": [
+        {
+          "label": "A",
+          "text": "lithium"
+        },
+        {
+          "label": "B",
+          "text": "sodium"
+        },
+        {
+          "label": "C",
+          "text": "rubidium"
+        },
+        {
+          "label": "D",
+          "text": "caesium"
+        }
+      ],
+      "marks": 1,
+      "regions": [
+        {
+          "page_index": 13,
+          "bbox": [
+            0.17,
+            0.088,
+            0.61,
+            0.355
+          ]
+        }
+      ],
+      "full_regions": [
+        {
+          "page_index": 13,
+          "bbox": [
+            0.17,
+            0.088,
+            0.61,
+            0.355
+          ]
+        }
+      ],
+      "answer_space": "none",
+      "figures": [],
+      "topics": [
+        "8.2"
+      ],
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "section": "A",
+      "label": "28",
+      "parent_label": null,
+      "type": "mcq",
+      "stem": "Three statements about the properties of metals are shown.\n\n1 All metals conduct electricity.\n2 All metals have two electrons in their innermost shell.\n3 All metals have high melting points.\n\nWhich statements are correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1, 2 and 3"
+        },
+        {
+          "label": "B",
+          "text": "1 and 2 only"
+        },
+        {
+          "label": "C",
+          "text": "1 and 3 only"
+        },
+        {
+          "label": "D",
+          "text": "2 and 3 only"
+        }
+      ],
+      "marks": 1,
+      "regions": [
+        {
+          "page_index": 13,
+          "bbox": [
+            0.17,
+            0.362,
+            0.68,
+            0.62
+          ]
+        }
+      ],
+      "full_regions": [
+        {
+          "page_index": 13,
+          "bbox": [
+            0.17,
+            0.362,
+            0.68,
+            0.62
+          ]
+        }
+      ],
+      "answer_space": "none",
+      "figures": [],
+      "topics": [
+        "3.3",
+        "2.2"
+      ],
+      "has_handwriting": true,
+      "confidence": "high",
+      "notes": "Question number circled by hand.",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "section": "A",
+      "label": "29",
+      "parent_label": null,
+      "type": "mcq",
+      "stem": "Group 1 elements and transition elements are metals.\n\nStudent X suggests that the Group 1 elements are above hydrogen in the reactivity series but that not all transition elements are above hydrogen.\n\nStudent Y suggests that the densities of Group 1 elements are lower than those of the transition elements.\n\nWhich students are correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "both X and Y"
+        },
+        {
+          "label": "B",
+          "text": "X only"
+        },
+        {
+          "label": "C",
+          "text": "Y only"
+        },
+        {
+          "label": "D",
+          "text": "neither X nor Y"
+        }
+      ],
+      "marks": 1,
+      "regions": [
+        {
+          "page_index": 14,
+          "bbox": [
+            0.18,
+            0.058,
+            0.895,
+            0.335
+          ]
+        }
+      ],
+      "full_regions": [
+        {
+          "page_index": 14,
+          "bbox": [
+            0.18,
+            0.058,
+            0.895,
+            0.335
+          ]
+        }
+      ],
+      "answer_space": "none",
+      "figures": [],
+      "topics": [
+        "8.2",
+        "8.4",
+        "8.5"
+      ],
+      "has_handwriting": true,
+      "confidence": "high",
+      "notes": "Question number circled by hand.",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "section": "A",
+      "label": "30",
+      "parent_label": null,
+      "type": "mcq",
+      "stem": "The equations for some of the reactions of metals Q, R and T are shown.\n\n2QNO₃(aq) + Cu(s) → 2Q(s) + Cu(NO₃)₂(aq)\nR(s) + TSO₄(aq) → T(s) + RSO₄(aq)\nT(s) + H₂SO₄(aq) → TSO₄(aq) + H₂(g)\n\nUsing the equations, what is the order of reactivity of Q, R and T?",
+      "options": [
+        {
+          "label": "A",
+          "text": "most reactive Q, T, R least reactive"
+        },
+        {
+          "label": "B",
+          "text": "most reactive R, Q, T least reactive"
+        },
+        {
+          "label": "C",
+          "text": "most reactive R, T, Q least reactive"
+        },
+        {
+          "label": "D",
+          "text": "most reactive T, R, Q least reactive"
+        }
+      ],
+      "marks": 1,
+      "regions": [
+        {
+          "page_index": 14,
+          "bbox": [
+            0.195,
+            0.365,
+            0.9,
+            0.635
+          ]
+        }
+      ],
+      "full_regions": [
+        {
+          "page_index": 14,
+          "bbox": [
+            0.195,
+            0.365,
+            0.9,
+            0.635
+          ]
+        }
+      ],
+      "answer_space": "none",
+      "figures": [
+        {
+          "id": "q30-table",
+          "page_index": 14,
+          "bbox": [
+            0.23,
+            0.51,
+            0.9,
+            0.623
+          ],
+          "kind": "table",
+          "caption": "",
+          "description": "Options table giving the order of reactivity from most reactive (left) to least reactive (right), with an arrow between the headings. A: Q, T, R. B: R, Q, T. C: R, T, Q. D: T, R, Q."
+        }
+      ],
+      "topics": [
+        "8.5"
+      ],
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "section": "A",
+      "label": "31",
+      "parent_label": null,
+      "type": "mcq",
+      "stem": "Zinc is used to galvanise iron, which prevents the iron from rusting. Which statements are correct?\n\n1 The layer of zinc forms a barrier between the iron and the oxygen and water in the atmosphere.\n2 Zinc will oxidise before the iron does, even if the layer of zinc is scratched.\n3 When iron rusts, atoms of iron gain electrons to form ions.",
+      "options": [
+        {
+          "label": "A",
+          "text": "1, 2 and 3"
+        },
+        {
+          "label": "B",
+          "text": "1 and 2 only"
+        },
+        {
+          "label": "C",
+          "text": "1 and 3 only"
+        },
+        {
+          "label": "D",
+          "text": "2 and 3 only"
+        }
+      ],
+      "marks": 1,
+      "regions": [
+        {
+          "page_index": 15,
+          "bbox": [
+            0.165,
+            0.075,
+            0.86,
+            0.33
+          ]
+        }
+      ],
+      "full_regions": [
+        {
+          "page_index": 15,
+          "bbox": [
+            0.165,
+            0.075,
+            0.86,
+            0.33
+          ]
+        }
+      ],
+      "answer_space": "none",
+      "figures": [],
+      "topics": [
+        "8.5",
+        "7.1"
+      ],
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "section": "A",
+      "label": "32",
+      "parent_label": null,
+      "type": "mcq",
+      "stem": "Some metals and the compounds in their ores are shown.\n\n| metal | Al | Ca | Pb | Na | Fe | Mg |\n|---|---|---|---|---|---|---|\n| compound in ore | Al₂O₃ | CaCO₃ | PbS | NaCl | Fe₂O₃ | MgCO₃ |\n\nWhich type of reaction occurs in the extraction of each of these metals from its ore?",
+      "options": [
+        {
+          "label": "A",
+          "text": "decomposition by heat"
+        },
+        {
+          "label": "B",
+          "text": "electrolysis"
+        },
+        {
+          "label": "C",
+          "text": "precipitation"
+        },
+        {
+          "label": "D",
+          "text": "reduction"
+        }
+      ],
+      "marks": 1,
+      "regions": [
+        {
+          "page_index": 15,
+          "bbox": [
+            0.17,
+            0.36,
+            0.83,
+            0.6
+          ]
+        }
+      ],
+      "full_regions": [
+        {
+          "page_index": 15,
+          "bbox": [
+            0.17,
+            0.36,
+            0.83,
+            0.6
+          ]
+        }
+      ],
+      "answer_space": "none",
+      "figures": [
+        {
+          "id": "q32-table",
+          "page_index": 15,
+          "bbox": [
+            0.25,
+            0.395,
+            0.825,
+            0.455
+          ],
+          "kind": "table",
+          "caption": "",
+          "description": "Two-row table. Metal: Al, Ca, Pb, Na, Fe, Mg. Compound in ore: Al₂O₃, CaCO₃, PbS, NaCl, Fe₂O₃, MgCO₃ respectively."
+        }
+      ],
+      "topics": [
+        "8.5",
+        "7.1"
+      ],
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "Faint pen dots in the left margin just below option D (between Q32 and Q33); not attributed to the question text.",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "section": "A",
+      "label": "33",
+      "parent_label": null,
+      "type": "mcq",
+      "stem": "What are the main products obtained by the fractional distillation of liquid air?",
+      "options": [
+        {
+          "label": "A",
+          "text": "carbon dioxide and oxygen"
+        },
+        {
+          "label": "B",
+          "text": "carbon dioxide and water vapour"
+        },
+        {
+          "label": "C",
+          "text": "nitrogen and oxygen"
+        },
+        {
+          "label": "D",
+          "text": "nitrogen and water vapour"
+        }
+      ],
+      "marks": 1,
+      "regions": [
+        {
+          "page_index": 15,
+          "bbox": [
+            0.18,
+            0.625,
+            0.79,
+            0.765
+          ]
+        }
+      ],
+      "full_regions": [
+        {
+          "page_index": 15,
+          "bbox": [
+            0.18,
+            0.625,
+            0.79,
+            0.765
+          ]
+        }
+      ],
+      "answer_space": "none",
+      "figures": [],
+      "topics": [
+        "12.1",
+        "1.2"
+      ],
+      "has_handwriting": true,
+      "confidence": "high",
+      "notes": "Handwritten stroke next to the question number.",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "section": "A",
+      "label": "34",
+      "parent_label": null,
+      "type": "mcq",
+      "stem": "Three statements about the carbon cycle are given.\n\n1 The carbon cycle regulates the amount of carbon dioxide in the atmosphere.\n2 During photosynthesis, carbon dioxide is produced.\n3 Combustion of hydrocarbons requires oxygen.\n\nWhich statements are correct?",
+      "options": [
+        {
+          "label": "A",
+          "text": "1, 2 and 3"
+        },
+        {
+          "label": "B",
+          "text": "1 and 2 only"
+        },
+        {
+          "label": "C",
+          "text": "1 and 3 only"
+        },
+        {
+          "label": "D",
+          "text": "2 and 3 only"
+        }
+      ],
+      "marks": 1,
+      "regions": [
+        {
+          "page_index": 16,
+          "bbox": [
+            0.19,
+            0.072,
+            0.855,
+            0.325
+          ]
+        }
+      ],
+      "full_regions": [
+        {
+          "page_index": 16,
+          "bbox": [
+            0.19,
+            0.072,
+            0.855,
+            0.325
+          ]
+        }
+      ],
+      "answer_space": "none",
+      "figures": [],
+      "topics": [
+        "12.2"
+      ],
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "section": "A",
+      "label": "35",
+      "parent_label": null,
+      "type": "mcq",
+      "stem": "CFC compounds were used as aerosol propellants. The structure of one CFC compound is shown.\n\nWhich element in this compound causes a depletion of ozone in the atmosphere?",
+      "options": [
+        {
+          "label": "A",
+          "text": "carbon"
+        },
+        {
+          "label": "B",
+          "text": "chlorine"
+        },
+        {
+          "label": "C",
+          "text": "fluorine"
+        },
+        {
+          "label": "D",
+          "text": "hydrogen"
+        }
+      ],
+      "marks": 1,
+      "regions": [
+        {
+          "page_index": 16,
+          "bbox": [
+            0.19,
+            0.362,
+            0.89,
+            0.645
+          ]
+        }
+      ],
+      "full_regions": [
+        {
+          "page_index": 16,
+          "bbox": [
+            0.19,
+            0.362,
+            0.89,
+            0.645
+          ]
+        }
+      ],
+      "answer_space": "none",
+      "figures": [
+        {
+          "id": "q35-structure",
+          "page_index": 16,
+          "bbox": [
+            0.48,
+            0.41,
+            0.635,
+            0.5
+          ],
+          "kind": "structure",
+          "caption": "",
+          "description": "Displayed formula of a CFC with two carbon atoms joined by a single bond: the left carbon bonded to three F atoms (top, left, bottom); the right carbon bonded to Cl (top), H (right) and H (bottom). i.e. CF₃–CH₂Cl (2-chloro-1,1,1-trifluoroethane)."
+        }
+      ],
+      "topics": [
+        "12.1"
+      ],
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "The full stop after 'propellants' is faint in the scan.",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "section": "A",
+      "label": "36",
+      "parent_label": null,
+      "type": "mcq",
+      "stem": "In the fractional distillation of petroleum, different fractions are obtained at the top and bottom of the fractionating column.\n\nWhich properties does the fraction obtained at the top of the fractionating column have, compared with the fraction obtained at the bottom?\n\n1 higher viscosity\n2 lower boiling point\n3 lower volatility\n4 shorter chain length",
+      "options": [
+        {
+          "label": "A",
+          "text": "1 and 2"
+        },
+        {
+          "label": "B",
+          "text": "1 and 3"
+        },
+        {
+          "label": "C",
+          "text": "2 and 4"
+        },
+        {
+          "label": "D",
+          "text": "3 and 4"
+        }
+      ],
+      "marks": 1,
+      "regions": [
+        {
+          "page_index": 17,
+          "bbox": [
+            0.18,
+            0.072,
+            0.85,
+            0.365
+          ]
+        }
+      ],
+      "full_regions": [
+        {
+          "page_index": 17,
+          "bbox": [
+            0.18,
+            0.072,
+            0.85,
+            0.365
+          ]
+        }
+      ],
+      "answer_space": "none",
+      "figures": [],
+      "topics": [
+        "11.1"
+      ],
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "section": "A",
+      "label": "37",
+      "parent_label": null,
+      "type": "mcq",
+      "stem": "Compound Q is a hydrocarbon that has no structural isomers.\n\nCompound Q does not decolourise bromine in the dark.\n\nWhich compound is Q?",
+      "options": [
+        {
+          "label": "A",
+          "text": "C₃H₆"
+        },
+        {
+          "label": "B",
+          "text": "C₃H₈"
+        },
+        {
+          "label": "C",
+          "text": "C₄H₈"
+        },
+        {
+          "label": "D",
+          "text": "C₄H₁₀"
+        }
+      ],
+      "marks": 1,
+      "regions": [
+        {
+          "page_index": 17,
+          "bbox": [
+            0.185,
+            0.4,
+            0.81,
+            0.585
+          ]
+        }
+      ],
+      "full_regions": [
+        {
+          "page_index": 17,
+          "bbox": [
+            0.185,
+            0.4,
+            0.81,
+            0.585
+          ]
+        }
+      ],
+      "answer_space": "none",
+      "figures": [],
+      "topics": [
+        "11.2",
+        "11.3"
+      ],
+      "has_handwriting": true,
+      "confidence": "high",
+      "notes": "Handwritten mark beside option A (not transcribed). Subscripts verified at 800 dpi: A C₃H₆, B C₃H₈.",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "section": "A",
+      "label": "38",
+      "parent_label": null,
+      "type": "mcq",
+      "stem": "Alkenes can be produced by the cracking of alkanes, such as decane, C₁₀H₂₂.\n\nWhich equation shows the cracking of decane to produce two different alkenes and at least one other product?",
+      "options": [
+        {
+          "label": "A",
+          "text": "C₁₀H₂₂ → 2C₂H₄ + C₃H₆ + C₄H₁₀"
+        },
+        {
+          "label": "B",
+          "text": "C₁₀H₂₂ → H₂ + 2C₂H₄ + C₃H₆ + C₅H₁₀"
+        },
+        {
+          "label": "C",
+          "text": "C₁₀H₂₂ → 2C₃H₆ + C₄H₁₀"
+        },
+        {
+          "label": "D",
+          "text": "C₁₀H₂₂ → H₂ + 2C₂H₄ + 2C₃H₆"
+        }
+      ],
+      "marks": 1,
+      "regions": [
+        {
+          "page_index": 17,
+          "bbox": [
+            0.19,
+            0.615,
+            0.86,
+            0.8
+          ]
+        }
+      ],
+      "full_regions": [
+        {
+          "page_index": 17,
+          "bbox": [
+            0.19,
+            0.615,
+            0.86,
+            0.8
+          ]
+        }
+      ],
+      "answer_space": "none",
+      "figures": [],
+      "topics": [
+        "11.3"
+      ],
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "Options verified at 600 dpi. As printed, A (11 C) and B (12 C) do not balance; C and D balance. The '?' at the end of the stem is very faint in the scan.",
+      "review_flags": []
+    },
+    {
+      "paper": "P1",
+      "section": "A",
+      "label": "39",
+      "parent_label": null,
+      "type": "mcq",
+      "stem": "Two statements are shown.\n\n1 When ethanol is made from glucose by fermentation, each glucose molecule produces three molecules of ethanol.\n2 When ethanoic acid is made from ethanol, the ethanol acts as an oxidising agent.\n\nWhich row about these statements is correct?\n\nkey\n✓ = true\n✗ = false",
+      "options": [
+        {
+          "label": "A",
+          "text": "statement 1: ✓; statement 2: (blank in scan)"
+        },
+        {
+          "label": "B",
+          "text": "statement 1: ✓; statement 2: (blank in scan)"
+        },
+        {
+          "label": "C",
+          "text": "statement 1: ✗; statement 2: (blank in scan)"
+        },
+        {
+          "label": "D",
+          "text": "statement 1: ✗; statement 2: (blank in scan)"
+        }
+      ],
+      "marks": 1,
+      "regions": [
+        {
+          "page_index": 18,
+          "bbox": [
+            0.17,
+            0.065,
+            0.875,
+            0.36
+          ]
+        }
+      ],
+      "full_regions": [
+        {
+          "page_index": 18,
+          "bbox": [
+            0.17,
+            0.065,
+            0.875,
+            0.36
+          ]
+        }
+      ],
+      "answer_space": "none",
+      "figures": [
+        {
+          "id": "q39-table",
+          "page_index": 18,
+          "bbox": [
+            0.235,
+            0.233,
+            0.75,
+            0.348
+          ],
+          "kind": "table",
+          "caption": "",
+          "description": "Options table with columns 'statement 1' and 'statement 2', and a key at the right: ✓ = true, ✗ = false. Statement 1 column: A ✓, B ✓, C ✗, D ✗. The statement 2 column is empty in this scan (its ticks and crosses did not print), so options A/B and C/D look identical. The usual layout would be A ✓ ✓, B ✓ ✗, C ✗ ✓, D ✗ ✗, but that is not visible on the page."
+        }
+      ],
+      "topics": [
+        "11.4",
+        "11.5",
+        "7.1"
+      ],
+      "has_handwriting": true,
+      "confidence": "low",
+      "notes": "The statement 2 column is printed blank (checked at 300 dpi; no faint marks), so A=B and C=D as printed. The usual pattern would be A ✓✓, B ✓✗, C ✗✓, D ✗✗ (the P1 key gives D), but that is inferred and not transcribed. Handwritten marks around the question number.",
+      "review_flags": [
+        "source_defect"
+      ]
+    },
+    {
+      "paper": "P1",
+      "section": "A",
+      "label": "40",
+      "parent_label": null,
+      "type": "mcq",
+      "stem": "An ester is formed from a carboxylic acid and an alcohol.\n\nHow does the number of carbon, hydrogen and oxygen atoms in an ester differ from the total number of these atoms in the carboxylic acid and alcohol from which the ester is formed?",
+      "options": [
+        {
+          "label": "A",
+          "text": "carbon atoms fewer; hydrogen atoms fewer; oxygen atoms fewer"
+        },
+        {
+          "label": "B",
+          "text": "carbon atoms fewer; hydrogen atoms same; oxygen atoms fewer"
+        },
+        {
+          "label": "C",
+          "text": "carbon atoms same; hydrogen atoms fewer; oxygen atoms fewer"
+        },
+        {
+          "label": "D",
+          "text": "carbon atoms same; hydrogen atoms same; oxygen atoms same"
+        }
+      ],
+      "marks": 1,
+      "regions": [
+        {
+          "page_index": 18,
+          "bbox": [
+            0.195,
+            0.385,
+            0.875,
+            0.6
+          ]
+        }
+      ],
+      "full_regions": [
+        {
+          "page_index": 18,
+          "bbox": [
+            0.195,
+            0.385,
+            0.875,
+            0.6
+          ]
+        }
+      ],
+      "answer_space": "none",
+      "figures": [
+        {
+          "id": "q40-table",
+          "page_index": 18,
+          "bbox": [
+            0.235,
+            0.478,
+            0.875,
+            0.59
+          ],
+          "kind": "table",
+          "caption": "",
+          "description": "Options table with columns 'carbon atoms', 'hydrogen atoms', 'oxygen atoms'. A: fewer, fewer, fewer. B: fewer, same, fewer. C: same, fewer, fewer. D: same, same, same."
+        }
+      ],
+      "topics": [
+        "11.5"
+      ],
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    }
+  ],
+  "answers": []
+}

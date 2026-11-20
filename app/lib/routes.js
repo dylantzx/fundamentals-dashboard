@@ -12,6 +12,8 @@ import {
   HttpError,
 } from './http-utils.js';
 import { COOKIE_NAME } from './sessions.js';
+import { TOPICS, LABEL_TEXT, labelFor } from './ratings.js';
+import { renderPractice, renderBankIndex, renderBankQuestion } from '../views/practice.js';
 
 export const MIN_PASSWORD_LENGTH = 8;
 const MAX_PASSWORD_LENGTH = 200;
@@ -33,6 +35,7 @@ const USERNAME_RE = /^[A-Za-z0-9][A-Za-z0-9._-]{0,31}$/;
  *   auth: ReturnType<typeof import('./auth.js').createAuthenticator>,
  *   loadUi: () => Promise<{ views: Views, buildDashboardModel: (o: { user: any, progress: any }) => any }>,
  *   publicDir: string,
+ *   bank?: ReturnType<typeof import('./question-bank.js').loadQuestionBank> | null,
  *   log: (line: string) => void,
  * }} RouteDeps
  */
@@ -43,11 +46,13 @@ const COMING_NEXT = [
   { re: /^\/check\/([0-9]{1,2})$/, title: 'Quick check' },
   { re: /^\/subjects?\/([A-Za-z0-9_-]{1,32})$/, title: 'Subjects' },
   { re: /^\/coming-next$/, title: 'Coming next' },
+  { re: /^\/bank(\/.*)?$/, title: 'Question bank' },
 ];
 
 /** @param {RouteDeps} deps */
 export function createRouter(deps) {
   const { store, sessions, auth, loadUi, publicDir, log } = deps;
+  const bank = deps.bank ?? null;
 
   /**
    * Resolves the current session.
@@ -226,6 +231,137 @@ export function createRouter(deps) {
     sendHtml(res, 200, views.renderComingNext({ title, backHref: homeFor(ctx.user) }));
   }
 
+  // ---- practice from the real question bank ---------------------------------
+
+  /** Questions per practice set and per quick check (as the dashboard promises). */
+  const PRACTICE_SIZE = 5;
+  const CHECK_SIZE = 3;
+
+  /**
+   * The question set behind /practise/:topicId or /check/:n, or null if there is none.
+   * @param {'practise' | 'check'} mode @param {string} key
+   */
+  function practiceSet(mode, key) {
+    if (!bank) return null;
+    let topic, checkN;
+    if (mode === 'check') {
+      checkN = Number(key);
+      topic = Number.isInteger(checkN) ? TOPICS[checkN - 1] : undefined;
+    } else {
+      topic = TOPICS.find((t) => t.id === key);
+    }
+    if (!topic) return null;
+    const all = bank.forTopic(topic.id);
+    // A check is short: MCQs first, since they mark themselves.
+    const items = mode === 'check'
+      ? [...all.filter((i) => i.type === 'mcq'), ...all.filter((i) => i.type !== 'mcq')].slice(0, CHECK_SIZE)
+      : all.slice(0, PRACTICE_SIZE);
+    const base = mode === 'check' ? `/check/${checkN}` : `/practise/${topic.id}`;
+    return { mode, topic, checkN, items, base };
+  }
+
+  function ratingFor(progress, topicId) {
+    const s = progress.topics?.[topicId] || {};
+    const total = Math.max(0, Math.floor(Number(s.total) || 0));
+    const right = Math.min(total, Math.max(0, Math.floor(Number(s.right) || 0)));
+    const label = labelFor({ right, total });
+    return { label, labelText: LABEL_TEXT[label], right, total };
+  }
+
+  async function getPractice(req, res, url, set) {
+    const ctx = currentUser(req);
+    if (!ctx.user) return toLogin(res, ctx);
+    if (ctx.user.role !== 'student') return redirect(res, homeFor(ctx.user));
+    const count = set.items.length;
+    const done = url.searchParams.get('done') === '1';
+    const index = Number(url.searchParams.get('i') ?? 0);
+    if (!done && count && !(Number.isInteger(index) && index >= 0 && index < count)) return redirect(res, set.base);
+    const item = done || !count ? null : set.items[index];
+    const picked = url.searchParams.get('picked');
+    const feedback = item && item.type === 'mcq' && item.options.some((o) => o.label === picked) ? { picked } : null;
+    const isLast = index === count - 1;
+    sendHtml(res, 200, renderPractice({
+      user: { username: ctx.user.username },
+      mode: set.mode,
+      checkN: set.checkN,
+      topic: set.topic,
+      rating: ratingFor(store.getProgress(ctx.user.id), set.topic.id),
+      base: set.base,
+      index: done ? count : index,
+      count,
+      item,
+      feedback,
+      nextHref: isLast ? `${set.base}?done=1` : `${set.base}?i=${index + 1}`,
+      isLast,
+      done,
+      source: bank.sourceLine(),
+    }));
+  }
+
+  async function postPracticeAnswer(req, res, set) {
+    const form = await readForm(req);
+    const ctx = currentUser(req);
+    if (!ctx.user) return toLogin(res, ctx);
+    if (ctx.user.role !== 'student') return redirect(res, homeFor(ctx.user));
+    const index = Number(form.i);
+    const item = Number.isInteger(index) ? set.items[index] : undefined;
+    if (!item) return redirect(res, set.base);
+
+    let right;
+    if (item.type === 'mcq') {
+      if (!item.options.some((o) => o.label === form.choice)) return redirect(res, `${set.base}?i=${index}`);
+      right = form.choice === item.correctOption;
+    } else {
+      if (form.self !== 'right' && form.self !== 'wrong') return redirect(res, `${set.base}?i=${index}`);
+      right = form.self === 'right';
+    }
+
+    const progress = store.getProgress(ctx.user.id);
+    const prev = progress.topics[set.topic.id] || { right: 0, total: 0 };
+    progress.topics[set.topic.id] = { right: (prev.right || 0) + (right ? 1 : 0), total: (prev.total || 0) + 1 };
+    const isLast = index === set.items.length - 1;
+    if (set.mode === 'check' && isLast && progress.checksDone === set.checkN - 1) progress.checksDone = set.checkN;
+    store.setProgress(ctx.user.id, progress);
+
+    if (item.type === 'mcq') return redirect(res, `${set.base}?i=${index}&picked=${form.choice}`);
+    return redirect(res, isLast ? `${set.base}?done=1` : `${set.base}?i=${index + 1}`);
+  }
+
+  async function getBankIndex(req, res) {
+    const ctx = currentUser(req);
+    if (!ctx.user) return toLogin(res, ctx);
+    const groups = bank.papers.map((p) => {
+      const qs = bank.roots.filter((r) => r.paper === p.paper && r.document_id === p.documentId);
+      return {
+        paper: p.paper,
+        title: `Paper ${p.paper.replace(/^P/, '')} (${p.paper_code}) · ${p.paper === 'P1' ? 'Multiple choice' : 'Structured'}`,
+        questions: qs.map((r) => ({
+          id: r.id,
+          label: r.label,
+          type: r.type,
+          marks: r.total_marks ?? r.marks ?? 0,
+          parts: countParts(r),
+          preview: preview(r),
+        })),
+      };
+    }).filter((g) => g.questions.length);
+    sendHtml(res, 200, renderBankIndex({ user: { username: ctx.user.username }, groups, source: bank.sourceLine(), backHref: homeFor(ctx.user) }));
+  }
+
+  async function getBankQuestion(req, res, id) {
+    const ctx = currentUser(req);
+    if (!ctx.user) return toLogin(res, ctx);
+    const root = bank.root(id);
+    if (!root) return notFound(res);
+    const p = bank.papers.find((x) => x.paper === root.paper && x.documentId === root.document_id) || {};
+    sendHtml(res, 200, renderBankQuestion({
+      user: { username: ctx.user.username },
+      root,
+      paperName: p.paper_code ? `Paper ${root.paper.replace(/^P/, '')} (${p.paper_code})` : root.paper,
+      source: bank.sourceLine(),
+    }));
+  }
+
   // ---- dispatch -------------------------------------------------------------
 
   /**
@@ -262,6 +398,25 @@ export function createRouter(deps) {
       return notFound(res);
     }
 
+    if (bank) {
+      const pm = /^\/(practise|check)\/([A-Za-z0-9_-]{1,32})(\/answer)?$/.exec(p);
+      const set = pm && practiceSet(pm[1], pm[2]);
+      if (set) {
+        if (!pm[3] && method === 'GET') return getPractice(req, res, url, set);
+        if (pm[3] && method === 'POST') return postPracticeAnswer(req, res, set);
+      }
+      if (method === 'GET' && p === '/bank') return getBankIndex(req, res);
+      const qm = /^\/bank\/q\/([A-Za-z0-9_-]{1,64})$/.exec(p);
+      if (method === 'GET' && qm) return getBankQuestion(req, res, qm[1]);
+      if (method === 'GET' && p.startsWith('/bank/assets/')) {
+        const ctx = currentUser(req);
+        if (!ctx.user) return toLogin(res, ctx);
+        const rawPath = (req.url || '').split('?')[0];
+        if (await serveStatic(res, bank.assetsDir, rawPath.slice('/bank/assets/'.length))) return;
+        return notFound(res);
+      }
+    }
+
     if (method === 'GET') {
       for (const { re, title } of COMING_NEXT) if (re.test(p)) return getComingNext(req, res, title);
     }
@@ -296,4 +451,16 @@ export function createRouter(deps) {
       return sendText(res, 500, 'Something went wrong.');
     }
   };
+}
+
+/** Number of answerable parts in a question tree. */
+function countParts(n) {
+  const own = n.type === 'structured' || n.type === 'mcq' ? 1 : 0;
+  return own + (n.children || []).reduce((s, c) => s + countParts(c), 0);
+}
+
+/** First line of a question, for the bank list. */
+function preview(n) {
+  const text = (n.stem || n.children?.[0]?.stem || '').split('\n').find((l) => l.trim() && !l.trim().startsWith('|')) || '';
+  return text.length > 140 ? text.slice(0, 137).trimEnd() + '…' : text;
 }

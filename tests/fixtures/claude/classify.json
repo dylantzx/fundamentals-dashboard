@@ -1,0 +1,158 @@
+{
+ "pages": [
+  {
+   "page_index": 0,
+   "page_type": "cover",
+   "paper": "P1",
+   "printed_page_number": "",
+   "section": "",
+   "question_starts": [],
+   "continues_previous": false,
+   "has_handwriting": false,
+   "cover": {
+    "paper": "P1",
+    "paper_code": "6092/01",
+    "school": "Test Secondary School",
+    "exam": "Preliminary Examination 2025",
+    "year": 2025,
+    "level": "Secondary 4 Express",
+    "subject": "Chemistry",
+    "date": "2025-08-29",
+    "duration_minutes": 60,
+    "total_marks": 40,
+    "instructions": "Answer all questions."
+   },
+   "notes": "",
+   "choice_instructions": []
+  },
+  {
+   "page_index": 1,
+   "page_type": "Questions",
+   "paper": "P1",
+   "printed_page_number": "2",
+   "section": "",
+   "question_starts": [
+    "1",
+    "2"
+   ],
+   "continues_previous": false,
+   "has_handwriting": false,
+   "cover": null,
+   "notes": "",
+   "choice_instructions": []
+  },
+  {
+   "page_index": 2,
+   "page_type": "questions",
+   "paper": "",
+   "printed_page_number": "3",
+   "section": "",
+   "question_starts": [
+    "3"
+   ],
+   "continues_previous": false,
+   "has_handwriting": true,
+   "cover": null,
+   "notes": "",
+   "choice_instructions": []
+  },
+  {
+   "page_index": 3,
+   "page_type": "cover",
+   "paper": "",
+   "printed_page_number": "",
+   "section": "",
+   "question_starts": [],
+   "continues_previous": false,
+   "has_handwriting": false,
+   "cover": {
+    "paper": "",
+    "paper_code": "6092/02",
+    "school": "Test Secondary School",
+    "exam": "Preliminary Examination 2025",
+    "year": 2025,
+    "level": "",
+    "subject": "Chemistry",
+    "date": "2025-08-30",
+    "duration_minutes": 105,
+    "total_marks": 80,
+    "instructions": "Section A: Answer all questions. Section B: Answer one question."
+   },
+   "notes": "",
+   "choice_instructions": [
+    {
+     "group_id": "B",
+     "choose": 1,
+     "questions": [],
+     "note": "Section B: Answer one question."
+    }
+   ]
+  },
+  {
+   "page_index": 4,
+   "page_type": "questions",
+   "paper": "",
+   "printed_page_number": "2",
+   "section": "A",
+   "question_starts": [
+    "1"
+   ],
+   "continues_previous": false,
+   "has_handwriting": false,
+   "cover": null,
+   "notes": "",
+   "choice_instructions": []
+  },
+  {
+   "page_index": 5,
+   "page_type": "questions",
+   "paper": "",
+   "printed_page_number": "3",
+   "section": "B",
+   "question_starts": [
+    "2",
+    "3"
+   ],
+   "continues_previous": true,
+   "has_handwriting": false,
+   "cover": null,
+   "notes": "",
+   "choice_instructions": [
+    {
+     "group_id": "Section B",
+     "choose": 1,
+     "questions": [],
+     "note": "Answer one question from this section."
+    }
+   ]
+  },
+  {
+   "page_index": 6,
+   "page_type": "answer_key",
+   "paper": "",
+   "printed_page_number": "",
+   "section": "",
+   "question_starts": [
+    "1"
+   ],
+   "continues_previous": false,
+   "has_handwriting": false,
+   "cover": null,
+   "notes": "",
+   "choice_instructions": []
+  },
+  {
+   "page_index": 7,
+   "page_type": "blank",
+   "paper": "",
+   "printed_page_number": "",
+   "section": "",
+   "question_starts": [],
+   "continues_previous": false,
+   "has_handwriting": false,
+   "cover": null,
+   "notes": "",
+   "choice_instructions": []
+  }
+ ]
+}
