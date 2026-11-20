@@ -250,7 +250,7 @@ describe('login, sessions and roles', () => {
     const body = await page.text();
     assert.match(body, /Hi MumTan/);
     assert.match(body, /Student account<\/p><strong>mei<\/strong>/);
-    assert.ok(body.includes('Session summaries coming soon'));
+    assert.ok(body.includes('Did mei stay in Steady?'), 'the parent page lists his sessions');
     const d = await app.get('/dashboard', cookie);
     assert.equal(d.status, 303);
     assert.equal(loc(d), '/parent');

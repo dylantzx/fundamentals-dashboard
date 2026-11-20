@@ -15,6 +15,7 @@ import { COOKIE_NAME } from './sessions.js';
 import { TOPICS, LABEL_TEXT, labelFor } from './ratings.js';
 import { labelOf } from './rating-rules.js';
 import { renderPractice, renderBankIndex, renderBankQuestion } from '../views/practice.js';
+import { createParentRoutes } from './parent-routes.js';
 
 export const MIN_PASSWORD_LENGTH = 8;
 const MAX_PASSWORD_LENGTH = 200;
@@ -39,6 +40,7 @@ const USERNAME_RE = /^[A-Za-z0-9][A-Za-z0-9._-]{0,31}$/;
  *   publicDir: string,
  *   bank?: ReturnType<typeof import('./question-bank.js').loadQuestionBank> | null,
  *   log: (line: string) => void,
+ *   studySessions: ReturnType<typeof import('./study-sessions.js').createStudySessions>,
  * }} RouteDeps
  */
 
@@ -56,6 +58,12 @@ export function createRouter(deps) {
   const { store, sessions, auth, loadUi, publicDir, log } = deps;
   const bank = deps.bank ?? null;
   const answers = deps.answers ?? null;
+  const { studySessions } = deps;
+
+  /** Ends the study session tied to a login, if it has one. */
+  function endStudy(meta, reason) {
+    if (meta && meta.studyId) studySessions.end(meta.studyId, reason);
+  }
 
   /**
    * Resolves the current session.
@@ -64,7 +72,9 @@ export function createRouter(deps) {
   function currentUser(req) {
     const sid = parseCookies(req.headers.cookie)[COOKIE_NAME];
     const s = sessions.touch(sid);
+    if (s.status === 'expired') endStudy(s.meta, 'idle');
     if (s.status === 'ok') {
+      if (s.meta && s.meta.studyId) studySessions.action(s.meta.studyId);
       const user = store.getUser(s.userId);
       if (user) return { user, sid, expired: false };
       sessions.destroy(sid);
@@ -191,9 +201,12 @@ export function createRouter(deps) {
       return sendHtml(res, 401, views.renderLogin({ error: 'bad-credentials', username, notice: null }));
     }
     // Fresh session id on every login (no fixation); drop any old one.
+    // A new login also ends this account's earlier logins (and their study sessions).
     const oldSid = parseCookies(req.headers.cookie)[COOKIE_NAME];
-    sessions.destroy(oldSid);
-    const sid = sessions.create(user.id);
+    endStudy(sessions.destroy(oldSid), 'replaced');
+    for (const meta of sessions.destroyUser(user.id)) endStudy(meta, 'replaced');
+    const meta = user.role === 'student' ? { studyId: studySessions.start(user.id).id } : undefined;
+    const sid = sessions.create(user.id, meta);
     res.setHeader('Set-Cookie', serializeCookie(COOKIE_NAME, sid));
     return redirect(res, '/');
   }
@@ -201,7 +214,7 @@ export function createRouter(deps) {
   async function postLogout(req, res) {
     await readForm(req);
     const sid = parseCookies(req.headers.cookie)[COOKIE_NAME];
-    sessions.destroy(sid);
+    endStudy(sessions.destroy(sid), 'logout');
     clearCookie(res);
     return redirect(res, '/login?notice=logged-out');
   }
@@ -219,17 +232,10 @@ export function createRouter(deps) {
     sendHtml(res, 200, views.renderDashboard(model));
   }
 
-  async function getParent(req, res) {
-    const ctx = currentUser(req);
-    if (!ctx.user) return toLogin(res, ctx);
-    if (ctx.user.role !== 'parent') return redirect(res, homeFor(ctx.user));
-    const student = store.listUsers().find((u) => u.role === 'student');
-    const { views } = await loadUi();
-    sendHtml(res, 200, views.renderParentHome({
-      user: { username: ctx.user.username },
-      student: student ? { username: student.username } : null,
-    }));
-  }
+  // Everything under /parent (lib/parent-routes.js).
+  const handleParent = createParentRoutes({
+    store, auth, studySessions, answers, loadUi, currentUser, toLogin, homeFor, notFound,
+  });
 
   async function getComingNext(req, res, title) {
     const ctx = currentUser(req);
@@ -332,7 +338,7 @@ export function createRouter(deps) {
     // questions, so every one is Exam level.
     answers?.add({
       userId: ctx.user.id, topicId: set.topic.id, questionId: item.id, correct: right,
-      level: 'exam', pool: set.mode === 'check' ? 'check' : 'practice', at: Date.now(),
+      level: 'exam', pool: set.mode === 'check' ? 'check' : 'practice', at: (deps.now ?? Date.now)(),
     });
 
     const progress = store.getProgress(ctx.user.id);
@@ -408,7 +414,7 @@ export function createRouter(deps) {
     }
     if (p === '/logout' && method === 'POST') return postLogout(req, res);
     if (p === '/dashboard' && method === 'GET') return getDashboard(req, res);
-    if (p === '/parent' && method === 'GET') return getParent(req, res);
+    if (p === '/parent' || p.startsWith('/parent/')) return handleParent(req, res, url, method);
 
     if (method === 'GET' && p.startsWith('/public/')) {
       // Use the raw (still-encoded) path so %2e%2e etc. are checked after decoding.
