@@ -1,0 +1,137 @@
+import { test } from 'node:test';
+import assert from 'node:assert/strict';
+import { buildDashboardModel, overallLabel } from '../lib/dashboard-model.js';
+import { DEMO_PROGRESS } from '../scripts/seed-demo.js';
+
+const user = { id: 'abc', username: 'jun_wei', role: 'student', passwordHash: 'x' };
+const build = (progress) => buildDashboardModel({ user, progress });
+const summary = (m) => m.topics.map((t) => `${t.labelText}${t.label === 'unrated' ? '' : ` ${t.right}/${t.total}`}`);
+
+test('eight subjects in order, only Chemistry active', () => {
+  const m = build({ topics: {}, checksDone: 0 });
+  assert.deepEqual(m.subjects.map((s) => s.name), [
+    'English', 'Mother Tongue', 'E Math', 'A Math', 'Chemistry', 'Physics', 'Biology', 'Combined Humanities',
+  ]);
+  assert.deepEqual(m.subjects.filter((s) => s.active).map((s) => s.name), ['Chemistry']);
+});
+
+test('user exposes only the username', () => {
+  assert.deepEqual(build({ topics: {}, checksDone: 0 }).user, { username: 'jun_wei' });
+});
+
+test('first-time seed matches landing-first-time.html', () => {
+  const m = build(DEMO_PROGRESS['first-time']);
+  assert.equal(m.state, 'first-time');
+  assert.equal(m.checksDone, 0);
+  assert.equal(m.checksTotal, 6);
+  assert.equal(m.nextUp, null);
+  assert.deepEqual(m.nextCheck, { n: 1, href: '/check/1', questions: 3, minutes: 3 });
+  assert.ok(m.topics.every((t) => t.label === 'unrated' && t.labelText === 'Not rated yet' && t.needMore === 3));
+  assert.deepEqual(m.topics.map((t) => t.href), ['t1', 't2', 't3', 't4', 't5', 't6'].map((id) => `/practise/${id}`));
+  assert.deepEqual(m.chemistry, { label: null, labelText: null, breakdown: { shaky: 0, getting: 0, solid: 0, unrated: 6 } });
+});
+
+test('a missing progress object is treated as first-time', () => {
+  assert.equal(buildDashboardModel({ user }).state, 'first-time');
+});
+
+test('part-way seed matches landing-part-way.html', () => {
+  const m = build(DEMO_PROGRESS['part-way']);
+  assert.equal(m.state, 'part-way');
+  assert.equal(m.checksDone, 2);
+  assert.deepEqual(summary(m), ['Solid 3/3', 'Shaky 1/3', 'Not rated yet', 'Not rated yet', 'Not rated yet', 'Not rated yet']);
+  assert.deepEqual(m.topics.map((t) => t.needMore), [0, 0, 2, 3, 3, 3]);
+  assert.equal(m.nextUp.name, 'Electron arrangement');
+  assert.deepEqual(m.nextCheck, { n: 3, href: '/check/3', questions: 3, minutes: 3 });
+  assert.deepEqual(m.chemistry, { label: null, labelText: null, breakdown: { shaky: 1, getting: 0, solid: 1, unrated: 4 } });
+});
+
+test('returning seed reproduces landing.html exactly', () => {
+  const m = build(DEMO_PROGRESS.returning);
+  assert.equal(m.state, 'returning');
+  assert.equal(m.checksDone, 6);
+  assert.deepEqual(summary(m), [
+    'Solid 4/5', 'Getting there 3/5', 'Shaky 1/3', 'Shaky 2/5', 'Getting there 2/4', 'Getting there 2/3',
+  ]);
+  assert.deepEqual(m.nextUp, {
+    id: 't3', name: 'Isotopes', label: 'shaky', labelText: 'Shaky', right: 1, total: 3,
+    href: '/practise/t3', minutes: 10, questions: 5,
+  });
+  assert.equal(m.nextCheck, null);
+  assert.deepEqual(m.chemistry, {
+    label: 'getting', labelText: 'Getting there', breakdown: { shaky: 2, getting: 3, solid: 1, unrated: 0 },
+  });
+});
+
+test('part-way when practice rated a topic but no check is done', () => {
+  const m = build({ topics: { t4: { right: 3, total: 3 } }, checksDone: 0 });
+  assert.equal(m.state, 'part-way');
+  assert.equal(m.nextUp.id, 't4');
+});
+
+test('part-way when checks are done but nothing is rated yet', () => {
+  const m = build({ topics: { t1: { right: 1, total: 2 } }, checksDone: 1 });
+  assert.equal(m.state, 'part-way');
+  assert.equal(m.nextUp, null);
+  assert.equal(m.topics[0].needMore, 1);
+});
+
+test('next up: shaky before getting before solid, unrated never chosen', () => {
+  const m = build({
+    topics: { t1: { right: 3, total: 3 }, t2: { right: 2, total: 3 }, t3: { right: 0, total: 1 } },
+    checksDone: 2,
+  });
+  assert.equal(m.nextUp.id, 't2');
+});
+
+test('next up tie-break is list order, not score', () => {
+  const m = build({
+    topics: { t2: { right: 2, total: 5 }, t5: { right: 0, total: 5 }, t1: { right: 5, total: 5 } },
+    checksDone: 3,
+  });
+  assert.equal(m.nextUp.id, 't2');
+  const g = build({ topics: { t6: { right: 2, total: 3 }, t4: { right: 3, total: 4 } }, checksDone: 3 });
+  assert.equal(g.nextUp.id, 't4');
+});
+
+test('needMore counts down to 0 as answers come in', () => {
+  const needs = [0, 1, 2, 3, 4].map((total) => build({ topics: { t1: { right: 0, total } }, checksDone: 1 }).topics[0].needMore);
+  assert.deepEqual(needs, [3, 2, 1, 0, 0]);
+});
+
+test('nextCheck runs 1..6 then null', () => {
+  const seq = [0, 1, 2, 3, 4, 5, 6].map((checksDone) => build({ topics: {}, checksDone }).nextCheck?.n ?? null);
+  assert.deepEqual(seq, [1, 2, 3, 4, 5, 6, null]);
+  assert.equal(build({ topics: {}, checksDone: 9 }).checksDone, 6);
+});
+
+test('overall label: average of shaky=1, getting=2, solid=3, halves round up', () => {
+  const s = 'shaky', g = 'getting', o = 'solid';
+  assert.equal(overallLabel([s, s, g, g, g, o]), 'getting'); // 11/6 = 1.83
+  assert.equal(overallLabel([s, s, s, s, s, g]), 'shaky'); // 7/6 = 1.17
+  assert.equal(overallLabel([s, s, s, g, g, g]), 'getting'); // 9/6 = 1.5, rounds up
+  assert.equal(overallLabel([g, g, g, o, o, o]), 'solid'); // 15/6 = 2.5, rounds up
+  assert.equal(overallLabel([s, s, s, s, g, g]), 'shaky'); // 8/6 = 1.33
+  assert.equal(overallLabel([o, o, o, o, o, o]), 'solid');
+  assert.equal(overallLabel([o, o, o, o, o, 'unrated']), null);
+});
+
+test('overall label stays null until all six are rated', () => {
+  const topics = { ...DEMO_PROGRESS.returning.topics, t6: { right: 2, total: 2 } };
+  const m = build({ topics, checksDone: 6 });
+  assert.equal(m.state, 'part-way');
+  assert.equal(m.chemistry.label, null);
+});
+
+test('bad numbers are cleaned up', () => {
+  const m = build({ topics: { t1: { right: 9, total: 3 }, t2: { right: -1, total: 'x' } }, checksDone: -2 });
+  assert.deepEqual([m.topics[0].right, m.topics[0].label], [3, 'solid']);
+  assert.deepEqual([m.topics[1].right, m.topics[1].total, m.topics[1].needMore], [0, 0, 3]);
+  assert.equal(m.checksDone, 0);
+});
+
+test('the model does not alias the seed data or shared constants', () => {
+  const a = build(DEMO_PROGRESS.returning);
+  a.subjects[0].name = 'changed';
+  assert.equal(build(DEMO_PROGRESS.returning).subjects[0].name, 'English');
+});

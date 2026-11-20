@@ -1,0 +1,15 @@
+{
+  "name": "steady",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Steady: from shaky to steady. A local study app for Chemistry.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test test/",
+    "seed-demo": "node scripts/seed-demo.js"
+  }
+}
