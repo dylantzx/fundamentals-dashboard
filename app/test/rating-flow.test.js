@@ -105,4 +105,25 @@ describe('answer log drives the dashboard', { skip: !HAVE_BANK && 'no question-b
     assert.match(body, /score">3\/5</);
     assert.doesNotMatch(body, /score">6\/10</);
   });
+
+  test('the practice page chip and the dashboard show the same label and numbers', async () => {
+    const items = server.bank.forTopic('t3');
+    await answer('/practise/t3', items, 0, false);
+    await answer('/practise/t3', items, 1, true);
+    // Latest five: R, R, R, W, R, all Exam -> Solid 4/5. The all-time counts (7 of 12) would say Getting there.
+    assert.deepEqual(server.store.getProgress(studentId).topics.t3, { right: 7, total: 12 });
+    const page = await (await req('/practise/t3', { headers: { cookie: student } })).text();
+    const chip = /practice-meta"><span class="chip chip--(\w+)">[^]*?score">(\d+)\/(\d+)</.exec(page);
+    assert.ok(chip, 'practice page has a scored chip');
+    const model = buildDashboardModel({
+      user: { username: STUDENT.username },
+      progress: server.store.getProgress(studentId),
+      answers: server.answers.list(studentId),
+    });
+    const t3 = model.topics.find((t) => t.id === 't3');
+    assert.deepEqual([chip[1], Number(chip[2]), Number(chip[3])], [t3.label, t3.right, t3.total]);
+    assert.deepEqual([t3.label, t3.right, t3.total], ['solid', 4, 5]);
+    assert.doesNotMatch(page, /score">7\/12</);
+    assert.match(await dashboard(), /chip--solid[^]*?score">4\/5</);
+  });
 });

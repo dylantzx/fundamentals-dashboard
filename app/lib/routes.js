@@ -13,6 +13,7 @@ import {
 } from './http-utils.js';
 import { COOKIE_NAME } from './sessions.js';
 import { TOPICS, LABEL_TEXT, labelFor } from './ratings.js';
+import { labelOf } from './rating-rules.js';
 import { renderPractice, renderBankIndex, renderBankQuestion } from '../views/practice.js';
 
 export const MIN_PASSWORD_LENGTH = 8;
@@ -266,7 +267,12 @@ export function createRouter(deps) {
     return { mode, topic, checkN, items, base };
   }
 
-  function ratingFor(progress, topicId) {
+  /** The topic's rating, worked out the same way as the dashboard's (lib/dashboard-model.js). */
+  function ratingFor(progress, topicId, logged) {
+    if (logged.length) {
+      const r = labelOf(logged.filter((a) => a.topicId === topicId));
+      return { label: r.label, labelText: LABEL_TEXT[r.label], right: r.right, total: r.lookedAt };
+    }
     const s = progress.topics?.[topicId] || {};
     const total = Math.max(0, Math.floor(Number(s.total) || 0));
     const right = Math.min(total, Math.max(0, Math.floor(Number(s.right) || 0)));
@@ -291,7 +297,7 @@ export function createRouter(deps) {
       mode: set.mode,
       checkN: set.checkN,
       topic: set.topic,
-      rating: ratingFor(store.getProgress(ctx.user.id), set.topic.id),
+      rating: ratingFor(store.getProgress(ctx.user.id), set.topic.id, answers ? answers.list(ctx.user.id) : []),
       base: set.base,
       index: done ? count : index,
       count,
