@@ -16,6 +16,7 @@ import { TOPICS, LABEL_TEXT, labelFor } from './ratings.js';
 import { labelOf } from './rating-rules.js';
 import { renderPractice, renderBankIndex, renderBankQuestion } from '../views/practice.js';
 import { createParentRoutes } from './parent-routes.js';
+import { renderLearn } from '../views/learn.js';
 
 export const MIN_PASSWORD_LENGTH = 8;
 const MAX_PASSWORD_LENGTH = 200;
@@ -41,6 +42,7 @@ const USERNAME_RE = /^[A-Za-z0-9][A-Za-z0-9._-]{0,31}$/;
  *   bank?: ReturnType<typeof import('./question-bank.js').loadQuestionBank> | null,
  *   log: (line: string) => void,
  *   studySessions: ReturnType<typeof import('./study-sessions.js').createStudySessions>,
+ *   learn?: { sources: import('./sources.js').Sources, summaries: Record<string, import('./summaries.js').Summary> } | null,
  * }} RouteDeps
  */
 
@@ -388,6 +390,23 @@ export function createRouter(deps) {
     }));
   }
 
+  // ---- "Understand: <topic>": Steady's summary plus checked outside sources ----
+
+  async function getLearn(req, res, topicId) {
+    const ctx = currentUser(req);
+    if (!ctx.user) return toLogin(res, ctx);
+    if (ctx.user.role !== 'student') return redirect(res, homeFor(ctx.user));
+    const topic = TOPICS.find((t) => t.id === topicId);
+    if (!topic || !deps.learn) return notFound(res);
+    sendHtml(res, 200, renderLearn({
+      user: { username: ctx.user.username },
+      topic,
+      summary: deps.learn.summaries?.[topic.id] ?? null,
+      sources: deps.learn.sources?.topics?.[topic.id] ?? [],
+      practiseHref: `/practise/${topic.id}`,
+    }));
+  }
+
   // ---- dispatch -------------------------------------------------------------
 
   /**
@@ -416,6 +435,9 @@ export function createRouter(deps) {
     if (p === '/logout' && method === 'POST') return postLogout(req, res);
     if (p === '/dashboard' && method === 'GET') return getDashboard(req, res);
     if (p === '/parent' || p.startsWith('/parent/')) return handleParent(req, res, url, method);
+
+    const lm = /^\/learn\/([A-Za-z0-9_-]{1,32})$/.exec(p);
+    if (lm && method === 'GET') return getLearn(req, res, lm[1]);
 
     if (method === 'GET' && p.startsWith('/public/')) {
       // Use the raw (still-encoded) path so %2e%2e etc. are checked after decoding.

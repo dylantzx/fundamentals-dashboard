@@ -1,0 +1,194 @@
+{
+  "checkedOn": "2026-11-20",
+  "note": "Free, no-login pages for each topic, checked by hand. Links and our own one-line summaries only: nothing is copied from them. Types: notes, syllabus, interactive. No videos.",
+  "topics": {
+    "t1": [
+      {
+        "title": "Structure of the atom",
+        "publisher": "BBC Bitesize (GCSE Chemistry, AQA)",
+        "url": "https://www.bbc.co.uk/bitesize/guides/z3sg2nb/revision/3",
+        "type": "notes",
+        "why": "A short, clear page on the nucleus, the shells and the charge and mass of each particle.",
+        "checkedOn": "2026-11-20",
+        "caution": "Some BBC videos may not play outside the UK. The written notes always work."
+      },
+      {
+        "title": "Atomic number and mass number",
+        "publisher": "BBC Bitesize (GCSE Chemistry, AQA)",
+        "url": "https://www.bbc.co.uk/bitesize/guides/z3sg2nb/revision/4",
+        "type": "notes",
+        "why": "Shows how to get protons, neutrons and electrons from the two numbers, with a question to try.",
+        "checkedOn": "2026-11-20",
+        "caution": "It says atomic number and mass number. Your syllabus calls them proton number and nucleon number."
+      },
+      {
+        "title": "O-Level Chemistry 6092 syllabus, section 2.2 Atomic Structure",
+        "publisher": "SEAB (Singapore Examinations and Assessment Board)",
+        "url": "https://isomer-user-content.by.gov.sg/334/19dfb9f9-b3ce-4609-a3cf-5d30052317f5/6092_y26_sy.pdf#page=11",
+        "type": "syllabus",
+        "why": "The official list of what you must be able to do for this topic, so you know exactly what is asked.",
+        "checkedOn": "2026-11-20"
+      },
+      {
+        "title": "Build an Atom",
+        "publisher": "PhET Interactive Simulations, University of Colorado Boulder",
+        "url": "https://phet.colorado.edu/sims/html/build-an-atom/latest/build-an-atom_all.html",
+        "type": "interactive",
+        "why": "Drag protons, neutrons and electrons into an atom and watch the element, charge and mass change.",
+        "checkedOn": "2026-11-20"
+      }
+    ],
+    "t2": [
+      {
+        "title": "Electronic structure",
+        "publisher": "BBC Bitesize (GCSE Chemistry, AQA)",
+        "url": "https://www.bbc.co.uk/bitesize/guides/zg923k7/revision/3",
+        "type": "notes",
+        "why": "Explains the 2, 8, 8 filling rule and how shells link to the Period and Group.",
+        "checkedOn": "2026-11-20",
+        "caution": "The BBC writes 2,8,1 with commas. In Singapore exams write it with dots: 2.8.1."
+      },
+      {
+        "title": "O-Level Chemistry 6092 syllabus, section 2.2 Atomic Structure",
+        "publisher": "SEAB (Singapore Examinations and Assessment Board)",
+        "url": "https://isomer-user-content.by.gov.sg/334/19dfb9f9-b3ce-4609-a3cf-5d30052317f5/6092_y26_sy.pdf#page=11",
+        "type": "syllabus",
+        "why": "Confirms you only need electrons in shells: s, p, d and f are not required.",
+        "checkedOn": "2026-11-20"
+      },
+      {
+        "title": "Build an Atom",
+        "publisher": "PhET Interactive Simulations, University of Colorado Boulder",
+        "url": "https://phet.colorado.edu/sims/html/build-an-atom/latest/build-an-atom_all.html",
+        "type": "interactive",
+        "why": "Add electrons one at a time and see the first shell fill with 2 before the second shell starts.",
+        "checkedOn": "2026-11-20",
+        "caution": "It only goes up to neon, so you see two shells, not three."
+      }
+    ],
+    "t3": [
+      {
+        "title": "Isotopes",
+        "publisher": "BBC Bitesize (GCSE Chemistry, AQA)",
+        "url": "https://www.bbc.co.uk/bitesize/guides/z3sg2nb/revision/5",
+        "type": "notes",
+        "why": "Same protons, different neutrons, explained with the three isotopes of hydrogen.",
+        "checkedOn": "2026-11-20",
+        "caution": "Some BBC videos may not play outside the UK. The written notes always work."
+      },
+      {
+        "title": "Calculating relative atomic mass",
+        "publisher": "BBC Bitesize (GCSE Chemistry, AQA)",
+        "url": "https://www.bbc.co.uk/bitesize/guides/z3sg2nb/revision/6",
+        "type": "notes",
+        "why": "Works through chlorine to show why its relative atomic mass is 35.5 and not a whole number.",
+        "checkedOn": "2026-11-20"
+      },
+      {
+        "title": "Isotopes and Atomic Mass",
+        "publisher": "PhET Interactive Simulations, University of Colorado Boulder",
+        "url": "https://phet.colorado.edu/sims/html/isotopes-and-atomic-mass/latest/isotopes-and-atomic-mass_all.html",
+        "type": "interactive",
+        "why": "Add neutrons to make different isotopes, then mix them and watch the average mass move.",
+        "checkedOn": "2026-11-20"
+      },
+      {
+        "title": "O-Level Chemistry 6092 syllabus, section 2.2 Atomic Structure",
+        "publisher": "SEAB (Singapore Examinations and Assessment Board)",
+        "url": "https://isomer-user-content.by.gov.sg/334/19dfb9f9-b3ce-4609-a3cf-5d30052317f5/6092_y26_sy.pdf#page=11",
+        "type": "syllabus",
+        "why": "Shows that you need to define isotopes and use nuclide notation for them.",
+        "checkedOn": "2026-11-20"
+      }
+    ],
+    "t4": [
+      {
+        "title": "Ionic bonding",
+        "publisher": "BBC Bitesize (GCSE Chemistry, WJEC)",
+        "url": "https://www.bbc.co.uk/bitesize/guides/z6k6pbk/revision/1",
+        "type": "notes",
+        "why": "Metal atoms give electrons to non-metal atoms, with examples like sodium chloride and magnesium oxide.",
+        "checkedOn": "2026-11-20"
+      },
+      {
+        "title": "Ionic (electrovalent) bonding",
+        "publisher": "Chemguide (Jim Clark)",
+        "url": "https://www.chemguide.co.uk/atoms/bonding/ionic.html",
+        "type": "notes",
+        "why": "A calm, careful explanation of why atoms lose or gain electrons, worked through for NaCl, MgO and CaCl₂.",
+        "checkedOn": "2026-11-20",
+        "caution": "Read the simple first part only. The page then goes on to A-level ideas you do not need."
+      },
+      {
+        "title": "O-Level Chemistry 6092 syllabus, section 3.1 Ionic Bonding",
+        "publisher": "SEAB (Singapore Examinations and Assessment Board)",
+        "url": "https://isomer-user-content.by.gov.sg/334/19dfb9f9-b3ce-4609-a3cf-5d30052317f5/6092_y26_sy.pdf#page=12",
+        "type": "syllabus",
+        "why": "Lists the examples you are expected to draw, such as NaCl and MgCl₂.",
+        "checkedOn": "2026-11-20"
+      }
+    ],
+    "t5": [
+      {
+        "title": "Covalent bonding",
+        "publisher": "BBC Bitesize (GCSE Chemistry, WJEC)",
+        "url": "https://www.bbc.co.uk/bitesize/guides/z6k6pbk/revision/2",
+        "type": "notes",
+        "why": "How non-metal atoms share pairs of electrons, and how to work out how many bonds each atom makes.",
+        "checkedOn": "2026-11-20"
+      },
+      {
+        "title": "Dot and cross models",
+        "publisher": "BBC Bitesize (GCSE Chemistry, WJEC)",
+        "url": "https://www.bbc.co.uk/bitesize/guides/z6k6pbk/revision/3",
+        "type": "notes",
+        "why": "Dot-and-cross pictures of common molecules showing outer shells only, the way exams want them.",
+        "checkedOn": "2026-11-20"
+      },
+      {
+        "title": "O-Level Chemistry 6092 syllabus, section 3.2 Covalent Bonding",
+        "publisher": "SEAB (Singapore Examinations and Assessment Board)",
+        "url": "https://isomer-user-content.by.gov.sg/334/19dfb9f9-b3ce-4609-a3cf-5d30052317f5/6092_y26_sy.pdf#page=12",
+        "type": "syllabus",
+        "why": "Names the molecules you should be able to draw: H₂, O₂, H₂O, CH₄ and CO₂.",
+        "checkedOn": "2026-11-20"
+      }
+    ],
+    "t6": [
+      {
+        "title": "Giant ionic structures",
+        "publisher": "BBC Bitesize (GCSE Chemistry, WJEC)",
+        "url": "https://www.bbc.co.uk/bitesize/guides/zjfkw6f/revision/1",
+        "type": "notes",
+        "why": "Why the ionic lattice gives high melting points and conducts only when molten or dissolved.",
+        "checkedOn": "2026-11-20",
+        "caution": "Later pages in this guide cover diamond, graphite and metals. Those are Pure Chemistry extras, not this topic."
+      },
+      {
+        "title": "Properties of simple molecular substances",
+        "publisher": "BBC Bitesize (GCSE Combined Science, Edexcel)",
+        "url": "https://www.bbc.co.uk/bitesize/guides/zqrxdxs/revision/4",
+        "type": "notes",
+        "why": "Why small molecules melt and boil easily and do not conduct electricity.",
+        "checkedOn": "2026-11-20"
+      },
+      {
+        "title": "Ionic structures",
+        "publisher": "Chemguide (Jim Clark)",
+        "url": "https://www.chemguide.co.uk/atoms/structures/ionicstruct.html",
+        "type": "notes",
+        "why": "Links the sodium chloride lattice to its melting point, brittleness and conductivity, step by step.",
+        "checkedOn": "2026-11-20",
+        "caution": "The part on caesium chloride goes beyond O-level. You can skip it."
+      },
+      {
+        "title": "O-Level Chemistry 6092 syllabus, section 3.4 Structure and Properties of Materials",
+        "publisher": "SEAB (Singapore Examinations and Assessment Board)",
+        "url": "https://isomer-user-content.by.gov.sg/334/19dfb9f9-b3ce-4609-a3cf-5d30052317f5/6092_y26_sy.pdf#page=13",
+        "type": "syllabus",
+        "why": "Shows you must use structure and bonding to explain properties, and the other way round.",
+        "checkedOn": "2026-11-20"
+      }
+    ]
+  }
+}

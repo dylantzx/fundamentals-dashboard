@@ -613,3 +613,85 @@ svg { display: block; flex-shrink: 0; }
 .pw-reset form { margin-top: var(--s-3); display: flex; flex-direction: column; gap: var(--s-4); align-items: flex-start; }
 .pw-reset .field-row { width: 100%; }
 .parent-privacy { display: flex; align-items: center; gap: var(--s-2); font-size: var(--fs-14); color: var(--c-text-3); }
+
+/* ---------- 21. Study notes: the dashboard link and the "Understand" page (/learn/:topicId) ---------- */
+/* A small secondary link under each tile's Practise pill. It sits beside the tile link
+   (never inside it) and is quieter than Practise, so it never competes with it. */
+.topic-item { position: relative; display: flex; }
+.topic-item > .topic { flex: 1; }
+.topic-item .topic-go { margin-bottom: 24px; }
+.study-link {
+  position: absolute; right: 14px; bottom: 7px;
+  display: inline-flex; align-items: center; min-height: 24px; padding: 0 6px; border-radius: 6px;
+  font-size: var(--fs-14); font-weight: 600; line-height: 1; color: var(--c-text-3);
+  text-decoration: underline; text-underline-offset: 2px;
+}
+.study-link:hover { color: var(--c-text); background: var(--c-surface-2); }
+
+.learn { max-width: 920px; padding-top: var(--s-6); padding-bottom: var(--s-12); display: flex; flex-direction: column; gap: var(--s-5); }
+.learn-card { padding: var(--s-8); display: flex; flex-direction: column; gap: var(--s-6); }
+.learn-bigidea { margin-top: var(--s-2); font-size: var(--fs-20); line-height: 1.45; color: var(--c-text); font-weight: 550; }
+.learn-h2 { font-size: var(--fs-18); font-weight: 700; display: flex; align-items: center; gap: var(--s-2); margin-bottom: var(--s-2); }
+.learn-points, .learn-steps { margin: 0; padding-left: 1.4em; display: grid; gap: var(--s-2); color: var(--c-text-2); }
+.learn-pair { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s-4); align-items: start; }
+.learn-example, .learn-mistake { padding: var(--s-5); border-radius: var(--r-lg); display: flex; flex-direction: column; gap: var(--s-3); }
+.learn-example { background: var(--c-primary-soft); }
+.learn-example .learn-h2 { margin-bottom: 0; }
+.learn-q { font-weight: 600; }
+.learn-answer strong { color: var(--c-primary-ink); }
+/* Neutral yellow note, not coral: a mistake to avoid is not a rating */
+.learn-mistake { background: var(--c-warn-bg); border: 1px solid var(--c-warn-border); color: var(--c-warn-ink); }
+.learn-mistake .learn-h2 { margin-bottom: 0; }
+.learn-figure { margin: 0; padding: var(--s-4); border: 1px solid var(--c-border); border-radius: var(--r-lg); background: #fff; }
+
+.learn-more { padding: var(--s-6) var(--s-8); display: flex; flex-direction: column; gap: var(--s-3); }
+.source-group { margin-top: var(--s-2); }
+.source-group-title { font-size: var(--fs-14); font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--c-text-3); margin-bottom: var(--s-2); }
+.sources { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--s-2); }
+.source { padding: var(--s-3) var(--s-4); border: 1px solid var(--c-border); border-radius: var(--r-md); display: flex; flex-direction: column; gap: 2px; }
+.source-title { font-weight: 650; text-underline-offset: 3px; }
+.source-meta { font-size: var(--fs-14); color: var(--c-text-3); display: flex; align-items: center; gap: var(--s-2); }
+.source-type { font-size: var(--fs-12); font-weight: 750; letter-spacing: .04em; text-transform: uppercase; padding: 0 6px; border-radius: 6px; border: 1px solid var(--c-border-strong); color: var(--c-text-2); }
+.source-why { color: var(--c-text-2); }
+.source-caution { display: flex; gap: 6px; align-items: flex-start; font-size: var(--fs-14); color: var(--c-warn-ink); }
+.source-caution svg { margin-top: 2px; }
+.learn-offline { display: flex; align-items: center; gap: var(--s-2); font-size: var(--fs-14); color: var(--c-text-3); margin-top: var(--s-2); }
+.learn-actions { display: flex; gap: var(--s-2); }
+
+/* Topic illustrations: inline SVG, scales to the column, colours from the palette.
+   Every meaning also has a shape, a sign or a label. */
+.ill { display: block; width: 100%; height: auto; max-width: 820px; margin: 0 auto; font-family: var(--font); }
+.ill text { font-size: 15px; fill: var(--c-text-2); }
+.ill .ill-text { fill: var(--c-text-2); }
+.ill .ill-small { font-size: 14px; fill: var(--c-text-3); }
+.ill .ill-strong { font-weight: 700; fill: var(--c-text); }
+.ill .ill-heading { font-size: 16px; font-weight: 700; fill: var(--steady-forest); }
+.ill .ill-sym { font-size: 20px; font-weight: 700; fill: var(--c-text); }
+.ill .ill-sign { font-size: 16px; font-weight: 800; fill: var(--steady-forest); }
+.ill .ill-sign-e { font-size: 14px; font-weight: 800; fill: #fff; }
+.ill .ill-charge { font-size: 22px; font-weight: 800; fill: var(--c-text); }
+.ill .ill-nuc-num { font-size: 34px; font-weight: 700; fill: var(--steady-forest); }
+.ill .ill-nuc-sym { font-size: 84px; font-weight: 700; fill: var(--c-text); }
+.ill .ill-nuc-small { font-size: 16px; font-weight: 700; fill: var(--steady-forest); }
+.ill .ill-nuc-sym-sm { font-size: 30px; font-weight: 700; fill: var(--c-text); }
+.ill-shell { fill: none; stroke: var(--steady-grey); stroke-width: 1.5; }
+.ill-shell--outer { stroke: var(--steady-ink); stroke-width: 2.5; }
+.ill-dot { fill: var(--steady-ink); }
+.ill-cross { stroke: var(--steady-forest); stroke-width: 2.4; stroke-linecap: round; fill: none; }
+.ill-e { fill: var(--steady-forest); }
+.ill-p { fill: var(--c-primary-soft); stroke: var(--steady-forest); stroke-width: 2; }
+.ill-n { fill: var(--c-surface-2); stroke: var(--steady-grey); stroke-width: 2; }
+.ill-nucleus { fill: var(--c-primary-soft); stroke: var(--steady-forest); stroke-width: 1.5; }
+.ill-nucleus-big { fill: var(--c-primary-soft); stroke: var(--steady-forest); stroke-width: 2; }
+.ill-pointer { stroke: var(--steady-slate); stroke-width: 1.2; }
+.ill-box { fill: var(--c-surface); stroke: var(--c-border-strong); stroke-width: 1.5; }
+.ill-box--alt { fill: var(--c-getting-bg); stroke: var(--steady-forest); stroke-width: 2.5; }
+.ill-bracket { fill: none; stroke: var(--steady-ink); stroke-width: 2.2; }
+.ill-arrow { fill: none; stroke: var(--steady-forest); stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+.ill-ion-pos { fill: var(--c-primary-soft); stroke: var(--steady-forest); stroke-width: 2; }
+.ill-ion-neg { fill: var(--c-surface-2); stroke: var(--steady-slate); stroke-width: 2; }
+.ill-attract { stroke: var(--steady-slate); stroke-width: 2.5; }
+.ill-atom { fill: var(--c-surface-2); stroke: var(--steady-slate); stroke-width: 2; }
+.ill-bond { stroke: var(--steady-ink); stroke-width: 4; stroke-linecap: round; }
+.ill-weak { stroke: var(--steady-slate); stroke-width: 1.5; stroke-dasharray: 4 5; }
+.ill-divider { stroke: var(--c-border); stroke-width: 1.5; }

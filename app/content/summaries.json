@@ -1,0 +1,153 @@
+{
+  "note": "Steady's own short explanation of each topic, written for this app at O-level depth (6092/5086 common content). Plain text only. Illustration ids name the drawings in views/illustrations/.",
+  "topics": {
+    "t1": {
+      "bigIdea": "An atom is a tiny nucleus of protons and neutrons with electrons in shells around it. Two numbers, the proton number and the nucleon number, tell you how many of each particle there are.",
+      "keyPoints": [
+        "Proton: relative charge +1, relative mass 1. Neutron: charge 0, mass 1. Electron: charge −1, mass about 1/1840, so almost nothing.",
+        "Protons and neutrons sit in the nucleus and together are called nucleons. Electrons are arranged in shells around the nucleus.",
+        "Proton (atomic) number = number of protons. Nucleon (mass) number = protons + neutrons.",
+        "In nuclide notation such as ²³₁₁Na, the top number is the nucleon number and the bottom number is the proton number.",
+        "In a neutral atom, electrons = protons. An ion has lost or gained electrons, but its protons and neutrons stay the same."
+      ],
+      "example": {
+        "question": "How many protons, neutrons and electrons are there in the ion ²⁷₁₃Al³⁺?",
+        "steps": [
+          "Protons = proton number = 13.",
+          "Neutrons = nucleon number − proton number = 27 − 13 = 14.",
+          "A neutral Al atom has 13 electrons. The charge 3+ means it has lost 3 electrons: 13 − 3 = 10."
+        ],
+        "answer": "13 protons, 14 neutrons and 10 electrons."
+      },
+      "mistake": {
+        "wrong": "Reading the nucleon number as the number of neutrons, so saying ²³₁₁Na has 23 neutrons.",
+        "right": "The nucleon number counts protons and neutrons together. Neutrons = 23 − 11 = 12."
+      },
+      "illustrations": ["atom-lithium", "nuclide-sodium"]
+    },
+    "t2": {
+      "bigIdea": "Electrons fill shells from the inside out. For the first 20 elements the shells hold at most 2, then 8, then 8, and any electrons left go into the fourth shell.",
+      "keyPoints": [
+        "Count the electrons first. In a neutral atom it is the same as the proton number.",
+        "Fill the first shell (2 at most), then the second (8 at most), then the third (8 for the first 20 elements), then the fourth.",
+        "Write the electronic configuration with dots between the shells: sodium has 11 electrons, so it is 2.8.1.",
+        "The number of occupied shells is the Period number. Sodium has 3 shells, so it is in Period 3.",
+        "The number of outer-shell electrons gives the Group: 1 or 2 outer electrons means Group 1 or 2, and 3 to 7 outer electrons means Groups 13 to 17. A full outer shell means Group 18, the noble gases."
+      ],
+      "example": {
+        "question": "Chlorine has proton number 17. Write its electronic configuration and find its Period and Group.",
+        "steps": [
+          "A chlorine atom has 17 electrons.",
+          "2 go in the first shell, 8 in the second and the last 7 in the third: 2.8.7.",
+          "It has 3 occupied shells, so it is in Period 3.",
+          "It has 7 outer electrons, so it is in Group 17."
+        ],
+        "answer": "2.8.7, Period 3, Group 17."
+      },
+      "mistake": {
+        "wrong": "Putting more than 8 electrons in the third shell for the first 20 elements, for example writing potassium as 2.8.9.",
+        "right": "After 2.8.8 the next electron starts the fourth shell. Potassium (19 electrons) is 2.8.8.1."
+      },
+      "illustrations": ["shells-na-cl"]
+    },
+    "t3": {
+      "bigIdea": "Isotopes are atoms of the same element with the same number of protons but different numbers of neutrons.",
+      "keyPoints": [
+        "Isotopes have the same proton number but different nucleon numbers. Chlorine-35 and chlorine-37 both have 17 protons.",
+        "Only the neutrons differ: chlorine-35 has 18 neutrons and chlorine-37 has 20.",
+        "Isotopes have the same number of electrons and the same electronic configuration, so they have the same chemical properties.",
+        "Their masses differ, so physical properties that depend on mass, such as density, can be slightly different.",
+        "The relative atomic mass in the Periodic Table (35.5 for chlorine) is an average over all the isotopes, weighted by how common each one is."
+      ],
+      "example": {
+        "question": "About 75% of chlorine atoms are chlorine-35 and 25% are chlorine-37. Show why the relative atomic mass of chlorine is 35.5.",
+        "steps": [
+          "Picture 100 chlorine atoms: 75 have mass 35 and 25 have mass 37.",
+          "Total mass = (75 × 35) + (25 × 37) = 2625 + 925 = 3550.",
+          "Average mass = 3550 ÷ 100 = 35.5."
+        ],
+        "answer": "The average of the two isotopes, weighted 3 to 1, is 35.5."
+      },
+      "mistake": {
+        "wrong": "Saying isotopes have different numbers of protons, or different numbers of electrons.",
+        "right": "A different number of protons would make a different element. Isotopes differ only in their neutrons, so their electrons and chemistry are the same."
+      },
+      "illustrations": ["isotopes-chlorine"]
+    },
+    "t4": {
+      "bigIdea": "Metal atoms lose their outer electrons to become positive ions. Non-metal atoms gain electrons to become negative ions. The strong attraction between the opposite charges is the ionic bond.",
+      "keyPoints": [
+        "Atoms lose or gain electrons so that they end up with a full outer shell, like a noble gas.",
+        "Metals lose electrons and form positive ions: Na → Na⁺, Mg → Mg²⁺, Al → Al³⁺.",
+        "Non-metals gain electrons and form negative ions: Cl → Cl⁻, O → O²⁻, N → N³⁻.",
+        "The charges in an ionic compound must balance. Na⁺ and Cl⁻ give NaCl. Mg²⁺ needs two Cl⁻ ions, giving MgCl₂.",
+        "In a dot-and-cross diagram, show the outer shells only. Use crosses for one atom's electrons and dots for the other's, put each ion in square brackets and write its charge at the top right."
+      ],
+      "example": {
+        "question": "Describe how magnesium and chlorine form magnesium chloride.",
+        "steps": [
+          "Magnesium is 2.8.2. It loses its 2 outer electrons and becomes Mg²⁺, which is 2.8.",
+          "Each chlorine atom is 2.8.7. It gains 1 electron and becomes Cl⁻, which is 2.8.8.",
+          "So one magnesium atom gives one electron to each of two chlorine atoms.",
+          "The charges balance: one 2+ ion and two 1− ions."
+        ],
+        "answer": "The formula is MgCl₂, held together by the attraction between Mg²⁺ and Cl⁻ ions."
+      },
+      "mistake": {
+        "wrong": "Saying Na⁺ is positive because it gained a proton.",
+        "right": "The nucleus never changes in bonding. Na⁺ has lost one electron, so it has 11 protons but only 10 electrons."
+      },
+      "illustrations": ["ionic-nacl"]
+    },
+    "t5": {
+      "bigIdea": "Non-metal atoms share pairs of electrons so that each atom gets a full outer shell. Each shared pair of electrons is one covalent bond.",
+      "keyPoints": [
+        "Covalent bonds form between non-metal atoms.",
+        "One shared pair is a single bond, as in H₂. Two shared pairs make a double bond, as in O₂.",
+        "Count how many more outer electrons each atom needs: H needs 1 (to reach 2), O needs 2, N needs 3 and C needs 4. That is how many bonds it usually forms.",
+        "In a dot-and-cross diagram the shared electrons sit where the two outer shells overlap. Outer electrons that are not shared stay in pairs called lone pairs.",
+        "Check your drawing: each H atom should have 2 electrons around it, and the other atoms here should have 8."
+      ],
+      "example": {
+        "question": "How are the outer electrons arranged in a water molecule, H₂O?",
+        "steps": [
+          "Oxygen is 2.6, so it has 6 outer electrons and needs 2 more.",
+          "Each hydrogen atom has 1 electron and needs 1 more.",
+          "Oxygen shares one pair of electrons with each hydrogen atom: 2 bonding pairs.",
+          "Oxygen's other 4 outer electrons form 2 lone pairs.",
+          "Check: oxygen has 2 bonding pairs and 2 lone pairs, which is 8 electrons. Each hydrogen has 2."
+        ],
+        "answer": "2 bonding pairs and 2 lone pairs on oxygen."
+      },
+      "mistake": {
+        "wrong": "Leaving out the lone pairs on oxygen, so the O in H₂O seems to have only 4 outer electrons.",
+        "right": "Draw all of oxygen's outer electrons: 2 shared pairs plus 2 lone pairs make 8."
+      },
+      "illustrations": ["covalent-h2", "covalent-h2o"]
+    },
+    "t6": {
+      "bigIdea": "How a substance's particles are held together decides how easily it melts and whether it conducts electricity.",
+      "keyPoints": [
+        "An ionic compound such as sodium chloride forms a giant lattice: a huge, regular arrangement of alternating positive and negative ions.",
+        "Many strong electrostatic attractions must be overcome to melt the lattice, so ionic compounds have high melting and boiling points.",
+        "Ionic compounds conduct electricity when molten or dissolved in water, because the ions are free to move. As solids they do not conduct: the ions are held in place.",
+        "A simple molecular substance, such as water, methane or iodine, is made of small molecules. The covalent bonds inside each molecule are strong, but the forces between the molecules are weak.",
+        "Little energy is needed to overcome these weak forces, so simple molecular substances have low melting and boiling points. They do not conduct electricity, because the molecules have no charge."
+      ],
+      "example": {
+        "question": "Substance X melts at 801 °C. It does not conduct as a solid, but it does when molten or dissolved in water. Is X ionic or simple molecular?",
+        "steps": [
+          "A high melting point means strong forces must be overcome throughout the solid: a giant structure.",
+          "Conducting only when molten or dissolved means it contains ions that become free to move.",
+          "Both clues point the same way."
+        ],
+        "answer": "X is an ionic compound. (801 °C is the melting point of sodium chloride.)"
+      },
+      "mistake": {
+        "wrong": "Saying a simple molecular substance melts because its covalent bonds break.",
+        "right": "Melting only overcomes the weak forces between the molecules. The molecules themselves stay whole."
+      },
+      "illustrations": ["lattice-vs-molecules"]
+    }
+  }
+}
