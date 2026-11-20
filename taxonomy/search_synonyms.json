@@ -1,0 +1,27 @@
+{
+  "_comment": "Query-time synonyms for ingest search. Each key (a word or phrase as a student might type it) is OR-expanded with its alternatives. Keep it small; edit freely, no reload needed. Also bridges stemming gaps (porter turns 'electrolysis' and 'electrolysed' into different stems).",
+  "synonyms": {
+    "redox": [
+      "oxidation",
+      "reduction",
+      "oxidation state"
+    ],
+    "brine": [
+      "sodium chloride"
+    ],
+    "dot and cross": [
+      "dot-and-cross"
+    ],
+    "haber": [
+      "ammonia"
+    ],
+    "isotopes": [
+      "isotope",
+      "nucleon number"
+    ],
+    "electrolysis": [
+      "electrolysed",
+      "electrolyse"
+    ]
+  }
+}

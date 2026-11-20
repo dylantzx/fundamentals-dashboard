@@ -1,0 +1,184 @@
+{
+ "questions": [
+  {
+   "paper": "P1",
+   "section": null,
+   "parent_label": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "CO₂"
+    },
+    {
+     "label": "B",
+     "text": "O₂"
+    },
+    {
+     "label": "C",
+     "text": "H₂"
+    },
+    {
+     "label": "D",
+     "text": "N₂"
+    }
+   ],
+   "marks": 1,
+   "full_regions": [
+    {
+     "page_index": 1,
+     "box": {
+      "x0": 80,
+      "y0": 100,
+      "x1": 920,
+      "y1": 400
+     }
+    }
+   ],
+   "answer_space": "none",
+   "figures": [],
+   "topics": [
+    "6.2"
+   ],
+   "has_handwriting": false,
+   "confidence": "high",
+   "notes": "",
+   "label": "1",
+   "type": "mcq",
+   "stem": "Which gas turns limewater milky?",
+   "regions": [
+    {
+     "page_index": 1,
+     "box": {
+      "x0": 80,
+      "y0": 100,
+      "x1": 920,
+      "y1": 400
+     }
+    }
+   ],
+   "review_flags": []
+  },
+  {
+   "paper": "P1",
+   "section": null,
+   "parent_label": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "HCI"
+    },
+    {
+     "label": "B",
+     "text": "H₂CI"
+    },
+    {
+     "label": "C",
+     "text": "HCI₂"
+    },
+    {
+     "label": "D",
+     "text": "CIH₂"
+    }
+   ],
+   "marks": 1,
+   "full_regions": [],
+   "answer_space": "none",
+   "figures": [],
+   "topics": [
+    "4.1"
+   ],
+   "has_handwriting": false,
+   "confidence": "high",
+   "notes": "",
+   "label": "2",
+   "type": "mcq",
+   "stem": "Which is the formula of hydrogen chloride?",
+   "regions": [
+    {
+     "page_index": 1,
+     "box": {
+      "x0": 80,
+      "y0": 450,
+      "x1": 920,
+      "y1": 800
+     }
+    }
+   ],
+   "review_flags": []
+  },
+  {
+   "paper": "P1",
+   "section": null,
+   "parent_label": null,
+   "options": [
+    {
+     "label": "A",
+     "text": "filtration"
+    },
+    {
+     "label": "B",
+     "text": "distillation"
+    },
+    {
+     "label": "C",
+     "text": "crystallisation"
+    },
+    {
+     "label": "D",
+     "text": "(blank in scan)"
+    }
+   ],
+   "marks": 1,
+   "full_regions": [
+    {
+     "page_index": 2,
+     "box": {
+      "x0": 80,
+      "y0": 100,
+      "x1": 920,
+      "y1": 900
+     }
+    }
+   ],
+   "answer_space": "none",
+   "figures": [
+    {
+     "id": "fig-q3",
+     "page_index": 2,
+     "box": {
+      "x0": 200,
+      "y0": 300,
+      "x1": 800,
+      "y1": 700
+     },
+     "kind": "apparatus",
+     "caption": "",
+     "description": "Flask heated over a Bunsen burner, connected to a water-cooled condenser and a receiving beaker."
+    }
+   ],
+   "topics": [
+    "1.2"
+   ],
+   "has_handwriting": true,
+   "confidence": "high",
+   "notes": "Option D is printed blank.",
+   "label": "3",
+   "type": "mcq",
+   "stem": "The apparatus shown is used to separate a mixture.\n\nWhich method is shown?",
+   "regions": [
+    {
+     "page_index": 2,
+     "box": {
+      "x0": 80,
+      "y0": 100,
+      "x1": 920,
+      "y1": 900
+     }
+    }
+   ],
+   "review_flags": [
+    "source_defect"
+   ]
+  }
+ ]
+}

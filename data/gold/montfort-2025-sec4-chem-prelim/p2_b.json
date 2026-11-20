@@ -1,0 +1,1476 @@
+{
+  "contract_version": 1,
+  "document_id": "montfort-2025-sec4-chem-prelim",
+  "source_pdf": "papers/Sec4_PureChemistry_2025_SA2_montfort.pdf",
+  "chunk": "p2_b",
+  "extracted_by": "subagent-gold",
+  "pages": [
+    {
+      "page_index": 31,
+      "paper": "P2",
+      "printed_page_number": "12",
+      "page_type": "questions",
+      "has_handwriting": false,
+      "notes": "Q6 start (Section A). In Table 6.1 the given formula Ca(NO3)2 is printed in a different, non-subscripted font; it is part of the question (mark scheme confirms the missing items are NH₄NO₃ and the name calcium nitrate). The carbon percentage in 6(b)(ii) is partly damaged in the scan; reads 20% (confirmed by mark scheme)."
+    },
+    {
+      "page_index": 32,
+      "paper": "P2",
+      "printed_page_number": "13",
+      "page_type": "questions",
+      "has_handwriting": false,
+      "notes": "Q6(c); [Total: 9]."
+    },
+    {
+      "page_index": 33,
+      "paper": "P2",
+      "printed_page_number": "14",
+      "page_type": "questions",
+      "has_handwriting": true,
+      "notes": "Q7 start with Fig. 7.1. Handwritten annotations: circle at 100 on y-axis, dashed read-off lines with '150 °C' written under the x-axis, an arrow near the N₂ curve, pen strokes over 'the' and 'yield of' in 7(a), vertical marks in right margin. Folded/dark corner at top right of scan."
+    },
+    {
+      "page_index": 34,
+      "paper": "P2",
+      "printed_page_number": "15",
+      "page_type": "questions",
+      "has_handwriting": false,
+      "notes": "Q7(e); [Total: 10]."
+    },
+    {
+      "page_index": 35,
+      "paper": "P2",
+      "printed_page_number": "16",
+      "page_type": "questions",
+      "has_handwriting": false,
+      "notes": "Q8 start: data-based passage 'Fossil Fuels' / 'Alternative Energy Source - Biogas' with Table 8.1."
+    },
+    {
+      "page_index": 36,
+      "paper": "P2",
+      "printed_page_number": "17",
+      "page_type": "questions",
+      "has_handwriting": false,
+      "notes": "Q8 passage continued: Fig. 8.1 and 'Alternative Energy Source - Metal Powders'; then 8(a)."
+    },
+    {
+      "page_index": 37,
+      "paper": "P2",
+      "printed_page_number": "18",
+      "page_type": "questions",
+      "has_handwriting": true,
+      "notes": "Q8(b)-(c); [Total: 10]. Small handwritten scribble ('and') at start of last answer line of 8(b); vertical scan-artifact lines in left margin. End of Section A."
+    },
+    {
+      "page_index": 38,
+      "paper": "P2",
+      "printed_page_number": "19",
+      "page_type": "questions",
+      "has_handwriting": false,
+      "notes": "Section B header: 'Answer one question from this section.' Q9 start with ester data table."
+    },
+    {
+      "page_index": 39,
+      "paper": "P2",
+      "printed_page_number": "20",
+      "page_type": "questions",
+      "has_handwriting": false,
+      "notes": "Q9(c)-(d); [Total: 10]."
+    },
+    {
+      "page_index": 40,
+      "paper": "P2",
+      "printed_page_number": "21",
+      "page_type": "questions",
+      "has_handwriting": false,
+      "notes": "Q10 start (Section B alternative to Q9)."
+    },
+    {
+      "page_index": 41,
+      "paper": "P2",
+      "printed_page_number": "22",
+      "page_type": "questions",
+      "has_handwriting": false,
+      "notes": "Q10(b)(ii)-(c); [Total: 10]. Last question page of Paper 2."
+    }
+  ],
+  "papers": [],
+  "questions": [
+    {
+      "paper": "P2",
+      "section": "A",
+      "label": "6",
+      "parent_label": null,
+      "type": "context",
+      "stem": "Calcium hydroxide is often added to acidic soil to increase its pH for healthy plant growth.\n\nFertilisers containing nitrogen, phosphorus, and potassium which are primary nutrients for healthy plant growth are often added as well.\n\nTable 6.1 shows some commonly used fertilisers.\n\nTable 6.1\n\n| fertiliser | formula |\n|---|---|\n| ammonium nitrate | |\n| sodium phosphate | Na₃PO₄ |\n| | Ca(NO₃)₂ |\n| potassium sulfate | K₂SO₄ |",
+      "options": [],
+      "marks": null,
+      "regions": [
+        {
+          "page_index": 31,
+          "bbox": [
+            0.17,
+            0.06,
+            0.89,
+            0.348
+          ]
+        }
+      ],
+      "full_regions": [
+        {
+          "page_index": 31,
+          "bbox": [
+            0.17,
+            0.06,
+            0.9,
+            0.8
+          ]
+        },
+        {
+          "page_index": 32,
+          "bbox": [
+            0.25,
+            0.05,
+            0.89,
+            0.47
+          ]
+        }
+      ],
+      "figures": [
+        {
+          "id": "table-6.1",
+          "page_index": 31,
+          "bbox": [
+            0.28,
+            0.175,
+            0.82,
+            0.345
+          ],
+          "kind": "table",
+          "caption": "Table 6.1",
+          "description": "Two-column table of fertilisers (fertiliser | formula). Rows: ammonium nitrate | (blank, to be completed); sodium phosphate | Na₃PO₄; (blank name, to be completed) | Ca(NO₃)₂; potassium sulfate | K₂SO₄."
+        }
+      ],
+      "answer_space": "none",
+      "topics": [],
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "Section A. Formula Ca(NO3)2 is printed in a different font without subscripts; transcribed as Ca(NO₃)₂.",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "A",
+      "label": "6(a)",
+      "parent_label": "6",
+      "type": "structured",
+      "stem": "Complete Table 6.1 by filling in the missing information.",
+      "options": [],
+      "marks": 2,
+      "regions": [
+        {
+          "page_index": 31,
+          "bbox": [
+            0.22,
+            0.35,
+            0.895,
+            0.38
+          ]
+        }
+      ],
+      "figures": [],
+      "answer_space": "table",
+      "topics": [
+        "4.1",
+        "5.3"
+      ],
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "Answers are written into Table 6.1 (on node 6).",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "A",
+      "label": "6(b)",
+      "parent_label": "6",
+      "type": "context",
+      "stem": "",
+      "options": [],
+      "marks": null,
+      "regions": [
+        {
+          "page_index": 31,
+          "bbox": [
+            0.22,
+            0.38,
+            0.32,
+            0.41
+          ]
+        }
+      ],
+      "figures": [],
+      "answer_space": "none",
+      "topics": [],
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "No shared text at this level; only the (b) label.",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "A",
+      "label": "6(b)(i)",
+      "parent_label": "6(b)",
+      "type": "structured",
+      "stem": "Write an ionic equation for the reaction between calcium hydroxide and the excess acid in the soil.",
+      "options": [],
+      "marks": 1,
+      "regions": [
+        {
+          "page_index": 31,
+          "bbox": [
+            0.28,
+            0.38,
+            0.895,
+            0.455
+          ]
+        }
+      ],
+      "figures": [],
+      "answer_space": "lines",
+      "topics": [
+        "4.1",
+        "5.1"
+      ],
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "A",
+      "label": "6(b)(ii)",
+      "parent_label": "6(b)",
+      "type": "structured",
+      "stem": "A common fertiliser, urea, contains the elements carbon, oxygen, nitrogen, and hydrogen.\n\nIt contains 46.7% nitrogen, 6.7% hydrogen and 20% carbon.\n\nCalculate the empirical formula of urea.",
+      "options": [],
+      "marks": 3,
+      "regions": [
+        {
+          "page_index": 31,
+          "bbox": [
+            0.27,
+            0.46,
+            0.895,
+            0.8
+          ]
+        }
+      ],
+      "figures": [],
+      "answer_space": "lines",
+      "topics": [
+        "4.2"
+      ],
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "'20%' is partly obliterated in the scan (reads '^^%'); value confirmed by mark scheme. Answer space is blank working space without printed lines.",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "A",
+      "label": "6(c)",
+      "parent_label": "6",
+      "type": "structured",
+      "stem": "Two farmers discovered that they have a plot of land that lacks nutrients and is too acidic for any healthy plant growth.\n\nThey wanted to add calcium hydroxide together with a fertiliser to the plot of land at the same time.\n\nFarmer 1: Ammonium nitrate should be added together with calcium hydroxide to provide nitrogen for healthy plant growth.\n\nFarmer 2: Calcium nitrate should be added together with calcium hydroxide to provide nitrogen for healthy plant growth.\n\nWhich farmer is correct? Explain your reasoning.",
+      "options": [],
+      "marks": 3,
+      "regions": [
+        {
+          "page_index": 32,
+          "bbox": [
+            0.25,
+            0.05,
+            0.885,
+            0.44
+          ]
+        }
+      ],
+      "figures": [],
+      "answer_space": "lines",
+      "topics": [
+        "5.3",
+        "5.1"
+      ],
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "A",
+      "label": "7",
+      "parent_label": null,
+      "type": "context",
+      "stem": "Ammonia is produced commercially via the catalytic reaction of nitrogen and hydrogen at high temperature and pressure.\n\nFig. 7.1 shows the graph of the reaction.",
+      "options": [],
+      "marks": null,
+      "regions": [
+        {
+          "page_index": 33,
+          "bbox": [
+            0.16,
+            0.07,
+            0.9,
+            0.415
+          ]
+        }
+      ],
+      "full_regions": [
+        {
+          "page_index": 33,
+          "bbox": [
+            0.16,
+            0.07,
+            0.9,
+            0.83
+          ]
+        },
+        {
+          "page_index": 34,
+          "bbox": [
+            0.25,
+            0.065,
+            0.885,
+            0.475
+          ]
+        }
+      ],
+      "figures": [
+        {
+          "id": "fig-7.1",
+          "page_index": 33,
+          "bbox": [
+            0.33,
+            0.155,
+            0.76,
+            0.415
+          ],
+          "kind": "graph",
+          "caption": "Fig. 7.1",
+          "description": "Line graph of percentage composition / % (y-axis, 0 to 100, gridded labels every 20) against temperature / °C (x-axis, 0 to 600, labels every 100). Three curves: NH₃ starts at about 68% at 0 °C, falls slowly at first then steeply, passing about 60% at 150 °C, about 40% near 280 °C, about 20% near 400 °C and approaching about 2% at 600 °C. H₂ rises in an S-shape from about 0% at 0 °C, about 12% at 150 °C, about 40% near 280 °C, about 75% at 400 °C, to about 100% at 600 °C. N₂ rises gradually from about 0% at 0 °C, about 5% at 150 °C, about 25% at 400 °C, levelling to about 32% at 600 °C. The NH₃ curve crosses the H₂ curve near 280 °C (about 40%) and the N₂ curve near 370 °C (about 23%)."
+        }
+      ],
+      "answer_space": "none",
+      "topics": [],
+      "has_handwriting": true,
+      "confidence": "medium",
+      "notes": "Section A. The scan of Fig. 7.1 carries handwritten annotations that are not part of the printed figure: dashed read-off lines from 60% to 150 °C and from 20% to 400 °C, the text '150 °C' under the x-axis, a circle at 100 on the y-axis and an arrow pointing at the N₂ curve. Curve values in the description are read from the graph (approximate).",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "A",
+      "label": "7(a)",
+      "parent_label": "7",
+      "type": "structured",
+      "stem": "Using the information from the graph, state the relationship between temperature and the percentage yield of ammonia obtained.",
+      "options": [],
+      "marks": 2,
+      "regions": [
+        {
+          "page_index": 33,
+          "bbox": [
+            0.22,
+            0.42,
+            0.895,
+            0.53
+          ]
+        }
+      ],
+      "figures": [],
+      "answer_space": "lines",
+      "topics": [
+        "10.4"
+      ],
+      "has_handwriting": true,
+      "confidence": "high",
+      "notes": "Handwritten pen strokes across 'the' and 'yield of' ignored. Answer space is blank (only a short dotted fragment before [2]).",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "A",
+      "label": "7(b)",
+      "parent_label": "7",
+      "type": "structured",
+      "stem": "Suggest why the percentage composition of hydrogen and nitrogen increases when temperature is high.",
+      "options": [],
+      "marks": 1,
+      "regions": [
+        {
+          "page_index": 33,
+          "bbox": [
+            0.22,
+            0.53,
+            0.895,
+            0.605
+          ]
+        }
+      ],
+      "figures": [],
+      "answer_space": "lines",
+      "topics": [
+        "10.4"
+      ],
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "Blank answer space, no printed lines.",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "A",
+      "label": "7(c)",
+      "parent_label": "7",
+      "type": "structured",
+      "stem": "Sketch on Fig. 7.1 the expected graph for the percentage yield of ammonia at a higher pressure for the stated temperatures. Label your graph as (c).",
+      "options": [],
+      "marks": 1,
+      "regions": [
+        {
+          "page_index": 33,
+          "bbox": [
+            0.22,
+            0.605,
+            0.895,
+            0.655
+          ]
+        }
+      ],
+      "figures": [],
+      "answer_space": "graph",
+      "topics": [
+        "10.4"
+      ],
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "'7' in 'Fig. 7.1' is damaged in the scan (reads 'Fig. r.1'). Answer is drawn on Fig. 7.1 (node 7).",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "A",
+      "label": "7(d)",
+      "parent_label": "7",
+      "type": "structured",
+      "stem": "In terms of collision theory, describe how increasing the pressure affects the rate of production of ammonia.",
+      "options": [],
+      "marks": 3,
+      "regions": [
+        {
+          "page_index": 33,
+          "bbox": [
+            0.22,
+            0.655,
+            0.895,
+            0.83
+          ]
+        }
+      ],
+      "figures": [],
+      "answer_space": "lines",
+      "topics": [
+        "10.2",
+        "10.4"
+      ],
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "Blank answer space, no printed lines.",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "A",
+      "label": "7(e)",
+      "parent_label": "7",
+      "type": "context",
+      "stem": "Ammonia can be used to treat industrial waste gases containing nitrogen oxides.\n\nThe equation shows how the treatment converts nitrogen monoxide to nitrogen and water.\n\n6NO + 4NH₃ → 5N₂ + 6H₂O",
+      "options": [],
+      "marks": null,
+      "regions": [
+        {
+          "page_index": 34,
+          "bbox": [
+            0.25,
+            0.065,
+            0.885,
+            0.17
+          ]
+        }
+      ],
+      "figures": [],
+      "answer_space": "none",
+      "topics": [],
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "A",
+      "label": "7(e)(i)",
+      "parent_label": "7(e)",
+      "type": "structured",
+      "stem": "Use the equation provided, state the effect on the composition of the gases released into the atmosphere when an insufficient amount of ammonia was added to nitrogen monoxide.",
+      "options": [],
+      "marks": 1,
+      "regions": [
+        {
+          "page_index": 34,
+          "bbox": [
+            0.29,
+            0.18,
+            0.885,
+            0.305
+          ]
+        }
+      ],
+      "figures": [],
+      "answer_space": "lines",
+      "topics": [
+        "4.3",
+        "12.3"
+      ],
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "A",
+      "label": "7(e)(ii)",
+      "parent_label": "7(e)",
+      "type": "structured",
+      "stem": "Describe how nitrogen monoxide affects the environment.",
+      "options": [],
+      "marks": 2,
+      "regions": [
+        {
+          "page_index": 34,
+          "bbox": [
+            0.29,
+            0.31,
+            0.885,
+            0.44
+          ]
+        }
+      ],
+      "figures": [],
+      "answer_space": "lines",
+      "topics": [
+        "12.1"
+      ],
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "A",
+      "label": "8",
+      "parent_label": null,
+      "type": "context",
+      "stem": "Fossil Fuels\n\nFossil fuels like crude oil are known to be non-renewable and are limited in supply. They are still used as fuels because getting energy from their combustion is still considered an economical and convenient method. To ensure that the supply of crude oil lasts longer for our use, we need to conserve crude oil.\n\nAlternative Energy Source - Biogas\n\nBiogas is a renewable fuel that is produced when organic matter, such as food or animal waste, is broken down by bacteria in the absence of oxygen. Biogas, that can be derived from cow dung from farms, contains biomethane.\n\nTable 8.1 shows a typical composition of biogas.\n\nTable 8.1\n\n| compound | formula | percentage by volume | additional information |\n|---|---|---|---|\n| biomethane | CH₄ | 50 - 80 | colourless, odourless |\n| carbon dioxide | CO₂ | 15 - 50 | colourless, odourless |\n| nitrogen | N₂ | 0 - 10 | colourless, odourless |\n| hydrogen sulfide | H₂S | 0 – 1 | colourless, pungent, toxic |\n\nThe biogas produced on the farm contains traces of hydrogen sulfide. To prolong the lifespan of the metal machinery parts, hydrogen sulfide must be removed from the biogas, otherwise when it is combusted, it produces sulfur dioxide and sulfuric acid.\n\nBurning biomethane releases greenhouse gases like carbon dioxide but allowing cow dung to degrade naturally also releases methane. Converting cow dung into biomethane to be used as biofuel instead of letting it degrade naturally is found to cut down greenhouse gases by 4%. This is because methane has a much greater global-warming power than carbon dioxide. To reduce the carbon impact, that source of destructive pollution must be transformed into a cleaner fuel. Most of the biomethane produced at the farm can be used to generate sufficient electricity to power several homes. The remaining is then used as fertiliser on the farm, allowing for a reduction in the use of synthetic fertilisers made from fossil fuels.\n\nBiomethane produced from cow dung is a biofuel with high performance and high purity. Obtaining biomethane from cow dung starts right on the farm, where cow dung is collected and put into an on-site biodigester. A biodigester is a sealed container where the bacteria breaks down cow dung into biomethane and fertiliser through a natural process. The biomethane then spins a power generator to produce electricity. The fertiliser produced from the biodigester can also be readily used by farmers.\n\nFig. 8.1 shows the process of obtaining biomethane.\n\nAlternative Energy Source - Metal Powders\n\nUsing tiny metal particles to power external-combustion engines is novel. Unlike the internal-combustion engines used in petrol-powered cars, external-combustion engines use heat from an outside source to drive an engine. For decades, the idea of burning metal powders has been used in fireworks and in rocket propellants, such as the solid-fuel booster rockets of space shuttles.\n\nThe potential for metal powders to be used as a recyclable fuel in a wide range of applications has been largely overlooked by scientists. When metal powders are burned, they react with air to form a non-toxic solid oxide product that can be easily collected for recycling, unlike the carbon dioxide emission produced from the burning of fossil fuels that escape into the atmosphere. Iron could be the primary candidate for this purpose as millions of tonnes of iron powders are already produced annually for the chemical and electronic industries. However, more research needs to be done to avoid carbon dioxide emissions associated with traditional iron production using coal. While not perfected and commercialised yet, the use of low-cost metallic fuels, like iron powder, is a worthy alternative to petrol and diesel fuels.",
+      "options": [],
+      "marks": null,
+      "regions": [
+        {
+          "page_index": 35,
+          "bbox": [
+            0.17,
+            0.075,
+            0.885,
+            0.725
+          ]
+        },
+        {
+          "page_index": 36,
+          "bbox": [
+            0.23,
+            0.07,
+            0.9,
+            0.605
+          ]
+        }
+      ],
+      "full_regions": [
+        {
+          "page_index": 35,
+          "bbox": [
+            0.17,
+            0.075,
+            0.885,
+            0.725
+          ]
+        },
+        {
+          "page_index": 36,
+          "bbox": [
+            0.23,
+            0.07,
+            0.9,
+            0.88
+          ]
+        },
+        {
+          "page_index": 37,
+          "bbox": [
+            0.22,
+            0.095,
+            0.885,
+            0.7
+          ]
+        }
+      ],
+      "figures": [
+        {
+          "id": "table-8.1",
+          "page_index": 35,
+          "bbox": [
+            0.245,
+            0.285,
+            0.855,
+            0.415
+          ],
+          "kind": "table",
+          "caption": "Table 8.1",
+          "description": "Typical composition of biogas, columns compound | formula | percentage by volume | additional information. biomethane, CH₄, 50 - 80, colourless, odourless; carbon dioxide, CO₂, 15 - 50, colourless, odourless; nitrogen, N₂, 0 - 10, colourless, odourless; hydrogen sulfide, H₂S, 0 – 1, colourless, pungent, toxic."
+        },
+        {
+          "id": "fig-8.1",
+          "page_index": 36,
+          "bbox": [
+            0.29,
+            0.105,
+            0.85,
+            0.34
+          ],
+          "kind": "diagram",
+          "caption": "Fig. 8.1",
+          "description": "Flow diagram of obtaining biomethane. A box labelled 'cow dung' (picture of a cow) has a thick arrow into a dome-shaped 'biodigester' (dark dome with bubbles). From the top of the biodigester an arrow labelled 'biomethane' goes to a 'power generator', which has an arrow to a light bulb labelled 'electricity'. From the biodigester another arrow goes to a tractor labelled 'fertiliser'. A return line labelled 'heat / electricity' runs from electricity back to the cow dung box."
+        }
+      ],
+      "answer_space": "none",
+      "topics": [],
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "Section A. Data-based question; passage spans pages 35-36 with headings 'Fossil Fuels', 'Alternative Energy Source - Biogas' and 'Alternative Energy Source - Metal Powders'. The sentence 'Fig. 8.1 shows the process of obtaining biomethane.' and Fig. 8.1 are at the top of page 36, before the Metal Powders section.",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "A",
+      "label": "8(a)",
+      "parent_label": "8",
+      "type": "context",
+      "stem": "",
+      "options": [],
+      "marks": null,
+      "regions": [
+        {
+          "page_index": 36,
+          "bbox": [
+            0.24,
+            0.61,
+            0.32,
+            0.64
+          ]
+        }
+      ],
+      "figures": [],
+      "answer_space": "none",
+      "topics": [],
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "No shared text at this level; only the (a) label.",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "A",
+      "label": "8(a)(i)",
+      "parent_label": "8(a)",
+      "type": "structured",
+      "stem": "Farmers can easily detect when levels of hydrogen sulfide in the biogas increase.\n\nExplain why this is so.",
+      "options": [],
+      "marks": 1,
+      "regions": [
+        {
+          "page_index": 36,
+          "bbox": [
+            0.24,
+            0.61,
+            0.9,
+            0.75
+          ]
+        }
+      ],
+      "figures": [],
+      "answer_space": "lines",
+      "topics": [
+        "9.3",
+        "12.1"
+      ],
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "A",
+      "label": "8(a)(ii)",
+      "parent_label": "8(a)",
+      "type": "structured",
+      "stem": "Explain why hydrogen sulfide must be removed from the biogas.",
+      "options": [],
+      "marks": 2,
+      "regions": [
+        {
+          "page_index": 36,
+          "bbox": [
+            0.27,
+            0.755,
+            0.9,
+            0.88
+          ]
+        }
+      ],
+      "figures": [],
+      "answer_space": "lines",
+      "topics": [
+        "12.1",
+        "9.3"
+      ],
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "A",
+      "label": "8(b)",
+      "parent_label": "8",
+      "type": "structured",
+      "stem": "Burning biomethane from cow dung also produces greenhouse gases.\n\nHowever, many people still think that it is worth using cow dung to generate electricity on the farms.\n\nUse the information provided to suggest environmental and economical reasons why many people think so.",
+      "options": [],
+      "marks": 5,
+      "regions": [
+        {
+          "page_index": 37,
+          "bbox": [
+            0.22,
+            0.095,
+            0.875,
+            0.45
+          ]
+        }
+      ],
+      "figures": [],
+      "answer_space": "lines",
+      "topics": [
+        "9.3",
+        "12.2"
+      ],
+      "has_handwriting": true,
+      "confidence": "high",
+      "notes": "'environmental' and 'economical' are printed in bold. Small handwritten scribble at start of last answer line ignored.",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "A",
+      "label": "8(c)",
+      "parent_label": "8",
+      "type": "context",
+      "stem": "Iron powder burns in air to form iron(III) oxide, which can be easily collected and then converted back to iron.",
+      "options": [],
+      "marks": null,
+      "regions": [
+        {
+          "page_index": 37,
+          "bbox": [
+            0.24,
+            0.46,
+            0.875,
+            0.495
+          ]
+        }
+      ],
+      "figures": [],
+      "answer_space": "none",
+      "topics": [],
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "A",
+      "label": "8(c)(i)",
+      "parent_label": "8(c)",
+      "type": "structured",
+      "stem": "Suggest a reactant to convert iron(III) oxide back to iron.",
+      "options": [],
+      "marks": 1,
+      "regions": [
+        {
+          "page_index": 37,
+          "bbox": [
+            0.28,
+            0.5,
+            0.88,
+            0.56
+          ]
+        }
+      ],
+      "figures": [],
+      "answer_space": "lines",
+      "topics": [
+        "8.5",
+        "7.1"
+      ],
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "A",
+      "label": "8(c)(ii)",
+      "parent_label": "8(c)",
+      "type": "structured",
+      "stem": "Use the information provided to explain why iron powder is considered a recyclable fuel as compared to fossil fuels.",
+      "options": [],
+      "marks": 1,
+      "regions": [
+        {
+          "page_index": 37,
+          "bbox": [
+            0.29,
+            0.565,
+            0.88,
+            0.665
+          ]
+        }
+      ],
+      "figures": [],
+      "answer_space": "lines",
+      "topics": [
+        "9.3"
+      ],
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "B",
+      "label": "9",
+      "parent_label": null,
+      "type": "context",
+      "stem": "The table shows some properties of five esters.\n\n| name | structure | relative molecular mass | melting point °C | boiling point / °C |\n|---|---|---|---|---|\n| methyl ethanoate | CH₃COOCH₃ | 74 | −98 | 57 |\n| ethyl ethanoate | CH₃COOCH₂CH₃ | 88 | −84 | 77 |\n| propyl ethanoate | CH₃COOCH₂CH₂CH₃ | 102 | −95 | 102 |\n| butyl ethanoate | CH₃COOCH₂CH₂CH₂CH₃ | 116 | −78 | 126 |\n| pentyl ethanoate | CH₃COOCH₂CH₂CH₂CH₂CH₃ | 130 | −71 | 148 |",
+      "options": [],
+      "marks": null,
+      "regions": [
+        {
+          "page_index": 38,
+          "bbox": [
+            0.21,
+            0.13,
+            0.895,
+            0.35
+          ]
+        }
+      ],
+      "full_regions": [
+        {
+          "page_index": 38,
+          "bbox": [
+            0.21,
+            0.13,
+            0.895,
+            0.775
+          ]
+        },
+        {
+          "page_index": 39,
+          "bbox": [
+            0.22,
+            0.07,
+            0.89,
+            0.775
+          ]
+        }
+      ],
+      "figures": [
+        {
+          "id": "table-9.1",
+          "page_index": 38,
+          "bbox": [
+            0.265,
+            0.165,
+            0.895,
+            0.35
+          ],
+          "kind": "table",
+          "caption": "",
+          "description": "Uncaptioned table of five esters with columns name | structure | relative molecular mass | melting point °C | boiling point / °C. methyl ethanoate, CH₃COOCH₃, 74, −98, 57; ethyl ethanoate, CH₃COOCH₂CH₃, 88, −84, 77; propyl ethanoate, CH₃COOCH₂CH₂CH₃, 102, −95, 102; butyl ethanoate, CH₃COOCH₂CH₂CH₂CH₃, 116, −78, 126; pentyl ethanoate, CH₃COOCH₂CH₂CH₂CH₂CH₃, 130, −71, 148."
+        }
+      ],
+      "answer_space": "none",
+      "topics": [],
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "Section B: 'Answer one question from this section.' (printed under the Section B heading on page 38). Candidates answer either Q9 or Q10. The 'melting point' header has no slash before °C as printed. Ethyl ethanoate boiling point '77' is faint in the scan (second 7 partly broken) but legible.",
+      "review_flags": [],
+      "choice_group": "B"
+    },
+    {
+      "paper": "P2",
+      "section": "B",
+      "label": "9(a)",
+      "parent_label": "9",
+      "type": "structured",
+      "stem": "These esters are part of a homologous series.\n\nUsing the data given, state two characteristics of a homologous series.\n\n1.\n\n2.",
+      "options": [],
+      "marks": 2,
+      "regions": [
+        {
+          "page_index": 38,
+          "bbox": [
+            0.25,
+            0.355,
+            0.895,
+            0.555
+          ]
+        }
+      ],
+      "figures": [],
+      "answer_space": "lines",
+      "topics": [
+        "11.1"
+      ],
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "Answer lines are numbered 1. and 2.",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "B",
+      "label": "9(b)",
+      "parent_label": "9",
+      "type": "structured",
+      "stem": "The next member of the homologous series is hexyl ethanoate.\n\nExplain why it is more difficult to predict the melting point than the boiling point of hexyl ethanoate.",
+      "options": [],
+      "marks": 2,
+      "regions": [
+        {
+          "page_index": 38,
+          "bbox": [
+            0.25,
+            0.565,
+            0.895,
+            0.775
+          ]
+        }
+      ],
+      "figures": [],
+      "answer_space": "lines",
+      "topics": [
+        "11.1"
+      ],
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "B",
+      "label": "9(c)",
+      "parent_label": "9",
+      "type": "structured",
+      "stem": "At 25 °C, ethyl ethanoate is a liquid.\n\nExplain how the data in the table shows this.",
+      "options": [],
+      "marks": 2,
+      "regions": [
+        {
+          "page_index": 39,
+          "bbox": [
+            0.22,
+            0.07,
+            0.885,
+            0.22
+          ]
+        }
+      ],
+      "figures": [],
+      "answer_space": "lines",
+      "topics": [
+        "2.1"
+      ],
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "B",
+      "label": "9(d)",
+      "parent_label": "9",
+      "type": "context",
+      "stem": "",
+      "options": [],
+      "marks": null,
+      "regions": [
+        {
+          "page_index": 39,
+          "bbox": [
+            0.22,
+            0.235,
+            0.3,
+            0.26
+          ]
+        }
+      ],
+      "figures": [],
+      "answer_space": "none",
+      "topics": [],
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "No shared text at this level; only the (d) label.",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "B",
+      "label": "9(d)(i)",
+      "parent_label": "9(d)",
+      "type": "structured",
+      "stem": "Methyl ethanoate can be made from an organic acid and compound Y.\n\nDraw the structures of the two compounds from which methyl ethanoate is made.",
+      "options": [],
+      "marks": 2,
+      "regions": [
+        {
+          "page_index": 39,
+          "bbox": [
+            0.27,
+            0.235,
+            0.885,
+            0.46
+          ]
+        }
+      ],
+      "figures": [],
+      "answer_space": "drawing",
+      "topics": [
+        "11.5",
+        "11.4"
+      ],
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "Answer space is two side-by-side empty boxes labelled 'organic acid' (left) and 'compound Y' (right).",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "B",
+      "label": "9(d)(ii)",
+      "parent_label": "9(d)",
+      "type": "structured",
+      "stem": "Hence, calculate the maximum mass of methyl ethanoate that can be made from 1.20 g of organic acid and excess compound Y.",
+      "options": [],
+      "marks": 2,
+      "regions": [
+        {
+          "page_index": 39,
+          "bbox": [
+            0.27,
+            0.475,
+            0.89,
+            0.755
+          ]
+        }
+      ],
+      "figures": [],
+      "answer_space": "lines",
+      "topics": [
+        "4.3",
+        "11.5"
+      ],
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "Answer space is blank working space without printed lines.",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "B",
+      "label": "10",
+      "parent_label": null,
+      "type": "context",
+      "stem": "Food packaging used in industries produces a lot of waste which includes both glass and plastic.",
+      "options": [],
+      "marks": null,
+      "regions": [
+        {
+          "page_index": 40,
+          "bbox": [
+            0.2,
+            0.065,
+            0.89,
+            0.1
+          ]
+        }
+      ],
+      "full_regions": [
+        {
+          "page_index": 40,
+          "bbox": [
+            0.2,
+            0.065,
+            0.89,
+            0.81
+          ]
+        },
+        {
+          "page_index": 41,
+          "bbox": [
+            0.24,
+            0.065,
+            0.865,
+            0.655
+          ]
+        }
+      ],
+      "figures": [],
+      "answer_space": "none",
+      "topics": [],
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "Section B: 'Answer one question from this section.' Candidates answer either Q9 or Q10.",
+      "review_flags": [],
+      "choice_group": "B"
+    },
+    {
+      "paper": "P2",
+      "section": "B",
+      "label": "10(a)",
+      "parent_label": "10",
+      "type": "context",
+      "stem": "One of the plastics that is commonly used in food packaging is polypropene which is formed by addition polymerisation.",
+      "options": [],
+      "marks": null,
+      "regions": [
+        {
+          "page_index": 40,
+          "bbox": [
+            0.25,
+            0.11,
+            0.875,
+            0.148
+          ]
+        }
+      ],
+      "figures": [],
+      "answer_space": "none",
+      "topics": [],
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "B",
+      "label": "10(a)(i)",
+      "parent_label": "10(a)",
+      "type": "structured",
+      "stem": "Complete the equation by drawing the structure of polypropene.",
+      "options": [],
+      "marks": 1,
+      "regions": [
+        {
+          "page_index": 40,
+          "bbox": [
+            0.29,
+            0.16,
+            0.89,
+            0.3
+          ]
+        }
+      ],
+      "figures": [
+        {
+          "id": "fig-10.1",
+          "page_index": 40,
+          "bbox": [
+            0.35,
+            0.2,
+            0.56,
+            0.275
+          ],
+          "kind": "structure",
+          "caption": "",
+          "description": "Displayed formula of propene, H₃C(H)C=CH₂: a C=C double bond with H₃C and H on the left carbon and two H atoms on the right carbon, followed by a reaction arrow (→) with blank space to its right for the polymer structure."
+        }
+      ],
+      "answer_space": "drawing",
+      "topics": [
+        "11.6"
+      ],
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "B",
+      "label": "10(a)(ii)",
+      "parent_label": "10(a)",
+      "type": "structured",
+      "stem": "With the aid of an equation, calculate the percentage yield of carbon dioxide if 4800 dm³ of carbon dioxide is released when 4.2 kg of propene is burnt.",
+      "options": [],
+      "marks": 2,
+      "regions": [
+        {
+          "page_index": 40,
+          "bbox": [
+            0.29,
+            0.31,
+            0.89,
+            0.54
+          ]
+        }
+      ],
+      "figures": [],
+      "answer_space": "lines",
+      "topics": [
+        "4.4",
+        "4.3",
+        "11.3"
+      ],
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "Answer space is blank working space without printed lines.",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "B",
+      "label": "10(b)",
+      "parent_label": "10",
+      "type": "context",
+      "stem": "Propene and cyclopropane are isomers.",
+      "options": [],
+      "marks": null,
+      "regions": [
+        {
+          "page_index": 40,
+          "bbox": [
+            0.25,
+            0.55,
+            0.89,
+            0.695
+          ]
+        }
+      ],
+      "figures": [
+        {
+          "id": "fig-10.2",
+          "page_index": 40,
+          "bbox": [
+            0.44,
+            0.58,
+            0.76,
+            0.695
+          ],
+          "kind": "structure",
+          "caption": "",
+          "description": "Two displayed formulae. Left, labelled 'propene': C=C double bond with H₃C and H on one carbon and two H atoms on the other (CH₃CH=CH₂). Right, labelled 'cyclopropane': three carbon atoms joined by single bonds in a triangular ring, each carbon bonded to two H atoms (C₃H₆)."
+        }
+      ],
+      "answer_space": "none",
+      "topics": [],
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "B",
+      "label": "10(b)(i)",
+      "parent_label": "10(b)",
+      "type": "structured",
+      "stem": "Suggest how the structures of propene and cyclopropane show that they are isomers.",
+      "options": [],
+      "marks": 1,
+      "regions": [
+        {
+          "page_index": 40,
+          "bbox": [
+            0.29,
+            0.705,
+            0.89,
+            0.81
+          ]
+        }
+      ],
+      "figures": [],
+      "answer_space": "lines",
+      "topics": [
+        "11.3"
+      ],
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "B",
+      "label": "10(b)(ii)",
+      "parent_label": "10(b)",
+      "type": "structured",
+      "stem": "Describe a chemical test that can distinguish propene from cyclopropane.",
+      "options": [],
+      "marks": 2,
+      "regions": [
+        {
+          "page_index": 41,
+          "bbox": [
+            0.27,
+            0.065,
+            0.86,
+            0.195
+          ]
+        }
+      ],
+      "figures": [],
+      "answer_space": "lines",
+      "topics": [
+        "11.3"
+      ],
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "B",
+      "label": "10(c)",
+      "parent_label": "10",
+      "type": "context",
+      "stem": "The glass waste from food packaging can be melted at high temperatures and then made into new objects.",
+      "options": [],
+      "marks": null,
+      "regions": [
+        {
+          "page_index": 41,
+          "bbox": [
+            0.24,
+            0.205,
+            0.86,
+            0.245
+          ]
+        }
+      ],
+      "figures": [],
+      "answer_space": "none",
+      "topics": [],
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "B",
+      "label": "10(c)(i)",
+      "parent_label": "10(c)",
+      "type": "structured",
+      "stem": "Using the movement of particles, describe the changes in movement and arrangement of the particles when melting occurs.",
+      "options": [],
+      "marks": 2,
+      "regions": [
+        {
+          "page_index": 41,
+          "bbox": [
+            0.28,
+            0.255,
+            0.86,
+            0.42
+          ]
+        }
+      ],
+      "figures": [],
+      "answer_space": "lines",
+      "topics": [
+        "2.1"
+      ],
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    },
+    {
+      "paper": "P2",
+      "section": "B",
+      "label": "10(c)(ii)",
+      "parent_label": "10(c)",
+      "type": "structured",
+      "stem": "Glass waste contains SiO₂.\n\nIn terms of structure and bonding, explain why this melting takes place at high temperatures.",
+      "options": [],
+      "marks": 2,
+      "regions": [
+        {
+          "page_index": 41,
+          "bbox": [
+            0.29,
+            0.425,
+            0.865,
+            0.63
+          ]
+        }
+      ],
+      "figures": [],
+      "answer_space": "lines",
+      "topics": [
+        "3.4",
+        "3.2"
+      ],
+      "has_handwriting": false,
+      "confidence": "high",
+      "notes": "",
+      "review_flags": []
+    }
+  ],
+  "answers": []
+}
