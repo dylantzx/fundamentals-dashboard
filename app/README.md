@@ -67,6 +67,16 @@ Every answer counts towards the topic's rating on the dashboard, and finishing a
 the six checks. **Browse every question in the bank** (at the bottom of the dashboard) lists the whole
 paper with the scanned figures and mark schemes. Questions still waiting for review are never shown.
 
+**Where is this from in the syllabus?** Every question shows its place in the MOE O-Level Chemistry
+(6092) syllabus: the printed question's main topic and the other topics it also tests, and the
+subtopics the part you are on is tagged with. Each topic links to every question in the bank on it,
+and the bank page lists them all by syllabus topic.
+
+**Similar questions:** after you answer, Steady suggests up to three questions like it, picked first
+by shared subtopic, then by the same main topic, then by similar wording, and says why each was
+picked. You can answer one on its own page and keep going from there. When the question is on one
+of the six dashboard topics, the answer counts towards that topic's rating.
+
 If the `question-bank` folder is missing, the practice pages show "Coming next" instead.
 
 ## Stop Steady
@@ -78,3 +88,6 @@ Close the Terminal window that opened when you started Steady (or click in it an
 - `npm start` runs the server (port 4600; set `PORT` to change it). Data lives in `data/` (set `STEADY_DATA_DIR` to change it).
 - `npm test` runs the tests. There are no npm dependencies to install.
 - The question bank is read from `../question-bank` at start-up (set `STEADY_BANK_DIR` to change it). Restart Steady after replacing the bundle.
+- Syllabus names come from `../taxonomy/o_level_chemistry_6092.json` (`STEADY_SYLLABUS_FILE`). Each printed question's
+  main and other topics and its one-line summary come from `../assets/chemistry_topic_tags.csv` (`STEADY_TOPIC_TAGS_FILE`),
+  matched by school, year, paper and question number. Both are optional: without them topics show by code only.

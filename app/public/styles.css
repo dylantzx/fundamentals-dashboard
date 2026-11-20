@@ -695,3 +695,24 @@ svg { display: block; flex-shrink: 0; }
 .ill-bond { stroke: var(--steady-ink); stroke-width: 4; stroke-linecap: round; }
 .ill-weak { stroke: var(--steady-slate); stroke-width: 1.5; stroke-dasharray: 4 5; }
 .ill-divider { stroke: var(--c-border); stroke-width: 1.5; }
+/* ---------- 22. MOE syllabus topic and similar questions ---------- */
+.q-syllabus { display: flex; flex-direction: column; gap: var(--s-2); padding: var(--s-4) var(--s-5); border-radius: var(--r-lg); background: var(--c-bg); border: 1px solid var(--c-border); }
+.q-syllabus-h { margin: 0; font-size: var(--fs-14); font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--c-text-3); }
+.q-syllabus-list { margin: 0; display: grid; grid-template-columns: max-content 1fr; gap: var(--s-1) var(--s-4); }
+.q-syllabus-list > div { display: contents; }
+.q-syllabus-list dt { font-weight: 650; color: var(--c-text-2); }
+.q-syllabus-list dd { margin: 0; }
+.q-syllabus-list a { color: var(--c-primary-ink); font-weight: 600; text-underline-offset: 3px; }
+.q-syllabus-code { font-size: var(--fs-14); color: var(--c-text-3); white-space: nowrap; }
+.similar { display: flex; flex-direction: column; gap: var(--s-2); width: 100%; }
+.similar-h { font-size: var(--fs-14); font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--c-primary-ink); margin: 0; }
+.similar p { margin: 0; }
+.similar-row { grid-template-columns: 112px 1fr auto; }
+.similar-main { display: flex; flex-direction: column; gap: 2px; }
+.similar-why { font-size: var(--fs-14); color: var(--c-text-3); }
+.syl-row { display: flex; flex-direction: column; gap: var(--s-2); padding: var(--s-3) var(--s-2); }
+.syl-topic { display: grid; grid-template-columns: 48px 1fr auto; gap: var(--s-4); align-items: baseline; text-decoration: none; color: var(--c-text); font-weight: 650; border-radius: var(--r-sm); }
+.syl-topic:hover { background: #f1f6f2; }
+.syl-row .q-tags { padding-left: calc(48px + var(--s-4)); }
+.q-tags a { color: inherit; text-decoration: none; }
+.q-tags a:hover { text-decoration: underline; }

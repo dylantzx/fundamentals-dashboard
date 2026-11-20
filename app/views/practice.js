@@ -5,7 +5,11 @@
 import { html } from './html.js';
 import { showFigure } from '../lib/question-bank.js';
 import { page, icon, appHeader, safeHref, HEADER_SYMBOLS } from './layout.js';
-import { questionBody, markScheme, printed, sourceTag, topicTags, richText, figures, marksTag, scan } from './question.js';
+import { shortTopicName } from '../lib/syllabus.js';
+import {
+  questionBody, markScheme, printed, sourceTag, richText, figures, marksTag, scan,
+  syllabusPanel, aboutItem, similarList, tryHref, topicHref, itemPreview, shortLabel,
+} from './question.js';
 
 const SYMBOLS = ['i-arrow', 'i-back', 'i-info', ...HEADER_SYMBOLS, 'steady-none', 'steady-shaky', 'steady-getting', 'steady-solid'];
 const ICON_FOR = { unrated: 'steady-none', shaky: 'steady-shaky', getting: 'steady-getting', solid: 'steady-solid' };
@@ -96,7 +100,8 @@ function feedbackBanner(m) {
   const fb = m.feedback;
   if (!fb) return '';
   const it = m.item;
-  const next = html`<a class="btn btn-primary btn-lg" href="${safeHref(m.nextHref)}">${m.isLast ? 'Finish' : 'Next question'}${icon('i-arrow', { cls: 'arrow', size: 22 })}</a>`;
+  const label = m.nextLabel ?? (m.isLast ? 'Finish' : 'Next question');
+  const next = m.nextHref ? html`<a class="btn btn-primary btn-lg" href="${safeHref(m.nextHref)}">${label}${icon('i-arrow', { cls: 'arrow', size: 22 })}</a>` : '';
   if (it.type !== 'mcq') {
     const gotIt = fb.self === 'right';
     const marks = it.marks > 1 ? 'the marks' : 'the mark';
@@ -121,7 +126,7 @@ function feedbackBanner(m) {
  *   topic: { id: string, n: number, name: string }, rating: any,
  *   base: string, index: number, count: number, item: any | null,
  *   feedback: null | { picked: string } | { self: 'right' | 'wrong' }, nextHref: string, isLast: boolean,
- *   done: boolean, source: string,
+ *   done: boolean, source: string, similar?: any[],
  * }} m
  */
 export function renderPractice(m) {
@@ -152,9 +157,11 @@ export function renderPractice(m) {
         <h2 class="t-h3" id="q-title">Question ${m.index + 1}</h2>
         ${sourceTag(it)}
       </div>
+      ${syllabusPanel(aboutItem(it), it.syllabusTitle)}
       ${questionBody(it)}
       ${it.type === 'mcq' ? mcq(m) : structured(m)}
       ${feedbackBanner(m)}
+      ${m.feedback ? similarList(m.similar, { note: 'Try one of these to practise the same idea. Your set is still here when you come back.' }) : ''}
       ${printed(it)}
     </section>`;
   }
@@ -178,7 +185,7 @@ export function renderPractice(m) {
 }
 
 /** The question-bank index: every reviewed top-level question, by paper. */
-export function renderBankIndex({ user, papers, groups, source, backHref }) {
+export function renderBankIndex({ user, groups, source, backHref, syllabusIndex = [], syllabusTitle = '' }) {
   const body = html`${appHeader(user)}
 
 <main class="container practice">
@@ -190,6 +197,16 @@ export function renderBankIndex({ user, papers, groups, source, backHref }) {
       <p class="t-lead">Every question that has passed review, transcribed from the scanned papers.</p>
     </div>
   </div>
+  ${syllabusIndex.length ? html`<section class="card bank-group" aria-labelledby="g-syllabus">
+    <h2 class="t-h2" id="g-syllabus">By MOE syllabus topic</h2>
+    <p class="t-small t-muted">${syllabusTitle}. Pick a topic to see every question on it.</p>
+    <ol class="bank-list">
+      ${syllabusIndex.map((t) => html`<li class="syl-row">
+        <a class="syl-topic" href="${topicHref(t.code)}"><span class="bank-label">${t.code}</span><span>${t.name || `Topic ${t.code}`}</span><span class="bank-meta">${t.count} ${t.count === 1 ? 'question' : 'questions'}</span></a>
+        <ul class="q-tags">${t.subtopics.map((st) => html`<li><a href="${topicHref(st.code)}" title="${st.name}">${st.code} ${shortTopicName(st.name)} <span class="t-muted">(${st.count})</span></a></li>`)}</ul>
+      </li>`)}
+    </ol>
+  </section>` : ''}
   ${groups.map((g) => html`<section class="card bank-group" aria-labelledby="g-${g.paper}">
     <h2 class="t-h2" id="g-${g.paper}">${g.title}</h2>
     <ol class="bank-list">
@@ -205,7 +222,7 @@ export function renderBankIndex({ user, papers, groups, source, backHref }) {
 }
 
 /** A whole top-level question: every part, with its mark scheme behind a disclosure. */
-export function renderBankQuestion({ user, root, paperName, source }) {
+export function renderBankQuestion({ user, root, paperName, source, about = {}, syllabusTitle = '', similar = [] }) {
   const node = (n, depth) => html`<div class="bank-node bank-node--d${Math.min(depth, 3)}">
       ${depth ? html`<p class="bank-part">${n.label}</p>` : ''}
       ${n.stem ? html`<div class="q-stem">${richText(n.stem)} ${marksTag(n.type !== 'context' ? n.marks : 0)}</div>` : ''}
@@ -224,19 +241,84 @@ export function renderBankQuestion({ user, root, paperName, source }) {
     <div class="practice-title">
       <p class="t-eyebrow">${source} · ${paperName}</p>
       <h1 class="t-h1">Question ${root.label}</h1>
-      ${topicTags(collectTopics(root))}
     </div>
   </div>
   <section class="card practice-card">
+    ${syllabusPanel(about, syllabusTitle)}
     ${node(root, 0)}
     ${printed({ label: root.label, fullQuestion: root.assets?.full_question, hasHandwriting: root.has_handwriting })}
   </section>
+  ${similar.length ? html`<section class="card bank-group">${similarList(similar, { heading: 'Similar questions elsewhere in the bank' })}</section>` : ''}
 </main>`;
   return page({ title: `Question ${root.label} · Steady`, symbols: SYMBOLS, body });
 }
 
-function collectTopics(n, out = []) {
-  out.push(...(n.topics || []).filter((t) => !t.inherited));
-  for (const c of n.children || []) collectTopics(c, out);
-  return out;
+/**
+ * Every question on one syllabus topic ("10") or subtopic ("10.2").
+ * @param {{ user: any, code: string, title: string, parent: null | { code: string, name: string },
+ *   syllabusTitle: string, subtopics: Array<{ code: string, name: string, count: number }>, items: any[], backHref: string }} m
+ */
+export function renderBankTopic(m) {
+  const body = html`${appHeader(m.user)}
+
+<main class="container practice">
+  <div class="practice-top">
+    <a class="link-action" href="${safeHref(m.backHref)}">${icon('i-back', { size: 16 })}${m.parent ? `Topic ${m.parent.code}` : 'Question bank'}</a>
+    <div class="practice-title">
+      <p class="t-eyebrow">MOE syllabus · ${m.syllabusTitle}${m.parent ? ` · Topic ${m.parent.code} ${m.parent.name}` : ''}</p>
+      <h1 class="t-h1">${m.title}</h1>
+      <p class="t-lead">${m.items.length} ${m.items.length === 1 ? 'question' : 'questions'} in the bank on this ${m.parent ? 'subtopic' : 'topic'}.</p>
+    </div>
+  </div>
+  ${m.subtopics.length ? html`<section class="card bank-group" aria-labelledby="g-subs">
+    <h2 class="t-h2" id="g-subs">Subtopics</h2>
+    <ul class="q-tags">${m.subtopics.map((st) => html`<li><a href="${topicHref(st.code)}" title="${st.name}">${st.code} ${shortTopicName(st.name)} <span class="t-muted">(${st.count})</span></a></li>`)}</ul>
+  </section>` : ''}
+  <section class="card bank-group" aria-labelledby="g-items">
+    <h2 class="t-h2" id="g-items">Questions</h2>
+    ${m.items.length ? html`<ol class="bank-list">${m.items.map((it) => html`<li><a class="bank-row similar-row" href="${tryHref(it)}">
+      <span class="bank-label">${shortLabel(it)}</span>
+      <span class="bank-stem">${itemPreview(it)}</span>
+      <span class="bank-meta">${it.type === 'mcq' ? 'MCQ' : 'Written'} · ${it.marks} ${it.marks === 1 ? 'mark' : 'marks'}</span>
+    </a></li>`)}</ol>` : html`<p class="t-lead">No reviewed questions on this yet.</p>`}
+  </section>
+</main>`;
+  return page({ title: `${m.title} · Steady`, symbols: SYMBOLS, body });
+}
+
+/**
+ * One bank question to answer on its own (reached from "similar questions" or a topic page).
+ * @param {{ user: any, item: any, feedback: any, similar: any[], source: string }} m
+ */
+export function renderTry(m) {
+  const it = m.item;
+  const base = tryHref(it);
+  const first = it.syllabus?.[0];
+  const nextHref = m.similar.length ? tryHref(m.similar[0].item) : first ? topicHref(first.subtopic.code) : '/bank';
+  const pm = { ...m, base, index: 0, nextHref, nextLabel: m.similar.length ? 'Next similar question' : 'More on this topic', isLast: false };
+  const body = html`${appHeader(m.user)}
+
+<main class="container practice">
+  <div class="practice-top">
+    <a class="link-action" href="${first ? topicHref(first.subtopic.code) : '/bank'}">${icon('i-back', { size: 16 })}${first ? `All ${first.subtopic.code} questions` : 'Question bank'}</a>
+    <div class="practice-title">
+      <p class="t-eyebrow">Question bank · Chemistry</p>
+      <h1 class="t-h1">${first ? shortTopicName(first.subtopic.name) : `Question ${it.label}`}</h1>
+    </div>
+    <p class="practice-source t-small t-muted">Real questions from ${m.source}</p>
+  </div>
+  <section class="card practice-card" aria-labelledby="q-title">
+    <div class="q-head">
+      <h2 class="t-h3" id="q-title">Question ${it.label}</h2>
+      ${sourceTag(it)}
+    </div>
+    ${syllabusPanel(aboutItem(it), it.syllabusTitle)}
+    ${questionBody(it)}
+    ${it.type === 'mcq' ? mcq(pm) : structured(pm)}
+    ${feedbackBanner(pm)}
+    ${m.feedback ? similarList(m.similar) : ''}
+    ${printed(it)}
+  </section>
+</main>`;
+  return page({ title: `Question ${it.label} · Steady`, symbols: SYMBOLS, body });
 }

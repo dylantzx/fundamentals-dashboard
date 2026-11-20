@@ -7,6 +7,9 @@
 
 import fs from 'node:fs';
 import path from 'node:path';
+import { EMPTY_SYLLABUS, placeInSyllabus, topicCodeOf, compareCodes } from './syllabus.js';
+import { buildSimilarity, bestPerQuestion } from './similar.js';
+import { findTag, topicByName } from './topic-tags.js';
 
 /**
  * How Steady's six topics map onto the 6092 syllabus codes the bank is tagged with.
@@ -35,11 +38,19 @@ export function showFigure(fig, node) {
 
 /**
  * @param {string} bankDir folder holding export.json and assets/
- * @param {{ explanations?: Map<string, import('./explanations.js').Explanation> }} [opts]
- *   why each answer is right or wrong, by question id (see lib/explanations.js)
+ * @param {{
+ *   explanations?: Map<string, import('./explanations.js').Explanation>,
+ *   syllabus?: import('./syllabus.js').Syllabus,
+ *   topicTags?: import('./topic-tags.js').TopicTag[],
+ * }} [opts]
+ *   explanations: why each answer is right or wrong, by question id (see lib/explanations.js);
+ *   syllabus: the 6092 topic list, so tags read "Topic 10 Rate of Reactions" (see lib/syllabus.js);
+ *   topicTags: each printed question's main and other topics, and a summary (see lib/topic-tags.js)
  */
 export function loadQuestionBank(bankDir, opts = {}) {
   const explanations = opts.explanations ?? new Map();
+  const syllabus = opts.syllabus ?? EMPTY_SYLLABUS;
+  const topicTags = opts.topicTags ?? [];
   const exportPath = path.join(bankDir, 'export.json');
   const data = JSON.parse(fs.readFileSync(exportPath, 'utf8'));
 
@@ -80,6 +91,63 @@ export function loadQuestionBank(bankDir, opts = {}) {
   for (const tid of Object.keys(TOPIC_RULES)) {
     byTopic[tid] = items.filter((it) => TOPIC_RULES[tid](it.codeSet, it.searchText));
   }
+  /** rootId -> what the whole printed question is about (from the topic tags CSV) */
+  const aboutRoot = new Map();
+  for (const root of roots) {
+    const paper = papers.get(`${root.document_id}:${root.paper}`) || {};
+    const tag = findTag(topicTags, { school: paper.school, year: paper.year, paper: root.paper, label: root.label });
+    aboutRoot.set(root.id, tag
+      ? { main: topicByName(syllabus, tag.primary), also: tag.secondary.map((n) => topicByName(syllabus, n)), summary: tag.summary }
+      : { main: null, also: [], summary: '' });
+  }
+  for (const it of items) {
+    it.syllabus = it.topics.map((t) => placeInSyllabus(syllabus, t));
+    it.syllabusTitle = syllabus.title;
+    const about = aboutRoot.get(it.rootId);
+    it.rootLabel = rootsById.get(it.rootId).label;
+    it.mainTopic = about.main;
+    it.alsoTopics = about.also;
+    it.summary = about.summary;
+    it.steadyTopics = Object.keys(TOPIC_RULES).filter((tid) => byTopic[tid].includes(it));
+  }
+
+  const { similar } = buildSimilarity(items);
+  const itemsByRoot = Map.groupBy(items, (it) => it.rootId);
+
+  /**
+   * Every question tagged with a syllabus code (a subtopic "10.2" or a whole topic "10"),
+   * or whose printed question has it as its main topic.
+   * @param {string} code
+   */
+  function forSyllabus(code) {
+    const isTopic = !String(code).includes('.');
+    const onCode = (c) => (isTopic ? topicCodeOf(c) === code : c === code);
+    return items.filter((it) => [...it.codeSet].some(onCode) || (it.mainTopic?.code && onCode(it.mainTopic.code)));
+  }
+
+  /**
+   * The syllabus topics that have questions in the bank, in syllabus order,
+   * each with its subtopics and how many questions are tagged with them.
+   */
+  const syllabusIndex = (() => {
+    const counts = new Map();
+    const names = new Map();
+    for (const it of items) {
+      for (const p of it.syllabus) {
+        counts.set(p.subtopic.code, (counts.get(p.subtopic.code) || 0) + 1);
+        names.set(p.subtopic.code, p);
+      }
+    }
+    const topics = new Map();
+    for (const code of [...counts.keys()].sort(compareCodes)) {
+      const p = names.get(code);
+      if (!topics.has(p.topic.code)) topics.set(p.topic.code, { ...p.topic, count: 0, subtopics: [] });
+      const t = topics.get(p.topic.code);
+      t.subtopics.push({ ...p.subtopic, count: forSyllabus(code).length });
+    }
+    for (const t of topics.values()) t.count = forSyllabus(t.code).length;
+    return [...topics.values()];
+  })();
 
   return {
     bankDir,
@@ -94,6 +162,26 @@ export function loadQuestionBank(bankDir, opts = {}) {
     root: (id) => rootsById.get(id) || null,
     /** @param {string} topicId @returns {any[]} */
     forTopic: (topicId) => byTopic[topicId] || [],
+    syllabusTitle: syllabus.title,
+    /** Syllabus topics and subtopics that have questions, with counts. */
+    syllabusIndex,
+    /**
+     * Every question tagged with a syllabus code: a subtopic ("10.2") or a whole topic ("10").
+     * @param {string} code
+     */
+    forSyllabus,
+    /** @param {string} rootId what a whole printed question is about: { main, also, summary } */
+    about: (rootId) => aboutRoot.get(rootId) || { main: null, also: [], summary: '' },
+    syllabus,
+    /** Questions like this practice item, best first, from other printed questions. */
+    similar,
+    /**
+     * Questions like any part of this top-level question, best first (one per other question).
+     * @param {string} rootId @param {number} [limit]
+     */
+    similarToRoot(rootId, limit = 5) {
+      return bestPerQuestion((itemsByRoot.get(rootId) || []).flatMap((it) => similar(it.id, limit)), limit);
+    },
     /** One line describing where the questions come from. */
     sourceLine() {
       const p = [...papers.values()][0];

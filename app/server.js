@@ -17,6 +17,8 @@ import { loadExplanations } from './lib/explanations.js';
 import { loadSources } from './lib/sources.js';
 import { loadSummaries } from './lib/summaries.js';
 import { ILLUSTRATION_IDS } from './views/illustrations/index.js';
+import { loadSyllabus } from './lib/syllabus.js';
+import { loadTopicTags } from './lib/topic-tags.js';
 import fs from 'node:fs';
 
 const APP_DIR = path.dirname(fileURLToPath(import.meta.url));
@@ -64,6 +66,8 @@ async function loadRealUi() {
  *   explanationsFile?: string,    // why answers are right or wrong; default app/content/explanations.json
  *   sourcesFile?: string,         // checked outside study sources; default app/content/sources.json
  *   summariesFile?: string,       // in-app topic summaries; default app/content/summaries.json
+ *   syllabusFile?: string,        // the 6092 topic list; default env STEADY_SYLLABUS_FILE or ../taxonomy/o_level_chemistry_6092.json
+ *   topicTagsFile?: string,       // each printed question's main topics; default env STEADY_TOPIC_TAGS_FILE or ../assets/chemistry_topic_tags.csv
  * }} [opts]
  * @returns {http.Server & { store: any, answers: any, sessions: any, auth: any, studySessions: any }}
  */
@@ -109,7 +113,16 @@ export function createApp(opts = {}) {
   let bank = null;
   if (bankDir && fs.existsSync(path.join(bankDir, 'export.json'))) {
     try {
-      bank = loadQuestionBank(bankDir, { explanations: readExplanations(opts.explanationsFile, log) });
+      const syllabusFile = opts.syllabusFile
+        ?? process.env.STEADY_SYLLABUS_FILE
+        ?? path.join(APP_DIR, '..', 'taxonomy', 'o_level_chemistry_6092.json');
+      bank = loadQuestionBank(bankDir, {
+        explanations: readExplanations(opts.explanationsFile, log),
+        syllabus: loadSyllabus(syllabusFile, log),
+        topicTags: loadTopicTags(opts.topicTagsFile
+          ?? process.env.STEADY_TOPIC_TAGS_FILE
+          ?? path.join(APP_DIR, '..', 'assets', 'chemistry_topic_tags.csv'), log),
+      });
     } catch (err) {
       log(`question bank not loaded from ${bankDir}: ${err && err.message}`);
     }

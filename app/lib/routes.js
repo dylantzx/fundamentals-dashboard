@@ -14,7 +14,8 @@ import {
 import { COOKIE_NAME } from './sessions.js';
 import { TOPICS, LABEL_TEXT, labelFor } from './ratings.js';
 import { labelOf } from './rating-rules.js';
-import { renderPractice, renderBankIndex, renderBankQuestion } from '../views/practice.js';
+import { renderPractice, renderBankIndex, renderBankQuestion, renderBankTopic, renderTry } from '../views/practice.js';
+import { CODE_RE, compareCodes, topicCodeOf } from './syllabus.js';
 import { createParentRoutes } from './parent-routes.js';
 import { renderLearn } from '../views/learn.js';
 
@@ -251,6 +252,9 @@ export function createRouter(deps) {
   /** Questions per practice set and per quick check (as the dashboard promises). */
   const PRACTICE_SIZE = 5;
   const CHECK_SIZE = 3;
+  /** Similar questions offered after an answer, and on a bank question page. */
+  const SIMILAR_AFTER_ANSWER = 3;
+  const SIMILAR_ON_BANK_PAGE = 5;
 
   /**
    * The question set behind /practise/:topicId or /check/:n, or null if there is none.
@@ -314,7 +318,39 @@ export function createRouter(deps) {
       isLast,
       done,
       source: bank.sourceLine(),
+      similar: item && feedback ? bank.similar(item.id, SIMILAR_AFTER_ANSWER) : [],
     }));
+  }
+
+  /**
+   * Saves one finished question towards a topic's rating and returns the updated progress
+   * (not yet stored, so the caller can change it further before setProgress).
+   * @param {'practice' | 'check'} pool
+   */
+  function recordAnswer(user, topicId, item, right, pool) {
+    // One finished question for the PRD 6 ratings. The bank holds prelim exam
+    // questions, so every one is Exam level.
+    answers?.add({
+      userId: user.id, topicId, questionId: item.id, correct: right,
+      level: 'exam', pool, at: (deps.now ?? Date.now)(),
+    });
+    const progress = store.getProgress(user.id);
+    const prev = progress.topics[topicId] || { right: 0, total: 0 };
+    progress.topics[topicId] = { right: (prev.right || 0) + (right ? 1 : 0), total: (prev.total || 0) + 1 };
+    return progress;
+  }
+
+  /**
+   * Whether an answer form was filled in properly: { right } if so, null if not.
+   * @param {any} item @param {Record<string, string>} form
+   */
+  function markAnswer(item, form) {
+    if (item.type === 'mcq') {
+      if (!item.options.some((o) => o.label === form.choice)) return null;
+      return { right: form.choice === item.correctOption };
+    }
+    if (form.self !== 'right' && form.self !== 'wrong') return null;
+    return { right: form.self === 'right' };
   }
 
   async function postPracticeAnswer(req, res, set) {
@@ -326,25 +362,11 @@ export function createRouter(deps) {
     const item = Number.isInteger(index) ? set.items[index] : undefined;
     if (!item) return redirect(res, set.base);
 
-    let right;
-    if (item.type === 'mcq') {
-      if (!item.options.some((o) => o.label === form.choice)) return redirect(res, `${set.base}?i=${index}`);
-      right = form.choice === item.correctOption;
-    } else {
-      if (form.self !== 'right' && form.self !== 'wrong') return redirect(res, `${set.base}?i=${index}`);
-      right = form.self === 'right';
-    }
+    const marked = markAnswer(item, form);
+    if (!marked) return redirect(res, `${set.base}?i=${index}`);
+    const { right } = marked;
 
-    // One finished question for the PRD 6 ratings. The bank holds prelim exam
-    // questions, so every one is Exam level.
-    answers?.add({
-      userId: ctx.user.id, topicId: set.topic.id, questionId: item.id, correct: right,
-      level: 'exam', pool: set.mode === 'check' ? 'check' : 'practice', at: (deps.now ?? Date.now)(),
-    });
-
-    const progress = store.getProgress(ctx.user.id);
-    const prev = progress.topics[set.topic.id] || { right: 0, total: 0 };
-    progress.topics[set.topic.id] = { right: (prev.right || 0) + (right ? 1 : 0), total: (prev.total || 0) + 1 };
+    const progress = recordAnswer(ctx.user, set.topic.id, item, right, set.mode === 'check' ? 'check' : 'practice');
     const isLast = index === set.items.length - 1;
     if (set.mode === 'check' && isLast && progress.checksDone === set.checkN - 1) progress.checksDone = set.checkN;
     store.setProgress(ctx.user.id, progress);
@@ -373,7 +395,10 @@ export function createRouter(deps) {
         })),
       };
     }).filter((g) => g.questions.length);
-    sendHtml(res, 200, renderBankIndex({ user: { username: ctx.user.username }, groups, source: bank.sourceLine(), backHref: homeFor(ctx.user) }));
+    sendHtml(res, 200, renderBankIndex({
+      user: { username: ctx.user.username }, groups, source: bank.sourceLine(), backHref: homeFor(ctx.user),
+      syllabusIndex: bank.syllabusIndex, syllabusTitle: bank.syllabusTitle,
+    }));
   }
 
   async function getBankQuestion(req, res, id) {
@@ -387,6 +412,13 @@ export function createRouter(deps) {
       root,
       paperName: p.paper_code ? `Paper ${root.paper.replace(/^P/, '')} (${p.paper_code})` : root.paper,
       source: bank.sourceLine(),
+      about: {
+        ...bank.about(root.id),
+        places: bank.items.filter((it) => it.rootId === root.id).flatMap((it) => it.syllabus)
+          .sort((a, b) => compareCodes(a.subtopic.code, b.subtopic.code)),
+      },
+      syllabusTitle: bank.syllabusTitle,
+      similar: bank.similarToRoot(root.id, SIMILAR_ON_BANK_PAGE),
     }));
   }
 
@@ -405,6 +437,58 @@ export function createRouter(deps) {
       sources: deps.learn.sources?.topics?.[topic.id] ?? [],
       practiseHref: `/practise/${topic.id}`,
     }));
+  }
+
+  /** /bank/topic/10 (a syllabus topic) or /bank/topic/10.2 (a subtopic). */
+  async function getBankTopic(req, res, code) {
+    const ctx = currentUser(req);
+    if (!ctx.user) return toLogin(res, ctx);
+    const tc = topicCodeOf(code);
+    const listed = bank.syllabusIndex.find((t) => t.code === tc);
+    const topic = bank.syllabus.topics.get(tc) || (listed && { code: tc, name: listed.name, subtopics: listed.subtopics });
+    if (!topic) return notFound(res);
+    const isTopic = !code.includes('.');
+    const sub = isTopic ? null : topic.subtopics.find((st) => st.code === code) || listed?.subtopics.find((st) => st.code === code);
+    if (!isTopic && !sub) return notFound(res);
+    sendHtml(res, 200, renderBankTopic({
+      user: { username: ctx.user.username },
+      code,
+      title: isTopic ? `Topic ${topic.code} · ${topic.name || 'Chemistry'}` : `${sub.code} ${sub.name}`,
+      parent: isTopic ? null : { code: topic.code, name: topic.name },
+      syllabusTitle: bank.syllabusTitle,
+      subtopics: isTopic ? topic.subtopics.map((st) => ({ ...st, count: bank.forSyllabus(st.code).length })) : [],
+      items: bank.forSyllabus(code),
+      backHref: isTopic ? '/bank' : `/bank/topic/${topic.code}`,
+    }));
+  }
+
+  /** One bank question on its own: answer it, see why, then go on to a similar one. */
+  async function getTry(req, res, url, item) {
+    const ctx = currentUser(req);
+    if (!ctx.user) return toLogin(res, ctx);
+    const feedback = feedbackFor(item, url.searchParams);
+    sendHtml(res, 200, renderTry({
+      user: { username: ctx.user.username },
+      item,
+      feedback,
+      similar: feedback ? bank.similar(item.id, SIMILAR_AFTER_ANSWER) : [],
+      source: bank.sourceLine(),
+    }));
+  }
+
+  async function postTryAnswer(req, res, item) {
+    const form = await readForm(req);
+    const ctx = currentUser(req);
+    if (!ctx.user) return toLogin(res, ctx);
+    const base = `/bank/try/${item.id}`;
+    const marked = markAnswer(item, form);
+    if (!marked) return redirect(res, base);
+    // A student's answer counts towards a dashboard topic when the question is on one.
+    const topicId = item.steadyTopics[0];
+    if (ctx.user.role === 'student' && topicId) {
+      store.setProgress(ctx.user.id, recordAnswer(ctx.user, topicId, item, marked.right, 'practice'));
+    }
+    return redirect(res, item.type === 'mcq' ? `${base}?picked=${form.choice}` : `${base}?self=${form.self}`);
   }
 
   // ---- dispatch -------------------------------------------------------------
@@ -454,8 +538,22 @@ export function createRouter(deps) {
         if (pm[3] && method === 'POST') return postPracticeAnswer(req, res, set);
       }
       if (method === 'GET' && p === '/bank') return getBankIndex(req, res);
+      const tm = /^\/bank\/topic\/([0-9.]{1,5})$/.exec(p);
+      if (method === 'GET' && tm && CODE_RE.test(tm[1])) return getBankTopic(req, res, tm[1]);
+      const ym = /^\/bank\/try\/([A-Za-z0-9_-]{1,64})(\/answer)?$/.exec(p);
+      const tryItem = ym && bank.item(ym[1]);
+      if (tryItem) {
+        if (!ym[2] && method === 'GET') return getTry(req, res, url, tryItem);
+        if (ym[2] && method === 'POST') return postTryAnswer(req, res, tryItem);
+      }
       const qm = /^\/bank\/q\/([A-Za-z0-9_-]{1,64})$/.exec(p);
       if (method === 'GET' && qm) return getBankQuestion(req, res, qm[1]);
+      // Anything else under these is an unknown question or topic, not "Coming next".
+      if (method === 'GET' && /^\/bank\/(q|topic|try)\//.test(p)) {
+        const ctx = currentUser(req);
+        if (!ctx.user) return toLogin(res, ctx);
+        return notFound(res);
+      }
       if (method === 'GET' && p.startsWith('/bank/assets/')) {
         const ctx = currentUser(req);
         if (!ctx.user) return toLogin(res, ctx);

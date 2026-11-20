@@ -3,6 +3,7 @@
 // Every value from the bank goes through html`` and is escaped.
 
 import { html } from './html.js';
+import { shortTopicName } from '../lib/syllabus.js';
 
 /** Where bank images are served from (see lib/routes.js). */
 export const ASSET_BASE = '/bank/assets/';
@@ -64,14 +65,6 @@ export function sourceTag(item) {
   return html`<p class="q-source">${item.source ? html`${item.source} · ` : ''}${item.paperName} · Question ${item.label}</p>`;
 }
 
-/** Topic codes as small tags. */
-export function topicTags(topics) {
-  const seen = new Set();
-  const own = (topics || []).filter((t) => !seen.has(t.code) && seen.add(t.code));
-  if (!own.length) return '';
-  return html`<ul class="q-tags" aria-label="Syllabus topics">${own.map((t) => html`<li title="${t.name}">${t.code} ${shortName(t.name)}</li>`)}</ul>`;
-}
-const shortName = (n) => String(n).replace(/\s*\(.*\)\s*$/, '');
 
 /** The mark scheme: transcribed text, with the scanned row behind a disclosure. */
 export function markScheme(item) {
@@ -103,4 +96,93 @@ export function questionBody(item) {
       <div class="q-stem">${richText(item.stem)} ${marksTag(item.marks)}</div>
       ${figures(item.ownFigures)}
     </div>`;
+}
+
+/** Link to a syllabus topic or subtopic page. */
+export const topicHref = (code) => `/bank/topic/${encodeURIComponent(code)}`;
+
+/** Link to answer one bank question on its own. */
+export const tryHref = (item) => `/bank/try/${encodeURIComponent(item.id)}`;
+
+/** A topic link: "Rate of Reactions" with its syllabus number. */
+const topicLink = (t) => (t.code
+  ? html`<a href="${topicHref(t.code)}">${t.name}</a> <span class="q-syllabus-code">${t.code.includes('.') ? '' : 'Topic '}${t.code}</span>`
+  : html`<span>${t.name}</span>`);
+
+/**
+ * Where a practice item sits in the MOE syllabus, for syllabusPanel().
+ * @param {any} it a practice item from the bank
+ */
+export const aboutItem = (it) => ({
+  main: it.mainTopic, also: it.alsoTopics, places: it.syllabus, partOf: it.id !== it.rootId ? it.rootLabel : null,
+});
+
+/**
+ * Where the question sits in the MOE syllabus: the printed question's main topic and
+ * the others it also tests (topic tags CSV), and the subtopics this part is tagged with
+ * (bank tags). Every topic links to all the questions on it.
+ * @param {{ main?: { code: string, name: string } | null, also?: Array<{ code: string, name: string }>,
+ *   places?: Array<{ topic: { code: string, name: string }, subtopic: { code: string, name: string } }>,
+ *   partOf?: string | null, summary?: string }} about
+ * @param {string} title e.g. "O-Level Chemistry (6092)"
+ */
+export function syllabusPanel(about, title) {
+  const seen = new Set();
+  const places = (about.places || []).filter((p) => !seen.has(p.subtopic.code) && seen.add(p.subtopic.code));
+  const also = about.also || [];
+  if (!about.main && !places.length) return '';
+  const whole = about.partOf ? ` (all of Question ${about.partOf})` : '';
+  return html`<section class="q-syllabus" aria-label="Where this is in the syllabus">
+      <p class="q-syllabus-h">MOE syllabus · ${title || 'O-Level Chemistry'}</p>
+      <dl class="q-syllabus-list">
+        ${about.main ? html`<div><dt>Main topic${whole}</dt><dd>${topicLink(about.main)}</dd></div>` : ''}
+        ${also.length ? html`<div><dt>Also tests</dt><dd>${also.map((t, i) => html`${i ? ', ' : ''}${topicLink(t)}`)}</dd></div>` : ''}
+        ${places.length ? html`<div><dt>${about.partOf ? 'This part' : 'Subtopics'}</dt><dd>${places.map((p, i) => html`${i ? html`<br>` : ''}<a href="${topicHref(p.subtopic.code)}" title="${p.subtopic.name}">${p.subtopic.code} ${shortTopicName(p.subtopic.name)}</a>`)}</dd></div>` : ''}
+        ${about.summary ? html`<div><dt>About</dt><dd>${about.summary}</dd></div>` : ''}
+      </dl>
+    </section>`;
+}
+
+/** First line of a practice item's text, for lists. */
+export function itemPreview(it) {
+  // A whole question (an MCQ) reads best as its summary; a part, as its own words.
+  if (it.summary && it.id === it.rootId) return it.summary.charAt(0).toUpperCase() + it.summary.slice(1);
+  const pick = (t) => String(t || '').split('\n').find((l) => l.trim() && !l.trim().startsWith('|')) || '';
+  const text = pick(it.stem) || pick(it.context?.[it.context.length - 1]);
+  return text.length > 140 ? text.slice(0, 137).trimEnd() + '…' : text;
+}
+
+/** "P1 Q19", "P2 Q3(a)(i)" */
+export const shortLabel = (it) => `${it.paper} Q${it.label}`;
+
+/** Why a question was picked as similar, in words a student can use. */
+function similarReason(s) {
+  const place = (code) => s.item.syllabus?.find((p) => p.subtopic.code === code);
+  if (s.shared.length) {
+    const p = place(s.shared[0]);
+    return `Same subtopic: ${s.shared[0]} ${shortTopicName(p?.subtopic.name)}`.trim();
+  }
+  if (s.sameMain) return `Same main topic: ${s.item.mainTopic.name}`;
+  if (s.sharedTopics.length) {
+    const p = s.item.syllabus?.find((x) => x.topic.code === s.sharedTopics[0]);
+    return `Same topic: ${s.sharedTopics[0]}${p?.topic.name ? ` ${p.topic.name}` : ''}`;
+  }
+  return 'Similar wording';
+}
+
+/**
+ * Questions like this one, each linking to a page where it can be answered.
+ * @param {Array<{ item: any, shared: string[], sharedTopics: string[] }>} list from bank.similar()
+ */
+export function similarList(list, { heading = 'Similar questions in the bank', note = '' } = {}) {
+  if (!list?.length) return '';
+  return html`<section class="similar" aria-labelledby="similar-h">
+      <h2 class="similar-h" id="similar-h">${heading}</h2>
+      ${note ? html`<p class="t-small t-muted">${note}</p>` : ''}
+      <ol class="bank-list">${list.map((s) => html`<li><a class="bank-row similar-row" href="${tryHref(s.item)}">
+        <span class="bank-label">${shortLabel(s.item)}</span>
+        <span class="similar-main"><span class="bank-stem">${itemPreview(s.item)}</span><span class="similar-why">${similarReason(s)}</span></span>
+        <span class="bank-meta">${s.item.type === 'mcq' ? 'MCQ' : 'Written'} · ${s.item.marks} ${s.item.marks === 1 ? 'mark' : 'marks'}</span>
+      </a></li>`)}</ol>
+    </section>`;
 }
