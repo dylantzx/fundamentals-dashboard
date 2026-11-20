@@ -10,6 +10,8 @@ import { createStore } from './lib/store.js';
 import { createAuthenticator, scryptNFromEnv } from './lib/auth.js';
 import { createSessions, IDLE_MS } from './lib/sessions.js';
 import { createRouter } from './lib/routes.js';
+import { createStudySessions } from './lib/study-sessions.js';
+import { labelFor } from './lib/ratings.js';
 import { loadQuestionBank } from './lib/question-bank.js';
 import fs from 'node:fs';
 
@@ -55,8 +57,10 @@ async function loadRealUi() {
  *   log?: (line: string) => void, // access/error log sink (default console.log)
  *   bankDir?: string | null,      // question bank folder (export.json + assets/); default env STEADY_BANK_DIR
  *                                 // or ../question-bank. null = no bank: practice pages show "Coming next".
+ *   answerLog?: { list(userId: string): any[] },  // override lib/answer-log.js createAnswerLog(dataDir)
+ *   labelOf?: (answers: any[]) => { label: string }, // override lib/rating-rules.js labelOf
  * }} [opts]
- * @returns {http.Server & { store: any, sessions: any, auth: any }}
+ * @returns {http.Server & { store: any, sessions: any, auth: any, studySessions: any }}
  */
 export function createApp(opts = {}) {
   const dataDir = opts.dataDir ?? process.env.STEADY_DATA_DIR ?? path.join(APP_DIR, 'data');
@@ -67,6 +71,9 @@ export function createApp(opts = {}) {
 
   const store = createStore(dataDir);
   const sessions = createSessions({ now, idleMs: opts.idleMs ?? IDLE_MS });
+  const studySessions = createStudySessions(dataDir, { now, idleMs: opts.idleMs ?? IDLE_MS });
+  // Logins live in memory, so after a restart no study session can still be open.
+  studySessions.closeAllOpen();
   const auth = createAuthenticator(store, { N: scryptN });
 
   /** @type {Promise<any> | null} */
@@ -96,11 +103,39 @@ export function createApp(opts = {}) {
     }
   }
 
-  const handler = createRouter({ store, sessions, auth, loadUi, publicDir, bank, log });
+  // The answer log and the rating rules behind the parent page, loaded lazily so
+  // either can be swapped for a stand-in. If a module is missing the page still
+  // works: no answers, and labels from lib/ratings.js.
+  /** @type {Promise<any> | null} */
+  let parentDataPromise = null;
+  const loadParentData = () =>
+    (parentDataPromise ??= (async () => {
+      let answerLog = opts.answerLog;
+      let labelOf = opts.labelOf;
+      if (!answerLog) {
+        try {
+          answerLog = (await import('./lib/answer-log.js')).createAnswerLog(dataDir);
+        } catch (err) {
+          log(`answer log not loaded: ${err && err.message}`);
+          answerLog = { list: () => [] };
+        }
+      }
+      if (!labelOf) {
+        try {
+          labelOf = (await import('./lib/rating-rules.js')).labelOf;
+        } catch (err) {
+          log(`rating rules not loaded: ${err && err.message}`);
+          labelOf = (answers) => ({ label: labelFor({ right: answers.filter((a) => a.correct === true).length, total: answers.length }) });
+        }
+      }
+      return { answerLog, labelOf };
+    })());
+
+  const handler = createRouter({ store, sessions, auth, loadUi, publicDir, bank, log, studySessions, loadParentData });
   const server = http.createServer(handler);
   server.headersTimeout = 15_000;
   server.requestTimeout = 30_000;
-  return Object.assign(server, { store, sessions, auth, bank });
+  return Object.assign(server, { store, sessions, auth, bank, studySessions });
 }
 
 const isMain = process.argv[1] && pathToFileURL(path.resolve(process.argv[1])).href === import.meta.url;

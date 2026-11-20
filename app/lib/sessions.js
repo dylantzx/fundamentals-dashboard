@@ -9,7 +9,7 @@ export const IDLE_MS = 20 * 60 * 1000;
  * @param {{ now?: () => number, idleMs?: number }} [opts]
  */
 export function createSessions({ now = Date.now, idleMs = IDLE_MS } = {}) {
-  /** @type {Map<string, { userId: string, lastSeen: number }>} */
+  /** @type {Map<string, { userId: string, lastSeen: number, meta?: any }>} */
   const map = new Map();
 
   // Expired sessions are kept for a while as tombstones so the next request can
@@ -21,18 +21,22 @@ export function createSessions({ now = Date.now, idleMs = IDLE_MS } = {}) {
   }
 
   return {
-    /** @param {string} userId @returns {string} new session id (32 random bytes, hex) */
-    create(userId) {
+    /**
+     * @param {string} userId
+     * @param {any} [meta] kept with the session and handed back by touch/destroy (e.g. { studyId })
+     * @returns {string} new session id (32 random bytes, hex)
+     */
+    create(userId, meta) {
       sweep();
       const id = crypto.randomBytes(32).toString('hex');
-      map.set(id, { userId, lastSeen: now() });
+      map.set(id, { userId, lastSeen: now(), meta });
       return id;
     },
 
     /**
      * Looks up a session and refreshes its idle timer.
      * @param {string | undefined} id
-     * @returns {{ status: 'ok', userId: string } | { status: 'expired' } | { status: 'none' }}
+     * @returns {{ status: 'ok', userId: string, meta?: any } | { status: 'expired', meta?: any } | { status: 'none' }}
      */
     touch(id) {
       if (!id || typeof id !== 'string') return { status: 'none' };
@@ -41,15 +45,25 @@ export function createSessions({ now = Date.now, idleMs = IDLE_MS } = {}) {
       const t = now();
       if (t - s.lastSeen > idleMs) {
         map.delete(id);
-        return { status: 'expired' };
+        return { status: 'expired', meta: s.meta };
       }
       s.lastSeen = t;
-      return { status: 'ok', userId: s.userId };
+      return { status: 'ok', userId: s.userId, meta: s.meta };
     },
 
-    /** @param {string | undefined} id */
+    /** @param {string | undefined} id @returns {any} the ended session's meta, if any */
     destroy(id) {
-      if (id) map.delete(id);
+      if (!id) return undefined;
+      const s = map.get(id);
+      map.delete(id);
+      return s?.meta;
+    },
+
+    /** Ends every session of one account (a new login replaces them). @param {string} userId @returns {any[]} their metas */
+    destroyUser(userId) {
+      const metas = [];
+      for (const [id, s] of map) if (s.userId === userId) { metas.push(s.meta); map.delete(id); }
+      return metas;
     },
 
     get size() {
