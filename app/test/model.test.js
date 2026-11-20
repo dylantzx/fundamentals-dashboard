@@ -54,7 +54,7 @@ test('returning seed reproduces landing.html exactly', () => {
     'Solid 4/5', 'Getting there 3/5', 'Shaky 1/3', 'Shaky 2/5', 'Getting there 2/4', 'Getting there 2/3',
   ]);
   assert.deepEqual(m.nextUp, {
-    id: 't3', name: 'Isotopes', label: 'shaky', labelText: 'Shaky', right: 1, total: 3,
+    id: 't3', name: 'Isotopes', label: 'shaky', labelText: 'Shaky', right: 1, total: 3, needMore: 0,
     href: '/practise/t3', minutes: 10, questions: 5,
   });
   assert.equal(m.nextCheck, null);
@@ -66,7 +66,9 @@ test('returning seed reproduces landing.html exactly', () => {
 test('part-way when practice rated a topic but no check is done', () => {
   const m = build({ topics: { t4: { right: 3, total: 3 } }, checksDone: 0 });
   assert.equal(m.state, 'part-way');
-  assert.equal(m.nextUp.id, 't4');
+  // PRD 6.3: Not rated yet comes before Solid, so the first unrated topic is Next up.
+  assert.equal(m.nextUp.id, 't1');
+  assert.equal(m.nextUp.needMore, 3);
 });
 
 test('part-way when checks are done but nothing is rated yet', () => {
@@ -76,12 +78,18 @@ test('part-way when checks are done but nothing is rated yet', () => {
   assert.equal(m.topics[0].needMore, 1);
 });
 
-test('next up: shaky before getting before solid, unrated never chosen', () => {
+test('next up (PRD 6.3): Shaky, then Not rated yet, then Getting there, then Solid', () => {
   const m = build({
     topics: { t1: { right: 3, total: 3 }, t2: { right: 2, total: 3 }, t3: { right: 0, total: 1 } },
     checksDone: 2,
   });
-  assert.equal(m.nextUp.id, 't2');
+  assert.equal(m.nextUp.id, 't3'); // Not rated yet beats Getting there (t2) and Solid (t1)
+  assert.equal(m.nextUp.needMore, 2);
+  const s = build({
+    topics: { t1: { right: 3, total: 3 }, t2: { right: 2, total: 3 }, t3: { right: 0, total: 1 }, t6: { right: 0, total: 3 } },
+    checksDone: 2,
+  });
+  assert.equal(s.nextUp.id, 't6'); // Shaky beats everything
 });
 
 test('next up tie-break is list order, not score', () => {
@@ -90,8 +98,16 @@ test('next up tie-break is list order, not score', () => {
     checksDone: 3,
   });
   assert.equal(m.nextUp.id, 't2');
+  // PRD 6.3: unrated t1 outranks the two Getting there topics.
   const g = build({ topics: { t6: { right: 2, total: 3 }, t4: { right: 3, total: 4 } }, checksDone: 3 });
-  assert.equal(g.nextUp.id, 't4');
+  assert.equal(g.nextUp.id, 't1');
+  // With every topic rated, the Getting there tie goes to the earlier topic.
+  const solid = { right: 3, total: 3 };
+  const all = build({
+    topics: { t1: solid, t2: solid, t3: solid, t5: solid, t6: { right: 2, total: 3 }, t4: { right: 3, total: 4 } },
+    checksDone: 6,
+  });
+  assert.equal(all.nextUp.id, 't4');
 });
 
 test('needMore counts down to 0 as answers come in', () => {
@@ -105,12 +121,13 @@ test('nextCheck runs 1..6 then null', () => {
   assert.equal(build({ topics: {}, checksDone: 9 }).checksDone, 6);
 });
 
-test('overall label: average of shaky=1, getting=2, solid=3, halves round up', () => {
+test('overall label (PRD 6.5): shaky=1, getting=2, solid=3 added; 6-9 Shaky, 10-14 Getting there, 15-18 Solid', () => {
   const s = 'shaky', g = 'getting', o = 'solid';
-  assert.equal(overallLabel([s, s, g, g, g, o]), 'getting'); // 11/6 = 1.83
-  assert.equal(overallLabel([s, s, s, s, s, g]), 'shaky'); // 7/6 = 1.17
-  assert.equal(overallLabel([s, s, s, g, g, g]), 'getting'); // 9/6 = 1.5, rounds up
-  assert.equal(overallLabel([g, g, g, o, o, o]), 'solid'); // 15/6 = 2.5, rounds up
+  assert.equal(overallLabel([s, s, g, g, g, o]), 'getting'); // 11
+  assert.equal(overallLabel([s, s, s, s, s, g]), 'shaky'); // 7
+  assert.equal(overallLabel([s, s, s, g, g, g]), 'shaky'); // 9
+  assert.equal(overallLabel([g, g, g, o, o, o]), 'solid'); // 15
+  assert.equal(overallLabel([s, g, o, o, o, o]), 'getting'); // 15, but one Shaky
   assert.equal(overallLabel([s, s, s, s, g, g]), 'shaky'); // 8/6 = 1.33
   assert.equal(overallLabel([o, o, o, o, o, o]), 'solid');
   assert.equal(overallLabel([o, o, o, o, o, 'unrated']), null);
@@ -134,4 +151,37 @@ test('the model does not alias the seed data or shared constants', () => {
   const a = build(DEMO_PROGRESS.returning);
   a.subjects[0].name = 'changed';
   assert.equal(build(DEMO_PROGRESS.returning).subjects[0].name, 'English');
+});
+
+// ---- ratings from the answer log (PRD 6.2) ----------------------------------
+
+let logId = 0;
+const logged = (topicId, marks, level = 'exam') => [...marks].map((m) => {
+  logId += 1;
+  return { id: logId, userId: 'abc', topicId, questionId: `q${logId}`, correct: m === 'R', level, pool: 'practice', at: logId * 1000 };
+});
+
+test('with logged answers, labels and right/total come from the latest five in the log', () => {
+  const answers = [...logged('t1', 'WWRRRR'), ...logged('t2', 'RRRR', 'core'), ...logged('t3', 'RW')];
+  // The progress counts disagree on purpose: the log wins.
+  const m = buildDashboardModel({ user, progress: { topics: { t1: { right: 0, total: 9 } }, checksDone: 1 }, answers });
+  assert.deepEqual(summary(m), ['Solid 4/5', 'Getting there 4/4', 'Not rated yet', 'Not rated yet', 'Not rated yet', 'Not rated yet']);
+  assert.deepEqual(m.topics.map((t) => t.needMore), [0, 0, 1, 3, 3, 3]);
+  assert.equal(m.nextUp.id, 't3'); // PRD 6.3: Not rated yet before Getting there
+  assert.equal(m.checksDone, 1); // checks done still come from progress
+});
+
+test('with logged answers, the Chemistry label follows PRD 6.5', () => {
+  const answers = ['t1', 't2', 't3', 't4', 't5', 't6'].flatMap((t, i) => logged(t, i === 0 ? 'WWW' : 'RRR'));
+  const m = buildDashboardModel({ user, progress: { topics: {}, checksDone: 6 }, answers });
+  // 1 + 3*5 = 16 points, but one topic is Shaky: Getting there.
+  assert.equal(m.state, 'returning');
+  assert.deepEqual([m.chemistry.label, m.nextUp.id], ['getting', 't1']);
+});
+
+test('an empty answer log falls back to the progress counts', () => {
+  assert.deepEqual(
+    buildDashboardModel({ user, progress: DEMO_PROGRESS.returning, answers: [] }),
+    build(DEMO_PROGRESS.returning),
+  );
 });

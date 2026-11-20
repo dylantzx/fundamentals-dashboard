@@ -7,6 +7,7 @@ import path from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 
 import { createStore } from './lib/store.js';
+import { createAnswerLog } from './lib/answer-log.js';
 import { createAuthenticator, scryptNFromEnv } from './lib/auth.js';
 import { createSessions, IDLE_MS } from './lib/sessions.js';
 import { createRouter } from './lib/routes.js';
@@ -56,7 +57,7 @@ async function loadRealUi() {
  *   bankDir?: string | null,      // question bank folder (export.json + assets/); default env STEADY_BANK_DIR
  *                                 // or ../question-bank. null = no bank: practice pages show "Coming next".
  * }} [opts]
- * @returns {http.Server & { store: any, sessions: any, auth: any }}
+ * @returns {http.Server & { store: any, answers: any, sessions: any, auth: any }}
  */
 export function createApp(opts = {}) {
   const dataDir = opts.dataDir ?? process.env.STEADY_DATA_DIR ?? path.join(APP_DIR, 'data');
@@ -66,6 +67,7 @@ export function createApp(opts = {}) {
   const log = opts.log ?? ((line) => console.log(line));
 
   const store = createStore(dataDir);
+  const answers = createAnswerLog(dataDir);
   const sessions = createSessions({ now, idleMs: opts.idleMs ?? IDLE_MS });
   const auth = createAuthenticator(store, { N: scryptN });
 
@@ -96,11 +98,11 @@ export function createApp(opts = {}) {
     }
   }
 
-  const handler = createRouter({ store, sessions, auth, loadUi, publicDir, bank, log });
+  const handler = createRouter({ store, answers, sessions, auth, loadUi, publicDir, bank, log });
   const server = http.createServer(handler);
   server.headersTimeout = 15_000;
   server.requestTimeout = 30_000;
-  return Object.assign(server, { store, sessions, auth, bank });
+  return Object.assign(server, { store, answers, sessions, auth, bank });
 }
 
 const isMain = process.argv[1] && pathToFileURL(path.resolve(process.argv[1])).href === import.meta.url;
