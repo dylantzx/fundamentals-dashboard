@@ -19,7 +19,7 @@
         "type": "notes",
         "why": "Shows how to get protons, neutrons and electrons from the two numbers, with a question to try.",
         "checkedOn": "2026-11-20",
-        "caution": "It says atomic number and mass number. Your syllabus calls them proton number and nucleon number."
+        "caution": "Your syllabus mainly uses proton number and nucleon number."
       },
       {
         "title": "O-Level Chemistry 6092 syllabus, section 2.2 Atomic Structure",
@@ -46,7 +46,7 @@
         "type": "notes",
         "why": "Explains the 2, 8, 8 filling rule and how shells link to the Period and Group.",
         "checkedOn": "2026-11-20",
-        "caution": "The BBC writes 2,8,1 with commas. In Singapore exams write it with dots: 2.8.1."
+        "caution": "The BBC writes 2,8,1 with commas; in Singapore exams write it with dots: 2.8.1. The BBC also numbers groups 1–7 and 0. Your syllabus uses Groups 1–18: 3–7 outer electrons means Groups 13–17, and a full shell means Group 18."
       },
       {
         "title": "O-Level Chemistry 6092 syllabus, section 2.2 Atomic Structure",
@@ -134,8 +134,9 @@
         "publisher": "BBC Bitesize (GCSE Chemistry, WJEC)",
         "url": "https://www.bbc.co.uk/bitesize/guides/z6k6pbk/revision/2",
         "type": "notes",
-        "why": "How non-metal atoms share pairs of electrons, and how to work out how many bonds each atom makes.",
-        "checkedOn": "2026-11-20"
+        "why": "How non-metal atoms share pairs of electrons to fill their outer shells, with simple examples.",
+        "checkedOn": "2026-11-20",
+        "caution": "This page numbers groups 1–7. With Groups 13–17, use 8 minus the number of outer electrons."
       },
       {
         "title": "Dot and cross models",
@@ -162,7 +163,7 @@
         "type": "notes",
         "why": "Why the ionic lattice gives high melting points and conducts only when molten or dissolved.",
         "checkedOn": "2026-11-20",
-        "caution": "Later pages in this guide cover diamond, graphite and metals. Those are Pure Chemistry extras, not this topic."
+        "caution": "Later pages cover diamond, graphite and metals, which are a separate part of the syllabus, not this topic."
       },
       {
         "title": "Properties of simple molecular substances",

@@ -32,7 +32,7 @@
         "Fill the first shell (2 at most), then the second (8 at most), then the third (8 for the first 20 elements), then the fourth.",
         "Write the electronic configuration with dots between the shells: sodium has 11 electrons, so it is 2.8.1.",
         "The number of occupied shells is the Period number. Sodium has 3 shells, so it is in Period 3.",
-        "The number of outer-shell electrons gives the Group: 1 or 2 outer electrons means Group 1 or 2, and 3 to 7 outer electrons means Groups 13 to 17. A full outer shell means Group 18, the noble gases."
+        "The number of outer-shell electrons gives the Group: 1 or 2 outer electrons means Group 1 or 2 (except helium: its 2 electrons fill the first shell, so it is in Group 18), and 3 to 7 outer electrons means Groups 13 to 17. A full outer shell means Group 18, the noble gases."
       ],
       "example": {
         "question": "Chlorine has proton number 17. Write its electronic configuration and find its Period and Group.",
@@ -56,11 +56,11 @@
         "Isotopes have the same proton number but different nucleon numbers. Chlorine-35 and chlorine-37 both have 17 protons.",
         "Only the neutrons differ: chlorine-35 has 18 neutrons and chlorine-37 has 20.",
         "Isotopes have the same number of electrons and the same electronic configuration, so they have the same chemical properties.",
-        "Their masses differ, so physical properties that depend on mass, such as density, can be slightly different.",
-        "The relative atomic mass in the Periodic Table (35.5 for chlorine) is an average over all the isotopes, weighted by how common each one is."
+        "Going a bit further: their masses differ, so physical properties that depend on mass, such as density, can be slightly different.",
+        "Going a bit further: the relative atomic mass in the Periodic Table (35.5 for chlorine) is an average over all the isotopes, weighted by how common each one is."
       ],
       "example": {
-        "question": "About 75% of chlorine atoms are chlorine-35 and 25% are chlorine-37. Show why the relative atomic mass of chlorine is 35.5.",
+        "question": "Going a bit further: about 75% of chlorine atoms are chlorine-35 and 25% are chlorine-37. Show why the relative atomic mass of chlorine is 35.5.",
         "steps": [
           "Picture 100 chlorine atoms: 75 have mass 35 and 25 have mass 37.",
           "Total mass = (75 × 35) + (25 × 37) = 2625 + 925 = 3550.",
@@ -75,9 +75,9 @@
       "illustrations": ["isotopes-chlorine"]
     },
     "t4": {
-      "bigIdea": "Metal atoms lose their outer electrons to become positive ions. Non-metal atoms gain electrons to become negative ions. The strong attraction between the opposite charges is the ionic bond.",
+      "bigIdea": "Metal atoms lose their outer electrons to become positive ions. Non-metal atoms gain electrons to become negative ions. The strong electrostatic attraction between the oppositely charged ions is the ionic bond.",
       "keyPoints": [
-        "Atoms lose or gain electrons so that they end up with a full outer shell, like a noble gas.",
+        "Metal atoms lose electrons and non-metal atoms gain them; the ions formed usually have a full outer shell, like a noble gas.",
         "Metals lose electrons and form positive ions: Na → Na⁺, Mg → Mg²⁺, Al → Al³⁺.",
         "Non-metals gain electrons and form negative ions: Cl → Cl⁻, O → O²⁻, N → N³⁻.",
         "The charges in an ionic compound must balance. Na⁺ and Cl⁻ give NaCl. Mg²⁺ needs two Cl⁻ ions, giving MgCl₂.",
@@ -132,7 +132,7 @@
         "Many strong electrostatic attractions must be overcome to melt the lattice, so ionic compounds have high melting and boiling points.",
         "Ionic compounds conduct electricity when molten or dissolved in water, because the ions are free to move. As solids they do not conduct: the ions are held in place.",
         "A simple molecular substance, such as water, methane or iodine, is made of small molecules. The covalent bonds inside each molecule are strong, but the forces between the molecules are weak.",
-        "Little energy is needed to overcome these weak forces, so simple molecular substances have low melting and boiling points. They do not conduct electricity, because the molecules have no charge."
+        "Little energy is needed to overcome these weak forces, so simple molecular substances have low melting and boiling points. They do not conduct electricity, because there are no ions or free electrons that can move."
       ],
       "example": {
         "question": "Substance X melts at 801 °C. It does not conduct as a solid, but it does when molten or dissolved in water. Is X ionic or simple molecular?",

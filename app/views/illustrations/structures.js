@@ -60,11 +60,11 @@ export function latticeVsMolecules(id = 'ill-structures') {
     pointer(700, 171, 730, 171) + label(736, 160, 'weak forces', { cls: 'ill-small' }) + label(736, 176, 'between', { cls: 'ill-small' }) + label(736, 192, 'molecules', { cls: 'ill-small' }) +
     label(430, 318, '→ low melting and boiling points', { cls: 'ill-strong' }) +
     label(430, 340, '→ does not conduct electricity', { cls: 'ill-text' }) +
-    label(430, 362, '(the molecules have no charge)', { cls: 'ill-small' });
+    label(430, 362, '(no ions or free electrons that can move)', { cls: 'ill-small' });
 
   return svg(id, {
     w: 820, h: 380,
     title: 'Giant ionic lattice compared with simple molecules',
-    desc: 'Left: a giant ionic lattice drawn as a grid of alternating small positive ions and larger negative ions, joined by short solid lines for the strong attractions in every direction. So ionic compounds have high melting and boiling points, and conduct electricity only when molten or dissolved, when the ions are free to move. Right: separate small molecules, each two atoms joined by a strong covalent bond, with dashed lines between molecules for the weak forces. So simple molecular substances have low melting and boiling points and do not conduct, because the molecules have no charge.',
+    desc: 'Left: a giant ionic lattice drawn as a grid of alternating small positive ions and larger negative ions, joined by short solid lines for the strong attractions in every direction. So ionic compounds have high melting and boiling points, and conduct electricity only when molten or dissolved, when the ions are free to move. Right: separate small molecules, each two atoms joined by a strong covalent bond, with dashed lines between molecules for the weak forces. So simple molecular substances have low melting and boiling points and do not conduct, because there are no ions or free electrons that can move.',
   }, body);
 }
