@@ -566,7 +566,8 @@ svg { display: block; flex-shrink: 0; }
 .facts dt { font-size: var(--fs-14); color: var(--c-text-3); }
 .facts dd { margin: 0; font-size: var(--fs-20); font-weight: 650; font-variant-numeric: tabular-nums; }
 .facts dd .t-muted { font-size: var(--fs-16); font-weight: 500; }
-.session-topics { width: 100%; border-collapse: collapse; }
+.session-topics { width: 100%; border-collapse: collapse; table-layout: fixed; }
+.session-topics th:first-child { width: 34%; }
 .session-topics th, .session-topics td { padding: var(--s-2) var(--s-3) var(--s-2) 0; text-align: left; vertical-align: middle; border-bottom: 1px solid var(--c-border); }
 .session-topics thead th { font-size: var(--fs-14); font-weight: 650; color: var(--c-text-3); }
 .session-topics tbody th { font-weight: 600; }
